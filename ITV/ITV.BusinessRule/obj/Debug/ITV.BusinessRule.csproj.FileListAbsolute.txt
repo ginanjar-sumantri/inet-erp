@@ -1,0 +1,13 @@
+D:\WORK IP.1\ITV\ITV.BusinessRule\bin\Debug\ITV.BusinessRule.dll
+D:\WORK IP.1\ITV\ITV.BusinessRule\bin\Debug\ITV.BusinessRule.pdb
+D:\WORK IP.1\ITV\ITV.BusinessRule\bin\Debug\DbLinq.dll
+D:\WORK IP.1\ITV\ITV.BusinessRule\bin\Debug\ITV.Common.dll
+D:\WORK IP.1\ITV\ITV.BusinessRule\bin\Debug\ITV.DataAccess.dll
+D:\WORK IP.1\ITV\ITV.BusinessRule\bin\Debug\DbLinq.MySql.dll
+D:\WORK IP.1\ITV\ITV.BusinessRule\bin\Debug\ITV.Common.pdb
+D:\WORK IP.1\ITV\ITV.BusinessRule\bin\Debug\ITV.DataAccess.pdb
+D:\WORK IP.1\ITV\ITV.BusinessRule\bin\Debug\DbLinq.pdb
+D:\WORK IP.1\ITV\ITV.BusinessRule\bin\Debug\DbLinq.MySql.pdb
+D:\WORK IP.1\ITV\ITV.BusinessRule\obj\Debug\ResolveAssemblyReference.cache
+D:\WORK IP.1\ITV\ITV.BusinessRule\obj\Debug\ITV.BusinessRule.dll
+D:\WORK IP.1\ITV\ITV.BusinessRule\obj\Debug\ITV.BusinessRule.pdb

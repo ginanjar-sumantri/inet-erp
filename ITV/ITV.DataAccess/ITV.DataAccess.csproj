@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D053BD40-F7ED-4A30-B5E6-FAB5307FF759}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITV.DataAccess</RootNamespace>
+    <AssemblyName>ITV.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DbLinq, Version=0.20.0.0, Culture=neutral, PublicKeyToken=61e015a67077348b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>build.dbg\DbLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="DbLinq.MySql, Version=0.20.0.0, Culture=neutral, PublicKeyToken=61e015a67077348b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>build.dbg\DbLinq.MySql.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=5.0.8.1, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>build.dbg\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base.cs" />
+    <Compile Include="ITVDatabase.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsRMSRoles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build.dbg\DbMetal.exe.config" />
+    <None Include="ITVDatabase.dbml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="build.dbg\DbLinq.dll" />
+    <Content Include="build.dbg\DbLinq.Firebird.dll" />
+    <Content Include="build.dbg\DbLinq.Firebird.pdb" />
+    <Content Include="build.dbg\DbLinq.Ingres.dll" />
+    <Content Include="build.dbg\DbLinq.Ingres.pdb" />
+    <Content Include="build.dbg\DbLinq.MySql.dll" />
+    <Content Include="build.dbg\DbLinq.MySql.pdb" />
+    <Content Include="build.dbg\DbLinq.Oracle.dll" />
+    <Content Include="build.dbg\DbLinq.Oracle.pdb" />
+    <Content Include="build.dbg\DbLinq.pdb" />
+    <Content Include="build.dbg\DbLinq.PostgreSql.dll" />
+    <Content Include="build.dbg\DbLinq.PostgreSql.pdb" />
+    <Content Include="build.dbg\DbLinq.Sqlite.dll" />
+    <Content Include="build.dbg\DbLinq.Sqlite.pdb" />
+    <Content Include="build.dbg\DbMetal.exe" />
+    <Content Include="build.dbg\DbMetal.pdb" />
+    <Content Include="build.dbg\FirebirdSql.Data.FirebirdClient.dll" />
+    <Content Include="build.dbg\Ingres.Stereo.dll" />
+    <Content Include="build.dbg\Mono.Security.dll" />
+    <Content Include="build.dbg\MySql.Data.dll" />
+    <Content Include="build.dbg\Npgsql.dll" />
+    <Content Include="build.dbg\Oracle.DataAccess.dll" />
+    <Content Include="build.dbg\sqlite3.dll" />
+    <Content Include="build.dbg\System.Data.SQLite.DLL" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ITVDatabase.dbml.layout">
+      <DependentUpon>ITVDatabase.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <!--supi yg tambah-->
+  <Target Name="BeforeBuild">
+    <Exec Command="build.dbg\dbmetal -namespace:ITV.DataAccess.ITVDatabase -code:ITVDatabase.designer.cs ITVDatabase.dbml">
+    </Exec>
+  </Target>
+  <!--supi yg tambah-->
+</Project>

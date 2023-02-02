@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "InetGlobalIndo.ERP.MTJ.UI", "InetGlobalIndo.ERP.MTJ.UI", "{0817D5FA-F881-4578-BF97-36204120433A}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/HomeWeb.root/HomeWeb", CAAAAAAA"
+		SccAuxPath = ""
+		SccLocalPath = ".."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/InetGlobalIndo.ERP.MTJ.UI"
+		Debug.AspNetCompiler.PhysicalPath = "InetGlobalIndo.ERP.MTJ.UI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\InetGlobalIndo.ERP.MTJ.UI\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/InetGlobalIndo.ERP.MTJ.UI"
+		Release.AspNetCompiler.PhysicalPath = "InetGlobalIndo.ERP.MTJ.UI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\InetGlobalIndo.ERP.MTJ.UI\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2100"
+		VWDDynamicPort = "false"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = InetGlobalIndo.ERP.MTJ.UI
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = InetGlobalIndo.ERP.MTJ.UI\\
+		SccProjectEnlistmentChoice1 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0817D5FA-F881-4578-BF97-36204120433A}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{0817D5FA-F881-4578-BF97-36204120433A}.Release|Any CPU.ActiveCfg = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

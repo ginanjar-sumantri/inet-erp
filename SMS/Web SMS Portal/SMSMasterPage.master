@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SMSMasterPage.master.cs" Inherits="SMSMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<script type="text/javascript" src="../jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="../JavaScript.js"></script>
+<head>
+    <title>WEB SMS</title>    
+    <style type="text/css">
+        BODY {margin: 0px 0px 0px 0px; background:#efefef;font-family:Calibri,Tahoma;font-size:12px;}
+        INPUT {font-family:Calibri,Tahoma;}
+        .bodyContent {width:796px;}
+        .uppanelTop {float:left;background-image:url("../images/layout/uppanelbg.jpg");width:735px;height:60px;}
+        .uppanelTitle {clear:both;color:#fffc00;text-align:left;font-weight:bold;padding-top:10px;font-family:Arial;font-size:14px;}
+        .uppanelContent {clear:both;border-left:solid 1px #b2b2b2;border-right:solid 1px #b2b2b2;min-height:10px;background-color:White;}
+        .lowerpanelContent {clear:both;border-left:solid 1px #7e7e7e;border-right:solid 1px #7e7e7e;min-height:10px;background-color:#999999;}
+        .menupanel {float:left;margin-left:10px;width:230px;}
+        .menuheader {float:left;width:201px;height:25px;background-image:url("../images/layout/menuheaderbg.jpg");
+                text-align:left;font-size:12px;font-weight:bold;font-family:Microsoft Sans Serif;color:#696969;padding-top:7px;padding-left:15px;}
+        .menuitem {clear:both;display:block;width:228;height:20px;border:solid 1px #b8b8b8;background-image:url("../images/layout/menubg.jpg");
+                text-align:left;font-size:10px;font-weight:bold;font-family:Microsoft Sans Serif;color:#b8b8b8;padding-left:15px;padding-top:7px;
+                text-decoration:none;}
+        .menuitem:hover {color:#696969;cursor:pointer;}
+        .contentpanel {float:left;margin-left:12px;width:530px;}
+        .contentpanelTitle {float:left;width:220px;height:23px;background-image:url("../images/layout/contentpanelheaderbg1.jpg");
+                text-align:left;font-size:12px;font-weight:bold;font-family:Microsoft Sans Serif;color:White;padding-top:7px;}
+        .contentpanelTitle2 {float:left;width:263px;height:30px;background-image:url("../images/layout/contentpanelheaderbg2.jpg");}
+        .contentpanelContent {clear:both;border-left:solid 1px #b2b2b2;border-right:solid 1px #b2b2b2;min-height:550px;background-color:White;text-align:left;padding:5px 5px 5px 5px;}
+        .bgcolor_gray { background-color : #999; color:White ; }
+        .TableRowOver { background-color : #EEE; cursor:pointer ;}
+        .TableRow { background-color : White ;}
+    </style>
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <center>
+        <div class="bodyContent">
+            <img style="clear:both" src="../images/layout/header.jpg" />
+            <div style="clear:both">
+                <img style="float:left" src="../images/layout/uppanelleft.jpg" />
+                <div class="uppanelTop">
+                    <div class="uppanelTitle"><asp:Label runat="server" ID="userIDLabel"></asp:Label></div>
+                    <div style="clear:both;padding-top:12px;font-size:10px;font-family:Microsoft Sans Serif;color:#999999;">
+                        <div style="float:left">Status : Online</div>
+                        <div style="float:right"><asp:ImageButton runat="server" ID="btnLogout" CausesValidation="false"
+                                ImageUrl="images/layout/btnLogout.jpg" onclick="btnLogout_Click" /></div>
+                    </div>
+                </div>
+                <img style="float:left" src="../images/layout/uppanelright.jpg" />
+            </div>
+            <div class="uppanelContent" style="background:url('../images/topheader.jpg');background-position:-200px;">
+                <embed src="../images/web_sms.swf" width="100%" wmode="transparent"></embed>
+                <asp:ContentPlaceHolder id="ContentPlaceHolderAtas" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <img style="clear:both" src="../images/layout/uppanelbottom.jpg" />
+            <img style="clear:both" src="../images/layout/lowerpaneltop.jpg" />
+            <div class="lowerpanelContent">
+                <div class="menupanel">
+                    <div style="clear:both">
+                        <img style="float:left" src="../images/layout/menuheaderleft.jpg" />
+                        <div class="menuheader">MENU</div>
+                        <img style="float:left" src="../images/layout/menuheaderright.jpg" />
+                    </div>
+                    <a class="menuitem" href="../Message/Compose.aspx"><img src="../images/menuIcon/compose_small.gif" style="border:0px;float:left;" /> &nbsp; Compose</a>
+                    <asp:Panel runat="server" ID="panelInbox">
+                        <a class="menuitem" href="../Message/Inbox.aspx"><img src="../images/menuIcon/inbox_small.gif" style="border:0px;float:left;" /> &nbsp; Inbox (<asp:Literal runat="server" ID="newInbox"></asp:Literal>)</a>
+                    </asp:Panel>
+                    <a class="menuitem" href="../Message/Outbox.aspx"><img src="../images/menuIcon/outbox_small.gif" style="border:0px;float:left;" /> &nbsp; Outbox (<asp:Literal runat="server" ID="newOutbox"></asp:Literal>)</a>
+                    <a class="menuitem" href="../Message/SentItems.aspx"><img src="../images/menuIcon/sent_small.gif" style="border:0px;float:left;" /> &nbsp; Sent</a>
+                    <asp:Panel runat="server" ID="panelJunk">
+                        <a class="menuitem" href="../Message/Junk.aspx"><img src="../images/menuIcon/junk_small.gif" style="border:0px;float:left;" /> &nbsp; Junk</a>
+                    </asp:Panel>
+                    <asp:Panel runat="server" ID="panelContact">
+                        <a class="menuitem" href="../Message/Contacts.aspx"><img src="../images/menuIcon/contacts_small.gif" style="border:0px;float:left;" /> &nbsp; Contact</a>
+                    </asp:Panel>
+                    <asp:Panel runat="server" ID="panelGroup">
+                        <a class="menuitem" href="../Message/Groups.aspx"><img src="../images/menuIcon/groups_small.gif" style="border:0px;float:left;" /> &nbsp; Group</a>
+                    </asp:Panel>
+                    <div style="clear:both;height:10px;"></div>
+                    <div style="clear:both">
+                        <img style="float:left" src="../images/layout/menuheaderleft.jpg" />
+                        <div class="menuheader">MANAGE ACCOUNT</div>
+                        <img style="float:left" src="../images/layout/menuheaderright.jpg" />
+                    </div>
+                        <a class="menuitem" href="../ChangePassword/ChangePassword.aspx">Change Password</a>
+                    <asp:Panel runat="server" ID="paneLBlockPhoneNumber">
+                        <a class="menuitem" href="../BlockPhoneNumber/BlockPhoneNumber.aspx">Block Phone Number</a>
+                    </asp:Panel>
+                    <asp:Panel runat="server" ID="panelStatistic">
+                        <a class="menuitem" href="../Statistic/Statistic.aspx">Statistic</a>
+                    </asp:Panel>
+                    <div style="clear:both;height:10px;"></div>                    
+                    <asp:Panel runat="server" ID="panelMenuAdmin">
+                        <div style="clear:both">
+                            <img style="float:left" src="../images/layout/menuheaderleft.jpg" />
+                            <div class="menuheader">ADMIN</div>
+                            <img style="float:left" src="../images/layout/menuheaderright.jpg" />
+                        </div>
+                        <a class="menuitem" href="../ManageUser/ManageUser.aspx">Manage User</a>
+                        <a class="menuitem" href="../BalanceCheck/BalanceCheck.aspx">Balance Check</a>
+                        <a class="menuitem" href="../Schedule/Schedule.aspx">Schedule</a>
+                        <a class="menuitem" href="../AutoReply/AutoReply.aspx">Auto Reply</a>
+                        <a class="menuitem" href="../Configure/Configure.aspx">Configure</a>
+                        <a class="menuitem" href="../Download/Download.aspx">Download Gateway Application</a>
+                    </asp:Panel>
+                    <div style="clear:both;height:10px;"></div>                    
+                    <asp:Panel runat="server" ID="CorporateFeaturePanel">
+                        <div style="clear:both">
+                            <img style="float:left" src="../images/layout/menuheaderleft.jpg" />
+                            <div class="menuheader">CORPORATE FEATURE</div>
+                            <img style="float:left" src="../images/layout/menuheaderright.jpg" />
+                        </div>
+                        <a class="menuitem" href="../BalanceCheck/BalanceCheck.aspx">Balance Check</a>
+                        <a class="menuitem" href="../Schedule/Schedule.aspx">Schedule</a>
+                        <a class="menuitem" href="../AutoReply/AutoReply.aspx">Auto Reply</a>
+                    </asp:Panel>
+                </div>
+                <div class="contentpanel">
+                    <div style="clear:both">
+                        <img style="float:left" src="../images/layout/contentpanelheaderleft.jpg" />
+                        <div class="contentpanelTitle">
+                            <asp:ContentPlaceHolder id="ContentPlaceHolderContentTitle" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <img style="float:left" src="../images/layout/contentpanelheaderright.jpg" />
+                        <div class="contentpanelTitle2"></div>
+                        <img style="float:left" src="../images/layout/contentpanelheaderright2.jpg" />
+                    </div>
+                    <div class="contentpanelContent">
+                        <asp:ContentPlaceHolder id="ContentPlaceHolderContent" runat="server">        
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <img style="clear:both" src="../images/layout/footer.jpg" />
+        </div>
+    </center>
+    <iframe id="IFrameNewMsg" src="../NewMsg.aspx" style="width:1px;height:1px;border:0px;"></iframe>
+    <script language="javascript">setInterval("$('#IFrameNewMsg').attr('src','../NewMsg.aspx');", 60000);</script>
+    </form>
+</body>
+</html>

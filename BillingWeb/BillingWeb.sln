@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "InetGlobalIndo.ERP.MTJ.UI.Billing", "InetGlobalIndo.ERP.MTJ.UI.Billing", "{3259BE0F-6835-4E73-A87B-CE6F2734FD58}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/BillingWeb.root/BillingWeb", CAAAAAAA"
+		SccAuxPath = ""
+		SccLocalPath = ".."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/InetGlobalIndo.ERP.MTJ.UI.Billing"
+		Debug.AspNetCompiler.PhysicalPath = "InetGlobalIndo.ERP.MTJ.UI.Billing\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\InetGlobalIndo.ERP.MTJ.UI.Billing\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/InetGlobalIndo.ERP.MTJ.UI.Billing"
+		Release.AspNetCompiler.PhysicalPath = "InetGlobalIndo.ERP.MTJ.UI.Billing\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\InetGlobalIndo.ERP.MTJ.UI.Billing\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2112"
+		VWDDynamicPort = "false"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = InetGlobalIndo.ERP.MTJ.UI.Billing
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = InetGlobalIndo.ERP.MTJ.UI.Billing\\
+		SccProjectEnlistmentChoice1 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3259BE0F-6835-4E73-A87B-CE6F2734FD58}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{3259BE0F-6835-4E73-A87B-CE6F2734FD58}.Release|Any CPU.ActiveCfg = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

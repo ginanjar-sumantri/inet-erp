@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "InetGlobalIndo.ERP.MTJ.UI.Finance", "InetGlobalIndo.ERP.MTJ.UI.Finance", "{A2E34E3E-427E-4D1E-96C3-27B3CDE67F8E}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/FinanceWeb.root/FinanceWeb", CAAAAAAA"
+		SccAuxPath = ""
+		SccLocalPath = ".."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/InetGlobalIndo.ERP.MTJ.UI.Finance"
+		Debug.AspNetCompiler.PhysicalPath = "InetGlobalIndo.ERP.MTJ.UI.Finance\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\InetGlobalIndo.ERP.MTJ.UI.Finance\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/InetGlobalIndo.ERP.MTJ.UI.Finance"
+		Release.AspNetCompiler.PhysicalPath = "InetGlobalIndo.ERP.MTJ.UI.Finance\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\InetGlobalIndo.ERP.MTJ.UI.Finance\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2102"
+		VWDDynamicPort = "false"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = InetGlobalIndo.ERP.MTJ.UI.Finance
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = InetGlobalIndo.ERP.MTJ.UI.Finance\\
+		SccProjectEnlistmentChoice1 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2E34E3E-427E-4D1E-96C3-27B3CDE67F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E34E3E-427E-4D1E-96C3-27B3CDE67F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E34E3E-427E-4D1E-96C3-27B3CDE67F8E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E34E3E-427E-4D1E-96C3-27B3CDE67F8E}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

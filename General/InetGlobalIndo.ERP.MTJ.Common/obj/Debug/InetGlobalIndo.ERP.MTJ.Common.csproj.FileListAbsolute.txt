@@ -1,0 +1,6 @@
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.Common\bin\Debug\InetGlobalIndo.ERP.MTJ.Common.dll
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.Common\bin\Debug\InetGlobalIndo.ERP.MTJ.Common.pdb
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.Common\bin\Debug\InetGlobalIndo.ERP.MTJ.SystemConfig.dll
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.Common\obj\Debug\InetGlobalIndo.ERP.MTJ.Common.dll
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.Common\obj\Debug\InetGlobalIndo.ERP.MTJ.Common.pdb

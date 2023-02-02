@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9465E8EA-65ED-4B54-9216-EC1414DE539E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InetGlobalIndo.ERP.MTJ.DataMapping</RootNamespace>
+    <AssemblyName>InetGlobalIndo.ERP.MTJ.DataMapping</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>PT. Inet Global Indo.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="InetGlobalIndo.ERP.MTJ.SystemConfig, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.100.1\ApplicationDll\InetGlobalIndo.ERP.MTJ.SystemConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountMapper.cs" />
+    <Compile Include="ApplicantResumeDataMapper.cs" />
+    <Compile Include="Base.cs" />
+    <Compile Include="BillOfLadingDataMapper.cs" />
+    <Compile Include="BilTrRadiusActivateTempDataMapper.cs" />
+    <Compile Include="CogsProcessDataMapper.cs" />
+    <Compile Include="ConnectionModeMapper.cs" />
+    <Compile Include="ContactStatus.cs" />
+    <Compile Include="ARRateDataMapper.cs" />
+    <Compile Include="APRateDataMapper.cs" />
+    <Compile Include="BankReconDataMapper.cs" />
+    <Compile Include="ApplicantScreeningDataMapper.cs" />
+    <Compile Include="ApplicantFinishingDataMapper.cs" />
+    <Compile Include="AbsenceTypeDataMapper.cs" />
+    <Compile Include="AbsenceRequestDataMapper.cs" />
+    <Compile Include="ActivityTypeDataMapper.cs" />
+    <Compile Include="CompanyConfigDataMapper.cs" />
+    <Compile Include="ContractDataMapper.cs" />
+    <Compile Include="BeritaAcaraDataMapper.cs" />
+    <Compile Include="ClaimTypeDataMapper.cs" />
+    <Compile Include="ClaimForDataMapper.cs" />
+    <Compile Include="ClaimIssueDataMapper.cs" />
+    <Compile Include="ClaimPlafonDataMapper.cs" />
+    <Compile Include="BenefitDataMapper.cs" />
+    <Compile Include="AttendanceDailyDataMapper.cs" />
+    <Compile Include="AttendanceClockDataMapper.cs" />
+    <Compile Include="AllowanceTypeDataMapper.cs" />
+    <Compile Include="BaseOnDataMapper.cs" />
+    <Compile Include="AppraisalDataMapper.cs" />
+    <Compile Include="ContractTemplateDataMapper.cs" />
+    <Compile Include="ClinicDataMapper.cs" />
+    <Compile Include="ChangeShiftDataMapper.cs" />
+    <Compile Include="ChangeTypeDataMapper.cs" />
+    <Compile Include="AdjustDiffRateDataMapper.cs" />
+    <Compile Include="CompConfigDataTypeMapper.cs" />
+    <Compile Include="CustomerReturDataMapper.cs" />
+    <Compile Include="POSPromoPaymentTypeMapper.cs" />
+    <Compile Include="POSPromoDataMapper.cs" />
+    <Compile Include="POSTrShippingDataMapper.cs" />
+    <Compile Include="POSTrGraphicDataMapper.cs" />
+    <Compile Include="POSTrPhotcopyDataMapper.cs" />
+    <Compile Include="POSTrPrintingDataMapper.cs" />
+    <Compile Include="StockServiceOutDataMapper.cs" />
+    <Compile Include="StockServiceInDataMapper.cs" />
+    <Compile Include="POSTrDeliveryOrderDataMapper.cs" />
+    <Compile Include="LoanChangeDataMapper.cs" />
+    <Compile Include="POSTrCafeDataMapper.cs" />
+    <Compile Include="POSFloorTypeDataMapper.cs" />
+    <Compile Include="POSHotelDataMapper.cs" />
+    <Compile Include="POSTicketingDataMapper.cs" />
+    <Compile Include="SupplierDiffRateDataMapper.cs" />
+    <Compile Include="SupplierReturDataMapper.cs" />
+    <Compile Include="TransactionDataMapper.cs" />
+    <Compile Include="POSPaymentTypeMapper.cs" />
+    <Compile Include="FINSuppInvConsignDataMapper.cs" />
+    <Compile Include="POSTrSettlementDataMapper.cs" />
+    <Compile Include="SKSalaryDataMapper.cs" />
+    <Compile Include="POSTransTypeDataMapper.cs" />
+    <Compile Include="POSTrRetailDataMapper.cs" />
+    <Compile Include="POSTrInternetDataMapper.cs" />
+    <Compile Include="GenderDataMapper.cs" />
+    <Compile Include="POSDiscountPaymentTypeMapper.cs" />
+    <Compile Include="POSDiscountDataMapper.cs" />
+    <Compile Include="MemberDataMapper.cs" />
+    <Compile Include="PaymentStatusDataMapper.cs" />
+    <Compile Include="SalaryPaymentDataMapper.cs" />
+    <Compile Include="SMSCategoryDataMapper.cs" />
+    <Compile Include="THRDataMapper.cs" />
+    <Compile Include="EmpReprimandDataMapper.cs" />
+    <Compile Include="EmpRewardDataMapper.cs" />
+    <Compile Include="ReprimandStatusDataMapper.cs" />
+    <Compile Include="RadiusUpdateVoucherDataMapper.cs" />
+    <Compile Include="DirectBillOfLadingDataMapper.cs" />
+    <Compile Include="LeaveRequestDataMapper.cs" />
+    <Compile Include="PPhYearDataMapper.cs" />
+    <Compile Include="ReturSparepartDataMapper.cs" />
+    <Compile Include="PayrollDataMapper.cs" />
+    <Compile Include="SlipDataMapper.cs" />
+    <Compile Include="EmpGroupAssignDataMapper.cs" />
+    <Compile Include="ScheduleShiftDataMapper.cs" />
+    <Compile Include="SalaryDataMapper.cs" />
+    <Compile Include="DeductionDataMapper.cs" />
+    <Compile Include="ServiceInvWithoutWarrantyDataMapper.cs" />
+    <Compile Include="PayrollTypeDataMapper.cs" />
+    <Compile Include="TertanggungDataMapper.cs" />
+    <Compile Include="PayrollPrefDataMapper.cs" />
+    <Compile Include="MethodRangeTypeDataMapper.cs" />
+    <Compile Include="HRMTermDataMapper.cs" />
+    <Compile Include="SparepartRequestDataMapper.cs" />
+    <Compile Include="LeaveAddDataMapper.cs" />
+    <Compile Include="ScheduleTypeDataMapper.cs" />
+    <Compile Include="DayTypeDataMapper.cs" />
+    <Compile Include="LemburDataMapper.cs" />
+    <Compile Include="LoanInDataMapper.cs" />
+    <Compile Include="LeaveProcessDataMapper.cs" />
+    <Compile Include="DinasDataMapper.cs" />
+    <Compile Include="FixedAssetPurchaseOrderDataMapper.cs" />
+    <Compile Include="DirectPurchaseDataMapper.cs" />
+    <Compile Include="TypePaymentDataMapper.cs" />
+    <Compile Include="TermAndConditionDataMapper.cs" />
+    <Compile Include="UnSubDataMapper.cs" />
+    <Compile Include="EmailNotificationDataMapper.cs" />
+    <Compile Include="SalesConfirmationDataMapper.cs" />
+    <Compile Include="DirectSalesDataMapper.cs" />
+    <Compile Include="ProductAssemblyDataMapper.cs" />
+    <Compile Include="ReportTypeDataMapper.cs" />
+    <Compile Include="NCPRefundDataMapper.cs" />
+    <Compile Include="NCPSalesDataMapper.cs" />
+    <Compile Include="RetailDataMapper.cs" />
+    <Compile Include="YesNoDataMapper.cs" />
+    <Compile Include="PriceGroupDataMapper.cs" />
+    <Compile Include="FinancialRatioDataMapper.cs" />
+    <Compile Include="PurchaseReturDataMapper.cs" />
+    <Compile Include="TerminationHandOverDataMapper.cs" />
+    <Compile Include="ExitInterviewDataMapper.cs" />
+    <Compile Include="TerminationFinishingDataMapper.cs" />
+    <Compile Include="TerminationRequestDataMapper.cs" />
+    <Compile Include="ReasonDataMapper.cs" />
+    <Compile Include="MonthMapper.cs" />
+    <Compile Include="UpdateLeaveDataMapper.cs" />
+    <Compile Include="DayMapper.cs" />
+    <Compile Include="WorkingHourDataMapper.cs" />
+    <Compile Include="ScreeningProcessDataMapper.cs" />
+    <Compile Include="ScreeningScheduleDataMapper.cs" />
+    <Compile Include="FixedAssetBeginningDataMapper.cs" />
+    <Compile Include="ProcessTypeDataMapper.cs" />
+    <Compile Include="MoneyChangerDataMapper.cs" />
+    <Compile Include="OrgUnitEmployeeDataMapper.cs" />
+    <Compile Include="TransactionCloseDataMapper.cs" />
+    <Compile Include="RecruitmentRequestDataMapper.cs" />
+    <Compile Include="TallyActorDataMapper.cs" />
+    <Compile Include="OrganizationUnitDataMapper.cs" />
+    <Compile Include="PermissionDataMapper.cs" />
+    <Compile Include="DocServiceActorDataMapper.cs" />
+    <Compile Include="FAAddStockDataMapper.cs" />
+    <Compile Include="CrewAssignmentActorDataMapper.cs" />
+    <Compile Include="CrewAssignmentDataMapper.cs" />
+    <Compile Include="CurrencyDataMapper.cs" />
+    <Compile Include="FAServiceDataMapper.cs" />
+    <Compile Include="PackingListActorDataMapper.cs" />
+    <Compile Include="PackingListDataMapper.cs" />
+    <Compile Include="PPHTActorDataMapper.cs" />
+    <Compile Include="PPHTDataMapper.cs" />
+    <Compile Include="ReceiptNonTradeDataMapper.cs" />
+    <Compile Include="FAProcessDataMapper.cs" />
+    <Compile Include="EmployeeAuthorDataMapper.cs" />
+    <Compile Include="CustBillAccountDataMapper.cs" />
+    <Compile Include="CustomerInvoiceDataMapper.cs" />
+    <Compile Include="DocServiceDataMapper.cs" />
+    <Compile Include="BillingInvoiceDataMapper.cs" />
+    <Compile Include="SalesPersonDataMapper.cs" />
+    <Compile Include="SetupDataMapper.cs" />
+    <Compile Include="SubledDataMapper.cs" />
+    <Compile Include="SupplierInvoiceDataMapper.cs" />
+    <Compile Include="SupplierNoteDataMapper.cs" />
+    <Compile Include="CustomerNoteDataMapper.cs" />
+    <Compile Include="ReceivingPODataMapper.cs" />
+    <Compile Include="DeliveryOrderDataMapper.cs" />
+    <Compile Include="PurchaseOrderDataMapper.cs" />
+    <Compile Include="SalesOrderDataMapper.cs" />
+    <Compile Include="StockChangeGoodDataMapper.cs" />
+    <Compile Include="StockIssueSlipDataMapper.cs" />
+    <Compile Include="StockReceivingCustomerDataMapper.cs" />
+    <Compile Include="StockReceivingSupplierDataMapper.cs" />
+    <Compile Include="StockTransferInternalDataMapper.cs" />
+    <Compile Include="StockReceivingOtherDataMapper.cs" />
+    <Compile Include="StockRejectInDataMapper.cs" />
+    <Compile Include="StockTransferExternalSJDataMapper.cs" />
+    <Compile Include="StockTransferExternalRRDataMapper.cs" />
+    <Compile Include="StockRejectOutDataMapper.cs" />
+    <Compile Include="StockIssueRequestFADataMapper.cs" />
+    <Compile Include="StockIssueFixedAssetDataMapper.cs" />
+    <Compile Include="STCReturDataMapper.cs" />
+    <Compile Include="StockBeginningDataMapper.cs" />
+    <Compile Include="StockAdjustmentDataMapper.cs" />
+    <Compile Include="ShipApprovalStatusDataMapper.cs" />
+    <Compile Include="PlanShipApprovalStatusDataMapper.cs" />
+    <Compile Include="PurchaseRequestDataMapper.cs" />
+    <Compile Include="RequestSalesReturDataMapper.cs" />
+    <Compile Include="StockIssueRequestDataMapper.cs" />
+    <Compile Include="FAPurchaseDataMapper.cs" />
+    <Compile Include="GLBudgetDataMapper.cs" />
+    <Compile Include="StockOpnameDataMapper.cs" />
+    <Compile Include="StockTransRequestDataMapper.cs" />
+    <Compile Include="SuppBeginningDataMapper.cs" />
+    <Compile Include="CustBeginningDataMapper.cs" />
+    <Compile Include="DPSupplierReturDataMapper.cs" />
+    <Compile Include="DPSuppPayDataMapper.cs" />
+    <Compile Include="DPCustomerReturDataMapper.cs" />
+    <Compile Include="DPCustomerDataMapper.cs" />
+    <Compile Include="GiroPaymentChangeDataMapper.cs" />
+    <Compile Include="GiroReceiptChangeDataMapper.cs" />
+    <Compile Include="DPCustListDataMapper.cs" />
+    <Compile Include="GiroPaymentDataMapper.cs" />
+    <Compile Include="GiroReceiptDataMapper.cs" />
+    <Compile Include="PaymentTradeDataMapper.cs" />
+    <Compile Include="ProductDataMapper.cs" />
+    <Compile Include="ReceiptDataMapper.cs" />
+    <Compile Include="ReceiptTradeDataMapper.cs" />
+    <Compile Include="TallyDataMapper.cs" />
+    <Compile Include="TaxDataMapper.cs" />
+    <Compile Include="WarehouseDataMapper.cs" />
+    <Compile Include="NotaDebitCustDataMapper.cs" />
+    <Compile Include="NotaCreditCustDataMapper.cs" />
+    <Compile Include="DateFormMapper.cs" />
+    <Compile Include="NotaCreditSuppDataMapper.cs" />
+    <Compile Include="NotaDebitSuppDataMapper.cs" />
+    <Compile Include="PaymentNonTradeDataMapper.cs" />
+    <Compile Include="CurrencyDefaultAccount.cs" />
+    <Compile Include="CustomerDataMapper.cs" />
+    <Compile Include="EmployeeDataMapper.cs" />
+    <Compile Include="FixedAssetMovingStatus.cs" />
+    <Compile Include="FixedAssetsDataMapper.cs" />
+    <Compile Include="FixedAssetStatus.cs" />
+    <Compile Include="HomeCurrency.cs" />
+    <Compile Include="JournalEntryStatus.cs" />
+    <Compile Include="AppModule.cs" />
+    <Compile Include="LanguageDataMapper.cs" />
+    <Compile Include="PaymentDataMapper.cs" />
+    <Compile Include="PaymentNonPurchaseDataMapper.cs" />
+    <Compile Include="PettyCashDataMapper.cs" />
+    <Compile Include="PettyDataMapper.cs" />
+    <Compile Include="ProductTypeDataMapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RowStatus.cs" />
+    <Compile Include="SupplierDataMapper.cs" />
+    <Compile Include="TermDataMapper.cs" />
+    <Compile Include="TransTypeDataMapper.cs" />
+    <Compile Include="UnitUpdate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InetGlobalIndo.ERP.MTJ.Common\InetGlobalIndo.ERP.MTJ.Common.csproj">
+      <Project>{514663BC-FC1A-4B3A-8C09-175A12F5A5A2}</Project>
+      <Name>InetGlobalIndo.ERP.MTJ.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PT. Inet Global Indo.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

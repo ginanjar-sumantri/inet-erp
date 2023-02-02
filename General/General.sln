@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InetGlobalIndo.ERP.MTJ.Authentication", "InetGlobalIndo.ERP.MTJ.Authentication\InetGlobalIndo.ERP.MTJ.Authentication.csproj", "{93669123-E567-42C5-A75E-B88A5AE65E09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InetGlobalIndo.ERP.MTJ.Common", "InetGlobalIndo.ERP.MTJ.Common\InetGlobalIndo.ERP.MTJ.Common.csproj", "{514663BC-FC1A-4B3A-8C09-175A12F5A5A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InetGlobalIndo.ERP.MTJ.CustomControl", "InetGlobalIndo.ERP.MTJ.CustomControl\InetGlobalIndo.ERP.MTJ.CustomControl.csproj", "{C28A037C-435B-44C4-99BF-20099D5E03CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InetGlobalIndo.ERP.MTJ.DataMapping", "InetGlobalIndo.ERP.MTJ.DataMapping\InetGlobalIndo.ERP.MTJ.DataMapping.csproj", "{9465E8EA-65ED-4B54-9216-EC1414DE539E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InetGlobalIndo.ERP.MTJ.DBFactory.ERPManSys", "InetGlobalIndo.ERP.MTJ.DBFactory.ERPManSys\InetGlobalIndo.ERP.MTJ.DBFactory.ERPManSys.csproj", "{DFF8F29F-B38D-4597-BCD3-1C6D8DBC0EA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InetGlobalIndo.ERP.MTJ.DBFactory.Membership", "InetGlobalIndo.ERP.MTJ.DBFactory.Membership\InetGlobalIndo.ERP.MTJ.DBFactory.Membership.csproj", "{F43D2BC2-FAEC-445A-8B55-6AC27E0FC447}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 7
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = InetGlobalIndo.ERP.MTJ.Authentication\\InetGlobalIndo.ERP.MTJ.Authentication.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = InetGlobalIndo.ERP.MTJ.Authentication\\
+		SccProjectUniqueName2 = InetGlobalIndo.ERP.MTJ.Common\\InetGlobalIndo.ERP.MTJ.Common.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = InetGlobalIndo.ERP.MTJ.Common\\
+		SccProjectUniqueName3 = InetGlobalIndo.ERP.MTJ.CustomControl\\InetGlobalIndo.ERP.MTJ.CustomControl.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = InetGlobalIndo.ERP.MTJ.CustomControl\\
+		SccProjectUniqueName4 = InetGlobalIndo.ERP.MTJ.DataMapping\\InetGlobalIndo.ERP.MTJ.DataMapping.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = InetGlobalIndo.ERP.MTJ.DataMapping\\
+		SccProjectUniqueName5 = InetGlobalIndo.ERP.MTJ.DBFactory.ERPManSys\\InetGlobalIndo.ERP.MTJ.DBFactory.ERPManSys.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = InetGlobalIndo.ERP.MTJ.DBFactory.ERPManSys\\
+		SccProjectUniqueName6 = InetGlobalIndo.ERP.MTJ.DBFactory.Membership\\InetGlobalIndo.ERP.MTJ.DBFactory.Membership.csproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = InetGlobalIndo.ERP.MTJ.DBFactory.Membership\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93669123-E567-42C5-A75E-B88A5AE65E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93669123-E567-42C5-A75E-B88A5AE65E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93669123-E567-42C5-A75E-B88A5AE65E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93669123-E567-42C5-A75E-B88A5AE65E09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{514663BC-FC1A-4B3A-8C09-175A12F5A5A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{514663BC-FC1A-4B3A-8C09-175A12F5A5A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{514663BC-FC1A-4B3A-8C09-175A12F5A5A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{514663BC-FC1A-4B3A-8C09-175A12F5A5A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C28A037C-435B-44C4-99BF-20099D5E03CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C28A037C-435B-44C4-99BF-20099D5E03CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C28A037C-435B-44C4-99BF-20099D5E03CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C28A037C-435B-44C4-99BF-20099D5E03CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9465E8EA-65ED-4B54-9216-EC1414DE539E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9465E8EA-65ED-4B54-9216-EC1414DE539E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9465E8EA-65ED-4B54-9216-EC1414DE539E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9465E8EA-65ED-4B54-9216-EC1414DE539E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFF8F29F-B38D-4597-BCD3-1C6D8DBC0EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFF8F29F-B38D-4597-BCD3-1C6D8DBC0EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFF8F29F-B38D-4597-BCD3-1C6D8DBC0EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFF8F29F-B38D-4597-BCD3-1C6D8DBC0EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F43D2BC2-FAEC-445A-8B55-6AC27E0FC447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43D2BC2-FAEC-445A-8B55-6AC27E0FC447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43D2BC2-FAEC-445A-8B55-6AC27E0FC447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43D2BC2-FAEC-445A-8B55-6AC27E0FC447}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[SMS.sln]
+SCC_Aux_Path = "\\192.168.100.1\VSS 2005 Database\SMSPortal"
+SCC_Project_Name = "$/SMS.root/SMS", CAAAAAAA
+
+[SMSGateway.sln]
+SCC_Aux_Path = "\\192.168.100.1\VSS 2005 Database\SMSPortal"
+SCC_Project_Name = "$/SMS.root/SMS", CAAAAAAA

@@ -1,0 +1,102 @@
+﻿using System;
+using System.Web;
+using System.Web.UI;
+using InetGlobalIndo.ERP.MTJ.DBFactory.ERPManSys;
+using InetGlobalIndo.ERP.MTJ.SystemConfig;
+using InetGlobalIndo.ERP.MTJ.Common;
+using InetGlobalIndo.ERP.MTJ.Common.Encryption;
+using InetGlobalIndo.ERP.MTJ.BusinessRule.Purchasing;
+using InetGlobalIndo.ERP.MTJ.BusinessRule.StockControl;
+using InetGlobalIndo.ERP.MTJ.BusinessRule;
+using InetGlobalIndo.ERP.MTJ.BusinessRule.Settings;
+using InetGlobalIndo.ERP.MTJ.DataMapping;
+using InetGlobalIndo.ERP.MTJ.Common.Enum;
+
+namespace InetGlobalIndo.ERP.MTJ.UI.Purchasing.PurchaseOrder
+{
+    public partial class PurchaseOrderDetail2View : PurchaseOrderBase
+    {
+        private PurchaseOrderBL _purchaseOrderBL = new PurchaseOrderBL();
+        //private ProductBL _productBL = new ProductBL();
+        //private UnitBL _unitBL = new UnitBL();
+        private PurchaseRequestBL _purchaseRequestBL = new PurchaseRequestBL();
+        private PermissionBL _permBL = new PermissionBL();
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            this._permAccess = this._permBL.PermissionValidation1(this._menuID, HttpContext.Current.User.Identity.Name, InetGlobalIndo.ERP.MTJ.Common.Enum.Action.Access);
+
+            if (this._permAccess == PermissionLevel.NoAccess)
+            {
+                Response.Redirect(this._errorPermissionPage);
+            }
+
+            this._permView = this._permBL.PermissionValidation1(this._menuID, HttpContext.Current.User.Identity.Name, InetGlobalIndo.ERP.MTJ.Common.Enum.Action.View);
+
+            if (this._permView == PermissionLevel.NoAccess)
+            {
+                Response.Redirect(this._errorPermissionPage);
+            }
+
+            this._nvcExtractor = new NameValueCollectionExtractor(Request.QueryString);
+
+            if (!this.Page.IsPostBack == true)
+            {
+                this.PageTitleLiteral.Text = this._pageTitleLiteral2;
+
+                string _transNo = Rijndael.Decrypt(this._nvcExtractor.GetValue(this._codeKey), ApplicationConfig.EncryptionKey);
+                string _revisi = Rijndael.Decrypt(this._nvcExtractor.GetValue(this._codeRevisi), ApplicationConfig.EncryptionKey);
+
+                PRCPOHd _prcPOHd = this._purchaseOrderBL.GetSinglePRCPOHd(_transNo, Convert.ToInt32(_revisi));
+                if (_prcPOHd.Status == PurchaseOrderDataMapper.GetStatus(PurchaseOrderStatus.Posted))
+                {
+                    this.EditButton.Visible = false;
+                }
+                else
+                {
+                    this.EditButton.ImageUrl = ApplicationConfig.HomeWebAppURL + "images/edit2.jpg";
+                }
+                this.CancelButton.ImageUrl = ApplicationConfig.HomeWebAppURL + "images/cancel.jpg";
+
+                this.SetButtonPermission();
+
+                this.ShowData();
+            }
+        }
+
+        private void SetButtonPermission()
+        {
+            this._permEdit = this._permBL.PermissionValidation1(this._menuID, HttpContext.Current.User.Identity.Name, InetGlobalIndo.ERP.MTJ.Common.Enum.Action.Edit);
+
+            if (this._permEdit == PermissionLevel.NoAccess)
+            {
+                this.EditButton.Visible = false;
+            }
+        }
+
+        public void ShowData()
+        {
+            string _transNo = Rijndael.Decrypt(this._nvcExtractor.GetValue(this._codeKey), ApplicationConfig.EncryptionKey);
+            string _revisi = Rijndael.Decrypt(this._nvcExtractor.GetValue(this._codeRevisi), ApplicationConfig.EncryptionKey);
+            //string _productCode = Rijndael.Decrypt(this._nvcExtractor.GetValue(this._productKey), ApplicationConfig.EncryptionKey);
+            string _requestNo = Rijndael.Decrypt(this._nvcExtractor.GetValue(this._requestNoKey), ApplicationConfig.EncryptionKey);
+
+            PRCPODt2 _prcPODt2 = this._purchaseOrderBL.GetSinglePRCPODt2(_transNo, Convert.ToInt32(_revisi), _requestNo);
+
+            //this.ProductTextBox.Text = this._productBL.GetProductNameByCode(_prcPODt2.ProductCode);
+            this.RequestNoTextBox.Text = this._purchaseRequestBL.GetFileNmbrPRCRequestHd(_prcPODt2.RequestNo);
+            //this.QtyTextBox.Text = (_prcPODt2.Qty == 0) ? "0" : _prcPODt2.Qty.ToString("#,###.##");
+            //this.UnitTextBox.Text = this._unitBL.GetUnitNameByCode(_prcPODt2.Unit);
+        }
+
+        protected void EditButton_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect(this._editDetailPage2 + "?" + this._codeKey + "=" + HttpUtility.UrlEncode(this._nvcExtractor.GetValue(this._codeKey)) + "&" + this._codeRevisi + "=" + HttpUtility.UrlEncode(this._nvcExtractor.GetValue(this._codeRevisi)) + "&" + this._productKey + "=" + HttpUtility.UrlEncode(this._nvcExtractor.GetValue(this._productKey)) + "&" + this._requestNoKey + "=" + HttpUtility.UrlEncode(this._nvcExtractor.GetValue(this._requestNoKey)));
+        }
+
+        protected void CancelButton_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect(this._detailPage + "?" + this._codeKey + "=" + HttpUtility.UrlEncode(this._nvcExtractor.GetValue(this._codeKey)) + "&" + this._codeRevisi + "=" + HttpUtility.UrlEncode(this._nvcExtractor.GetValue(this._codeRevisi)));
+        }
+    }
+}

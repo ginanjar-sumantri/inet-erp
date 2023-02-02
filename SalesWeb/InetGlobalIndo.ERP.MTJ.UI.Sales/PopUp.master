@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PopUp.master.cs" Inherits="PopUp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="DefaultHeadContentPlaceHolder" runat="server" />
+    <asp:Literal ID="StyleSheetLiteral" runat="server" />
+    <asp:Literal ID="JScriptLiteral" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table cellpadding="0" cellspacing="0" border="1" width="100%">
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:ContentPlaceHolder ID="DefaultBodyContentPlaceHolder" runat="server" />
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

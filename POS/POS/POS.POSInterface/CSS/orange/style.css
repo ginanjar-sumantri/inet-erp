@@ -1,0 +1,4237 @@
+/*Login Page*/
+*
+{
+    outline: none; /*width: 644px;*/
+}
+button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner
+{
+    border: none;
+}
+#bodyLogin
+{
+    background: url(image/bg_login.jpg) no-repeat center 0px #000000;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 725px;
+    outline: none;
+    overflow: hidden;
+}
+#bodyLogin #Login1
+{
+    width: 100%;
+    margin: 0 auto;
+}
+#bodyLogin .container
+{
+    position: relative;
+}
+#bodyLogin .container .content
+{
+    width: 651px;
+    height: 685px;
+    margin: 0px auto;
+}
+#bodyLogin .container .content .left-content
+{
+    background: #F6891F;
+    width: 270px;
+    height: 662px;
+    float: left;
+    margin-right: 5px;
+    padding: 13px 10px 10px 10px;
+}
+#bodyLogin .container .content .right-content
+{
+    background: #F6891F;
+    width: 316px;
+    height: 665px;
+    float: left;
+}
+#bodyLogin .container .footer
+{
+    font-family: "Myriad Pro";
+    font-size: 42px;
+    font-weight: bold;
+    color: #FFFF00;
+    background: url(image/bg_footer.jpg) repeat-x;
+    text-align: center;
+    height: 70px;
+    clear: both;
+    margin: 0 auto;
+    margin-top: 4px;
+}
+#bodyLogin .container .content .link-button input
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 135px;
+    height: 110px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+}
+/*
+#bodyLogin .container .content .link-button #Login1_MemberButton
+{
+    background: url(image/btn_DO_management_on.png) center no-repeat;
+}
+
+#bodyLogin .container .content .left-content .link-button input.MemberButtonOff
+{
+    background: url(image/btn_DO_management_off.png) center no-repeat !important;
+}
+*/
+#bodyLogin .container .content .link-button #Login1_DeliveryOrderButton
+{
+    background: url(image/btn_DO_management_on.png) center no-repeat;
+}
+#bodyLogin .container .content .left-content .link-button input.DeliveryOrderButtonOff
+{
+    background: url(image/btn_DO_management_off.png) center no-repeat !important;
+}
+#bodyLogin .container .content .link-button #Login1_TourButton
+{
+    background: url(image/btn_tour.png) center no-repeat;
+}
+#bodyLogin .container .content .left-content .link-button input.TourButtonOff
+{
+    background: url(image/btn_tour2.png) center no-repeat !important;
+}
+#bodyLogin .container .content .link-button #Login1_PrintingButton
+{
+    background: url(image/btn_print.jpg) center no-repeat;
+}
+#bodyLogin .container .content .left-content .link-button input.PrintingButtonOff
+{
+    background: url(image/btn_print2.jpg) center no-repeat !important;
+}
+#bodyLogin .container .content .link-button #Login1_PhotoCopyButton
+{
+    background: url(image/btn_copy.jpg) center no-repeat;
+}
+#bodyLogin .container .content .left-content .link-button input.PhotoCopyButtonOff
+{
+    background: url(image/btn_copy2.jpg) center no-repeat !important;
+}
+#bodyLogin .container .content .link-button #Login1_ShippingButton
+{
+    background: url(image/btn_shiping.jpg) center no-repeat;
+}
+#bodyLogin .container .content .left-content .link-button input.ShippingButtonOff
+{
+    background: url(image/btn_shiping2.jpg) center no-repeat !important;
+}
+#bodyLogin .container .content .link-button #Login1_InternetButton
+{
+    background: url(image/btn_internet.jpg) center no-repeat;
+}
+#bodyLogin .container .content .left-content .link-button input.InternetButtonOff
+{
+    background: url(image/btn_internet2.jpg) center no-repeat !important;
+}
+#bodyLogin .container .content .link-button #Login1_StationaryButton
+{
+    background: url(image/btn_stationery.jpg) center no-repeat;
+}
+#bodyLogin .container .content .left-content .link-button input.StationaryButtonOff
+{
+    background: url(image/btn_stationery2.jpg) center no-repeat !important;
+}
+#bodyLogin .container .content .link-button #Login1_GrafikDesainButton
+{
+    background: url(image/btn_design.jpg) center no-repeat;
+}
+#bodyLogin .container .content .left-content .link-button input.GrafikDesainButtonOff
+{
+    background: url(image/btn_design2.jpg) center no-repeat !important;
+}
+#bodyLogin .container .content .link-button #Login1_VoucherButton
+{
+    background: url(image/btn_voucher.jpg) center no-repeat;
+}
+#bodyLogin .container .content .left-content .link-button input.VoucherButtonOff
+{
+    background: url(image/btn_voucher2.jpg) center no-repeat !important;
+}
+#bodyLogin .container .content .link-button #Login1_CafeButton
+{
+    background: url(image/btn_cafe.jpg) center no-repeat;
+}
+#bodyLogin .container .content .left-content .link-button input.CafeButtonOff
+{
+    background: url(image/btn_cafe2.jpg) center no-repeat !important;
+}
+#bodyLogin .container .content .link-button #Login1_CashierButton
+{
+    background: url(image/btn_cashier.jpg) center no-repeat;
+}
+#bodyLogin .container .content .left-content .link-button input.CashierButtonOff
+{
+    background: url(image/btn_cashier2.jpg) center no-repeat !important;
+}
+#bodyLogin .container .content .link-button #Login1_MonitoringButton
+{
+    background: url(image/btn_monitoring.png) center no-repeat;
+}
+#bodyLogin .container .content .left-content .link-button input.MonitoringButtonOff
+{
+    background: url(image/btn_monitoring2.png) center no-repeat !important;
+}
+#bodyLogin .container .content .link-button #Login1_TicketingButton
+{
+    background: url(image/btn_ticket.jpg) center no-repeat;
+}
+#bodyLogin .container .content .left-content .link-button input.TicketingButtonOff
+{
+    background: url(image/btn_ticket2.jpg) center no-repeat !important;
+}
+#bodyLogin .container .content .link-button #Login1_HotelButton
+{
+    background: url(image/btn_hotel.png) center no-repeat;
+}
+#bodyLogin .container .content .left-content .link-button input.HotelButtonOff
+{
+    background: url(image/btn_hotel2.png) center no-repeat !important;
+}
+#bodyLogin .container .content .link-button #Login1_BackButton
+{
+    background: url(image/btn_back_login_on.png) center no-repeat;
+}
+#bodyLogin .container .content .left-content .link-button input.BackButtonOff
+{
+    background: url(image/btn_back_login_off.png) center no-repeat !important;
+}
+
+#bodyLogin .container .content .right-content .login .OpenShift input
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    width: 156px;
+    height: 61px;
+}
+#bodyLogin .container .content .right-content .login .OpenShift input.OpenShiftOn
+{
+    background: url(image/btn_open_shift_in.png) center no-repeat;
+    background-size: 160px;
+}
+#bodyLogin .container .content .right-content .login .OpenShift input.OpenShiftOff
+{
+    background: url(image/btn_open_shift_out.png) center no-repeat;
+    background-size: 160px;
+}
+#bodyLogin .container .content .right-content .WelcomeLabel
+{
+    color: #000000;
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+#bodyLogin .container .content .right-content .CompanyImage
+{
+    height: 96px;
+    background: url(image/logo.jpg) no-repeat;
+    margin-bottom: 15px;
+}
+#bodyLogin .container .content .right-content .login .input-form
+{
+    background: url(image/bg_input_form.jpg) no-repeat;
+    height: 27px;
+    padding: 5px;
+}
+#bodyLogin .container .content .right-content .login .input-form .label
+{
+    float: left;
+    font-family: "Myriad Pro";
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-left: 3px;
+    padding-top: 3px;
+}
+#bodyLogin .container .content .right-content .login .input-form .input
+{
+    float: right;
+    margin-right: 10px;
+}
+#bodyLogin .container .content .right-content .login .input-form .input input
+{
+    height: 16px;
+    width: 194px !important;
+}
+#bodyLogin .container .content .right-content .login .input-form .input select
+{
+    height: 22px;
+    width: 200px;
+}
+#bodyLogin .container .content .right-content .login .input-form .input span
+{
+    display: none;
+}
+#bodyLogin .container .content .right-content .login .submit, #bodyLogin .container .content .right-content .login .OpenShift
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+#bodyLogin .container .content .right-content .login .submit .btn_login input, #bodyLogin .container .content .right-content .login .submit .btn_logout a
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 156px;
+    height: 61px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/btn_login_new.png) center no-repeat;
+    background-size: 160px;
+}
+
+#bodyLogin .container .content .right-content .login .submit .btn_logout a
+{
+    background: url(image/btn_logout_new.jpg) center no-repeat;
+    background-size: 160px;
+}
+
+#bodyLogin .container .content .right-content .login
+{
+    position: relative;
+}
+#bodyLogin .container .content .right-content .login .message-error
+{
+    font-family: "Myriad Pro";
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFF00;
+    margin-bottom: 11px;
+    width: 316px;
+}
+#bodyLogin .container .content .right-content .numpad
+{
+    width: 300px;
+    clear: both;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#bodyLogin .container .content .right-content .numpad .left-container
+{
+    width: 222px;
+    float: left;
+}
+#bodyLogin .container .content .right-content .numpad .right-container
+{
+    width: 75px;
+}
+#bodyLogin .container .content .right-content .numpad .right-container .clear input
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 72px;
+    height: 296px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/btn_nmbr_clear.png) center -1px no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container .number input
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 72px;
+    height: 72px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    margin: 1px;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr1 input
+{
+    background: url(image/btn_nmbr_1.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr2 input
+{
+    background: url(image/btn_nmbr_2.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr3 input
+{
+    background: url(image/btn_nmbr_3.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr4 input
+{
+    background: url(image/btn_nmbr_4.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr5 input
+{
+    background: url(image/btn_nmbr_5.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr6 input
+{
+    background: url(image/btn_nmbr_6.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr7 input
+{
+    background: url(image/btn_nmbr_7.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr8 input
+{
+    background: url(image/btn_nmbr_8.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr9 input
+{
+    background: url(image/btn_nmbr_9.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbrdot input
+{
+    background: url(image/btn_nmbr_dot.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr0 input
+{
+    background: url(image/btn_nmbr_0.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr00 input
+{
+    background: url(image/btn_nmbr_00.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content
+{
+    padding: 10px 15px;
+}
+
+/*Internet Page*/
+#bodyInternet
+{
+    background: url(image/bg_login.jpg) no-repeat center 0px #000000;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 768px;
+    outline: none;
+    overflow: hidden;
+}
+#bodyInternet .container
+{
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    margin: 0px auto;
+}
+#bodyInternet .container .header
+{
+    height: 25px;
+    background: #000;
+    border: solid #000 1px;
+}
+#bodyInternet .container .header .left
+{
+    float: left;
+}
+#bodyInternet .container .header .left .title .text
+{
+    font-family: "Myriad Pro";
+    text-transform: uppercase;
+    color: #000;
+    background: url(image/bg_title_internet.jpg) repeat-x;
+    height: 23px;
+    float: left;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 12pt;
+    padding-top: 2px;
+}
+#bodyInternet .container .header .left .title .sep
+{
+    background: url(image/bg_title_internet2.png) repeat-x;
+    height: 25px;
+    width: 13px;
+    float: left;
+}
+#bodyInternet .container .header .right
+{
+    float: right;
+    height: 25px;
+}
+#bodyInternet .container .header .right .date #tanggal
+{
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFF;
+    height: 23px;
+    float: left;
+    font-size: 12pt;
+    margin-right: 25px;
+    padding-top: 2px;
+}
+#bodyInternet .container .header .right .date #jam
+{
+    float: left;
+    color: #FFFF00;
+    font-family: Arial;
+    font-weight: bold;
+    width: 65px;
+    padding-top: 2px;
+    height: 23px;
+    font-size: 13pt;
+    margin-right: 10px;
+}
+#bodyInternet .container .content .left
+{
+    width: 700px;
+    float: left;
+}
+#bodyInternet .container .content .left .left-inner-top
+{
+    width: 700px;
+    height: 485px;
+    background: #CCCCCC;
+    border: #000 solid 1px;
+    border-top: none;
+}
+#bodyInternet .container .content .left .left-inner-top #PanelLayout
+{
+    border: none;
+    float: none;
+    width: 700px;
+    height: 485px;
+}
+#bodyInternet .container .content .left .left-inner-top #PanelLayout .divBox
+{
+    font-size: 14px;
+    height: 41px;
+    width: 54px;
+    padding: 20px 0px;
+    border: none;
+}
+#bodyInternet .container .content .left .left-inner-top #PanelLayout .flag-available
+{
+    position: absolute;
+    top: 30px;
+    left: 310px;
+}
+#bodyInternet .container .content .left .left-inner-top #PanelLayout .flag-available .flag
+{
+    width: 20px;
+    height: 20px;
+    background: url(image/bg_flag_available_internet.png) no-repeat;
+    float: left;
+    margin-right: 5px;
+}
+#bodyInternet .container .content .left .left-inner-top #PanelLayout .flag-not-available
+{
+    position: absolute;
+    top: 30px;
+    left: 485px;
+}
+#bodyInternet .container .content .left .left-inner-top #PanelLayout .flag-not-available .flag
+{
+    width: 20px;
+    height: 20px;
+    background: url(image/bg_flag_not_available_internet.png) no-repeat;
+    float: left;
+    margin-right: 5px;
+}
+#bodyInternet .container .content .left .left-inner-top #PanelLayout .flag-not-available15min
+{
+    position: absolute;
+    top: 30px;
+    left: 400px;
+}
+#bodyInternet .container .content .left .left-inner-top #PanelLayout .flag-not-available15min .flag
+{
+    width: 20px;
+    height: 20px;
+    background: url(image/bg_flag_notavailable_internet_15min.png) no-repeat;
+    float: left;
+    margin-right: 5px;
+}
+#bodyInternet .container .content .left .left-inner-top #PanelLayout .flag-reserved
+{
+    position: absolute;
+    top: 30px;
+    left: 600px;
+}
+#bodyInternet .container .content .left .left-inner-top #PanelLayout .flag-reserved .flag
+{
+    width: 20px;
+    height: 20px;
+    background: url(image/bg_flag_reserved_internet.png) no-repeat;
+    float: left;
+    margin-right: 5px;
+}
+#bodyInternet .container .content .left .left-inner-top #PanelLayout .available
+{
+    background: url(image/bg_available_internet_2.png) no-repeat;
+    cursor: pointer;
+}
+#bodyInternet .container .content .left .left-inner-top #PanelLayout .not-available
+{
+    background: url(image/bg_not_available_internet_2.png) no-repeat;
+    cursor: pointer;
+}
+#bodyInternet .container .content .left .left-inner-top #PanelLayout .not-available15min
+{
+    background: url(image/bg_not_available_internet_15min.png) no-repeat;
+    cursor: pointer;
+}
+#bodyInternet .container .content .left .left-inner-top #PanelLayout .reserved
+{
+    background: url(image/bg_reserved_internet_2.png) no-repeat;
+}
+#bodyInternet .container .content .left .left-inner-bottom
+{
+    background: #000;
+    border: #000 solid 1px;
+    width: 700px;
+}
+#bodyInternet .container .content .left .left-inner-bottom .left-inner-bottom-left
+{
+    width: 660px;
+    float: left;
+}
+#bodyInternet .container .content .left .left-inner-bottom .left-inner-bottom-right
+{
+    width: 35px;
+    height: 202px;
+    padding-top: 28px;
+    margin-left: 5px;
+    float: left;
+}
+
+#bodyInternet .container .content .left .left-inner-bottom .left-inner-bottom-right .up
+{
+    width: 35px;
+    height: 108px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_up_2.png) center no-repeat;
+}
+#bodyInternet .container .content .left .left-inner-bottom .left-inner-bottom-right .down
+{
+    width: 35px;
+    height: 108px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_down_2.png) center no-repeat;
+}
+#bodyInternet .container .content .left .left-inner-bottom .title
+{
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFFF00;
+    font-weight: bold;
+    font-size: 13pt;
+    padding: 5px;
+}
+#bodyInternet .container .content .left .left-inner-bottom .table-header, #bodyInternet .container .content .left .left-inner-bottom .table-body
+{
+    width: 665px;
+}
+#bodyInternet .container .content .left .left-inner-bottom .table-header table
+{
+    width: 665px;
+    border: solid #4D4D4D 1px;
+    border-left: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-size: 14px;
+    vertical-align: top;
+    font-weight: bold;
+    background: url(image/bg_table_head.jpg) repeat-x;
+}
+#bodyInternet .container .content .left .left-inner-bottom .table-body
+{
+    overflow: hidden;
+    height: 185px;
+    background: #4D4D4D;
+}
+#bodyInternet .container .content .left .left-inner-bottom .table-body table
+{
+    width: 665px;
+    border: solid #4D4D4D 1px;
+    border-left: none;
+    border-top: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-size: 12px;
+    vertical-align: top;
+}
+#bodyInternet .container .content .left .left-inner-bottom .table-body tr, #bodyInternet .container .content .left .left-inner-bottom .table-body td
+{
+    height: 44px; /*vertical-align: top;*/
+}
+#bodyInternet .container .content .left .left-inner-bottom .table-body .OpenBookedButton
+{
+    width: 77px;
+    height: 25px;
+    border: medium none;
+    cursor: pointer;
+    display: block !important;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_open_reserv.png) center no-repeat;
+    margin: 0 auto;
+}
+#bodyInternet .container .content .left .left-inner-bottom #no-member
+{
+    width: 15%;
+    text-align: left;
+}
+#bodyInternet .container .content .left .left-inner-bottom #name
+{
+    text-align: left;
+    width: 10%;
+}
+#bodyInternet .container .content .left .left-inner-bottom #no-telpon
+{
+    text-align: left;
+    width: 12%;
+}
+#bodyInternet .container .content .left .left-inner-bottom #table
+{
+    width: 14%;
+}
+#bodyInternet .container .content .left .left-inner-bottom #date
+{
+    width: 11%;
+}
+#bodyInternet .container .content .left .left-inner-bottom #time
+{
+    width: 10%;
+}
+#bodyInternet .container .content .left .left-inner-bottom #to
+{
+    width: 10%;
+}
+#bodyInternet .container .content .left .left-inner-bottom #operator-name
+{
+    width: 17%;
+}
+#bodyInternet .container .content .right
+{
+    width: 310px;
+    height: 730px;
+    background: #F6891F;
+    float: left;
+    margin-left: 13px;
+}
+#bodyInternet .container .content .right-inner .title
+{
+    background: #000000;
+    margin-left: 20px;
+    font-family: "Myriad Pro";
+    color: #FFFF00;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+#bodyInternet .container .content .right-inner .lantai
+{
+    margin-top: -5px;
+}
+#bodyInternet .container .content .right-inner .lantai .button-lantai input
+{
+    width: 136px;
+    height: 95px;
+    background: url(image/bg_lantai_internet_3.png) center no-repeat;
+    border: none;
+    font-family: "Myriad Pro";
+    color: #000;
+    font-weight: bold;
+    font-size: 12pt;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    cursor: pointer;
+    float: left;
+    margin-left: 14px;
+}
+#bodyInternet .container .content .right-inner .control .control1
+{
+    width: 248px;
+    height: 78px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+#bodyInternet .container .content .right-inner .control .control1 input
+{
+    width: 124px;
+    height: 78px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+}
+#bodyInternet .container .content .right-inner .control .control1 #UpFloorPanelButton
+{
+    background: url(image/btn_up_internet.png) center no-repeat;
+    float: left;
+}
+#bodyInternet .container .content .right-inner .control .control1 #DownFloorPanelButton
+{
+    background: url(image/btn_down_internet.png) center no-repeat;
+    float: left;
+}
+#bodyInternet .container .content .right-inner .control .control2
+{
+    height: 85px;
+    clear: both;
+    margin-left: 2px;
+    margin-bottom: 25px;
+}
+#bodyInternet .container .content .right-inner .control .control2 input
+{
+    width: 102px;
+    height: 85px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    padding-top: 15px;
+}
+#bodyInternet .container .content .right-inner .control .control2 #ReservationImageButton
+{
+    background: url(image/btn_reservation.jpg) center no-repeat;
+    float: left;
+}
+#bodyInternet .container .content .right-inner .control .control2 #BackImageButton
+{
+    background: url(image/btn_back.jpg) center no-repeat;
+    float: left;
+}
+#bodyInternet .container .content .right-inner .control .control2 #CheckStatusImageButton
+{
+    background: url(image/bg_check_status_internet.png) center no-repeat;
+    float: left;
+}
+#bodyInternet .container .content .right-inner .control .control3 #CheckStatusImageButton
+{
+    background: url(image/bg_check_status_internet.png) center no-repeat;
+    width: 96px;
+    height: 80px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    margin-left: 12px;
+}
+#bodyInternet .container .content .right-inner .table-transfer
+{
+    clear: both;
+}
+#bodyInternet .container .content .right-inner .table-transfer .left-inner
+{
+    float: left;
+    margin-left: 20px;
+    position: relative;
+}
+#bodyInternet .container .content .right-inner .table-transfer .left-inner .from-table, #bodyInternet .container .content .right-inner .table-transfer .left-inner .to-table
+{
+    background: url(image/bg_table_transfer_internet.png) center no-repeat;
+    width: 174px;
+    height: 34px;
+    margin-bottom: 10px;
+}
+#bodyInternet .container .content .right-inner .table-transfer .left-inner .label
+{
+    float: left;
+    font-family: "Myriad Pro";
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 6px;
+}
+#bodyInternet .container .content .right-inner .table-transfer .left-inner .input
+{
+    /*float: right;*/
+    padding: 6px;
+    position: absolute;
+    right: -3px;
+    top: 0;
+}
+#bodyInternet .container .content .right-inner .table-transfer .left-inner .input2
+{
+    /*float: right;*/
+    padding: 6px;
+    position: absolute;
+    right: -3px;
+    top: 44px;
+}
+#bodyInternet .container .content .right-inner .table-transfer .left-inner .input select
+{
+    width: 55px;
+}
+#bodyInternet .container .content .right-inner .table-transfer .left-inner .input2 select
+{
+    width: 55px;
+}
+#bodyInternet .container .content .right-inner .table-transfer .right-inner
+{
+    float: left;
+    margin-top: -4px;
+}
+#bodyInternet .container .content .right-inner .table-transfer .right-inner input
+{
+    width: 106px;
+    height: 89px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_transfer.png) center no-repeat;
+}
+/* */
+#bodyInternet .container .content .right-inner .time-setting
+{
+    clear: both;
+}
+#bodyInternet .container .content .right-inner .time-setting .left-inner
+{
+    float: left;
+    margin-left: 20px;
+    position: relative;
+}
+#bodyInternet .container .content .right-inner .time-setting .left-inner .from-table, #bodyInternet .container .content .right-inner .time-setting .left-inner .to-table
+{
+    background: url(image/bg_timesetting_internet2.png) center no-repeat;
+    width: 142px;
+    height: 34px;
+    margin-bottom: 10px;
+}
+#bodyInternet .container .content .right-inner .time-setting .left-inner .label
+{
+    float: left;
+    font-family: "Myriad Pro";
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 6px;
+}
+#bodyInternet .container .content .right-inner .time-setting .left-inner .input
+{
+    /*float: right;*/
+    padding: 6px;
+    position: absolute;
+    right: -3px;
+    top: 0;
+}
+#bodyInternet .container .content .right-inner .time-setting .left-inner .input2
+{
+    /*float: right;*/
+    padding: 6px;
+    position: absolute;
+    right: -3px;
+    top: 44px;
+}
+#bodyInternet .container .content .right-inner .time-setting .left-inner .input select
+{
+    width: 55px;
+}
+#bodyInternet .container .content .right-inner .time-setting .left-inner .input2 select
+{
+    width: 55px;
+}
+#bodyInternet .container .content .right-inner .time-setting .right-inner
+{
+    float: left;
+    margin-top: -4px;
+}
+#bodyInternet .container .content .right-inner .time-setting .left-inner #TableInfoImageButton
+{
+    width: 95px;
+    height: 91px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_view_internet.png) center no-repeat;
+    background-size: 106px;
+    margin-left: 4px;
+}
+
+#bodyInternet .container .content .right-inner .time-setting .right-inner input
+{
+    width: 140px;
+    height: 38px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_stop_internet.png) center no-repeat;
+}
+#bodyInternet .container .content .right-inner .time-setting .right-inner2 input
+{
+    width: 140px;
+    height: 40px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_addtime_internet.png) center no-repeat;
+    margin-left: 162px;
+    margin-top: 61px;
+}
+
+
+/*Choose Table Page*/
+#bodyChooseTable
+{
+    background: url(image/bg_login.jpg) no-repeat center 0px #F7931E;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 768px;
+    outline: none;
+    overflow: hidden;
+}
+#bodyChooseTable .container
+{
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    margin: 0px auto;
+}
+#bodyChooseTable .container .header
+{
+    height: 25px;
+    background: #000;
+    border: solid #000 1px;
+    margin-bottom: 5px;
+}
+#bodyChooseTable .container .header .left
+{
+    float: left;
+}
+#bodyChooseTable .container .header .left .title .text
+{
+    font-family: "Myriad Pro";
+    text-transform: uppercase;
+    color: #000;
+    background: url(image/bg_title_internet.jpg) repeat-x;
+    height: 23px;
+    float: left;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 12pt;
+    padding-top: 2px;
+}
+#bodyChooseTable .container .header .left .title .sep
+{
+    background: url(image/bg_title_internet2.png) repeat-x;
+    height: 25px;
+    width: 13px;
+    float: left;
+}
+#bodyChooseTable .container .header .right
+{
+    float: right;
+    height: 25px;
+}
+#bodyChooseTable .container .header .right .date #tanggal
+{
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFF;
+    height: 23px;
+    float: left;
+    font-size: 12pt;
+    margin-right: 25px;
+    padding-top: 2px;
+}
+#bodyChooseTable .container .header .right .date #jam
+{
+    float: left;
+    color: #FFFF00;
+    font-family: Arial;
+    font-weight: bold;
+    width: 65px;
+    padding-top: 2px;
+    height: 23px;
+    font-size: 13pt;
+    margin-right: 10px;
+}
+#bodyChooseTable .container .content .left
+{
+    width: 430px;
+    margin: 5px;
+    float: left;
+    margin-top: 0px;
+}
+#bodyChooseTable .container .content .left .table
+{
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-top: 0px;
+    background: #000;
+    height: 173px;
+}
+#bodyChooseTable .container .content .left .table .table-inner-left
+{
+    width: 245px;
+    float: left;
+    margin-right: 22px;
+}
+#bodyChooseTable .container .content .left .table .table-inner-left #trans-ref
+{
+    font-family: "Myriad Pro";
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    min-height: 20px;
+}
+#bodyChooseTable .container .content .left .table .table-inner-left #trans-ref .label, #bodyChooseTable .container .content .left .table .table-inner-left #trans-ref .sep
+{
+    margin-right: 5px;
+    float: left;
+}
+#bodyChooseTable .container .content .left .table .table-inner-left .input-form
+{
+    font-family: Arial;
+    color: #FFFF00;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    line-height: 20px;
+}
+#bodyChooseTable .container .content .left .table .table-inner-left .input-form .input #TransRefTextBox
+{
+    width: 205px;
+    border: none;
+    color: #FFFF00;
+    text-align: center;
+    font-weight: bold;
+    background: #000000;
+}
+#bodyChooseTable .container .content .left .table .table-inner-left .clear
+{
+    clear: both;
+}
+#bodyChooseTable .container .content .left .table .table-inner-left #register
+{
+    height: 25px;
+}
+#bodyChooseTable .container .content .left .table .table-inner-left #member .label, #bodyChooseTable .container .content .left .table .table-inner-left #name .label, #bodyChooseTable .container .content .left .table .table-inner-left #cashier .label, #bodyChooseTable .container .content .left .table .table-inner-left #reference .label, #bodyChooseTable .container .content .left .table .table-inner-left #phone .label
+{
+    margin-right: 5px;
+    float: left;
+    width: 80px;
+}
+#bodyChooseTable .container .content .left .table .table-inner-left #member .sep, #bodyChooseTable .container .content .left .table .table-inner-left #name .sep, #bodyChooseTable .container .content .left .table .table-inner-left #cashier .sep, #bodyChooseTable .container .content .left .table .table-inner-left #reference .sep, #bodyChooseTable .container .content .left .table .table-inner-left #phone .sep
+{
+    margin-right: 5px;
+    float: left;
+}
+#bodyChooseTable .container .content .left .table .table-inner-left #register #NewMemberButton
+{
+    width: 181px;
+    height: 36px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_register_choose_table.png) center no-repeat;
+    position: relative;
+    left: 77px;
+    top: -5px;
+}
+#bodyChooseTable .container .content .left .table .table-inner-right
+{
+    font-family: "Myriad Pro";
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2px;
+    float: left;
+    width: 143px;
+}
+#bodyChooseTable .container .content .left .table .table-inner-right .label
+{
+    font-size: 16px;
+    margin-bottom: 9px;
+}
+#bodyChooseTable .container .content .left .table .table-inner-right .number
+{
+    border: solid 1px #FFF;
+    font-size: 85px;
+    padding: 18px 5px;
+}
+#bodyChooseTable .container .content .left .order
+{
+    padding-left: 10px;
+    background: #000;
+    margin-bottom: 5px;
+    margin-top: -3px;
+}
+#bodyChooseTable .container .content .left .order table
+{
+    width: 100%;
+    color: #FFF;
+    border-collapse: collapse;
+    font-family: Trebuchet MS;
+    font-size: 11px;
+    text-align: center;
+}
+#bodyChooseTable .container .content .left .order .table-header table tr td
+{
+    text-transform: uppercase;
+    padding: 5px;
+    font-weight: bold;
+}
+#bodyChooseTable .container .content .left .order .table-body table tr td
+{
+    padding: 5px;
+}
+#bodyChooseTable .container .content .left .order .table-body table tr #edit span
+{
+    width: 15px;
+    height: 15px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_edit.jpg) center no-repeat;
+    margin: 0 auto;
+}
+#bodyChooseTable .container .content .left .order .table-body table tr #cancel span
+{
+    width: 16px;
+    height: 16px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_cancel.jpg) center no-repeat;
+    margin: 0 auto;
+}
+#bodyChooseTable .container .content .left .order #qty
+{
+    width: 7%;
+}
+#bodyChooseTable .container .content .left .order #product
+{
+    width: 28%;
+}
+#bodyChooseTable .container .content .left .order #price
+{
+    width: 15%;
+}
+#bodyChooseTable .container .content .left .order #disc
+{
+    width: 15%;
+}
+#bodyChooseTable .container .content .left .order #total
+{
+    width: 15%;
+}
+#bodyChooseTable .container .content .left .order #edit
+{
+    width: 8%;
+}
+#bodyChooseTable .container .content .left .order #cancel
+{
+    width: 12%;
+}
+#bodyChooseTable .container .content .left .order .table-header
+{
+    background: url(image/bg_table_head.jpg) repeat-x;
+    border: solid #4D4D4D 1px;
+    border-bottom: none;
+}
+#bodyChooseTable .container .content .left .order .table-body
+{
+    height: 326px;
+    background: #4D4D4D;
+    border: solid #4D4D4D 1px;
+    border-top: none;
+    overflow: hidden;
+}
+#bodyChooseTable .container .content .left .order .table-body td
+{
+    vertical-align: top;
+}
+#bodyChooseTable .container .content .left .total
+{
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #FFF;
+    position: relative;
+}
+#bodyChooseTable .container .content .left .total .send
+{
+    width: 270px;
+    background: #333333;
+    margin-right: 5px;
+    margin-left: 10px;
+    border: 1px solid #4D4D4D;
+}
+#bodyChooseTable .container .content .left .total .send .text
+{
+    padding-bottom: 0;
+}
+#bodyChooseTable .container .content .left .total .send .text .input-form .label
+{
+    float: left;
+    width: 145px;
+    padding: 5px 10px;
+    border-right: solid 1px #4d4d4d;
+    border-bottom: solid 1px #4d4d4d;
+}
+#bodyChooseTable .container .content .left .total .send .text .input-form .value
+{
+    float: left;
+    text-align: right;
+    color: #FFFF00;
+    width: 84px;
+    padding: 5px 10px;
+    border-bottom: solid 1px #4d4d4d;
+}
+#bodyChooseTable .container .content .left .total .send .text .clear
+{
+    clear: both;
+}
+#bodyChooseTable .container .content .left .total .send .button-submit
+{
+    padding-top: 2px;
+    padding-bottom: 0px;
+}
+#bodyChooseTable .container .content .left .total .send .button-submit input
+{
+    width: 232px;
+    height: 46px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_send_to_cashier_internet.png) center no-repeat;
+    margin: 0 auto;
+}
+#bodyChooseTable .container .content .left .total .navigator
+{
+    position: absolute;
+    top: 0px;
+    left: 287px;
+}
+#bodyChooseTable .container .content .left .total .navigator .scroll
+{
+    width: 143px;
+    height: 75px;
+    margin-bottom: 4px;
+}
+#bodyChooseTable .container .content .left .total .navigator .scroll .btn_up
+{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: medium none;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_choose_table_up2.png) no-repeat;
+    float: left;
+    margin-top: 7px;
+    margin-left: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#bodyChooseTable .container .content .left .total .navigator .scroll .btn_down
+{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: medium none;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_choose_table_down2.png) no-repeat;
+    float: left;
+    margin-top: 7px;
+    cursor: pointer;
+}
+#bodyChooseTable .container .content .left .total .navigator .note textarea
+{
+    border: none;
+    width: 383px;
+    height: 85px;
+    padding: 5px;
+}
+#bodyChooseTable .container .content .right
+{
+    float: left;
+    width: 580px;
+}
+#bodyChooseTable .container .content .right .item
+{
+    background: url(image/bg_choose_table_right.jpg) no-repeat;
+    padding: 5px;
+}
+#bodyChooseTable .container .content .right .item .item-inner-top #PrevProductGroupButton
+{
+    display: block;
+    width: 67px;
+    height: 67px;
+    border: medium none;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_choose_table_left.jpg) no-repeat;
+    float: left;
+    margin-right: 4px;
+}
+#bodyChooseTable .container .content .right .item .item-inner-top #NextProductGroupButton
+{
+    display: block;
+    width: 67px;
+    height: 67px;
+    border: medium none;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_choose_table_right.jpg) no-repeat;
+    float: left;
+}
+#bodyChooseTable .container .content .right .item .item-inner-top .list-item .productGroupBox
+{
+    width: 67px;
+    height: 67px;
+    background: url(image/bg_cat_prod.jpg) center no-repeat;
+    font-family: Trebuchet MS;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    border: none;
+    display: block;
+    float: left;
+    margin-right: 4px;
+    cursor: pointer;
+}
+#bodyChooseTable .container .content .right .item .item-inner-top .list-item
+{
+    width: 426px;
+    float: left;
+}
+#bodyChooseTable .container .content .right .item .clear
+{
+    clear: both;
+}
+#bodyChooseTable .container .content .right .item .item-inner-bottom
+{
+    margin-top: 3px;
+}
+#bodyChooseTable .container .content .right .item .item-inner-bottom .item-inner-bottom-left
+{
+    width: 67px;
+    float: left;
+    margin-right: 4px;
+}
+#bodyChooseTable .container .content .right .item .item-inner-bottom .item-inner-bottom-left #PrevProductSubGroupButton
+{
+    display: block;
+    width: 67px;
+    height: 67px;
+    border: medium none;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_choose_table_up.jpg) no-repeat;
+}
+#bodyChooseTable .container .content .right .item .item-inner-bottom .item-inner-bottom-left #NextProductSubGroupButton
+{
+    display: block;
+    width: 67px;
+    height: 67px;
+    border: medium none;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_choose_table_down.jpg) no-repeat;
+}
+#bodyChooseTable .container .content .right .item .item-inner-bottom .item-inner-bottom-left .list-item .productSubGroupBox
+{
+    width: 67px;
+    height: 67px;
+    background: url(image/bg_cat_prod.jpg) center no-repeat;
+    font-family: Trebuchet MS;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    border: none;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 1px;
+}
+#bodyChooseTable .container .content .right .item .item-inner-bottom .item-inner-bottom-left .list-item
+{
+    height: 134px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+#bodyChooseTable .container .content .right .item .item-inner-bottom .item-inner-bottom-right
+{
+    width: 497px;
+    float: left;
+}
+#bodyChooseTable .container .content .right .item .item-inner-bottom .item-inner-bottom-right .productBox
+{
+    width: 67px;
+    height: 67px;
+    background: url(image/bg_subcat_prod.jpg) center no-repeat;
+    font-family: Trebuchet MS;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFF00;
+    border: none;
+    display: block;
+    float: left;
+    margin-right: 4px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+#bodyChooseTable .container .content .right .item .navigator-left-right
+{
+    height: 61px;
+}
+#bodyChooseTable .container .content .right .item .navigator-left-right #ProductPrevButton
+{
+    width: 110px;
+    height: 55px;
+    background: url(image/btn_prev.jpg) center no-repeat;
+    border: none;
+    display: block;
+    float: left;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    margin-left: 1px;
+}
+#bodyChooseTable .container .content .right .item .navigator-left-right #ProductNextButton
+{
+    width: 110px;
+    height: 55px;
+    background: url(image/btn_next.jpg) center no-repeat;
+    border: none;
+    display: block;
+    float: left;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-left
+{
+    height: 192px;
+    width: 246px;
+    float: left;
+    position: relative;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right
+{
+    width: 302px;
+    padding: 5px;
+    float: left;
+    position: relative;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-left .button-submit
+{
+    width: 80px;
+    height: 95px;
+    border: none;
+    display: block;
+    float: left;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-left #SearchImageButton
+{
+    background: url(image/btn_search.jpg) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-left #LayoutMapImageButton
+{
+    background: url(image/btn_layout_map.jpg) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-left #CashierButton
+{
+    background: url(image/btn_goto_cashier.png) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-left # GoToCashierImageButton
+{
+    background: url(image/btn_goto_cashier.png) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-left #CancelAllImageButton
+{
+    background: url(image/btn_cancel2.jpg) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-left #JoinJobOrderImageButton
+{
+    background: url(image/btn_join.jpg) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner .input-form
+{
+    position: absolute;
+    top: -60px;
+    left: -10px;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner .input-form #qtyProductTextBox
+{
+    width: 332px;
+    height: 47px;
+    padding: 3px;
+    border: none;
+    font-family: "Myriad Pro";
+    font-size: 50px;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber
+{
+    position: relative;
+    left: 8px;
+    top: -5px;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber .number
+{
+    width: 227px;
+    float: left;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber .number input
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 73px;
+    height: 72px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    margin: 1px;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber .number #nmbr1 input
+{
+    background: url(image/btn_nmbr_1.png) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber .number #nmbr2 input
+{
+    background: url(image/btn_nmbr_2.png) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber .number #nmbr3 input
+{
+    background: url(image/btn_nmbr_3.png) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber .number #nmbr4 input
+{
+    background: url(image/btn_nmbr_4.png) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber .number #nmbr5 input
+{
+    background: url(image/btn_nmbr_5.png) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber .number #nmbr6 input
+{
+    background: url(image/btn_nmbr_6.png) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber .number #nmbr7 input
+{
+    background: url(image/btn_nmbr_7.png) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber .number #nmbr8 input
+{
+    background: url(image/btn_nmbr_8.png) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber .number #nmbr9 input
+{
+    background: url(image/btn_nmbr_9.png) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber .number #nmbrdot input
+{
+    background: url(image/btn_nmbr_dot.png) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber .number #nmbr0 input
+{
+    background: url(image/btn_nmbr_0.png) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber .number #nmbr00 input
+{
+    background: url(image/btn_nmbr_00.png) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber .button-submit
+{
+    float: left;
+    width: 63px;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber .button-submit #btnClearNumber
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 70px;
+    height: 145px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    background: url(image/btn_small_gif.png) center no-repeat;
+}
+#bodyChooseTable .container .content .right .navigator .navigator-right .navigator-right-inner #panelInputNumber .button-submit #UpdateButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 70px;
+    height: 158px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    background: url(image/btn_ok_small.png) center no-repeat;
+}
+
+/*Choose Settlement*/
+#bodySettlement
+{
+    background: url(image/bg_login.jpg) no-repeat center 0px #F7931E;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 768px;
+    outline: none;
+    overflow: hidden;
+    color: #FFFFFF;
+}
+#bodySettlement .container
+{
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    margin: 0px auto;
+}
+#bodySettlement .container .header
+{
+    height: 25px;
+    background: #000;
+    border: solid #000 1px;
+    margin-bottom: 5px;
+}
+#bodySettlement .container .header .left
+{
+    float: left;
+}
+#bodySettlement .container .header .left .title .text
+{
+    font-family: "Myriad Pro";
+    text-transform: uppercase;
+    color: #000;
+    background: url(image/bg_title_internet.jpg) repeat-x;
+    height: 23px;
+    float: left;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 12pt;
+    padding-top: 2px;
+}
+#bodySettlement .container .header .left .title .sep
+{
+    background: url(image/bg_title_internet2.png) repeat-x;
+    height: 25px;
+    width: 13px;
+    float: left;
+}
+#bodySettlement .container .header .right
+{
+    float: right;
+    height: 25px;
+}
+#bodySettlement .container .header .right .date #tanggal
+{
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFF;
+    height: 23px;
+    float: left;
+    font-size: 12pt;
+    margin-right: 25px;
+    padding-top: 2px;
+}
+#bodySettlement .container .header .right .date #jam
+{
+    float: left;
+    color: #FFFF00;
+    font-family: Arial;
+    font-weight: bold;
+    width: 65px;
+    padding-top: 2px;
+    height: 23px;
+    font-size: 13pt;
+    margin-right: 10px;
+}
+#bodySettlement .content
+{
+    padding: 0px 5px;
+}
+#bodySettlement .content .left
+{
+    width: 375px;
+    float: left;
+}
+#bodySettlement .content .right
+{
+    width: 630px;
+    float: left;
+    margin-left: 5px;
+}
+#bodySettlement .content .rightBottom
+{
+    width: 630px;
+    margin-left: 5px;
+    float: left;
+    border: solid 1px #333333;
+    background: #1A1A1A;
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+#bodySettlement .content .left .boxLeft1, #bodySettlement .content .left .boxLeft2, #bodySettlement .content .left .boxLeft4
+{
+    border: solid 1px #333333;
+    background: #1A1A1A;
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+#bodySettlement .content .left .boxLeft1 .label, #bodySettlement .content .left .boxLeft2 .label
+{
+    float: left;
+    width: 174px;
+    padding: 10px;
+}
+#bodySettlement .content .left .boxLeft1 .sep, #bodySettlement .content .left .boxLeft2 .sep
+{
+    float: left;
+    width: 5px;
+    padding: 10px;
+}
+#bodySettlement .content .left .boxLeft1 .input, #bodySettlement .content .left .boxLeft2 .input
+{
+    float: left;
+    width: 134px;
+    padding: 10px;
+    color: #FFFF00;
+    text-align: right;
+}
+#bodySettlement .content .left .boxLeft1 .clear, #bodySettlement .content .left .boxLeft2 .clear, #bodySettlement .content .right .clear
+{
+    clear: both;
+}
+#bodySettlement .content .left .boxLeft1 .tax, #bodySettlement .content .left .boxLeft1 .service-charge, #bodySettlement .content .left .boxLeft1 .subtotal, #bodySettlement .content .left .boxLeft1 .dp-received, #bodySettlement .content .left .boxLeft1 .other, #bodySettlement .content .left .boxLeft1 .total, #bodySettlement .content .left .boxLeft2 .credit-card-payment, #bodySettlement .content .left .boxLeft2 .debit-card-payment, #bodySettlement .content .left .boxLeft2 .gift-voucher, #bodySettlement .content .left .boxLeft2 .change
+{
+    border-bottom: solid 1px #333333;
+}
+#bodySettlement .content .left .boxLeft3 input
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 360px;
+    height: 95px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/bg_pay.png) center no-repeat;
+    margin: auto;
+}
+#bodySettlement .content .left .boxLeft4
+{
+    padding: 13px 10px;
+    text-align: center;
+    margin-top: 3px;
+}
+#bodySettlement .content .left .boxLeft4 .input
+{
+    font-size: 18px;
+}
+#bodySettlement .content .right .top .logo
+{
+    border: medium none;
+    display: block;
+    font-size: 0;
+    width: 312px;
+    height: 96px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/logo.png) center no-repeat;
+    float: left;
+}
+#bodySettlement .content .right .top .top-right
+{
+    float: left;
+    width: 100px;
+    background: #F6891F;
+    color: #000000;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    padding: 33px 0;
+    width: 310px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+#bodySettlement .content .right .middle
+{
+    background: #F6891F;
+    margin-top: 5px;
+    width: 626px;
+    height: 70px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+    margin-bottom: 5px;
+}
+#bodySettlement .content .right .middle .boxRightTopTopLineFloat input
+{
+    float: left;
+    border: medium none;
+    display: block;
+    font-size: 0;
+    width: 115px;
+    height: 96px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    cursor: pointer;
+}
+#bodySettlement .content .right .middle .boxRightTopTopLineFloat #ImageButton1
+{
+    background: url(image/btn_cash.jpg) center no-repeat;
+    margin-left: 25px;
+}
+#bodySettlement .content .right .middle .boxRightTopTopLineFloat #ImageButton2
+{
+    background: url(image/btn_credit_card.jpg) center no-repeat;
+}
+#bodySettlement .content .right .middle .boxRightTopTopLineFloat #ImageButton3
+{
+    background: url(image/btn_debit.jpg) center no-repeat;
+}
+#bodySettlement .content .right .middle .boxRightTopTopLineFloat #ImageButton4
+{
+    background: url(image/btn_voucher_settlement.jpg) center no-repeat;
+}
+#bodySettlement .content .right .middle .boxRightTopTopLineFloat #ImageButton5
+{
+    background: url(image/btn_back2.jpg) center no-repeat;
+}
+#bodySettlement .content .right .bottom #CashPanel #AmountDiv, #bodySettlement .content .right .bottom #CreditCardPanel #ListCardTypePanel, #bodySettlement .content .right .bottom #CreditCardPanel #ListCreditCardPanel, #bodySettlement .content .right .bottom #DebitPanel #ListBankDebitPanel, #bodySettlement .content .right .bottom #VoucherPanel .left-inner
+{
+    border: solid 1px #333333;
+    background: #1A1A1A;
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 14px;
+    padding: 18px 5px;
+    width: 300px;
+    height: 308px;
+    float: left;
+}
+#bodySettlement .content .right .bottom #VoucherPanel .left-inner
+{
+    color: #FFFFFF;
+    text-align: center;
+}
+#bodySettlement .content .right .bottom #VoucherPanel .left-inner input
+{
+    margin-bottom: 10px;
+    width: 285px;
+    height: 20px;
+    padding: 3px;
+    font-size: 16px;
+}
+#bodySettlement .content .right .bottom #CreditCardPanel #ListCardTypePanel, #bodySettlement .content .right .bottom #CreditCardPanel #ListCreditCardPanel
+{
+    height: 200px;
+    margin-bottom: 5px;
+    padding: 5px 6px 5px 12px;
+}
+#bodySettlement .content .right .bottom #DebitPanel #ListBankDebitPanel
+{
+    padding: 5px 6px 5px 12px;
+    height: 425px;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit, #bodySettlement .content .right .bottom #VoucherPanel .right-inner
+{
+    width: 300px;
+    float: left;
+    margin-left: 5px;
+}
+#bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit
+{
+    margin-left: 0;
+    margin-right: 5px;
+}
+#bodySettlement .content .right .bottom #CashPanel #AmountDiv .title
+{
+    color: #FFFF00;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#bodySettlement .content .right .bottom #CashPanel #AmountDiv .inner
+{
+    padding-left: 4px;
+}
+#bodySettlement .content .right .bottom #CashPanel #AmountDiv .inner input, #bodySettlement .content .right .bottom #CreditCardPanel #ListCardTypePanel input, #bodySettlement .content .right .bottom #CreditCardPanel #ListCreditCardPanel input, #bodySettlement .content .right .bottom #DebitPanel #ListBankDebitPanel input
+{
+    float: left;
+    border: medium none;
+    display: block;
+    width: 146px;
+    height: 69px;
+    line-height: 0;
+    outline: none;
+    cursor: pointer;
+    background: url(image/bg_btn_settlement.jpg) center no-repeat;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #panelInputNumber .left-container, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #panelInputNumberCredit .left-container, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #panelInputNumberDebit .left-container, #bodySettlement .content .right .bottom #VoucherPanel .right-inner #panelInputNumberVoucher .left-container
+{
+    width: 227px;
+    float: left;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #panelInputNumber .btnInputNumber, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #panelInputNumberCredit .btnInputNumberCredit, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #panelInputNumberDebit .btnInputNumberDebit, #bodySettlement .content .right .bottom #VoucherPanel .right-inner #panelInputNumberVoucher .btnInputNumberVoucher
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 73px;
+    height: 72px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    margin: 1px;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #panelInputNumber #nmbr1 input, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #panelInputNumberCredit #nmbr1_2 input, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #panelInputNumberDebit #nmbr1_3 input, #bodySettlement .content .right .bottom #VoucherPanel .right-inner #panelInputNumberVoucher #nmbr1_4 input
+{
+    background: url(image/btn_nmbr_1.png) center no-repeat;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #panelInputNumber #nmbr2 input, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #panelInputNumberCredit #nmbr2_2 input, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #panelInputNumberDebit #nmbr2_3 input, #bodySettlement .content .right .bottom #VoucherPanel .right-inner #panelInputNumberVoucher #nmbr2_4 input
+{
+    background: url(image/btn_nmbr_2.png) center no-repeat;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #panelInputNumber #nmbr3 input, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #panelInputNumberCredit #nmbr3_2 input, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #panelInputNumberDebit #nmbr3_3 input, #bodySettlement .content .right .bottom #VoucherPanel .right-inner #panelInputNumberVoucher #nmbr3_4 input
+{
+    background: url(image/btn_nmbr_3.png) center no-repeat;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #panelInputNumber #nmbr4 input, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #panelInputNumberCredit #nmbr4_2 input, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #panelInputNumberDebit #nmbr4_3 input, #bodySettlement .content .right .bottom #VoucherPanel .right-inner #panelInputNumberVoucher #nmbr4_4 input
+{
+    background: url(image/btn_nmbr_4.png) center no-repeat;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #panelInputNumber #nmbr5 input, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #panelInputNumberCredit #nmbr5_2 input, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #panelInputNumberDebit #nmbr5_3 input, #bodySettlement .content .right .bottom #VoucherPanel .right-inner #panelInputNumberVoucher #nmbr5_4 input
+{
+    background: url(image/btn_nmbr_5.png) center no-repeat;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #panelInputNumber #nmbr6 input, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #panelInputNumberCredit #nmbr6_2 input, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #panelInputNumberDebit #nmbr6_3 input, #bodySettlement .content .right .bottom #VoucherPanel .right-inner #panelInputNumberVoucher #nmbr6_4 input
+{
+    background: url(image/btn_nmbr_6.png) center no-repeat;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #panelInputNumber #nmbr7 input, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #panelInputNumberCredit #nmbr7_2 input, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #panelInputNumberDebit #nmbr7_3 input, #bodySettlement .content .right .bottom #VoucherPanel .right-inner #panelInputNumberVoucher #nmbr7_4 input
+{
+    background: url(image/btn_nmbr_7.png) center no-repeat;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #panelInputNumber #nmbr8 input, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #panelInputNumberCredit #nmbr8_2 input, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #panelInputNumberDebit #nmbr8_3 input, #bodySettlement .content .right .bottom #VoucherPanel .right-inner #panelInputNumberVoucher #nmbr8_4 input
+{
+    background: url(image/btn_nmbr_8.png) center no-repeat;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #panelInputNumber #nmbr9 input, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #panelInputNumberCredit #nmbr9_2 input, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #panelInputNumberDebit #nmbr9_3 input, #bodySettlement .content .right .bottom #VoucherPanel .right-inner #panelInputNumberVoucher #nmbr9_4 input
+{
+    background: url(image/btn_nmbr_9.png) center no-repeat;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #panelInputNumber #nmbrdot input, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #panelInputNumberCredit #nmbrdot_2 input, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #panelInputNumberDebit #nmbrdot_3 input, #bodySettlement .content .right .bottom #VoucherPanel .right-inner #panelInputNumberVoucher #nmbrdot_4 input
+{
+    background: url(image/btn_nmbr_dot.png) center no-repeat;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #panelInputNumber #nmbr0 input, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #panelInputNumberCredit #nmbr0_2 input, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #panelInputNumberDebit #nmbr0_3 input, #bodySettlement .content .right .bottom #VoucherPanel .right-inner #panelInputNumberVoucher #nmbr0_4 input
+{
+    background: url(image/btn_nmbr_0.png) center no-repeat;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #panelInputNumber #nmbr00 input, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #panelInputNumberCredit #nmbr00_2 input, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #panelInputNumberDebit #nmbr00_3 input, #bodySettlement .content .right .bottom #VoucherPanel .right-inner #panelInputNumberVoucher #nmbr00_4 input
+{
+    background: url(image/btn_nmbr_00.png) center no-repeat;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #panelInputNumber .right-container, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #panelInputNumberCredit .right-container, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #panelInputNumberDebit .right-container, #bodySettlement .content .right .bottom #VoucherPanel .right-inner #panelInputNumberVoucher .right-container
+{
+    float: left;
+    width: 63px;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #panelInputNumber .right-container #btnClearNumber, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #panelInputNumberCredit .right-container #btnClearNumberCredit, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #panelInputNumberDebit .right-container #btnClearNumberDebit, #bodySettlement .content .right .bottom #VoucherPanel .right-inner #panelInputNumberVoucher .right-container #btnClearNumberVoucher
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 70px;
+    height: 145px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    background: url(image/btn_small_gif.png) center no-repeat;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #panelInputNumber .right-container #btnOKPanelNumber, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #panelInputNumberCredit .right-container #btnOKPanelNumberCredit, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #panelInputNumberDebit .right-container #btnOKPanelNumberDebit, #bodySettlement .content .right .bottom #VoucherPanel .right-inner #panelInputNumberVoucher .right-container #btnOKPanelNumberVoucher
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 70px;
+    height: 158px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    background: url(image/btn_ok_small.png) center no-repeat;
+}
+#bodySettlement .content .right .bottom #CashPanel #NumpadDiv #AmountPaymentTextBox, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #CreditCardReferenceTextBox, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #CreditCardNominalTextBox, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #DebitCardReferenceTextBox, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #DebitCardNominalTextBox, #bodySettlement .content .right .bottom #VoucherPanel .left-inner #VoucherNoTextBox, #bodySettlement .content .right .bottom #VoucherPanel .left-inner #VoucherNominalTextBox
+{
+    width: 296px;
+    height: 40px;
+    padding: 3px;
+    border: none;
+    font-family: "Myriad Pro";
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+#bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #CreditCardReferenceTextBox, #bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit #CreditCardNominalTextBox, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #DebitCardReferenceTextBox, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit #DebitCardNominalTextBox
+{
+    /*height: 20px;     font-size: 25px;*/
+}
+#bodySettlement .content .right .bottom #CreditCardPanel #NumpadDivCredit .reference .label, #bodySettlement .content .right .bottom #DebitPanel #NumpadDivDebit .reference .label
+{
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+/*POS Retail*/
+#bodyPosRetail
+{
+    background: url(image/bg_login.jpg) no-repeat center 0px #F7931E;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 768px;
+    outline: none;
+    overflow: hidden;
+}
+#bodyPosRetail .container
+{
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    margin: 0px auto;
+}
+#bodyPosRetail .container #PasswordPanel #OKButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 60px;
+    height: 32px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    background: url(image/btn_ok_password.png) center no-repeat;
+    background-size: 67px;
+}
+#bodyPosRetail .container .header
+{
+    height: 25px;
+    background: #000;
+    border: solid #000 1px;
+}
+#bodyPosRetail .container .header .left
+{
+    float: left;
+}
+#bodyPosRetail .container .header .left .title .text
+{
+    font-family: "Myriad Pro";
+    text-transform: uppercase;
+    color: #000;
+    background: url(image/bg_title_internet.jpg) repeat-x;
+    height: 23px;
+    float: left;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 12pt;
+    padding-top: 2px;
+}
+#bodyPosRetail .container .header .left .title .sep
+{
+    background: url(image/bg_title_internet2.png) repeat-x;
+    height: 25px;
+    width: 13px;
+    float: left;
+}
+#bodyPosRetail .container .header .warning
+{
+    color: Red;
+    float: left;
+    padding-left: 10px;
+}
+#bodyPosRetail .container .header .right
+{
+    float: right;
+    height: 25px;
+}
+#bodyPosRetail .container .header .right .date #tanggal
+{
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFF;
+    height: 23px;
+    float: left;
+    font-size: 12pt;
+    margin-right: 25px;
+    padding-top: 2px;
+}
+#bodyPosRetail .container .header .right .date #jam
+{
+    float: left;
+    color: #FFFF00;
+    font-family: Arial;
+    font-weight: bold;
+    width: 65px;
+    padding-top: 2px;
+    height: 23px;
+    font-size: 13pt;
+    margin-right: 10px;
+}
+#bodyPosRetail .container .content
+{
+    padding: 5px;
+}
+#bodyPosRetail .container .content .top .top-left
+{
+    width: 195px;
+    height: 87px;
+    background-color: #F6891F;
+    font-family: Arial;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    float: left;
+}
+#bodyPosRetail .container .content .top .top-left .label
+{
+    width: 65px;
+    float: left;
+}
+#bodyPosRetail .container .content .top .top-left .sep
+{
+    width: 20px;
+    float: left;
+    text-align: center;
+}
+#bodyPosRetail .container .content .top .top-left .input
+{
+    width: 110px;
+    float: left;
+}
+#bodyPosRetail .container .content .top .top-left .trans-ref .input
+{
+    width: 200px;
+}
+#bodyPosRetail .container .content .top .top-left .trans-ref .input input
+{
+    width: 195px;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    background: #F6891F;
+}
+#bodyPosRetail .container .content .top .top-left .clear
+{
+    clear: both;
+    margin-bottom: 5px;
+}
+#bodyPosRetail .container .content .top .top-center
+{
+    width: 327px;
+    height: 63px;
+    background-color: #F6891F;
+    font-family: Arial;
+    color: #000000;
+    font-weight: bold;
+    padding: 22px 10px;
+    text-transform: uppercase;
+    font-size: 11px;
+    float: left;
+    margin-left: 5px;
+}
+#bodyPosRetail .container .content .top .top-center .label
+{
+    width: 100px;
+    float: left;
+}
+#bodyPosRetail .container .content .top .top-center-center .label
+{
+    width: 70px;
+    float: left;
+}
+#bodyPosRetail .container .content .top .top-center .sep
+{
+    width: 15px;
+    float: left;
+    text-align: center;
+}
+#bodyPosRetail .container .content .top .top-center .input
+{
+    width: 150px;
+    height: 38px;
+    float: left;
+    background: url(image/bg_textbox_retail.png) no-repeat -4px -3px;
+    position: relative;
+    top: -11px;
+}
+#bodyPosRetail .container .content .top .top-center .input input
+{
+    width: 135px;
+    border: none;
+    position: relative;
+    top: 5px;
+    left: 8px;
+    font-size: 16px;
+    height: 24px;
+}
+#bodyPosRetail .container .content .top .top-center .clear
+{
+    clear: both;
+    margin-bottom: 10px;
+}
+#bodyPosRetail .container .content .top .top-center-left, #bodyPosRetail .container .content .top .top-center-center, #bodyPosRetail .container .content .top .top-center-right
+{
+    float: left;
+}
+#bodyPosRetail .container .content .top .top-center-center
+{
+    margin-left: 10px;
+}
+#bodyPosRetail .container .content .top .top-center
+{
+    float: left;
+    width: 585px;
+}
+#bodyPosRetail .container .content .top .top-center-right input
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 73px;
+    height: 86px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/bg_new_retail.png) center no-repeat;
+    margin-top: -11px;
+    margin-left: 2px;
+}
+#bodyPosRetail .container .content .top .top-right
+{
+    background: #F6891F;
+    padding: 10px;
+    height: 87px;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    width: 164px;
+    float: left;
+    margin-left: 5px;
+}
+#bodyPosRetail .container .content .top .top-right .input
+{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+#bodyPosRetail .container .content .top .top-clear
+{
+    clear: both;
+}
+#bodyPosRetail .container .content .middle
+{
+    margin-top: 5px;
+    height: 320px;
+}
+#bodyPosRetail .container .content .middle .middle-left
+{
+    width: 692px;
+    float: left;
+}
+#bodyPosRetail .container .content .middle .middle-left .posTHeaderScroll, #bodyPosRetail .container .content .middle .middle-left .posTBodyScroll
+{
+    background: url(image/bg_table_head.jpg) repeat-x;
+    color: #FFFFFF;
+    height: 22px;
+    font-family: Trebuchet MS;
+    text-align: center;
+    font-size: 14px;
+}
+#bodyPosRetail .container .content .middle .middle-left .posTHeaderScroll
+{
+    font-weight: bold;
+}
+#bodyPosRetail .container .content .middle .middle-left .productListBox2 .up
+{
+    width: 35px;
+    height: 102px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_up.png) center no-repeat;
+    margin-top: 55px;
+}
+#bodyPosRetail .container .content .middle .middle-left .productListBox2 .down
+{
+    width: 35px;
+    height: 102px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_down.png) center no-repeat;
+}
+#bodyPosRetail .container .content .middle .middle-left .productListBox
+{
+    width: 650px;
+    float: left;
+}
+#bodyPosRetail .container .content .middle .middle-left .productListBox2
+{
+    width: 35px;
+    float: left;
+    margin-left: 6px;
+}
+#bodyPosRetail .container .content .middle .middle-left .posTBodyScroll
+{
+    background-image: none;
+}
+#bodyPosRetail .container .content .middle .middle-left .table-header
+{
+    width: 650px;
+    border: #4D4D4D solid 1px;
+    border-bottom: none;
+}
+#bodyPosRetail .container .content .middle .middle-left .table-body
+{
+    width: 650px;
+    height: 279px;
+    overflow: hidden;
+    background: #1a1a1a;
+    border: #4D4D4D solid 1px;
+}
+#bodyPosRetail .container .content .middle .middle-left .posTHeaderScroll
+{
+    border-bottom: none;
+}
+#bodyPosRetail .container .content .middle .middle-left .posTHeaderScroll tbody, #bodyPosRetail .container .content .middle .middle-left .posTHeaderScroll tr, #bodyPosRetail .container .content .middle .middle-left .posTBodyScroll tbody, #bodyPosRetail .container .content .middle .middle-left .posTBodyScroll tr
+{
+    padding: 0;
+    margin: 0;
+}
+#bodyPosRetail .container .content .middle .middle-left .posTBodyScroll td.qty2
+{
+    width: 11px;
+    border-right: none;
+    text-align: right;
+}
+#bodyPosRetail .container .content .middle .middle-left .posTBodyScroll td.qty3
+{
+    width: 10px;
+}
+#bodyPosRetail .container .content .middle .middle-left .productListBox td
+{
+    padding: 10px 5px;
+}
+#bodyPosRetail .container .content .middle .middle-left .productListBox .no
+{
+    width: 30px;
+}
+#bodyPosRetail .container .content .middle .middle-left .productListBox .product-code
+{
+    width: 140px;
+    text-align: left;
+}
+#bodyPosRetail .container .content .middle .middle-left .productListBox .desc
+{
+    width: 145px;
+    text-align: left;
+}
+#bodyPosRetail .container .content .middle .middle-left .productListBox .qty
+{
+    width: 30px;
+}
+#bodyPosRetail .container .content .middle .middle-left .productListBox .disc
+{
+    width: 75px;
+    text-align: right;
+}
+#bodyPosRetail .container .content .middle .middle-left .productListBox .price
+{
+    width: 75px;
+    text-align: right;
+}
+#bodyPosRetail .container .content .middle .middle-left .productListBox .line-total
+{
+    width: 75px;
+    text-align: right;
+}
+#bodyPosRetail .container .content .middle .middle-left .productListBox .cancel
+{
+    width: 30px;
+}
+#bodyPosRetail .container .content .middle .middle-left .posTBodyScroll #EditButton, #bodyPosRetail .container .content .middle .middle-left .posTBodyScroll .EditButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_edit.png) center no-repeat;
+    margin: 0 auto;
+}
+#bodyPosRetail .container .content .middle .middle-left .posTBodyScroll #CancelButton, #bodyPosRetail .container .content .middle .middle-left .posTBodyScroll .CancelButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_cancel_retail.png) center no-repeat;
+    margin: 0 auto;
+}
+#bodyPosRetail .container .content .middle .middle-right
+{
+    background: #F6891F;
+    padding: 10px;
+    padding-bottom: 0px;
+    float: left;
+    margin-left: 5px;
+}
+#bodyPosRetail .container .content .middle .middle-right .label
+{
+    font-family: Arial;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+#bodyPosRetail .container .content .middle .middle-right .left
+{
+    width: 206px;
+    float: left;
+}
+#bodyPosRetail .container .content .middle .middle-right .input
+{
+    background: url(image/bg_textbox__long_retail.png) center no-repeat;
+    height: 25px;
+    padding-left: 3px;
+    padding-top: 5px;
+}
+#bodyPosRetail .container .content .middle .middle-right .input input
+{
+    border: none;
+    width: 200px;
+}
+#bodyPosRetail .container .content .middle .middle-right .right
+{
+    width: 85px;
+    float: left;
+    margin-left: 5px;
+}
+#bodyPosRetail .container .content .middle .middle-right .right .input
+{
+    background: url(image/bg_textbox__short_retail.png) center no-repeat;
+    height: 25px;
+    padding-left: 3px;
+    padding-top: 5px;
+}
+#bodyPosRetail .container .content .middle .middle-right .right .input input
+{
+    border: none;
+    width: 78px;
+}
+#bodyPosRetail .container .content .middle .middle-right .top
+{
+    border-bottom: solid 2px #C1272D;
+    height: 45px;
+    margin-bottom: 5px;
+}
+#bodyPosRetail .container .content .middle .middle-right .mid input
+{
+    border: none;
+    background: url(image/bg_ProductCode_cashier.png) center no-repeat; /*background:none;*/
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    width: 297px;
+    height: 22px;
+}
+#bodyPosRetail .container .content .middle .middle-right .bottom
+{
+    width: 292px;
+    height: 213px;
+    border: solid 2px #C1272D;
+    background: #FFF;
+}
+#bodyPosRetail .container .content .middle .middle-right .bottom2
+{
+    text-transform: uppercase;
+    font-family: Arial;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    height: 15px;
+}
+#bodyPosRetail .container .content .middle .middle-clear
+{
+    clear: both;
+}
+#bodyPosRetail .container .content .bottom
+{
+    margin-top: 5px;
+}
+#bodyPosRetail .container .content .bottom .bottom-left
+{
+    color: #FFFFFF;
+    font-family: Arial;
+    text-transform: uppercase;
+    background: #1A1A1A;
+    font-size: 18px;
+    height: 287px;
+    padding: 0;
+    border: solid 1px #333333;
+    width: 443px;
+    float: left;
+}
+#bodyPosRetail .container .content .bottom .bottom-left .label
+{
+    float: left;
+    width: 237px;
+    padding: 15px 5px;
+    border-right: solid 1px #333333;
+}
+#bodyPosRetail .container .content .bottom .bottom-left .value
+{
+    float: left;
+    width: 185px;
+    padding: 5px;
+    text-align: right;
+    color: #FFFF00;
+}
+#bodyPosRetail .container .content .bottom .bottom-left .clear
+{
+    clear: both;
+}
+#bodyPosRetail .container .content .bottom .bottom-left .discount, #bodyPosRetail .container .content .bottom .bottom-left .subtotal, #bodyPosRetail .container .content .bottom .bottom-left .service-charge, #bodyPosRetail .container .content .bottom .bottom-left .tax, #bodyPosRetail .container .content .bottom .bottom-left .total
+{
+    height: 52px;
+}
+#bodyPosRetail .container .content .bottom .bottom-left .subtotal, #bodyPosRetail .container .content .bottom .bottom-left .tax
+{
+    border-bottom: solid 1px #333333;
+}
+#bodyPosRetail .container .content .bottom .bottom-left .total .label, #bodyPosRetail .container .content .bottom .bottom-left .total .value
+{
+    padding: 30px 5px;
+    height: 17px;
+}
+#bodyPosRetail .container .content .bottom .bottom-center
+{
+    float: left;
+    margin-left: 5px;
+    padding: 5px 3px 5px 5px;
+    width: 235px;
+    height: 279px;
+    background: #F6891F;
+}
+#bodyPosRetail .container .content .bottom .bottom-center input
+{
+    margin-right: 4px;
+    margin-bottom: 3px;
+}
+#bodyPosRetail .container .content .bottom .bottom-center #BackButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 74px;
+    height: 74px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/bg_back_retail.png) center no-repeat;
+    float: left;
+}
+#bodyPosRetail .container .content .bottom .bottom-center #SearchButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 74px;
+    height: 74px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/bg_search_retail.png) center no-repeat;
+    float: left;
+}
+#bodyPosRetail .container .content .bottom .bottom-center #HoldButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 74px;
+    height: 74px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/bg_hold_retail.png) center no-repeat;
+    float: left;
+}
+#bodyPosRetail .container .content .bottom .bottom-center #OpenHoldButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 74px;
+    height: 74px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/bg_open_hold_retail.png) center no-repeat;
+    float: left;
+}
+#bodyPosRetail .container .content .bottom .bottom-center #CheckStatusButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 74px;
+    height: 74px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/bg_check_status_retail.png) center no-repeat;
+    float: left;
+}
+#bodyPosRetail .container .content .bottom .bottom-center #CancelAllButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 74px;
+    height: 74px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/bg_cancel_all_retail.png) center no-repeat;
+    float: left;
+}
+#bodyPosRetail .container .content .bottom .bottom-center #JoinJobOrderButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 74px;
+    height: 74px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_edit_pos.png) center no-repeat;
+    float: left;
+    background-size: 73.5px;
+}
+
+#bodyPosRetail .container .content .bottom .bottom-center #GotoCashierButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 74px;
+    height: 74px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/bg_go_to_cashier_retail.png) center no-repeat;
+    float: left;
+}
+
+#bodyPosRetail .container .content .bottom .bottom-center .clear
+{
+    clear: both;
+}
+#bodyPosRetail .container .content .bottom .bottom-center #SendToCashierButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 243px;
+    height: 60px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/bg_send_cashier_retail.png) center no-repeat;
+    position: relative;
+    top: -4px;
+    left: -5px;
+}
+/*#bodyPosRetail .container .content .bottom .bottom-center #GotoCashierButton
+{
+	border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 243px;
+    height: 60px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/bg_go_to_cashier_retail.jpg) center no-repeat;
+    position:relative;
+    top:-4px;
+    left:-95px;
+}*/
+#bodyPosRetail .container .content .bottom .bottom-right
+{
+    float: left;
+    margin-left: 3px;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber
+{
+    margin-left: 9px;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber input
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 73px;
+    height: 72px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    margin: 1px;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber #nmbr1 input
+{
+    background: url(image/btn_nmbr_1.png) center no-repeat;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber #nmbr2 input
+{
+    background: url(image/btn_nmbr_2.png) center no-repeat;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber #nmbr3 input
+{
+    background: url(image/btn_nmbr_3.png) center no-repeat;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber #nmbr4 input
+{
+    background: url(image/btn_nmbr_4.png) center no-repeat;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber #nmbr5 input
+{
+    background: url(image/btn_nmbr_5.png) center no-repeat;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber #nmbr6 input
+{
+    background: url(image/btn_nmbr_6.png) center no-repeat;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber #nmbr7 input
+{
+    background: url(image/btn_nmbr_7.png) center no-repeat;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber #nmbr8 input
+{
+    background: url(image/btn_nmbr_8.png) center no-repeat;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber #nmbr9 input
+{
+    background: url(image/btn_nmbr_9.png) center no-repeat;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber #nmbrdot input
+{
+    background: url(image/btn_nmbr_dot.png) center no-repeat;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber #nmbr0 input
+{
+    background: url(image/btn_nmbr_0.png) center no-repeat;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber #nmbr00 input
+{
+    background: url(image/btn_nmbr_00.png) center no-repeat;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber .left-container
+{
+    float: left;
+    width: 227px;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber .right-container
+{
+    float: left;
+    width: 63px;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber #btnClearNumber
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 70px;
+    height: 145px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    background: url(image/btn_small_gif.png) center no-repeat;
+}
+#bodyPosRetail .container .content .bottom .bottom-right #panelInputNumber #btnOKPanelNumber
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 70px;
+    height: 147px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    background: url(image/btn_ok_small.png) center no-repeat;
+}
+/*
+
+#bodyPosRetail .container .right_mid
+{
+	background:#F6891F;
+	margin-top:5px;
+	padding:10px;
+	padding-bottom:5px;
+	margin-bottom:1px;
+}
+#bodyPosRetail .container .right_mid .label
+{
+	font-family:Arial;
+	text-transform:uppercase;
+	font-size:12px;
+	font-weight:bold;
+}
+#bodyPosRetail .container .right_mid .left
+{
+	width:206px;
+	float:left;
+}
+#bodyPosRetail .container .right_mid .left .input
+{
+	background: url(image/bg_textbox__long_retail.png) center no-repeat;
+	height:25px;
+	padding-left:3px;
+	padding-top:5px;
+}
+#bodyPosRetail .container .right_mid .left .input input
+{
+	border:none;
+	width:200px;
+}
+#bodyPosRetail .container .right_mid .right
+{
+	width:85px;
+	float:left;
+	margin-left:5px;
+}
+#bodyPosRetail .container .right_mid .right .input
+{
+	background: url(image/bg_textbox__short_retail.png) center no-repeat;
+	height:25px;
+	padding-left:3px;
+	padding-top:5px;
+}
+#bodyPosRetail .container .right_mid .right .input input
+{
+	border:none;
+	width:78px;
+}
+#bodyPosRetail .container .right_mid .top
+{
+	border-bottom:solid 2px #C1272D;
+	height:45px;
+	margin-bottom:5px;
+}
+#bodyPosRetail .container .right_mid .mid input
+{
+	border:none;
+	background:none;
+	font-family:Arial;
+	font-weight:bold;
+	text-align:center;
+	width:297px;
+}
+#bodyPosRetail .container .right_mid .bottom
+{
+	width:292px;
+	height:213px;
+	border:solid 2px #C1272D;
+	background:#FFF;
+}
+#bodyPosRetail .container .right_mid .bottom2
+{
+	text-transform:uppercase;
+	font-family:Arial;
+	text-align:center;
+	font-weight:bold;
+	font-size:12px;
+	height:15px;
+}*/
+
+/*POS Close Shift*/
+#bodyCloseShift
+{
+    background: url(image/bg_login.jpg) no-repeat center 0px #F7931E;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 768px;
+    outline: none;
+    overflow: hidden;
+}
+#bodyCloseShift .container
+{
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    margin: 0px auto;
+}
+#bodyCloseShift .container .header
+{
+    height: 25px;
+    background: #000;
+    border: solid #000 1px;
+}
+#bodyCloseShift .container .header .left
+{
+    float: left;
+}
+#bodyCloseShift .container .header .left .title .text
+{
+    font-family: "Myriad Pro";
+    text-transform: uppercase;
+    color: #000;
+    background: url(image/bg_title_internet.jpg) repeat-x;
+    height: 23px;
+    float: left;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 12pt;
+    padding-top: 2px;
+}
+#bodyCloseShift .container .header .left .title .sep
+{
+    background: url(image/bg_title_internet2.png) repeat-x;
+    height: 25px;
+    width: 13px;
+    float: left;
+}
+#bodyCloseShift .container .header .right
+{
+    float: right;
+    height: 25px;
+}
+#bodyCloseShift .container .header .right .date #tanggal
+{
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFF;
+    height: 23px;
+    float: left;
+    font-size: 12pt;
+    margin-right: 25px;
+    padding-top: 2px;
+}
+#bodyCloseShift .container .header .right .date #jam
+{
+    float: left;
+    color: #FFFF00;
+    font-family: Arial;
+    font-weight: bold;
+    width: 65px;
+    padding-top: 2px;
+    height: 23px;
+    font-size: 13pt;
+    margin-right: 10px;
+}
+#bodyCloseShift .container .content
+{
+    padding: 5px;
+}
+#bodyCloseShift .container .content .content-top .title
+{
+    background: #F6891F;
+    color: #000; /*font-family: Arial;*/
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 35px 0px;
+    font-size: 30px;
+    width: 378px;
+    float: left;
+    border-radius: 10px;
+}
+#bodyCloseShift .container .content .content-top .cashier .cashier-name
+{
+    margin-bottom: 5px;
+}
+#bodyCloseShift .container .content .content-top .cashier
+{
+    /*font-family: Arial;*/
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    background: #F6891F;
+    padding: 35px 14px;
+    position: relative;
+    width: 203px;
+    margin-left: 5px;
+    float: left;
+    border-radius: 10px;
+}
+#bodyCloseShift .container .content .content-top .cashier .clear
+{
+    clear: both;
+}
+#bodyCloseShift .container .content .content-top .cashier .cashier-name, #bodyCloseShift .container .content .content-top .cashier .petty-cash
+{
+    height: 15px;
+}
+#bodyCloseShift .container .content .content-top .cashier .label
+{
+    width: 110px;
+    float: left;
+}
+#bodyCloseShift .container .content .content-top .cashier .sep
+{
+    width: 5px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#bodyCloseShift .container .content .content-top .cashier .input
+{
+    width: 100px;
+    float: left;
+}
+#bodyCloseShift .container .content .content-top .ending-balance
+{
+    background: #F6891F;
+    margin-left: 5px;
+    padding: 7px 14px;
+    width: 368px;
+    float: left;
+    border-radius: 10px;
+}
+#bodyCloseShift .container .content .content-top .ending-balance .left
+{
+    width: 175px;
+    float: left;
+}
+#bodyCloseShift .container .content .content-top .button
+{
+    float: left;
+    margin-left: 8px;
+    padding-top: 7px;
+}
+#bodyCloseShift .container .content .content-top .ending-balance .label
+{
+    font-family: Myriad Pro;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+#bodyCloseShift .container .content .content-top .ending-balance .input
+{
+    background: #C1272D;
+    color: #FFF;
+    font-family: Arial;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 5px;
+    margin-top: 5px;
+}
+#bodyCloseShift .container .content .content-top .button #ApproveButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 90px;
+    height: 68px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/back_approved_btn_close_shift.png) center no-repeat;
+    float: left;
+}
+
+#bodyCloseShift .container .content .content-top .button #PrintButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 109px;
+    height: 82px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/Print2.png) center no-repeat;
+    float: left;
+    margin-left: 17px;
+}
+
+#bodyCloseShift .container .content .content-top .button #CloseButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 110px;
+    height: 83px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_close_sift.png) center no-repeat;
+    float: left; /*margin-left: 5px;*/
+}
+
+#bodyCloseShift .container .content .content-top .button #BackButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 110px;
+    height: 81px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_back_close_sift.png) center no-repeat;
+    float: left;
+    margin-left: 13px;
+}
+#bodyCloseShift .container .content .content-top
+{
+    height: 105px;
+}
+#bodyCloseShift .container .content .content-mid
+{
+    clear: both;
+    margin-top: 7px;
+    width: 973px;
+    float: left;
+}
+#bodyCloseShift .container .content .content-mid td
+{
+    text-align: center;
+}
+#bodyCloseShift .container .content .content-mid .table-header
+{
+    background: url(image/bg_table_head.jpg) repeat-x;
+    border: solid 1px #4D4D4D;
+    font-family: Arial;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+}
+#bodyCloseShift .container .content .content-mid .table-container-scroll
+{
+    background: #1A1A1A;
+    height: 500px;
+    overflow: hidden;
+    border: solid 1px #4D4D4D;
+    border-top: none;
+    margin-bottom: 5px;
+    font-family: Arial;
+    color: #FFF;
+    font-size: 15px;
+}
+#bodyCloseShift .container .content .content-mid .table-container-scroll td
+{
+    padding: 6px;
+}
+#bodyCloseShift .container .content .content-mid .table-header table, #bodyCloseShift .container .content .content-mid .table-container-scroll table
+{
+    width: 100%;
+}
+.#bodyCloseShift .container .content .content-mid .Number
+{
+    width: 5%;
+}
+.#bodyCloseShift .container .content .content-mid .TransactionNo
+{
+    width: 20%;
+}
+.#bodyCloseShift .container .content .content-mid .TransactionDate
+{
+    width: 20%;
+}
+.#bodyCloseShift .container .content .content-mid .ReferenceNo
+{
+    width: 20%;
+}
+.#bodyCloseShift .container .content .content-mid .PaymentStatus
+{
+    width: 10%;
+}
+.#bodyCloseShift .container .content .content-mid .DeliveryStatus
+{
+    width: 10%;
+}
+.#bodyCloseShift .container .content .content-mid .AmountTrans
+{
+    width: 15%;
+}
+#bodyCloseShift .container .content .table-navigation-scroll
+{
+    /*padding-left:6px;*/
+    float: left;
+    width: 35px;
+    margin-top: 163px;
+}
+#bodyCloseShift .table-navigation-scroll .up
+{
+    width: 35px;
+    height: 102px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_up.png) center no-repeat;
+}
+#bodyCloseShift .table-navigation-scroll .down
+{
+    width: 35px;
+    height: 102px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_down.png) center no-repeat;
+}
+
+#bodyCloseShift .container .content .content-bottom .total .label
+{
+    font-family: Myriad Pro;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: right;
+    width: 732px;
+    float: left;
+}
+#bodyCloseShift .container .content .content-bottom .total .input
+{
+    font-family: Arial;
+    color: #FFFF00;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: right;
+    background: #1A1A1A;
+    width: 228px;
+    border: solid 1px #4D4D4D;
+    padding: 0 5px;
+    margin-left: 5px;
+    float: left;
+}
+.dragger
+{
+    cursor: move;
+}
+
+/*Cafe Page*/
+#bodyCafe
+{
+    background: url(image/bg_login.jpg) no-repeat center 0px #000000;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 768px;
+    outline: none;
+    overflow: hidden;
+}
+#bodyCafe .container
+{
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    margin: 0px auto;
+}
+#bodyCafe .container .header
+{
+    height: 25px;
+    background: #000;
+    border: solid #000 1px;
+}
+#bodyCafe .container .header .left
+{
+    float: left;
+}
+#bodyCafe .container .header .left .title .text
+{
+    font-family: "Myriad Pro";
+    text-transform: uppercase;
+    color: #000;
+    background: url(image/bg_title_internet.jpg) repeat-x;
+    height: 23px;
+    float: left;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 12pt;
+    padding-top: 2px;
+}
+#bodyCafe .container .header .left .title .sep
+{
+    background: url(image/bg_title_internet2.png) repeat-x;
+    height: 25px;
+    width: 13px;
+    float: left;
+}
+#bodyCafe .container .header .right
+{
+    float: right;
+    height: 25px;
+}
+#bodyCafe .container .header .right .date #tanggal
+{
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFF;
+    height: 23px;
+    float: left;
+    font-size: 12pt;
+    margin-right: 25px;
+    padding-top: 2px;
+}
+#bodyCafe .container .header .right .date #jam
+{
+    float: left;
+    color: #FFFF00;
+    font-family: Arial;
+    font-weight: bold;
+    width: 65px;
+    padding-top: 2px;
+    height: 23px;
+    font-size: 13pt;
+    margin-right: 10px;
+}
+#bodyCafe .container .content .left
+{
+    width: 700px;
+    float: left;
+}
+#bodyCafe .container .content .left .left-inner-top
+{
+    width: 700px;
+    height: 485px;
+    background: #CCCCCC;
+    border: #000 solid 1px;
+    border-top: none;
+}
+#bodyCafe .container .content .left .left-inner-top #PanelLayout
+{
+    border: none;
+    float: none;
+    width: 700px;
+    height: 485px;
+}
+#bodyCafe .container .content .left .left-inner-top #PanelLayout .divBox
+{
+    font-size: 14px;
+    height: 41px;
+    width: 54px;
+    padding: 20px 0px;
+    border: none;
+}
+#bodyCafe .container .content .left .left-inner-top #PanelLayout .flag-available
+{
+    position: absolute;
+    top: 30px;
+    left: 310px;
+}
+#bodyCafe .container .content .left .left-inner-top #PanelLayout .flag-available .flag
+{
+    width: 20px;
+    height: 20px;
+    background: url(image/bg_flag_available_internet.png) no-repeat;
+    float: left;
+    margin-right: 5px;
+}
+#bodyCafe .container .content .left .left-inner-top #PanelLayout .flag-not-available
+{
+    position: absolute;
+    top: 30px;
+    left: 485px;
+}
+#bodyCafe .container .content .left .left-inner-top #PanelLayout .flag-not-available .flag
+{
+    width: 20px;
+    height: 20px;
+    background: url(image/bg_flag_not_available_internet.png) no-repeat;
+    float: left;
+    margin-right: 5px;
+}
+#bodyCafe .container .content .left .left-inner-top #PanelLayout .flag-not-available15min
+{
+    position: absolute;
+    top: 30px;
+    left: 400px;
+}
+#bodyCafe .container .content .left .left-inner-top #PanelLayout .flag-not-available15min .flag
+{
+    width: 20px;
+    height: 20px;
+    background: url(image/bg_flag_notavailable_internet_15min.png) no-repeat;
+    float: left;
+    margin-right: 5px;
+}
+#bodyCafe .container .content .left .left-inner-top #PanelLayout .flag-reserved
+{
+    position: absolute;
+    top: 30px;
+    left: 600px;
+}
+#bodyCafe .container .content .left .left-inner-top #PanelLayout .flag-reserved .flag
+{
+    width: 20px;
+    height: 20px;
+    background: url(image/bg_flag_reserved_internet.png) no-repeat;
+    float: left;
+    margin-right: 5px;
+}
+#bodyCafe .container .content .left .left-inner-top #PanelLayout .available
+{
+    background: url(image/bg_available_internet_2.png) no-repeat;
+    cursor: pointer;
+}
+#bodyCafe .container .content .left .left-inner-top #PanelLayout .not-available
+{
+    background: url(image/bg_not_available_internet_2.png) no-repeat;
+    cursor: pointer;
+}
+#bodyCafe .container .content .left .left-inner-top #PanelLayout .not-available15min
+{
+    background: url(image/bg_not_available_internet_15min.png) no-repeat;
+    cursor: pointer;
+}
+#bodyCafe .container .content .left .left-inner-top #PanelLayout .reserved
+{
+    background: url(image/bg_reserved_internet_2.png) no-repeat;
+}
+#bodyCafe .container .content .left .left-inner-bottom
+{
+    background: #000;
+    border: #000 solid 1px;
+    width: 700px;
+}
+#bodyCafe .container .content .left .left-inner-bottom .left-inner-bottom-left
+{
+    width: 660px;
+    float: left;
+}
+#bodyCafe .container .content .left .left-inner-bottom .left-inner-bottom-right
+{
+    width: 35px;
+    height: 202px;
+    padding-top: 28px;
+    margin-left: 5px;
+    float: left;
+}
+#bodyCafe .container .content .left .left-inner-bottom .left-inner-bottom-right .up
+{
+    width: 35px;
+    height: 108px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_up_2.png) center no-repeat;
+}
+#bodyCafe .container .content .left .left-inner-bottom .left-inner-bottom-right .down
+{
+    width: 35px;
+    height: 108px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_down_2.png) center no-repeat;
+}
+#bodyCafe .container .content .left .left-inner-bottom .title
+{
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFFF00;
+    font-weight: bold;
+    font-size: 13pt;
+    padding: 5px;
+}
+#bodyCafe .container .content .left .left-inner-bottom .table-header, #bodyCafe .container .content .left .left-inner-bottom .table-body
+{
+    width: 665px;
+}
+#bodyCafe .container .content .left .left-inner-bottom .table-header table
+{
+    width: 665px;
+    border: solid #4D4D4D 1px;
+    border-left: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-size: 14px;
+    vertical-align: top;
+    font-weight: bold;
+    background: url(image/bg_table_head.jpg) repeat-x;
+}
+#bodyCafe .container .content .left .left-inner-bottom .table-body
+{
+    overflow: hidden;
+    height: 185px;
+    background: #4D4D4D;
+}
+#bodyCafe .container .content .left .left-inner-bottom .table-body table
+{
+    width: 665px;
+    border: solid #4D4D4D 1px;
+    border-left: none;
+    border-top: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-size: 12px;
+    vertical-align: top;
+}
+#bodyCafe .container .content .left .left-inner-bottom .table-body tr, #bodyCafe .container .content .left .left-inner-bottom .table-body td
+{
+    height: 44px; /*vertical-align: top;*/
+}
+#bodyCafe .container .content .left .left-inner-bottom .table-body .OpenBookedButton
+{
+    width: 77px;
+    height: 25px;
+    border: medium none;
+    cursor: pointer;
+    display: block !important;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_open_reserv.png) center no-repeat;
+    margin: 0 auto;
+}
+#bodyCafe .container .content .left .left-inner-bottom #no-member
+{
+    width: 15%;
+    text-align: left;
+}
+#bodyCafe .container .content .left .left-inner-bottom #name
+{
+    text-align: left;
+    width: 10%;
+}
+#bodyCafe .container .content .left .left-inner-bottom #no-telpon
+{
+    text-align: left;
+    width: 12%;
+}
+#bodyCafe .container .content .left .left-inner-bottom #table
+{
+    width: 14%;
+}
+#bodyCafe .container .content .left .left-inner-bottom #date
+{
+    width: 11%;
+}
+#bodyCafe .container .content .left .left-inner-bottom #time
+{
+    width: 10%;
+}
+#bodyCafe .container .content .left .left-inner-bottom #to
+{
+    width: 10%;
+}
+#bodyCafe .container .content .left .left-inner-bottom #operator-name
+{
+    width: 17%;
+}
+#bodyCafe .container .content .right
+{
+    width: 310px;
+    height: 730px;
+    background: #F6891F;
+    float: left;
+    margin-left: 13px;
+}
+#bodyCafe .container .content .right-inner .title
+{
+    background: #000000;
+    margin-left: 20px;
+    font-family: "Myriad Pro";
+    color: #FFFF00;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 14px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+#bodyCafe .container .content .right-inner .lantai
+{
+    margin-top: -5px;
+}
+#bodyCafe .container .content .right-inner .lantai .button-lantai input
+{
+    width: 136px;
+    height: 95px;
+    background: url(image/bg_lantai_internet_3.png) center no-repeat;
+    border: none;
+    font-family: "Myriad Pro";
+    color: #000;
+    font-weight: bold;
+    font-size: 12pt;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    cursor: pointer;
+    float: left;
+    margin-left: 14px;
+}
+#bodyCafe .container .content .right-inner .control .control1
+{
+    width: 248px;
+    height: 78px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+#bodyCafe .container .content .right-inner .control .control1 input
+{
+    width: 124px;
+    height: 78px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+}
+#bodyCafe .container .content .right-inner .control .control1 #UpFloorPanelButton
+{
+    background: url(image/btn_up_internet.png) center no-repeat;
+    float: left;
+}
+#bodyCafe .container .content .right-inner .control .control1 #DownFloorPanelButton
+{
+    background: url(image/btn_down_internet.png) center no-repeat;
+    float: left;
+}
+#bodyCafe .container .content .right-inner .control .control2
+{
+    height: 176px;
+    clear: both;
+    margin-left: 2px;
+    margin-bottom: 25px;
+}
+#bodyCafe .container .content .right-inner .control .control2 input
+{
+    width: 102px;
+    height: 85px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    padding-top: 15px;
+}
+#bodyCafe .container .content .right-inner .control .control2 #ReservationImageButton
+{
+    background: url(image/btn_reservation.jpg) center no-repeat;
+    float: left;
+}
+#bodyCafe .container .content .right-inner .control .control2 #BackImageButton
+{
+    background: url(image/btn_back.jpg) center no-repeat;
+    float: left;
+}
+#bodyCafe .container .content .right-inner .control .control2 #CheckStatusImageButton
+{
+    background: url(image/bg_check_status_internet.png) center no-repeat;
+    float: left;
+}
+#bodyCafe .container .content .right-inner .control .control2 #JoinTableImageButton
+{
+    background: url(image/btn_jointable_poscafe.png) center no-repeat;
+    float: left;
+}
+#bodyCafe .container .content .right-inner .control .control2 #TakeAwayImageButton
+{
+    background: url(image/btn_takeaway_poscafe.png) center no-repeat;
+    float: left;
+}
+#bodyCafe .container .content .right-inner .control .control2 #StopImageButton
+{
+    background: url(image/btn_takeaway_poscafe.png) center no-repeat;
+    float: left;
+}
+#bodyCafe .container .content .right-inner .table-transfer
+{
+    clear: both;
+}
+#bodyCafe .container .content .right-inner .table-transfer .left-inner
+{
+    float: left;
+    margin-left: 20px;
+    position: relative;
+}
+#bodyCafe .container .content .right-inner .table-transfer .left-inner #TableInfoImageButton
+{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("image/btn_view_internet.png");
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 106px auto;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 91px;
+    line-height: 0;
+    margin-left: 4px;
+    outline: medium none;
+    padding: 0;
+    text-indent: -999px;
+    width: 95px;
+}
+#bodyCafe .container .content .right-inner .table-transfer .left-inner .from-table, #bodyCafe .container .content .right-inner .table-transfer .left-inner .to-table
+{
+    background: url(image/bg_table_transfer_internet.png) center no-repeat;
+    width: 150px;
+    height: 34px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+#bodyCafe .container .content .right-inner .table-transfer .left-inner .label
+{
+    float: left;
+    font-family: "Myriad Pro";
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 10.6pt;
+    font-weight: bold;
+    padding: 6px;
+}
+#bodyCafe .container .content .right-inner .table-transfer .left-inner .input
+{
+    /*float: right;*/
+    padding: 6px;
+    position: absolute;
+    right: -3px;
+    top: 0;
+}
+#bodyCafe .container .content .right-inner .table-transfer .left-inner .label2
+{
+    float: left;
+    font-family: "Myriad Pro";
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 6px;
+}
+#bodyCafe .container .content .right-inner .table-transfer .left-inner .input2
+{
+    /*float: right;*/
+    padding: 6px;
+    position: absolute;
+    right: -3px;
+    top: 44px;
+}
+#bodyCafe .container .content .right-inner .table-transfer .left-inner .input select
+{
+    width: 55px;
+}
+#bodyCafe .container .content .right-inner .table-transfer .left-inner .input2 select
+{
+    width: 55px;
+}
+#bodyCafe .container .content .right-inner .table-transfer .right-inner
+{
+    float: left;
+    margin-top: -4px;
+    padding-left: 17px;
+}
+#bodyCafe .container .content .right-inner .table-transfer .right-inner input
+{
+    width: 106px;
+    height: 89px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_transfer.png) center no-repeat;
+}
+
+#bodyCafe .container .content .right-inner .table-transfer .right-inner2
+{
+    float: left;
+    margin-top: -4px;
+}
+#bodyCafe .container .content .right-inner .table-transfer .right-inner2 input
+{
+    width: 140px;
+    height: 38px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_stop_internet.png) center no-repeat;
+}
+
+#ReasonListPanel
+{
+    margin-top: 75px;
+}
+#ReasonListPanel .reasonList
+{
+    margin-top: 20px;
+    border-radius: 10Px 10px 0px 0px;
+}
+
+#ReasonListPanel .reasonList, #ReasonListPanel .table-container-scroll2
+{
+    background-color: #1a1a1a;
+    color: White;
+    font-size: 14px;
+    width: 350px;
+    font-family: Trebuchet MS;
+    float: left;
+    margin-left: 329px;
+    padding-top: 2px;
+    clear: both;
+}
+#ReasonListPanel .table-container-scroll2
+{
+    height: 340px;
+    overflow: hidden;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#ReasonListPanel .table-navigation-scroll2
+{
+    float: left;
+    width: 35px;
+}
+#ReasonListPanel .table-navigation-scroll2 .up
+{
+    width: 35px;
+    height: 102px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_up.png) center no-repeat;
+    margin-top: 61px;
+}
+#ReasonListPanel .table-navigation-scroll2 .down
+{
+    width: 35px;
+    height: 102px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_down.png) center no-repeat;
+}
+#ReasonListPanel .bgproductListBox
+{
+    font-weight: lighter;
+    font-size: 18px;
+}
+#ReasonListPanel .bgproductListBox td
+{
+    background: url(image/bg_top_table_cashier.png) center no-repeat;
+    width: auto;
+}
+#ReasonListPanel .pickReasonButton input
+{
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    display: block;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/btn_check.png) center no-repeat;
+    margin: 1 auto;
+}
+
+#ReasonListPanel .reasonback
+{
+    width: 80px;
+    height: 95px;
+    border: none;
+    display: block;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    margin: 0 0 0 600px;
+    clear: both;
+    padding-top: 10px;
+}
+
+#ReasonListPanel .reasonback #Back2ImageButton
+{
+    background: url(image/btn_back5.png) center no-repeat;
+    display: block;
+    width: 80px;
+    height: 95px;
+    text-indent: -999px;
+}
+

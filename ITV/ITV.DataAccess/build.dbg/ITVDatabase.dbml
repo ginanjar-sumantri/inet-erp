@@ -1,0 +1,589 @@
+<?xml version="1.0"?>
+<Database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="ITVDB" EntityNamespace="ITV.DataAccess.ITVDatabase" ContextNamespace="ITV.DataAccess.ITVDatabase" Class="ItVdB" BaseType="DbLinq.Data.Linq.DataContext" Provider="MySql" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="ITVDB.CNM_Category" Member="CNmCAteGory">
+    <Type Name="CNmCAteGory">
+      <Column Name="category_id" Member="CategoryID" Storage="_categoryID" Type="System.UInt32" DbType="int unsigned" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="category_isActive" Member="CategoryIsActive" Storage="_categoryIsActive" Type="System.SByte" DbType="tinyint(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="category_isParentalLock" Member="CategoryIsParentalLock" Storage="_categoryIsParentalLock" Type="System.SByte" DbType="tinyint(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="category_name" Member="CategoryName" Storage="_categoryName" Type="System.String" DbType="varchar(50)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="category_poster" Member="CategoryPoster" Storage="_categoryPoster" Type="System.String" DbType="varchar(255)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsEvent" Member="MsEvent">
+    <Type Name="MsEvent">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="EventDesc" Member="EventDesc" Storage="_eventDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="EventID" Member="EventID" Storage="_eventID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EventName" Member="EventName" Storage="_eventName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="VideoFile" Member="VideoFile" Storage="_videoFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsGame" Member="MsGame">
+    <Type Name="MsGame">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="GameDesc" Member="GameDesc" Storage="_gameDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="GameID" Member="GameID" Storage="_gameID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GameName" Member="GameName" Storage="_gameName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="GamePath" Member="GamePath" Storage="_gamePath" Type="System.String" DbType="varchar(200)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsGameBuffet" Member="MsGameBuffet">
+    <Type Name="MsGameBuffet">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="GameBuffetDesc" Member="GameBuffetDesc" Storage="_gameBuffetDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="GameBuffetID" Member="GameBuffetID" Storage="_gameBuffetID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GameBuffetName" Member="GameBuffetName" Storage="_gameBuffetName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="GameBuffetType" Member="GameBuffetType" Storage="_gameBuffetType" Type="System.String" DbType="char(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsGameBuffetDt" Member="MsGameBuffetDT">
+    <Type Name="MsGameBuffetDT">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="GameBuffetDtID" Member="GameBuffetDtID" Storage="_gameBuffetDtID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GameBuffetID" Member="GameBuffetID" Storage="_gameBuffetID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="GameID" Member="GameID" Storage="_gameID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsHotelOutlet" Member="MsHotelOutlet">
+    <Type Name="MsHotelOutlet">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="HotelOutletBooked" Member="HotelOutletBooked" Storage="_hotelOutletBooked" Type="System.SByte" DbType="tinyint(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="HotelOutletDesc" Member="HotelOutletDesc" Storage="_hotelOutletDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="HotelOutletID" Member="HotelOutletID" Storage="_hotelOutletID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HotelOutletName" Member="HotelOutletName" Storage="_hotelOutletName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="VideoFile" Member="VideoFile" Storage="_videoFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsHotelOutletBooked" Member="MsHotelOutletBooked">
+    <Type Name="MsHotelOutletBooked">
+      <Column Name="BookedDate" Member="BookedDate" Storage="_bookedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="BookedEvent" Member="BookedEvent" Storage="_bookedEvent" Type="System.String" DbType="varchar(50)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="BookedID" Member="BookedID" Storage="_bookedID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="GuestBooked" Member="GuestBooked" Storage="_guestBooked" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="HotelOutletID" Member="HotelOutletID" Storage="_hotelOutletID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsHotelServices" Member="MsHotelServices">
+    <Type Name="MsHotelServices">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="HotelServicesDesc" Member="HotelServicesDesc" Storage="_hotelServicesDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="HotelServicesID" Member="HotelServicesID" Storage="_hotelServicesID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HotelServicesName" Member="HotelServicesName" Storage="_hotelServicesName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="HotelServicesTitle" Member="HotelServicesTitle" Storage="_hotelServicesTitle" Type="System.String" DbType="varchar(50)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="VideoFile" Member="VideoFile" Storage="_videoFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsMenu" Member="MsMenu">
+    <Type Name="MsMenu">
+      <Column Name="ImageURL" Member="ImageUrl" Storage="_imageUrl" Type="System.String" DbType="varchar(50)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Indent" Member="Indent" Storage="_indent" Type="System.SByte" DbType="tinyint(4)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="IsActive" Member="IsActive" Storage="_isActive" Type="System.Boolean" DbType="bit(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="MenuIcon" Member="MenuIcon" Storage="_menuIcon" Type="System.String" DbType="varchar(50)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="MenuID" Member="MenuID" Storage="_menuID" Type="System.Int16" DbType="smallint(6)" IsPrimaryKey="true" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="ModuleID" Member="ModuleID" Storage="_moduleID" Type="System.String" DbType="varchar(5)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="NavigateURL" Member="NavigateUrl" Storage="_navigateUrl" Type="System.String" DbType="varchar(500)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="OnSelectedImageURL" Member="OnSelectedImageUrl" Storage="_onSelectedImageUrl" Type="System.String" DbType="varchar(50)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ParentID" Member="ParentID" Storage="_parentID" Type="System.Int16" DbType="smallint(6)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Priority" Member="Priority" Storage="_priority" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ShowInQuickLaunch" Member="ShowInQuickLaunch" Storage="_showInQuickLaunch" Type="System.Boolean" DbType="bit(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="SiteMapURL" Member="SiteMapUrl" Storage="_siteMapUrl" Type="System.String" DbType="varchar(500)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Text" Member="Text" Storage="_text" Type="System.String" DbType="varchar(30)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Value" Member="Value" Storage="_value" Type="System.String" DbType="varchar(30)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsMovie" Member="MsMovie">
+    <Type Name="MsMovie">
+      <Column Name="CategoryID" Member="CategoryID" Storage="_categoryID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Image" Member="Image" Storage="_image" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="LanguageID" Member="LanguageID" Storage="_languageID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="MovieDuration" Member="MovieDuration" Storage="_movieDuration" Type="System.String" DbType="varchar(10)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="MovieID" Member="MovieID" Storage="_movieID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MovieName" Member="MovieName" Storage="_movieName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="MovieSynopsis" Member="MovieSynopsis" Storage="_movieSynopsis" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="MovieYear" Member="MovieYear" Storage="_movieYear" Type="System.String" DbType="varchar(4)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RatingID" Member="RatingID" Storage="_ratingID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="TrailerURLs" Member="TrailerUrlS" Storage="_trailerUrlS" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsMovieBuffet" Member="MsMovieBuffet">
+    <Type Name="MsMovieBuffet">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(50)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="MovieBuffetDesc" Member="MovieBuffetDesc" Storage="_movieBuffetDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="MovieBuffetID" Member="MovieBuffetID" Storage="_movieBuffetID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MovieBuffetName" Member="MovieBuffetName" Storage="_movieBuffetName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="MovieBuffetType" Member="MovieBuffetType" Storage="_movieBuffetType" Type="System.String" DbType="char(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsMovieBuffetDt" Member="MsMovieBuffetDT">
+    <Type Name="MsMovieBuffetDT">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="MovieBuffetDtID" Member="MovieBuffetDtID" Storage="_movieBuffetDtID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MovieBuffetID" Member="MovieBuffetID" Storage="_movieBuffetID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="MovieID" Member="MovieID" Storage="_movieID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsMovieCategory" Member="MsMovieCategory">
+    <Type Name="MsMovieCategory">
+      <Column Name="CategoryDesc" Member="CategoryDesc" Storage="_categoryDesc" Type="System.String" DbType="varchar(500)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CategoryID" Member="CategoryID" Storage="_categoryID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryName" Member="CategoryName" Storage="_categoryName" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Image" Member="Image" Storage="_image" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsMovieLanguage" Member="MsMovieLanguage">
+    <Type Name="MsMovieLanguage">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="LanguageID" Member="LanguageID" Storage="_languageID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LanguageName" Member="LanguageName" Storage="_languageName" Type="System.String" DbType="varchar(50)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsMovieRating" Member="MsMovieRating">
+    <Type Name="MsMovieRating">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RatingCode" Member="RatingCode" Storage="_ratingCode" Type="System.String" DbType="varchar(10)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="RatingDesc" Member="RatingDesc" Storage="_ratingDesc" Type="System.String" DbType="varchar(500)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RatingID" Member="RatingID" Storage="_ratingID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RatingName" Member="RatingName" Storage="_ratingName" Type="System.String" DbType="varchar(50)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsMusicAlbum" Member="MsMusicAlbum">
+    <Type Name="MsMusicAlbum">
+      <Column Name="AlbumID" Member="AlbumID" Storage="_albumID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AlbumName" Member="AlbumName" Storage="_albumName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ArtiseID" Member="ArtiseID" Storage="_artiseID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(50)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsMusicArtise" Member="MsMusicArtIsE">
+    <Type Name="MsMusicArtIsE">
+      <Column Name="ArtiseID" Member="ArtiseID" Storage="_artiseID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ArtiseName" Member="ArtiseName" Storage="_artiseName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(50)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsMusicBuffet" Member="MsMusicBuffet">
+    <Type Name="MsMusicBuffet">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="MusicBuffetDesc" Member="MusicBuffetDesc" Storage="_musicBuffetDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="MusicBuffetID" Member="MusicBuffetID" Storage="_musicBuffetID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MusicBuffetName" Member="MusicBuffetName" Storage="_musicBuffetName" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="MusicBuffetType" Member="MusicBuffetType" Storage="_musicBuffetType" Type="System.String" DbType="char(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsMusicBuffetDt" Member="MsMusicBuffetDT">
+    <Type Name="MsMusicBuffetDT">
+      <Column Name="AlbumID" Member="AlbumID" Storage="_albumID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="MusicBuffetDtID" Member="MusicBuffetDtID" Storage="_musicBuffetDtID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MusicBuffetID" Member="MusicBuffetID" Storage="_musicBuffetID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsMusicSong" Member="MsMusicSong">
+    <Type Name="MsMusicSong">
+      <Column Name="AlbumID" Member="AlbumID" Storage="_albumID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="ArtisID" Member="ArtisID" Storage="_artisID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="SongID" Member="SongID" Storage="_songID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SongName" Member="SongName" Storage="_songName" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="SongPath" Member="SongPath" Storage="_songPath" Type="System.String" DbType="varchar(200)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsNews" Member="MsNews">
+    <Type Name="MsNews">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="NewID" Member="NewID" Storage="_newID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NewsCategoryID" Member="NewsCategoryID" Storage="_newsCategoryID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="NewsDesc" Member="NewsDesc" Storage="_newsDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="NewsHeadline" Member="NewsHeadline" Storage="_newsHeadline" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsNewsCategory" Member="MsNewsCategory">
+    <Type Name="MsNewsCategory">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="NewsCategoryDesc" Member="NewsCategoryDesc" Storage="_newsCategoryDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="NewsCategoryID" Member="NewsCategoryID" Storage="_newsCategoryID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NewsCategoryName" Member="NewsCategoryName" Storage="_newsCategoryName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsRadioCategory" Member="MsRadioCategory">
+    <Type Name="MsRadioCategory">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RadioCategoryDesc" Member="RadioCategoryDesc" Storage="_radioCategoryDesc" Type="System.DateTime" DbType="time" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RadioCategoryID" Member="RadioCategoryID" Storage="_radioCategoryID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RadioCategoryName" Member="RadioCategoryName" Storage="_radioCategoryName" Type="System.String" DbType="varchar(200)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsRadioStation" Member="MsRadioStation">
+    <Type Name="MsRadioStation">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RadioCategoryID" Member="RadioCategoryID" Storage="_radioCategoryID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="RadioStasionDesc" Member="RadioStasionDesc" Storage="_radioStasionDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RadioStationID" Member="RadioStationID" Storage="_radioStationID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RadioStationName" Member="RadioStationName" Storage="_radioStationName" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsRoomServiceCategory" Member="MsRoomServiceCategory">
+    <Type Name="MsRoomServiceCategory">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RoomServiceCategoryDesc" Member="RoomServiceCategoryDesc" Storage="_roomServiceCategoryDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RoomServiceCategoryID" Member="RoomServiceCategoryID" Storage="_roomServiceCategoryID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoomServiceCategoryName" Member="RoomServiceCategoryName" Storage="_roomServiceCategoryName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsRoomServiceItem" Member="MsRoomServiceItem">
+    <Type Name="MsRoomServiceItem">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RoomServiceCategoryID" Member="RoomServiceCategoryID" Storage="_roomServiceCategoryID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="RoomServiceItemDesc" Member="RoomServiceItemDesc" Storage="_roomServiceItemDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RoomServiceItemID" Member="RoomServiceItemID" Storage="_roomServiceItemID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoomServiceItemName" Member="RoomServiceItemName" Storage="_roomServiceItemName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RoomServiceItemPrice" Member="RoomServiceItemPrice" Storage="_roomServiceItemPrice" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsShoppingCategory" Member="MsShoppingCategory">
+    <Type Name="MsShoppingCategory">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Imagefile" Member="Imagefile" Storage="_imagefile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="ShoppingCategoryDesc" Member="ShoppingCategoryDesc" Storage="_shoppingCategoryDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ShoppingCategoryID" Member="ShoppingCategoryID" Storage="_shoppingCategoryID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ShoppingCategoryName" Member="ShoppingCategoryName" Storage="_shoppingCategoryName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsShoppingItem" Member="MsShoppingItem">
+    <Type Name="MsShoppingItem">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="ShopingItemPrice" Member="ShopingItemPrice" Storage="_shopingItemPrice" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ShoppingCategoryID" Member="ShoppingCategoryID" Storage="_shoppingCategoryID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ShoppingItemDesc" Member="ShoppingItemDesc" Storage="_shoppingItemDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ShoppingItemID" Member="ShoppingItemID" Storage="_shoppingItemID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ShoppingItemName" Member="ShoppingItemName" Storage="_shoppingItemName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsSTB" Member="MsSTB">
+    <Type Name="MsSTB">
+      <Column Name="fgAllowDowngrade" Member="FgAllowDowngrade" Storage="_fgAllowDowngrade" Type="System.SByte" DbType="tinyint(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="fgForceUpdate" Member="FgForceUpdate" Storage="_fgForceUpdate" Type="System.SByte" DbType="tinyint(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="fgLog" Member="FgLog" Storage="_fgLog" Type="System.SByte" DbType="tinyint(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="fgSSH" Member="FgSsh" Storage="_fgSsh" Type="System.SByte" DbType="tinyint(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="LastConnection" Member="LastConnection" Storage="_lastConnection" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="MacAddress" Member="MacAddress" Storage="_macAddress" Type="System.String" DbType="varchar(17)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ProviderID" Member="ProviderID" Storage="_providerID" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="SmartCard" Member="SmartCard" Storage="_smartCard" Type="System.String" DbType="varchar(50)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="STBID" Member="STBid" Storage="_stbID" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="STBRemark" Member="StbrEmark" Storage="_stbrEmark" Type="System.String" DbType="varchar(200)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Uptime" Member="Uptime" Storage="_uptime" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Version" Member="Version" Storage="_version" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsSTBModuleVersion" Member="MsSTBmOdUlEVersion">
+    <Type Name="MsSTBmOdUlEVersion">
+      <Column Name="ModuleID" Member="ModuleID" Storage="_moduleID" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="STBMacAddress" Member="StbmAcAddress" Storage="_stbmAcAddress" Type="System.String" DbType="varchar(17)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Version" Member="Version" Storage="_version" Type="System.String" DbType="varchar(10)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsTourCategory" Member="MsTourCategory">
+    <Type Name="MsTourCategory">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="TourCategoryDesc" Member="TourCategoryDesc" Storage="_tourCategoryDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="TourCategoryID" Member="TourCategoryID" Storage="_tourCategoryID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TourCategoryName" Member="TourCategoryName" Storage="_tourCategoryName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsTourDetail" Member="MsTourDetail">
+    <Type Name="MsTourDetail">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="TourCategoryID" Member="TourCategoryID" Storage="_tourCategoryID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="TourDetailDesc" Member="TourDetailDesc" Storage="_tourDetailDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="TourDetailID" Member="TourDetailID" Storage="_tourDetailID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TourDetailName" Member="TourDetailName" Storage="_tourDetailName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="TourDetailPriceAdult" Member="TourDetailPriceAdult" Storage="_tourDetailPriceAdult" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="TourDetailPriceChild" Member="TourDetailPriceChild" Storage="_tourDetailPriceChild" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsTVCategory" Member="MsTvCAteGory">
+    <Type Name="MsTvCAteGory">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="TVCategoryDesc" Member="TvcAtegoryDesc" Storage="_tvcAtegoryDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="TVCategoryID" Member="TvcAtegoryID" Storage="_tvcAtegoryID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TVCategoryName" Member="TvcAtegoryName" Storage="_tvcAtegoryName" Type="System.String" DbType="varchar(50)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsTVChannel" Member="MsTvCHanNeL">
+    <Type Name="MsTvCHanNeL">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="TVCategoryID" Member="TvcAtegoryID" Storage="_tvcAtegoryID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="TVChannelID" Member="TvcHannelID" Storage="_tvcHannelID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TVChannelName" Member="TvcHannelName" Storage="_tvcHannelName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="TVChannelNo" Member="TvcHannelNo" Storage="_tvcHannelNo" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="TVChannelURL" Member="TvcHannelUrl" Storage="_tvcHannelUrl" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsWeatherCountry" Member="MsWeatherCountry">
+    <Type Name="MsWeatherCountry">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="WeatherCountryDesc" Member="WeatherCountryDesc" Storage="_weatherCountryDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="WeatherCountryID" Member="WeatherCountryID" Storage="_weatherCountryID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WeatherCountryName" Member="WeatherCountryName" Storage="_weatherCountryName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="WeatherRegionalID" Member="WeatherRegionalID" Storage="_weatherRegionalID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsWeatherLocation" Member="MsWeatherLocation">
+    <Type Name="MsWeatherLocation">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="RssURL" Member="RssUrl" Storage="_rssUrl" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="WeatherCountryID" Member="WeatherCountryID" Storage="_weatherCountryID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="WeatherLoationDesc" Member="WeatherLoationDesc" Storage="_weatherLoationDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="WeatherLocationDate" Member="WeatherLocationDate" Storage="_weatherLocationDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="WeatherLocationID" Member="WeatherLocationID" Storage="_weatherLocationID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WeatherLocationName" Member="WeatherLocationName" Storage="_weatherLocationName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.MsWeatherRegion" Member="MsWeatherRegion">
+    <Type Name="MsWeatherRegion">
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ImageFile" Member="ImageFile" Storage="_imageFile" Type="System.String" DbType="varchar(150)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="WeatherRegionDesc" Member="WeatherRegionDesc" Storage="_weatherRegionDesc" Type="System.String" DbType="text" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="WeatherRegionID" Member="WeatherRegionID" Storage="_weatherRegionID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WeatherRegionName" Member="WeatherRegionName" Storage="_weatherRegionName" Type="System.String" DbType="varchar(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.TrBillingRoom" Member="TRBillingRoom">
+    <Type Name="TRBillingRoom">
+      <Column Name="BillRoomID" Member="BillRoomID" Storage="_billRoomID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CreatedBy" Member="CreatedBy" Storage="_createdBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="CreatedDate" Member="CreatedDate" Storage="_createdDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedBy" Member="ModifiedBy" Storage="_modifiedBy" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ModifiedDate" Member="ModifiedDate" Storage="_modifiedDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RoomID" Member="RoomID" Storage="_roomID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="RoomNo" Member="RoomNo" Storage="_roomNo" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RoomTerminalIP" Member="RoomTerminalIp" Storage="_roomTerminalIp" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RoomTvType" Member="RoomTvType" Storage="_roomTvType" Type="System.SByte" DbType="tinyint(4)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RoomType" Member="RoomType" Storage="_roomType" Type="System.SByte" DbType="tinyint(4)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="RowStatus" Member="RowStatus" Storage="_rowStatus" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Timestamp" Member="Timestamp" Storage="_timestamp" Type="System.DateTime" DbType="timestamp" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.USR_MsRoles" Member="UsRMSRoles">
+    <Type Name="UsRMSRoles">
+      <Column Name="LoweredRoleName" Member="LoweredRoleName" Storage="_loweredRoleName" Type="System.String" DbType="varchar(200)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="RoleName" Member="RoleName" Storage="_roleName" Type="System.String" DbType="varchar(200)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="SystemRole" Member="SystemRole" Storage="_systemRole" Type="System.Boolean" DbType="bit(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="USR_MsRolesID" Member="UsrmSRolesID" Storage="_usrmSrOlesID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.USRMsUsers" Member="UsRMSUsers">
+    <Type Name="UsRMSUsers">
+      <Column Name="CreateDate" Member="CreateDate" Storage="_createDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Email" Member="Email" Storage="_email" Type="System.String" DbType="varchar(200)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="FailedPasswordAnswerCount" Member="FailedPasswordAnswerCount" Storage="_failedPasswordAnswerCount" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="FailedPasswordAttemptCount" Member="FailedPasswordAttemptCount" Storage="_failedPasswordAttemptCount" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="IsApproved" Member="IsApproved" Storage="_isApproved" Type="System.Boolean" DbType="bit(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="IsLockedOut" Member="IsLockedOut" Storage="_isLockedOut" Type="System.Boolean" DbType="bit(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="LastLockedOutDate" Member="LastLockedOutDate" Storage="_lastLockedOutDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="LastLoginDate" Member="LastLoginDate" Storage="_lastLoginDate" Type="System.DateTime" DbType="datetime" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="LoweredEmail" Member="LoweredEmail" Storage="_loweredEmail" Type="System.String" DbType="varchar(200)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="LoweredUserName" Member="LoweredUserName" Storage="_loweredUserName" Type="System.String" DbType="varchar(200)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Password" Member="Password" Storage="_password" Type="System.String" DbType="varchar(200)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="UserName" Member="UserName" Storage="_userName" Type="System.String" DbType="varchar(200)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="USR_MsUsersID" Member="UsrmSUsersID" Storage="_usrmSuSersID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="ITVDB.USR_UsersInRoles" Member="UsRuSERSInRoles">
+    <Type Name="UsRuSERSInRoles">
+      <Column Name="USR_MsRolesID" Member="UsrmSRolesID" Storage="_usrmSrOlesID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="USR_MsUsersID" Member="UsrmSUsersID" Storage="_usrmSuSersID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="USR_UsersInRolesID" Member="UsruSersInRolesID" Storage="_usruSersInRolesID" Type="System.Int64" DbType="bigint(20)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

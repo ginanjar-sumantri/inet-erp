@@ -1,0 +1,3061 @@
+/*By ALif*/
+/*POS Retail Page*/
+
+#bodyPosRetail
+{
+	background: url(image/bg_login.jpg) no-repeat center 0px #F7931E;
+	font-family: Arial;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 768px;
+	outline: none;
+	overflow: hidden;
+}
+#bodyPosRetail .container
+{
+	position: relative;
+	width: 1024px;
+	height: 768px;
+	margin: 0px auto;
+}
+#bodyPosRetail .container .header
+{
+	height: 25px;
+	background: #000;
+	border: solid #000 1px;
+	margin-bottom: 5px;
+}
+#bodyPosRetail .container .header .left
+{
+	float: left;
+}
+#bodyPosRetail .container .header .left .title .text
+{
+	font-family: "Myriad Pro";
+	text-transform: uppercase;
+	color: #000;
+	background: url(image/bg_title_internet.jpg) repeat-x;
+	height: 23px;
+	float: left;
+	font-weight: bold;
+	padding: 0 10px;
+	font-size: 12pt;
+	padding-top: 2px;
+}
+#bodyPosRetail .container .header .left .title .sep
+{
+	background: url(image/bg_title_internet2.png) repeat-x;
+	height: 25px;
+	width: 13px;
+	float: left;
+}
+#bodyPosRetail .container .header .right
+{
+	float: right;
+	height: 25px;
+}
+#bodyPosRetail .container .header .right .date #tanggal
+{
+	font-family: Arial;
+	text-transform: uppercase;
+	color: #FFF;
+	height: 23px;
+	float: left;
+	font-size: 12pt;
+	margin-right: 25px;
+	padding-top: 2px;
+}
+#bodyPosRetail .container .header .right .date #jam
+{
+	float: left;
+	color: #FFFF00;
+	font-family: Arial;
+	font-weight: bold;
+	width: 65px;
+	padding-top: 2px;
+	height: 23px;
+	font-size: 13pt;
+	margin-right: 10px;
+}
+#bodyPosRetail .containerBox
+{
+	padding: 7px;
+}
+
+#bodyPosRetail .containerBox .totalItemBox
+{
+	background: #f6891f;
+	margin: 3px;
+	width: 10.5%;
+	height: 88px;
+	float: left;
+	font-weight: bold;
+	font-size: 15px;
+}
+#bodyPosRetail .containerBox .transactionRefBox
+{
+	background: #f6891f;
+	margin: 3px;
+	width: 26%;
+	height: 88px;
+	float: left;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 13px;
+}
+#bodyPosRetail .containerBox .customerBox
+{
+	background: #f6891f;
+	margin: 3px;
+	width: 36%;
+	height: 88px;
+	float: left;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 13px;
+}
+#bodyPosRetail .containerBox .totalBox
+{
+	background: #f6891f;
+	margin: 3px;
+	width: 23%;
+	height: 88px;
+	float: left;
+}
+.productListBox
+{
+	background-color: #4D4D4D;
+	color: White;
+	font-weight: bold;
+	font-size: 12px;
+}
+.productListBox th
+{
+	border: solid #4D4D4D 1px;
+	background: #000000;
+}
+
+/* Dari sini Mulai nya................ By Handy*/
+
+#NewMemberButton
+{
+	background: url(image/btn_New.png) center no-repeat;
+	width: 75px;
+	height: 82px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+#bodyPosRetail .container .productImageBox
+{
+	background: #f6891f;
+}
+
+#bodyPosRetail .container .SendtoCashier
+{
+	background: #f6891f;
+}
+
+#bodyPosRetail .container .containerBox .transactionRefBox #TransNmbrTextBox
+{
+	background: none;
+	border: none;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+#bodyPosRetail .container .productImageBox #ProductCodeTextBox
+{
+	background: none;
+	border: none;
+}
+
+#BackButton
+{
+	background: url(image/btn_back2.png)center no-repeat;
+	width: 59px;
+	height: 59px;
+	font-size: smaller;
+	margin-right: 1px;
+}
+
+#SearchButton
+{
+	background: url(image/btn_search2.png)center no-repeat;
+	width: 59px;
+	height: 59px;
+	font-size: smaller;
+	margin-right: 1px;
+}
+
+#HoldButton
+{
+	background: url(image/btn_hold.png)center no-repeat;
+	width: 56px;
+	height: 59px;
+	font-size: smaller;
+	margin-right: 1px;
+}
+
+#OpenHoldButton
+{
+	background: url(image/btn_openHold.png)center no-repeat;
+	width: 55px;
+	height: 57px;
+	font-size: smaller;
+	margin-right: 1px;
+}
+
+#CheckStatusButton
+{
+	background: url(image/btn_check_Status.png)center no-repeat;
+	width: 55px;
+	height: 56px;
+	font-size: smaller;
+}
+
+#CancelAllButton
+{
+	background: url(image/btn_cancelAll.png)center no-repeat;
+	width: 60px;
+	height: 60px;
+	font-size: smaller;
+	margin-right: 1px;
+}
+
+#JoinJobOrderButton
+{
+	background: url(image/btn_join_job_order.png)center no-repeat;
+	width: 60px;
+	height: 60px;
+	font-size: smaller;
+	margin-right: 1px;
+}
+
+#SendToCashierButton
+{
+	background: url(image/btn_Send_to_cashier.png)center no-repeat;
+	width: 290px;
+	height: 47px;
+	font-size: smaller;
+	margin-bottom: 3px;
+}
+
+.Button1
+{
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#bodyPosRetail .container .panelInputNumber .number input
+{
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	width: 60px;
+	height: 60px;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	float: left;
+	padding: 0;
+	margin: 1px;
+}
+
+#bodyPosRetail .container .panelInputNumber #nmbr1 input
+{
+	background: url(image/btn_nmbr_1.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr2 input
+{
+	background: url(image/btn_nmbr_2.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr3 input
+{
+	background: url(image/btn_nmbr_3.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr4 input
+{
+	background: url(image/btn_nmbr_4.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr5 input
+{
+	background: url(image/btn_nmbr_5.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr6 input
+{
+	background: url(image/btn_nmbr_6.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr7 input
+{
+	background: url(image/btn_nmbr_7.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr8 input
+{
+	background: url(image/btn_nmbr_8.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr9 input
+{
+	background: url(image/btn_nmbr_9.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbrdot input
+{
+	background: url(image/btn_nmbr_dot.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr0 input
+{
+	background: url(image/btn_nmbr_0.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr00 input
+{
+	background: url(image/btn_nmbr_00.png) center no-repeat;
+}
+
+/*By Surya*/
+#bodyPosRetail .container .subTotalBox
+{
+	color: #FFFFFF;
+	font-family: Arial;
+	text-transform: uppercase;
+	background: #1A1A1A;
+	font-size: 14px;
+	height: 182px;
+	padding: 0;
+	border: solid 1px #333333;
+}
+#bodyPosRetail .container .subTotalBox .label
+{
+	float: left;
+	width: 250px;
+	padding: 5px;
+	border-right: solid 1px #333333;
+}
+#bodyPosRetail .container .subTotalBox .value
+{
+	float: left;
+	width: 150px;
+	padding: 5px;
+	text-align: right;
+	color: #FFFF00;
+}
+#bodyPosRetail .container .subTotalBox .clear
+{
+	clear: both;
+}
+#bodyPosRetail .container .subTotalBox .discount, #bodyPosRetail .container .subTotalBox .subtotal, #bodyPosRetail .container .subTotalBox .service-charge, #bodyPosRetail .container .subTotalBox .tax, #bodyPosRetail .container .subTotalBox .total
+{
+	height: 26px;
+}
+#bodyPosRetail .container .subTotalBox .subtotal, #bodyPosRetail .container .subTotalBox .tax
+{
+	border-bottom: solid 1px #333333;
+}
+#bodyPosRetail .container .subTotalBox .total .label, #bodyPosRetail .container .subTotalBox .total .value
+{
+	padding: 30px 5px;
+	height: 17px;
+}
+#bodyPosRetail .container .productListBox .EditButton
+{
+	width: 15px;
+	height: 15px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_edit.jpg) center no-repeat;
+	margin: 0 auto;
+}
+#bodyPosRetail .container .productListBox .CancelButton
+{
+	width: 16px;
+	height: 16px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_cancel.jpg) center no-repeat;
+	margin: 0 auto;
+}
+/*byalif*/
+/*OpenHold*/
+
+#bodyPosOpenHold
+{
+	background: url(image/bg_login.jpg) no-repeat center 0px #F7931E;
+	font-family: Arial;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 768px;
+	outline: none;
+	overflow: hidden;
+}
+#bodyPosOpenHold .container
+{
+	position: relative;
+	width: 1024px;
+	height: 768px;
+	margin: 0px auto;
+}
+#bodyPosOpenHold .container .header
+{
+	height: 25px;
+	background: #000;
+	border: solid #000 1px;
+	margin-bottom: 5px;
+}
+#bodyPosOpenHold .container .header .left
+{
+	float: left;
+}
+#bodyPosOpenHold .container .header .left .title .text
+{
+	font-family: "Myriad Pro";
+	text-transform: uppercase;
+	color: #000;
+	background: url(image/bg_title_internet.jpg) repeat-x;
+	height: 23px;
+	float: left;
+	font-weight: bold;
+	padding: 0 10px;
+	font-size: 12pt;
+	padding-top: 2px;
+}
+#bodyPosOpenHold .container .header .left .title .sep
+{
+	background: url(image/bg_title_internet2.png) repeat-x;
+	height: 25px;
+	width: 13px;
+	float: left;
+}
+#bodyPosOpenHold .container .header .right
+{
+	float: right;
+	height: 25px;
+}
+#bodyPosOpenHold .container .header .right .date #tanggal
+{
+	font-family: Arial;
+	text-transform: uppercase;
+	color: #FFF;
+	height: 23px;
+	float: left;
+	font-size: 12pt;
+	margin-right: 25px;
+	padding-top: 2px;
+}
+#bodyPosOpenHold .container .header .right .date #jam
+{
+	float: left;
+	color: #FFFF00;
+	font-family: Arial;
+	font-weight: bold;
+	width: 65px;
+	padding-top: 2px;
+	height: 23px;
+	font-size: 13pt;
+	margin-right: 10px;
+}
+#bodyPosOpenHold .containerBox
+{
+	padding: 7px;
+}
+
+#bodyPosOpenHold .containerBox .totalItemBox
+{
+	background: #f6891f;
+	margin: 3px;
+	width: 20%;
+	height: 73px;
+	float: left;
+	font-weight: bold;
+	font-size: 30px;
+	padding-top: 40px;
+	padding-left: 15px;
+}
+#bodyPosOpenHold .containerBox .transactionRefBox
+{
+	background: #f6891f;
+	margin: 3px;
+	width: 75.3%;
+	height: 113px;
+	float: left;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 16px;
+	padding-left: 15px;
+}
+#bodyPosOpenHold .containerBox .customerBox
+{
+	background: #f6891f;
+	margin: 3px;
+	width: 36%;
+	height: 88px;
+	float: left;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 13px;
+}
+#bodyPosOpenHold .containerBox .totalBox
+{
+	background: #f6891f;
+	margin: 3px;
+	width: 23%;
+	height: 88px;
+	float: left;
+}
+#bodyPosOpenHold .transactionRefBox #SearchButton
+{
+	width: 130px;
+	height: 75px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_search_130x75.png) center no-repeat;
+	margin: 0 auto;
+}
+#bodyPosOpenHold .transactionRefBox #CloseButton
+{
+	width: 130px;
+	height: 75px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_back_130x75.png) center no-repeat;
+	margin: 0 auto;
+}
+
+#bodyPosOpenHold .transactionRefBox #ResetButton
+{
+	width: 130px;
+	height: 75px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_reset_130x75.png) center no-repeat;
+	margin: 0 auto;
+}
+#bodyPosOpenHold .productListBox2
+{
+	background-color: #1a1a1a;
+	color: White;
+	font-weight: bold;
+	font-size: 12px;
+	height: 595px;
+	width: 960px;
+	float: left;
+}
+#bodyPosOpenHold .productListBox2 .table-header, #bodyPosOpenHold .productListBox2 .table-body
+{
+	font-family: Trebuchet MS;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+#bodyPosOpenHold .productListBox2 .table-header table, #bodyPosOpenHold .productListBox2 .table-body table
+{
+	width: 100%;
+}
+#bodyPosOpenHold .productListBox2 .table-body
+{
+	height: 566px;
+	overflow: hidden;
+}
+#bodyPosOpenHold .productListBox2 .number
+{
+	width: 3%;
+}
+#bodyPosOpenHold .productListBox2 .job-order
+{
+	width: 20%;
+}
+#bodyPosOpenHold .productListBox2 .reference-no
+{
+	width: 20%;
+}
+#bodyPosOpenHold .productListBox2 .customer-name
+{
+	width: 20%;
+}
+#bodyPosOpenHold .productListBox2 .datetime
+{
+	width: 12%;
+}
+#bodyPosOpenHold .productListBox2 .action
+{
+	width: 30%;
+}
+#bodyPosOpenHold .productListBox2 .table-body
+{
+	font-size: 16px;
+	font-weight: normal;
+}
+#bodyPosOpenHold .productListBox2 .table-body td
+{
+	padding-bottom: 5px;
+}
+#bodyPosOpenHold .productListBox2 .table-header
+{
+	text-align: center;
+}
+#bodyPosOpenHold .navigation
+{
+	float: left;
+	width: 35px;
+	margin-top: 200px;
+	margin-left: 5px;
+}
+#bodyPosOpenHold .navigation .up
+{
+	width: 35px;
+	height: 102px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_internet_up.png) center no-repeat;
+}
+#bodyPosOpenHold .navigation .down
+{
+	width: 35px;
+	height: 102px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_internet_down.png) center no-repeat;
+}
+#bodyPosOpenHold .bgproductListBox td
+{
+	background: url(image/bg_top_table_cashier.png) center no-repeat;
+	width: auto;
+}
+
+#bodyPosOpenHold .productListBox2 .CancelOrder
+{
+	width: 96px;
+	height: 45px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn-cancel-order-96x45.png) center no-repeat;
+	margin: 0 auto;
+	float: left;
+	margin-left: 21px;
+}
+#bodyPosOpenHold .productListBox2 .OpenHold
+{
+	width: 96px;
+	height: 45px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn-open-hold-96x45.png) center no-repeat;
+	margin: 0 auto;
+	float: left;
+}
+#bodyPosOpenHold .productListBox2 .clearClass
+{
+	clear: both;
+}
+#bodyPosOpenHold .containerBox .transactionRefBox #CustIDTextBox, #bodyPosOpenHold .containerBox .transactionRefBox #SearchFieldTextBox
+{
+	height: 22px;
+	font-size: 18px;
+}
+#bodyPosOpenHold .containerBox .transactionRefBox #SearchFieldDDL
+{
+	height: 28px;
+	font-size: 18px;
+}
+/*#bodyPosOpenHold .containerBox .transactionRefBox #CustIDTextBox, #bodyPosOpenHold .containerBox .transactionRefBox #SearchFieldDDL
+{
+	margin-bottom: 2px;
+}*/
+
+/* DESAIN KEYBOARD*/
+
+#panelKeyboard
+{
+	float: left;
+	position: fixed;
+	bottom: 1px;
+	width: 100%;
+	left: 0px;
+	background: url(image/bg_key_keyboard.png) repeat;
+	font-weight: bold;
+	font-size: 11px;
+	color: Gray;
+}
+#panelKeyboard .keyboard
+{
+	background-color: #cccccc;
+}
+
+#panelKeyboard .KeyboardDiv
+{
+	bottom: 0;
+	height: 300px;
+	padding-top: 8px;
+	text-align: center;
+	width: 1024px;
+	margin: auto;
+}
+#panelKeyboard .KeyboardDiv input
+{
+	width: 50px;
+	height: 50px;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1
+{
+	padding-left: 88px;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 .number input
+{
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	width: 59px;
+	height: 57px;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	float: left;
+	padding: 0;
+	margin: 1px;
+}
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr1 input
+{
+	background: url(image/btn_key_1.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr2 input
+{
+	background: url(image/btn_key_2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr3 input
+{
+	background: url(image/btn_key_3.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr4 input
+{
+	background: url(image/btn_key_4.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr5 input
+{
+	background: url(image/btn_key_5.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr6 input
+{
+	background: url(image/btn_key_6.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr7 input
+{
+	background: url(image/btn_key_7.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr8 input
+{
+	background: url(image/btn_key_8.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr9 input
+{
+	background: url(image/btn_key_9.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr0 input
+{
+	background: url(image/btn_key_0.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrMin input
+{
+	background: url(image/btn_key_min.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrEqual input
+{
+	background: url(image/btn_key_equal.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrBack input
+{
+	background: url(image/btn_key_back.png) center no-repeat;
+}
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2
+{
+	padding-left: 150px;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 .number input
+{
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	width: 59px;
+	height: 56px;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	float: left;
+	padding: 0;
+	margin: 1px;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrQ input
+{
+	background: url(image/btn_key_Q.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrW input
+{
+	background: url(image/btn_key_W.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrE input
+{
+	background: url(image/btn_key_E.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrR input
+{
+	background: url(image/btn_key_R.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrT input
+{
+	background: url(image/btn_key_T.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrY input
+{
+	background: url(image/btn_key_Y.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrU input
+{
+	background: url(image/btn_key_U.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrI input
+{
+	background: url(image/btn_key_I.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrO input
+{
+	background: url(image/btn_key_O.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrP input
+{
+	background: url(image/btn_key_P.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrOpenKurva input
+{
+	background: url(image/btn_open_kurva.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrCloseKurva input
+{
+	background: url(image/btn_close_kurva.png) center no-repeat;
+}
+
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrA input
+{
+	background: url(image/btn_key_A.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrS input
+{
+	background: url(image/btn_key_S.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrD input
+{
+	background: url(image/btn_key_D.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrF input
+{
+	background: url(image/btn_key_F.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrG input
+{
+	background: url(image/btn_key_G.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrH input
+{
+	background: url(image/btn_key_H.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrJ input
+{
+	background: url(image/btn_key_J.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrK input
+{
+	background: url(image/btn_key_K.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrL input
+{
+	background: url(image/btn_key_L.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrTitikKoma input
+{
+	background: url(image/btn_key_titik_koma.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrPetik input
+{
+	background: url(image/btn_key_petik.png) center no-repeat;
+}
+
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrZ input
+{
+	background: url(image/btn_key_Z.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrX input
+{
+	background: url(image/btn_key_X.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrC input
+{
+	background: url(image/btn_key_C.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrV input
+{
+	background: url(image/btn_key_V.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrB input
+{
+	background: url(image/btn_key_B.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrN input
+{
+	background: url(image/btn_key_N.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrM input
+{
+	background: url(image/btn_key_M.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrKoma input
+{
+	background: url(image/btn_key_koma.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrTitik input
+{
+	background: url(image/btn_key_titik.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrSlash input
+{
+	background: url(image/btn_key_slash.png) center no-repeat;
+}
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrSift input
+{
+	background: url(image/btn_key_sift.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrSpace input
+{
+	background: url(image/btn_key_space.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrEnter input
+{
+	background: url(image/btn_key_enter.png) center no-repeat;
+}
+
+
+
+/* KEYBOARD SIFT */
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrSeru input
+{
+	background: url(image/btn_key_seru.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrAdd input
+{
+	background: url(image/btn_key_@.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrSharp input
+{
+	background: url(image/btn_key_sharp.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrDolar input
+{
+	background: url(image/btn_key_dolar.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrPersen input
+{
+	background: url(image/btn_key_persen.png) center no-repeat;
+}
+
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrPangkat input
+{
+	background: url(image/btn_key_pangkat.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrAnd input
+{
+	background: url(image/btn_key_and.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrBintang input
+{
+	background: url(image/btn_key_bintang.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrBukaKurung input
+{
+	background: url(image/btn_key_Buka_kurung.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrTutupKurung input
+{
+	background: url(image/btn_key_tutup_kurung.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrUnderCross input
+{
+	background: url(image/btn_key_under_cross.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrPlus input
+{
+	background: url(image/btn_key_plus.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrBack2 input
+{
+	background: url(image/btn_key_back.png) center no-repeat;
+}
+
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrQ2 input
+{
+	background: url(image/btn_key_Q2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrW2 input
+{
+	background: url(image/btn_key_W2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrE2 input
+{
+	background: url(image/btn_key_E2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrR2 input
+{
+	background: url(image/btn_key_R2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrT2 input
+{
+	background: url(image/btn_key_T2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrY2 input
+{
+	background: url(image/btn_key_Y2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrU2 input
+{
+	background: url(image/btn_key_U2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrI2 input
+{
+	background: url(image/btn_key_I2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrO2 input
+{
+	background: url(image/btn_key_O2.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrP2 input
+{
+	background: url(image/btn_key_P2.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrKurvaOpen2 input
+{
+	background: url(image/btn_open_kurva2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrKurvaClose2 input
+{
+	background: url(image/btn_close_kurva2.png) center no-repeat;
+}
+
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrA2 input
+{
+	background: url(image/btn_key_A2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrS2 input
+{
+	background: url(image/btn_key_S2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrD2 input
+{
+	background: url(image/btn_key_D2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrF2 input
+{
+	background: url(image/btn_key_F2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrG2 input
+{
+	background: url(image/btn_key_G2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrH2 input
+{
+	background: url(image/btn_key_H2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrJ2 input
+{
+	background: url(image/btn_key_J2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrK2 input
+{
+	background: url(image/btn_key_K2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrL2 input
+{
+	background: url(image/btn_key_L2.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrTitikDua input
+{
+	background: url(image/btn_key_titik_dua.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrBackSlash input
+{
+	background: url(image/btn_key_back_slash.png) center no-repeat;
+}
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrZ2 input
+{
+	background: url(image/btn_key_z2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrX2 input
+{
+	background: url(image/btn_key_x2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrC2 input
+{
+	background: url(image/btn_key_c2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrV2 input
+{
+	background: url(image/btn_key_v2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrB2 input
+{
+	background: url(image/btn_key_b2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrN2 input
+{
+	background: url(image/btn_key_n2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrM2 input
+{
+	background: url(image/btn_key_m2.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrLebihBesar input
+{
+	background: url(image/btn_key_lebih_besar.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrLebihKecil input
+{
+	background: url(image/btn_key_lebih_kecil.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrTanya input
+{
+	background: url(image/btn_key_tanya.png) center no-repeat;
+}
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrSift input
+{
+	background: url(image/btn_key_sift.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrSpace input
+{
+	background: url(image/btn_key_space.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrEnter input
+{
+	background: url(image/btn_key_enter.png) center no-repeat;
+}
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrSift2 input
+{
+	background: url(image/btn_key_sift.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrSpace2 input
+{
+	background: url(image/btn_key_space.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrEnter2 input
+{
+	background: url(image/btn_key_enter.png) center no-repeat;
+}
+.dragger
+{
+	cursor: move;
+}
+
+
+/*By Alif */
+/*Delivery Order*/
+
+#bodyDeliveryOrder
+{
+	background: url(image/bg_login.jpg) no-repeat center 0px #F7931E;
+	font-family: Arial;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 768px;
+	outline: none;
+	overflow: hidden;
+}
+#bodyDeliveryOrder .container
+{
+	position: relative;
+	width: 1024px;
+	height: 768px;
+	margin: 0px auto;
+}
+#bodyDeliveryOrder .container .header
+{
+	height: 25px;
+	background: #000;
+	border: solid #000 1px;
+	margin-bottom: 5px;
+}
+#bodyDeliveryOrder .container .header .left
+{
+	float: left;
+}
+#bodyDeliveryOrder .container .header .left .title .text
+{
+	font-family: "Arial";
+	text-transform: uppercase;
+	color: #000;
+	background: url(image/bg_title_internet.jpg) repeat-x;
+	height: 23px;
+	float: left;
+	font-weight: bold;
+	padding: 0 10px;
+	font-size: 12pt;
+	padding-top: 2px;
+}
+#bodyDeliveryOrder .container .header .left .title .sep
+{
+	background: url(image/bg_title_internet2.png) repeat-x;
+	height: 25px;
+	width: 13px;
+	float: left;
+}
+#bodyDeliveryOrder .container .header .right
+{
+	float: right;
+	height: 25px;
+}
+#bodyDeliveryOrder .container .header .right .date #tanggal
+{
+	font-family: Arial;
+	text-transform: uppercase;
+	color: #FFF;
+	height: 23px;
+	float: left;
+	font-size: 12pt;
+	margin-right: 25px;
+	padding-top: 2px;
+}
+#bodyDeliveryOrder .container .header .right .date #jam
+{
+	float: left;
+	color: #FFFF00;
+	font-family: Arial;
+	font-weight: bold;
+	width: 65px;
+	padding-top: 2px;
+	height: 23px;
+	font-size: 13pt;
+	margin-right: 10px;
+}
+
+#bodyDeliveryOrder .container .ContentForm
+{
+	background-color: #1a1a1a;
+	float: left;
+	width: 986px;
+	padding: 10px;
+	margin: 9px;
+	height: 418px;
+	color: White;
+	font-size: 15;
+	border: 1px solid #4D4D4D; /*font-weight:bold;*/
+}
+#bodyDeliveryOrder .container .warning
+{
+	font-size: 15px;
+	color: Red;
+	margin-left: 9px;
+}
+#bodyDeliveryOrder .container .ContentForm .SizeRB
+{
+	font-size: 14px;
+}
+#bodyDeliveryOrder .container .ContentForm .widthDDL
+{
+	width: 255px;
+}
+
+#bodyDeliveryOrder .container .ContentForm .formRegister1
+{
+	float: left;
+	padding: 5px;
+}
+#bodyDeliveryOrder .container .ContentForm .formRegister1 .table1 td
+{
+	padding: 2.5px;
+}
+#bodyDeliveryOrder .container .ContentForm .widthText
+{
+	width: 250px;
+}
+#bodyDeliveryOrder .container .ContentForm .formRegister2
+{
+	margin-left: 36px;
+	float: left;
+}
+#bodyDeliveryOrder .container .ContentForm .formRegister2 .table2 td
+{
+	padding: 2.5px 2.5px 2.5px 9px;
+}
+
+#bodyDeliveryOrder .container .ContentForm .formRegister2 #SaveButton
+{
+	width: 102px;
+	height: 100px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_save_DO.png) center no-repeat;
+	margin: 0 auto;
+}
+
+
+#bodyDeliveryOrder .container .ContentForm .formRegister2 #ResetButton
+{
+	width: 102px;
+	height: 100px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_reset_DO.png) center no-repeat;
+	margin: 0 auto;
+}
+#bodyDeliveryOrder .container .ContentForm .formRegister2 #BackButton
+{
+	width: 100px;
+	height: 100px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_back_DO.png) center no-repeat;
+	margin: 0 auto;
+}
+#bodyDeliveryOrder .container .ContentForm .formRegister2 #SearchButton
+{
+	width: 87px;
+	height: 100px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_search_DO.png) center no-repeat;
+	margin: 0 auto;
+}
+#bodyDeliveryOrder .container .divisi
+{
+	padding-left: 25px;
+	clear: both;
+}
+#bodyDeliveryOrder .container .divisi .LabelDivisi
+{
+	color: #FFFF00;
+	font-family: Arial Black;
+	font-size: 13pt;
+	padding-left: 6px;
+}
+#bodyDeliveryOrder .container .divisi #Printing
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_printing_DO.png) center no-repeat;
+	margin: 3px;
+}
+#bodyDeliveryOrder .container .divisi #Stationary
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_stationary_DO.png) center no-repeat;
+	margin: 3px;
+}
+#bodyDeliveryOrder .container .divisi #GraphicDesain
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_grapich_DO.png) center no-repeat;
+	margin: 3px;
+}
+#bodyDeliveryOrder .container .divisi #Tiketing
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_tiketing_DO.png) center no-repeat;
+	margin: 3px;
+}
+#bodyDeliveryOrder .container .divisi #Internet
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_internet_DO.png) center no-repeat;
+	margin: 3px;
+}
+#bodyDeliveryOrder .container .divisi #Cafe
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_cafe_DO.png) center no-repeat;
+	margin: 3px;
+}
+#bodyDeliveryOrder .container .divisi #Photocopy
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_photocopy_DO.png) center no-repeat;
+	margin: 3px;
+}
+#bodyDeliveryOrder .container .divisi #Shipping
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_shipping_DO.png) center no-repeat;
+	margin: 3px;
+	clear: both;
+}
+#bodyDeliveryOrder .container .divisi #EVoucher,
+#bodyDeliveryOrder .container .divisi #VoucherHotel
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_evoucher_DO.png) center no-repeat;
+	margin: 3px;
+}
+#bodyDeliveryOrder .container .divisi #VoucherHotel
+{
+	background: url(image/btn_hotel.png) center no-repeat;
+}
+
+
+
+/*ListDeliveryOrder*/
+/*by Alif*/
+
+#bodyListDeliveryOrder
+{
+	background: url(image/bg_login.jpg) no-repeat center 0px #F7931E;
+	font-family: Trebuchet MS;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 768px;
+	outline: none;
+	overflow: hidden;
+}
+#bodyListDeliveryOrder .container
+{
+	position: relative;
+	width: 1024px;
+	height: 768px;
+	margin: 0px auto;
+}
+#bodyListDeliveryOrder .container .header
+{
+	height: 25px;
+	background: #000;
+	border: solid #000 1px;
+	margin-bottom: 5px;
+}
+#bodyListDeliveryOrder .container .header .left
+{
+	float: left;
+}
+#bodyListDeliveryOrder .container .header .left .title .text
+{
+	font-family: "Myriad Pro";
+	text-transform: uppercase;
+	color: #000;
+	background: url(image/bg_title_internet.jpg) repeat-x;
+	height: 23px;
+	float: left;
+	font-weight: bold;
+	padding: 0 10px;
+	font-size: 12pt;
+	padding-top: 2px;
+}
+#bodyListDeliveryOrder .container .header .left .title .sep
+{
+	background: url(image/bg_title_internet2.png) repeat-x;
+	height: 25px;
+	width: 13px;
+	float: left;
+}
+#bodyListDeliveryOrder .container .header .right
+{
+	float: right;
+	height: 25px;
+}
+#bodyListDeliveryOrder .container .header .right .date #tanggal
+{
+	font-family: Arial;
+	text-transform: uppercase;
+	color: #FFF;
+	height: 23px;
+	float: left;
+	font-size: 12pt;
+	margin-right: 25px;
+	padding-top: 2px;
+}
+#bodyListDeliveryOrder .container .header .right .date #jam
+{
+	float: left;
+	color: #FFFF00;
+	font-family: Arial;
+	font-weight: bold;
+	width: 65px;
+	padding-top: 2px;
+	height: 23px;
+	font-size: 13pt;
+	margin-right: 10px;
+}
+#bodyListDeliveryOrder .containerBox
+{
+	padding: 7px;
+}
+
+#bodyListDeliveryOrder .containerBox .totalItemBox
+{
+	background: #f6891f;
+	margin: 3px;
+	width: 203px;
+	height: 95px;
+	float: left;
+	font-weight: bold;
+	font-size: 20pt;
+	padding-top: 14px;
+	text-align: center;
+	border-radius: 10px;
+	font-family: Arial Black;
+}
+#bodyListDeliveryOrder .containerBox .transactionRefBox
+{
+	background: #f6891f;
+	margin: 3px;
+	width: 78.3%;
+	height: 85px;
+	float: left;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 12px;
+	padding-left: 0px;
+	border-radius: 10px;
+	padding-top: 24px;
+}
+#bodyListDeliveryOrder .containerBox .transactionRefBox td
+{
+	vertical-align: middle;
+}
+#bodyListDeliveryOrder .containerBox .transactionRefBox .CustIDTextBox
+{
+	background: url( "image/bg_Ref_DO.png" ) no-repeat scroll center center transparent;
+	width: 219px;
+	padding-left: 6px;
+}
+#bodyListDeliveryOrder .containerBox .transactionRefBox .CustIDTextBox input
+{
+	border: medium none;
+	height: 23px;
+	width: 213px;
+	font-size: 16px;
+}
+
+#bodyListDeliveryOrder .containerBox .customerBox
+{
+	background: #f6891f;
+	margin: 3px;
+	width: 36%;
+	height: 88px;
+	float: left;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 13px;
+}
+#bodyListDeliveryOrder .containerBox .totalBox
+{
+	background: #f6891f;
+	margin: 3px;
+	width: 23%;
+	height: 88px;
+	float: left;
+}
+#bodyListDeliveryOrder .transactionRefBox #SearchButton
+{
+	width: 84px;
+	height: 53px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_search_listDO.png) center no-repeat;
+	margin: 0 auto;
+}
+#bodyListDeliveryOrder .transactionRefBox #BackButton
+{
+	width: 84px;
+	height: 53px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_back_listDO.png) center no-repeat;
+	margin: 0 auto;
+}
+
+#bodyListDeliveryOrder .transactionRefBox #ResetButton
+{
+	width: 84px;
+	height: 53px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_reset_listDO.png) center no-repeat;
+	margin: 0 auto;
+}
+#bodyListDeliveryOrder .transactionRefBox #CheckOrder
+{
+	width: 84px;
+	height: 53px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_checkorder_listDO.png) center no-repeat;
+	margin: 0 auto;
+}
+#bodyListDeliveryOrder .transactionRefBox #NewOrder
+{
+	width: 84px;
+	height: 53px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_neworder_listDO.png) center no-repeat;
+	margin: 0 auto;
+}
+#bodyListDeliveryOrder .productListBox
+{
+	background-color: #1a1a1a;
+	color: White;
+	font-weight: bold;
+	font-size: 18px;
+	border: 1px solid #4D4D4D;
+}
+#bodyListDeliveryOrder .productListBoxRepeater
+{
+	background-color: #1a1a1a;
+	color: White;
+	font-size: 14px;
+	height: 490px;
+	overflow: hidden;
+	border: 1px solid #4D4D4D;
+}
+#bodyListDeliveryOrder .productDetailListBox, #bodyListDeliveryOrder .table-container-scroll2
+{
+	background-color: #1a1a1a;
+	color: White;
+	font-size: 14px;
+	width: 318px;
+	text-align: center;
+}
+#bodyListDeliveryOrder .productDetailListBox .table-header
+{
+	font-weight: bold;
+	font-size: 18px;
+}
+#bodyListDeliveryOrder .reasonList, #bodyListDeliveryOrder .table-container-scroll3
+{
+	background-color: #1a1a1a;
+	color: #ffff00;
+	font-size: 14px;
+	width: 321px;
+	border: 1px solid #4D4D4D;
+}
+#bodyListDeliveryOrder .bgproductListBox
+{
+	font-weight: bold;
+	font-size: 16px;
+}
+#bodyListDeliveryOrder .bgproductListBox td
+{
+	background: url(image/bg_top_table_cashier.png) center no-repeat;
+	width: auto;
+}
+#bodyListDeliveryOrder .productListBoxLeft
+{
+	width: 620px;
+	float: left;
+}
+#bodyListDeliveryOrder .productListBoxRight
+{
+	float: left;
+}
+#bodyListDeliveryOrder .productListBoxRight .up, #DetailListPanel .table-navigation-scroll2 .up, #ReasonListPanel .table-navigation-scroll3 .up
+{
+	width: 35px;
+	height: 102px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_internet_up.png) center no-repeat;
+	margin-top: 110px;
+}
+#bodyListDeliveryOrder .productListBoxRight .down, #DetailListPanel .table-navigation-scroll2 .down, #ReasonListPanel .table-navigation-scroll3 .down
+{
+	width: 35px;
+	height: 102px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_internet_down.png) center no-repeat;
+}
+#DetailListPanel .productDetailListBox, #DetailListPanel .table-container-scroll2, #ReasonListPanel .reasonList, #ReasonListPanel .table-container-scroll3
+{
+	float: left;
+	width: 321 px;
+}
+#DetailListPanel .table-container-scroll2, #ReasonListPanel .table-container-scroll3
+{
+	height: 325px;
+	overflow: hidden;
+}
+#DetailListPanel .table-navigation-scroll2, #ReasonListPanel .table-navigation-scroll3
+{
+	float: left;
+	width: 35px;
+	margin-top: 33px;
+}
+#bodyListDeliveryOrder .productListBoxClear
+{
+	clear: both;
+}
+#bodyListDeliveryOrder .productListBox
+{
+	width: 620px;
+}
+#bodyListDeliveryOrder .productListBoxRepeater
+{
+	width: 620px;
+	height: 325px;
+}
+#bodyListDeliveryOrder .productListBoxRepeater td
+{
+	padding-bottom: 5px;
+}
+#bodyListDeliveryOrder .productListBox table, #bodyListDeliveryOrder .productListBoxRepeater table
+{
+	width: 100%;
+}
+#bodyListDeliveryOrder .productListBox .no, #bodyListDeliveryOrder .productListBoxRepeater .no
+{
+	width: 4%;
+	text-align: center;
+}
+#bodyListDeliveryOrder .productListBox .reference, #bodyListDeliveryOrder .productListBoxRepeater .reference
+{
+	width: 13%;
+	text-align: center;
+}
+#bodyListDeliveryOrder .productListBox .User, #bodyListDeliveryOrder .productListBoxRepeater .User
+{
+	width: 16%;
+	text-align: center;
+}
+#bodyListDeliveryOrder .productListBox .date, #bodyListDeliveryOrder .productListBoxRepeater .date
+{
+	width: 15%;
+	text-align: center;
+}
+#bodyListDeliveryOrder .productListBox .divisi, #bodyListDeliveryOrder .productListBoxRepeater .divisi
+{
+	width: 15%;
+	text-align: center;
+}
+
+#bodyListDeliveryOrder .productListBox .action, #bodyListDeliveryOrder .productListBoxRepeater .action
+{
+	width: 30%;
+	text-align: center;
+}
+#bodyListDeliveryOrder .container .productListBoxRepeater .CancelPaidButton
+{
+	width: 90px;
+	height: 45px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_cancel_DO.png) center no-repeat;
+	float: left;
+}
+#bodyListDeliveryOrder .container .productListBoxRepeater .PickButton
+{
+	width: 66px;
+	height: 45px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_pick_DO.png) center no-repeat;
+	float: left;
+}
+#bodyListDeliveryOrder .container .productListBoxRepeater .JoinJobOrderButton
+{
+	width: 66px;
+	height: 45px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn-join-66x45.png) center no-repeat;
+	float: left;
+}
+#bodyListDeliveryOrder .container .productListBoxRepeater .clearClass
+{
+	clear: both;
+}
+#bodyListDeliveryOrder .reasonList, #bodyListDeliveryOrder .table-container-scroll3 .pickReasonButton
+{
+	width: 48px;
+	height: 48px;
+	cursor: pointer;
+	display: block;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	background: url(image/btn_check.png) center no-repeat;
+	margin: 1 auto;
+}
+#bodyListDeliveryOrder .containerBox .transactionRefBox #CustIDTextBox, #bodyListDeliveryOrder .containerBox .transactionRefBox #SearchFieldTextBox
+{
+	height: 22px;
+	font-size: 18px;
+}
+#bodyListDeliveryOrder .containerBox .transactionRefBox #SearchFieldDDL
+{
+	height: 28px;
+	font-size: 18px;
+}
+#bodyListDeliveryOrder .containerBox .transactionRefBox #CustIDTextBox, #bodyListDeliveryOrder .containerBox .transactionRefBox #SearchFieldDDL
+{
+	margin-bottom: 2px;
+}
+
+#bodyListDeliveryOrder .container .divisi
+{
+	padding-left: 25px;
+	clear: both;
+}
+#bodyListDeliveryOrder .container .divisi .LabelDivisi
+{
+	color: #FFFF00;
+	font-family: Arial Black;
+	font-size: 13pt;
+	padding-left: 6px;
+}
+#bodyListDeliveryOrder .container .divisi #Printing
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_printing_DO.png) center no-repeat;
+	margin: 3px;
+}
+
+#bodyListDeliveryOrder .container #PasswordPanel #OKButton
+{
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	width: 60px;
+	height: 32px;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	float: left;
+	padding: 0;
+	background: url(image/btn_ok_password.png) center no-repeat;
+	background-size:67px;
+
+}
+#bodyListDeliveryOrder .container #PasswordPanel #CancellButton
+{
+background: url("image/btn_cancel_DO.png") no-repeat scroll center center transparent;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 0;
+    height: 30px;
+    line-height: 0;
+    outline: medium none;
+    padding: 0;
+    text-indent: -999px;
+    width: 67px;
+}
+
+
+#bodyListDeliveryOrder .container .divisi #Stationary
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_stationary_DO.png) center no-repeat;
+	margin: 3px;
+}
+#bodyListDeliveryOrder .container .divisi #GraphicDesain
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_grapich_DO.png) center no-repeat;
+	margin: 3px;
+}
+#bodyListDeliveryOrder .container .divisi #Tiketing
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_tiketing_DO.png) center no-repeat;
+	margin: 3px;
+}
+#bodyListDeliveryOrder .container .divisi #Internet
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_internet_DO.png) center no-repeat;
+	margin: 3px;
+}
+#bodyListDeliveryOrder .container .divisi #Cafe
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_cafe_DO.png) center no-repeat;
+	margin: 3px;
+}
+#bodyListDeliveryOrder .container .divisi #Photocopy
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_photocopy_DO.png) center no-repeat;
+	margin: 3px;
+}
+#bodyListDeliveryOrder .container .divisi #Shipping
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_shipping_DO.png) center no-repeat;
+	margin: 3px;
+	clear: both;
+}
+#bodyListDeliveryOrder .container .divisi #EVoucher,
+#bodyListDeliveryOrder .container .divisi #VoucherHotel
+{
+	float: left;
+	width: 120px;
+	height: 105px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0 0 0 14px;
+	background: url(image/btn_evoucher_DO.png) center no-repeat;
+	margin: 3px;
+}
+#bodyListDeliveryOrder .container .divisi #VoucherHotel
+{
+	background: url(image/btn_hotel.png) center no-repeat;
+}
+
+/*CheckOrder*/
+/*By Alif*/
+
+
+#bodyCheckOrder
+{
+	background: url(image/bg_login.jpg) no-repeat center 0px #F7931E;
+	font-family: Trebuchet MS;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 768px;
+	outline: none;
+	overflow: hidden;
+}
+#bodyCheckOrder .container
+{
+	position: relative;
+	width: 1024px;
+	height: 768px;
+	margin: 0px auto;
+}
+#bodyCheckOrder .container #PasswordPanel #OKButton
+{
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	width: 60px;
+	height: 32px;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	float: left;
+	padding: 0;
+	background: url(image/btn_ok_password.png) center no-repeat;
+	background-size:67px;
+}
+#bodyCheckOrder .container #PasswordPanel #CancellButton
+{
+	background: url("image/btn_cancel_DO.png") no-repeat scroll center center transparent;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 0;
+    height: 30px;
+    line-height: 0;
+    outline: medium none;
+    padding: 0;
+    text-indent: -999px;
+    width: 67px;
+}
+
+#bodyCheckOrder .container .header
+{
+	height: 25px;
+	background: #000;
+	border: solid #000 1px;
+	margin-bottom: 5px;
+}
+#bodyCheckOrder .container .header .left
+{
+	float: left;
+}
+#bodyCheckOrder .container .header .left .title .text
+{
+	font-family: "Myriad Pro";
+	text-transform: uppercase;
+	color: #000;
+	background: url(image/bg_title_internet.jpg) repeat-x;
+	height: 23px;
+	float: left;
+	font-weight: bold;
+	padding: 0 10px;
+	font-size: 12pt;
+	padding-top: 2px;
+}
+#bodyCheckOrder .container .header .left .title .sep
+{
+	background: url(image/bg_title_internet2.png) repeat-x;
+	height: 25px;
+	width: 13px;
+	float: left;
+}
+#bodyCheckOrder .container .header .right
+{
+	float: right;
+	height: 25px;
+}
+#bodyCheckOrder .container .header .right .date #tanggal
+{
+	font-family: Arial;
+	text-transform: uppercase;
+	color: #FFF;
+	height: 23px;
+	float: left;
+	font-size: 12pt;
+	margin-right: 25px;
+	padding-top: 2px;
+}
+#bodyCheckOrder .container .header .right .date #jam
+{
+	float: left;
+	color: #FFFF00;
+	font-family: Arial;
+	font-weight: bold;
+	width: 65px;
+	padding-top: 2px;
+	height: 23px;
+	font-size: 13pt;
+	margin-right: 10px;
+}
+#bodyCheckOrder .containerBox
+{
+	padding: 7px;
+}
+
+#bodyCheckOrder .containerBox .totalItemBox
+{
+	background: #f6891f;
+	margin: 3px;
+	width: 203px;
+	height: 95px;
+	float: left;
+	font-weight: bold;
+	font-size: 20pt;
+	padding-top: 14px;
+	text-align: center;
+	border-radius: 10px;
+	font-family: Arial Black;
+}
+#bodyCheckOrder .containerBox .transactionRefBox
+{
+	background: none repeat scroll 0 0 #F6891F;
+	border-radius: 10px 10px 10px 10px;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	height: 86px;
+	margin: 3px;
+	padding-left: 0;
+	padding-top: 24px;
+	width: 78.3%;
+}
+#bodyCheckOrder .containerBox .transactionRefBox td
+{
+	vertical-align: middle;
+}
+#bodyCheckOrder .containerBox .transactionRefBox .CustIDTextBox
+{
+	background: url( "image/bg_Ref_DO.png" ) no-repeat scroll center center transparent;
+	width: 219px;
+	padding-left: 6px;
+}
+#bodyCheckOrder .containerBox .transactionRefBox .CustIDTextBox input
+{
+	border: medium none;
+	height: 23px;
+	width: 213px;
+	font-size: 16px;
+}
+#bodyCheckOrder .containerBox .transactionRefBox .CustIDTextBox #StatusDDL
+{
+	border: medium none;
+	height: 23px;
+	width: 213px;
+	font-size: 16px;
+}
+#bodyCheckOrder .containerBox .customerBox
+{
+	background: #f6891f;
+	margin: 3px;
+	width: 36%;
+	height: 88px;
+	float: left;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 13px;
+}
+#bodyCheckOrder .containerBox .totalBox
+{
+	background: #f6891f;
+	margin: 3px;
+	width: 23%;
+	height: 88px;
+	float: left;
+}
+#bodyCheckOrder .transactionRefBox #SearchButton
+{
+	width: 84px;
+	height: 53px;
+	border: medium none;
+	cursor: pointer;
+	display: block !important;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_search_listDO.png) center no-repeat;
+	margin: 0 auto;
+}
+#bodyCheckOrder .transactionRefBox #BackButton
+{
+	width: 84px;
+	height: 53px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_back_listDO.png) center no-repeat;
+	margin: 0 auto;
+}
+
+#bodyCheckOrder .transactionRefBox #ResetButton
+{
+	width: 84px;
+	height: 53px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_reset_listDO.png) center no-repeat;
+	margin: 0 auto;
+}
+#bodyCheckOrder .transactionRefBox #AssignRider
+{
+	width: 84px;
+	height: 53px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_AssRider_CheckOrder.png) center no-repeat;
+	margin: 0 auto;
+}
+#bodyCheckOrder .transactionRefBox #NewOrder
+{
+	width: 84px;
+	height: 53px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_CloseRider_CheckOrder.png) center no-repeat;
+	margin: 0 auto;
+}
+#bodyCheckOrder .productListBox
+{
+	background-color: #1a1a1a;
+	color: White;
+	font-weight: bold;
+	font-size: 18px;
+	border: 1px solid #4D4D4D;
+}
+#bodyCheckOrder .productListBoxRepeater
+{
+	background-color: #1a1a1a;
+	color: White;
+	font-size: 14px;
+	height: 490px;
+	overflow: hidden;
+	border: 1px solid #4D4D4D;
+}
+#bodyCheckOrder .productDetailListBox
+{
+	background-color: #1a1a1a;
+	color: White;
+	font-size: 14px;
+	width: 318px;
+	text-align: center;
+	border: 1px solid #4D4D4D;
+	margin-left: 0px;
+}
+#bodyCheckOrder .table-container-scroll2
+{
+	background-color: #1a1a1a;
+	color: White;
+	font-size: 14px;
+	width: 500px;
+	text-align: center;
+	height: 214px;
+	border: 1px solid #4D4D4D;
+	margin-left: 0px;
+}
+#bodyCheckOrder .detailCustomerInfo
+{
+	background-color: #1a1a1a;
+	color: White;
+	font-size: 14px;
+	width: 314px;
+	text-align: center;
+	height: 307px;
+	border: 1px solid #4D4D4D;
+}
+#bodyCheckOrder .detailCustomerInfo .detailCustInfo
+{
+	font-weight: bold;
+	text-align: left;
+	margin: 5px 5px 0;
+}
+#bodyCheckOrder .detailCustomerInfo .detailCustInfo td
+{
+	padding-top: 7px;
+}
+#bodyCheckOrder .productDetailListBox .table-header
+{
+	font-weight: bold;
+	font-size: 18px;
+}
+#bodyCheckOrder .reasonList, #bodyCheckOrder .table-container-scroll3
+{
+	background-color: #1a1a1a;
+	color: #ffff00;
+	font-size: 14px;
+	width: 350px;
+}
+#bodyCheckOrder .bgproductListBox
+{
+	font-weight: bold;
+	font-size: 13px;
+}
+#bodyCheckOrder .bgproductListBox td
+{
+	background: url(image/bg_top_table_cashier.png) center no-repeat;
+	width: auto;
+}
+#bodyCheckOrder .productListBoxLeft
+{
+	width: 620px;
+	float: left;
+}
+#bodyCheckOrder .productListBoxRight
+{
+	float: left;
+	margin-left: 28px;
+}
+#bodyCheckOrder .productListBoxRight .up, #DetailListPanel .table-navigation-scroll2 .up, #ReasonListPanel .table-navigation-scroll3 .up
+{
+	width: 35px;
+	height: 102px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_internet_up.png) center no-repeat;
+	margin-top: 50px;
+}
+#bodyCheckOrder .productListBoxRight .down, #DetailListPanel .table-navigation-scroll2 .down
+{
+	width: 35px;
+	height: 102px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_internet_down.png) center no-repeat;
+}
+#bodyCheckOrder #DetailListPanel .productDetailListBox, #bodyCheckOrder #DetailListPanel .table-container-scroll2
+{
+	float: left;
+	width: 646px;
+	border:1px solid #4D4D4D;
+}
+#bodyCheckOrder #DetailListPanel .table-container-scroll2
+{
+	height: 214px;
+	overflow: hidden;
+}
+#bodyCheckOrder #DetailListPanel .table-navigation-scroll2
+{
+	float: left;
+	width: 35px;
+	margin-top: -54px;
+}
+#bodyCheckOrder .productListBoxClear
+{
+	clear: both;
+}
+#bodyCheckOrder .productListBox
+{
+	width: 646px;
+}
+#bodyCheckOrder .productListBoxRepeater
+{
+	width: 646px;
+	height: 279px;
+}
+#bodyCheckOrder .productListBoxRepeater td
+{
+	padding-bottom: 5px;
+}
+#bodyCheckOrder .productListBox table, #bodyCheckOrder .productListBoxRepeater table
+{
+	width: 100%;
+}
+#bodyCheckOrder .productListBox .no, #bodyCheckOrder .productListBoxRepeater .no
+{
+	width: 4%;
+	text-align: center;
+}
+#bodyCheckOrder .productListBox .reference, #bodyCheckOrder .productListBoxRepeater .reference
+{
+	width: 13%;
+	text-align: center;
+}
+#bodyCheckOrder .productListBox .User, #bodyCheckOrder .productListBoxRepeater .User
+{
+	width: 16%;
+	text-align: center;
+}
+#bodyCheckOrder .productListBox .date, #bodyCheckOrder .productListBoxRepeater .date
+{
+	width: 17%;
+	text-align: center;
+}
+#bodyCheckOrder .productListBox .divisi, #bodyCheckOrder .productListBoxRepeater .divisi
+{
+	width: 10%;
+	text-align: center;
+}
+
+#bodyCheckOrder .productListBox .action, #bodyCheckOrder .productListBoxRepeater .action
+{
+	width: 21%;
+	text-align: center;
+	padding-left: 14px;
+}
+/*#bodyCheckOrder .container .productListBoxRepeater .UpdateButton
+{
+	width: 77px;
+	height: 42px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 2px;
+	background: url(image/btn_update_checkorder.png) center no-repeat;
+	float: left;
+}*/
+#bodyCheckOrder .container .productListBoxRepeater .ViewButton
+{
+	width: 65px;
+	height: 45px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_view_checkorder.png) center no-repeat;
+	float: left;
+}
+#bodyCheckOrder .container .productListBoxRepeater .ActionButton
+{
+	width: 62px;
+	height: 35px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 2px;
+	background: url(image/btn_action_do.png) center no-repeat;
+	float: left;
+	margin-left:36px;
+}
+#bodyCheckOrder .container .productListBoxRepeater .UpdateOpenButton,
+#bodyCheckOrder .container .productListBoxRepeater .UpdateProcessButton,
+#bodyCheckOrder .container #ChangePanel .PrintCustomerImageButton
+{
+	width: 77px;
+	height: 42px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 2px;
+	background: url(image/btn_process_DO.png) center no-repeat;
+	float: left;
+}
+#bodyCheckOrder .container .productListBoxRepeater .UpdateProcessButton
+{
+	background: url(image/btn_done_DO.png) center no-repeat;
+}
+#bodyCheckOrder .container #ChangePanel .PrintCustomerImageButton
+{
+	background: url(image/btn_done_DO.png) center no-repeat;
+}
+#bodyCheckOrder .container #ChangePanel .PrintToCustomer,
+#bodyCheckOrder .container #ChangePanel .PrintToKitchen
+{
+	width: 148px;
+	height: 60px;
+	border: medium none; azimuth
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 2px;
+	background: url(image/btn_print_to_customer.png) center no-repeat;
+	background-size:170px;
+	float: left;
+}
+#bodyCheckOrder .container #ChangePanel .PrintToKitchen
+{
+background: url(image/btn_print_to_kitchen.png) center no-repeat;   
+	background-size:170px; 
+}
+#bodyCheckOrder .container #ChangePanel .CashImageButton,
+#bodyCheckOrder .container #ChangePanel .VoucherImageButton,
+#bodyCheckOrder .container #ChangePanel .DebitImageButton,
+#bodyCheckOrder .container #ChangePanel .CreditImageButton
+{
+	width: 103px;
+	height: 85px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 2px;
+	background: url(image/btn_cash.jpg) center no-repeat;
+	float: left;
+}
+
+#bodyCheckOrder .container #ChangePanel .CreditImageButton
+{
+    	background: url(image/btn_credit_card.jpg) center no-repeat;
+}
+#bodyCheckOrder .container #ChangePanel .DebitImageButton
+{
+    	background: url(image/btn_debit.jpg) center no-repeat;
+}
+#bodyCheckOrder .container #ChangePanel .VoucherImageButton
+{
+    	background: url(image/btn_voucher_settlement.jpg) center no-repeat;
+}
+
+#bodyCheckOrder .container #ChangePanel .buttonPay
+{
+   background-color: #F6891F; 
+   border-radius: 10px; 
+   width: 267px; 
+   padding-left:46px;
+}
+
+#bodyCheckOrder .container .productListBoxRepeater .clearClass
+{
+	clear: both;
+}
+
+#bodyCheckOrder .containerBox .transactionRefBox #CustIDTextBox, #bodyCheckOrder .containerBox .transactionRefBox #SearchFieldTextBox
+{
+	height: 22px;
+	font-size: 18px;
+}
+#bodyCheckOrder .containerBox .transactionRefBox #SearchFieldDDL
+{
+	height: 28px;
+	font-size: 18px;
+}
+#bodyCheckOrder .containerBox .transactionRefBox #CustIDTextBox, #bodyCheckOrder .containerBox .transactionRefBox #SearchFieldDDL
+{
+	margin-bottom: 2px;
+}
+
+#bodyCheckOrder .container .divisi
+{
+	clear: both;
+}
+#bodyCheckOrder .container .LabelDivisi
+{
+	color: #FFFF00;
+	font-family: Arial Black;
+	font-size: 13pt;
+	padding-left: 6px;
+}
+#bodyCheckOrder .productListBoxLeft2
+{
+	width: 476px;
+	float: left;
+}
+#bodyCheckOrder .productListBox2
+{
+	width: 500px;
+	color: #ffffff;
+	border: 1px solid #4D4D4D;
+}
+#bodyCheckOrder .productListBoxRepeater2
+{
+	width: 500px;
+	height: 214px;
+	background-color: #1A1A1A;
+	border: 1px solid #4D4D4D;
+	color: #ffffff;
+}
+#bodyCheckOrder .productListBoxRepeater2 td
+{
+	padding-bottom: 5px;
+}
+#bodyCheckOrder .productDetailListBox table, #bodyCheckOrder .table-container-scroll2 table
+{
+	width: 100%;
+}
+#bodyCheckOrder .productDetailListBox .no, #bodyCheckOrder .table-container-scroll2 .no
+{
+	width: 2%;
+	text-align: center;
+}
+#bodyCheckOrder .productDetailListBox .transtype, #bodyCheckOrder .table-container-scroll2 .transtype
+{
+	width: 5%;
+	text-align: center;
+}
+#bodyCheckOrder .productDetailListBox .transnmbr, #bodyCheckOrder .table-container-scroll2 .transnmbr
+{
+	width: 17%;
+	text-align: center;
+}
+#bodyCheckOrder .productDetailListBox .productCode, #bodyCheckOrder .table-container-scroll2 .productCode
+{
+	width: 8%;
+	text-align: center;
+}
+#bodyCheckOrder .productDetailListBox .productName, #bodyCheckOrder .table-container-scroll2 .productName
+{
+	width: 15%;
+	text-align: center;
+}
+#bodyCheckOrder .productDetailListBox .qty, #bodyCheckOrder .table-container-scroll2 .qty
+{
+	width: 3%;
+	text-align: center;
+}
+#bodyCheckOrder .productDetailListBox .action,#bodyCheckOrder .table-container-scroll2 .action
+{
+	width: 5%;
+	text-align: center;
+}
+#bodyCheckOrder .container .table-container-scroll2 .EditButton
+{
+	width: 35px;
+	height: 45px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_edit2.png) center no-repeat;
+	float: left;
+}
+#bodyCheckOrder .productListBoxRight2
+{
+	float: left;
+	margin-left: 25px;
+}
+#bodyCheckOrder .detailItem
+{
+	float: left;
+	padding-left: 10px; 
+	width: 53%;
+}
+#bodyCheckOrder .detailItem .table-navigation-scroll2
+{
+	float:left;
+	margin-left:24px;
+	margin-top:4px;
+}
+#bodyCheckOrder .productListBoxRight2 .up, #bodyCheckOrder .detailItem .table-navigation-scroll2 .up
+{
+	width: 35px;
+	height: 102px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_internet_up.png) center no-repeat;
+	margin-top: 25px;
+}
+#bodyCheckOrder .productListBoxRight2 .down, #bodyCheckOrder .detailItem .table-navigation-scroll2 .down
+{
+	width: 35px;
+	height: 102px;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	outline: none;
+	text-indent: -999px;
+	padding: 0;
+	background: url(image/btn_internet_down.png) center no-repeat;
+}
+#bodyCheckOrder .productListBoxLeft3
+{
+	width: 315px;
+	float: left;
+}
+#bodyCheckOrder .productListBox3
+{
+	width: 315px;
+	color: #ffffff;
+	border: 1px solid #4D4D4D;
+}
+#bodyCheckOrder .productListBoxRepeater3
+{
+	width: 315px;
+	height: 214px;
+	background-color: #1A1A1A;
+	border: 1px solid #4D4D4D;
+	color:#ffffff;
+}
+#bodyCheckOrder .productListBoxRepeater3 td
+{
+	padding-bottom: 5px;
+}
+#bodyCheckOrder .productListBox3 table, #bodyCheckOrder .productListBoxRepeater3 table
+{
+	width: 100%;
+}
+#bodyCheckOrder .productListBox3 .no, #bodyCheckOrder .productListBoxRepeater3 .no
+{
+	width: 2%;
+	text-align: center;
+}
+#bodyCheckOrder .productListBoxRepeater3 .no
+{
+    padding-left:15px;
+}
+#bodyCheckOrder .productListBox3 .status, #bodyCheckOrder .productListBoxRepeater3 .status
+{
+	width: 4%;
+	text-align: center;
+}
+#bodyCheckOrder .productListBox3 .time, #bodyCheckOrder .productListBoxRepeater3 .time
+{
+	width: 16%;
+	text-align: center;
+}
+#bodyCheckOrder .productListBox3 .user, #bodyCheckOrder .productListBoxRepeater3 .user
+{
+	width: 10%;
+	text-align: center;
+}
+#bodyCheckOrder .productListBoxRight3
+{
+	float: left;
+	margin-left: 25px;
+}

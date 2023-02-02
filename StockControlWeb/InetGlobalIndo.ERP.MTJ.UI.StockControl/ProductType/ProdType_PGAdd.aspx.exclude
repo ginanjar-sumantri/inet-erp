@@ -1,0 +1,157 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/default.master" AutoEventWireup="true" CodeFile="ProdType_PGAdd.aspx.cs"
+    Inherits="InetGlobalIndo.ERP.MTJ.UI.StockControl.ProdType_PGAdd" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="DefaultHeadContentPlaceHolder" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="DefaultBodyContentPlaceHolder" runat="Server">
+    <asp:Panel ID="Panel1" runat="server">
+        <table cellpadding="3" cellspacing="0" width="0" border="0">
+            <tr>
+                <td class="tahoma_14_black">
+                    <b>
+                        <asp:Literal ID="PageTitleLiteral" runat="server" />
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ValidationSummary ID="ValidationSummary" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label runat="server" ID="WarningLabel" CssClass="warning"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table cellpadding="3" cellspacing="0" width="0" border="0">
+                        <tr>
+                            <td>
+                                Price Group Code
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td>
+                                <asp:DropDownList ID="PriceGroupDropDownList" AutoPostBack="true" runat="server"
+                                    OnSelectedIndexChanged="PriceGroupDropDownList_SelectedIndexChanged">
+                                </asp:DropDownList>
+                                <asp:CustomValidator ID="PriceGroupCustomValidator" ControlToValidate="PriceGroupDropDownList"
+                                    runat="server" ErrorMessage="Price Group Must Be Choosen" Text="*" ClientValidationFunction="DropDownValidation"></asp:CustomValidator>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Year
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td>
+                                <asp:TextBox runat="server" ReadOnly="true" BackColor="#CCCCCC" ID="YearTextBox"
+                                    Width="70" MaxLength="4"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr valign="top">
+                            <td>
+                                Remark
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td>
+                                <asp:TextBox runat="server" ReadOnly="true" BackColor="#CCCCCC" ID="RemarkTextBox"
+                                    Width="300" Height="80" TextMode="MultiLine"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Currency
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td>
+                                <asp:TextBox runat="server" ReadOnly="true" BackColor="#CCCCCC" ID="CurrTextBox"
+                                    Width="70" MaxLength="5"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Forex Rate
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td>
+                                <asp:TextBox runat="server" ReadOnly="true" BackColor="#CCCCCC" ID="ForexRateTextBox"
+                                    Width="150" MaxLength="18"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Is Active
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td align="left">
+                                <asp:CheckBox ID="IsActiveCheckBox" Enabled="false" runat="server" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <table cellpadding="3" cellspacing="0" width="0" border="0">
+                                    <tr>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            Curr
+                                        </td>
+                                        <td>
+                                            Forex
+                                        </td>
+                                        <td>
+                                            <asp:Literal runat="server" ID="DefaultLiteral"></asp:Literal>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Amount
+                                        </td>
+                                        <td>
+                                            <asp:Literal runat="server" ID="DebitCurrLiteral"></asp:Literal>
+                                        </td>
+                                        <td>
+                                            <asp:TextBox runat="server" ID="AmountForexTextBox" ReadOnly="true" BackColor="#CCCCCC"
+                                                Width="150"></asp:TextBox>
+                                        </td>
+                                        <td>
+                                            <asp:TextBox runat="server" ID="AmountHomeTextBox" Width="150" ReadOnly="true" BackColor="#CCCCCC"></asp:TextBox>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table cellpadding="3" cellspacing="0" border="0" width="0">
+                        <tr>
+                            <td>
+                                <asp:ImageButton ID="SaveButton" runat="server" OnClick="SaveButton_Click" />
+                                <%--</td>
+                            <td>--%>
+                                &nbsp;<asp:ImageButton ID="CancelButton" runat="server" CausesValidation="False"
+                                    OnClick="CancelButton_Click" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </asp:Panel>
+</asp:Content>

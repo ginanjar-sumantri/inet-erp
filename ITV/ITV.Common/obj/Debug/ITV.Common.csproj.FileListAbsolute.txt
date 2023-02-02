@@ -1,0 +1,5 @@
+D:\WORK IP.1\ITV\ITV.Common\bin\Debug\ITV.Common.dll
+D:\WORK IP.1\ITV\ITV.Common\bin\Debug\ITV.Common.pdb
+D:\WORK IP.1\ITV\ITV.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\WORK IP.1\ITV\ITV.Common\obj\Debug\ITV.Common.dll
+D:\WORK IP.1\ITV\ITV.Common\obj\Debug\ITV.Common.pdb

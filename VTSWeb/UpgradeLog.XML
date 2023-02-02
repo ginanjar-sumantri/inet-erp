@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="VTSWeb">
+</Property><Property Name="Solution File" Value="E:\WEB SITE\VTSWeb\VTSWeb.sln">
+</Property><Property Name="User Options File" Value="E:\WEB SITE\VTSWeb\VTSWeb.suo">
+</Property><Property Name="Date" Value="Friday, March 22, 2013">
+</Property><Property Name="Time" Value="22:16 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="VTSWeb.sln" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.sln">
+</Event><Event ErrorLevel="0" Project="" Source="VTSWeb.suo" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.suo">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\VTSWeb.BusinessRule.csproj" Description="Project file successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\VTSWeb.BusinessRule.csproj">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\Base.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\Base.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\CDC_VTS_DevelopmentDataSet.Designer.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\CDC_VTS_DevelopmentDataSet.Designer.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\ClearanceBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\ClearanceBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\MsRackServerBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\MsRackServerBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\EmployeeBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\EmployeeBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\GoodsInOutBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\GoodsInOutBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\MsAreaBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\MsAreaBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\MsCityBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\MsCityBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\MsCustContactBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\MsCustContactBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\MsCustContact_AreaBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\MsCustContact_AreaBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\MsCustomerBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\MsCustomerBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\MsCompanyTypeBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\MsCompanyTypeBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\MsCountryBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\MsCountryBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\MsPurposeBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\MsPurposeBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\MsRegionalBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\MsRegionalBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\MsReligionBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\MsReligionBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\MsVisitorExtendionBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\MsVisitorExtendionBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\PermisiionBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\PermisiionBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\PrintPreviewBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\PrintPreviewBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\Properties\Settings.Designer.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\RackCustomerBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\RackCustomerBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\ReportClearanceBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\ReportClearanceBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\TrGoodlistBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\TrGoodlistBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\UserBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\UserBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\UserGroupBL.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\UserGroupBL.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\app.config" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\app.config">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\CDC_VTS_DevelopmentDataSet.xsc" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\CDC_VTS_DevelopmentDataSet.xsc">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\CDC_VTS_DevelopmentDataSet.xsd" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\CDC_VTS_DevelopmentDataSet.xsd">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\CDC_VTS_DevelopmentDataSet.xss" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\CDC_VTS_DevelopmentDataSet.xss">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\Properties\Settings.settings" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.BusinessRule\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\VTSWeb.BusinessRule.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="VTSWeb.BusinessRule" Source="VTSWeb.BusinessRule\VTSWeb.BusinessRule.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="VTSWeb.SystemConfig" Source="VTSWeb.SystemConfig\VTSWeb.SystemConfig.csproj" Description="Project file successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.SystemConfig\VTSWeb.SystemConfig.csproj">
+</Event><Event ErrorLevel="0" Project="VTSWeb.SystemConfig" Source="VTSWeb.SystemConfig\ApplicationConfig.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.SystemConfig\ApplicationConfig.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.SystemConfig" Source="VTSWeb.SystemConfig\base.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.SystemConfig\base.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.SystemConfig" Source="VTSWeb.SystemConfig\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.SystemConfig\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.SystemConfig" Source="VTSWeb.SystemConfig\Properties\Settings.Designer.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.SystemConfig\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.SystemConfig" Source="VTSWeb.SystemConfig\app.config" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.SystemConfig\app.config">
+</Event><Event ErrorLevel="0" Project="VTSWeb.SystemConfig" Source="VTSWeb.SystemConfig\Properties\Settings.settings" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.SystemConfig\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="VTSWeb.SystemConfig" Source="VTSWeb.SystemConfig\VTSWeb.SystemConfig.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="VTSWeb.SystemConfig" Source="VTSWeb.SystemConfig\VTSWeb.SystemConfig.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\VTSWeb.Database.csproj" Description="Project file successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\VTSWeb.Database.csproj">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\Base.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\Base.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\ClearanceAddPhoto.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\ClearanceAddPhoto.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\ClearanceDT.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\ClearanceDT.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\ClearanceHD.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\ClearanceHD.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\GoodsInOutDt.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\GoodsInOutDt.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\GoodsInOutHd.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\GoodsInOutHd.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\MsArea.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\MsArea.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\MsCity.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\MsCity.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\MsCustContact.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\MsCustContact.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\MsCustContact_MsArea.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\MsCustContact_MsArea.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\MsCustomer.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\MsCustomer.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\MsCompanyType.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\MsCompanyType.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\MsCountry.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\MsCountry.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\MsEmployee.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\MsEmployee.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\MsMenu.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\MsMenu.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\MsPurpose.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\MsPurpose.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\MsRackCustomer.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\MsRackCustomer.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\MsRackServer.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\MsRackServer.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\MsRegional.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\MsRegional.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\MsReligion.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\MsReligion.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\master_CustContactExtension.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\master_CustContactExtension.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\MsUser.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\MsUser.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\MsUserGroup.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\MsUserGroup.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\MsUserGroupDt.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\MsUserGroupDt.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\Properties\Settings.Designer.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\TrGoodList.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\TrGoodList.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\VTSDatabase.designer.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\VTSDatabase.designer.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\app.config" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\app.config">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\Properties\Settings.settings" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\VTSDatabase.dbml" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\VTSDatabase.dbml">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\VTSDatabase.dbml.layout" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Database\VTSDatabase.dbml.layout">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Database" Source="VTSWeb.Database\VTSWeb.Database.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="VTSWeb.Database" Source="VTSWeb.Database\VTSWeb.Database.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="VTSWeb.DataMapping" Source="VTSWeb.DataMapping\VTSWeb.DataMapping.csproj" Description="Project file successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.DataMapping\VTSWeb.DataMapping.csproj">
+</Event><Event ErrorLevel="0" Project="VTSWeb.DataMapping" Source="VTSWeb.DataMapping\Base.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.DataMapping\Base.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.DataMapping" Source="VTSWeb.DataMapping\ClearanceCompleteDataMapping.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.DataMapping\ClearanceCompleteDataMapping.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.DataMapping" Source="VTSWeb.DataMapping\ClearanceDataMapping.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.DataMapping\ClearanceDataMapping.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.DataMapping" Source="VTSWeb.DataMapping\CustomerContactDataMapping.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.DataMapping\CustomerContactDataMapping.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.DataMapping" Source="VTSWeb.DataMapping\CustomerDataMapping.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.DataMapping\CustomerDataMapping.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.DataMapping" Source="VTSWeb.DataMapping\DateFormMapping.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.DataMapping\DateFormMapping.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.DataMapping" Source="VTSWeb.DataMapping\PriorityDataMapping.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.DataMapping\PriorityDataMapping.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.DataMapping" Source="VTSWeb.DataMapping\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.DataMapping\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.DataMapping" Source="VTSWeb.DataMapping\VTSWeb.DataMapping.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="VTSWeb.DataMapping" Source="VTSWeb.DataMapping\VTSWeb.DataMapping.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Common" Source="VTSWeb.Common\VTSWeb.Common.csproj" Description="Project file successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Common\VTSWeb.Common.csproj">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Common" Source="VTSWeb.Common\Base.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Common\Base.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Common" Source="VTSWeb.Common\Enum.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Common\Enum.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Common" Source="VTSWeb.Common\GetConString.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Common\GetConString.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Common" Source="VTSWeb.Common\NameValueCollectionExtractors.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Common\NameValueCollectionExtractors.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Common" Source="VTSWeb.Common\PictureHandler.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Common\PictureHandler.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Common" Source="VTSWeb.Common\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Common\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Common" Source="VTSWeb.Common\Rijndael.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Common\Rijndael.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Common" Source="VTSWeb.Common\VTSWeb.Common.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="VTSWeb.Common" Source="VTSWeb.Common\VTSWeb.Common.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="VTSWeb.CustomControl" Source="VTSWeb.CustomControl\VTSWeb.CustomControl.csproj" Description="Project file successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.CustomControl\VTSWeb.CustomControl.csproj">
+</Event><Event ErrorLevel="0" Project="VTSWeb.CustomControl" Source="VTSWeb.CustomControl\Base.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.CustomControl\Base.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.CustomControl" Source="VTSWeb.CustomControl\NavigationMenu.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.CustomControl\NavigationMenu.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.CustomControl" Source="VTSWeb.CustomControl\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.CustomControl\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.CustomControl" Source="VTSWeb.CustomControl\VTSWeb.CustomControl.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="VTSWeb.CustomControl" Source="VTSWeb.CustomControl\VTSWeb.CustomControl.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Foto" Source="VTSWeb.Foto\VTSWeb.Foto.csproj" Description="Project file successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Foto\VTSWeb.Foto.csproj">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Foto" Source="VTSWeb.Foto\FotoAdd.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Foto\FotoAdd.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Foto" Source="VTSWeb.Foto\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\WEB SITE\VTSWeb\Backup\VTSWeb.Foto\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="VTSWeb.Foto" Source="VTSWeb.Foto\VTSWeb.Foto.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="VTSWeb.Foto" Source="VTSWeb.Foto\VTSWeb.Foto.csproj" Description="Converted">
+</Event><Event ErrorLevel="2" Project="" Source="VTSWeb.sln" Description="Solution file 'E:\WEB SITE\VTSWeb\VTSWeb.sln' cannot be converted because it is read-only on disk. To convert the solution, change the permissions on the solution file to allow modification and re-open it.">
+</Event><Event ErrorLevel="3" Project="" Source="VTSWeb.sln" Description="Not Converted">
+</Event></UpgradeLog>

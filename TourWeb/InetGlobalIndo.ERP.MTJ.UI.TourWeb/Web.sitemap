@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode title="Tour" url="Default.aspx">
+    <siteMapNode title="Customer Manager" url="">
+      <siteMapNode title="Customer Group" url="CustomerGroup/CustomerGroup.aspx">
+        <siteMapNode title="Add" url="CustomerGroup/CustomerGroupAdd.aspx" />
+        <siteMapNode title="Edit" url="CustomerGroup/CustomerGroupEdit.aspx" />
+        <siteMapNode title="View" url="CustomerGroup/CustomerGroupView.aspx" />
+        <siteMapNode title="Account Add" url="CustomerGroup/CustomerGroupAccountAdd.aspx" />
+        <siteMapNode title="Account Edit" url="CustomerGroup/CustomerGroupAccountEdit.aspx" />
+        <siteMapNode title="Account View" url="CustomerGroup/CustomerGroupAccountView.aspx" />
+      </siteMapNode>
+      <siteMapNode title="Customer Type" url="CustomerType/CustomerType.aspx">
+        <siteMapNode title="Add" url="CustomerType/CustomerTypeAdd.aspx" />
+        <siteMapNode title="Edit" url="CustomerType/CustomerTypeEdit.aspx" />
+        <siteMapNode title="View" url="CustomerType/CustomerTypeView.aspx" />
+      </siteMapNode>
+      <siteMapNode title="Customer" url="Customer/Customer.aspx">
+        <siteMapNode title="Add" url="Customer/CustomerAdd.aspx" />
+        <siteMapNode title="Edit" url="Customer/CustomerEdit.aspx" />
+        <siteMapNode title="View" url="Customer/CustomerView.aspx" />
+        <siteMapNode title="Address Add" url="Customer/CustomerAddressAdd.aspx" />
+        <siteMapNode title="Address Edit" url="Customer/CustomerAddressEdit.aspx" />
+        <siteMapNode title="Contact Add" url="Customer/CustomerContactAdd.aspx" />
+        <siteMapNode title="Contact Edit" url="Customer/CustomerContactEdit.aspx" />
+        <siteMapNode title="Contact View" url="Customer/CustomerContactView.aspx" />
+      </siteMapNode>
+      <siteMapNode title="Customer Selling Price" url="CustomerSellingPrice/CustomerSellingPrice.aspx" />
+    </siteMapNode>
+    <siteMapNode title="Sales Order" url="SalesOrder/SalesOrder.aspx">
+      <siteMapNode title="Add" url="SalesOrder/SalesOrderAdd.aspx" />
+      <siteMapNode title="Edit" url="SalesOrder/SalesOrderEdit.aspx" />
+      <siteMapNode title="Detail" url="SalesOrder/SalesOrderDetail.aspx" />
+      <siteMapNode title="Detail Add" url="SalesOrder/SalesOrderDetailAdd.aspx" />
+      <siteMapNode title="Detail Edit" url="SalesOrder/SalesOrderDetailEdit.aspx" />
+      <siteMapNode title="Detail View" url="SalesOrder/SalesOrderDetailView.aspx" />
+    </siteMapNode>
+    <siteMapNode title="Delivery Order" url="DeliveryOrder/DeliveryOrder.aspx">
+      <siteMapNode title="Add" url="DeliveryOrder/DeliveryOrderAdd.aspx" />
+      <siteMapNode title="Edit" url="DeliveryOrder/DeliveryOrderEdit.aspx" />
+      <siteMapNode title="Detail" url="DeliveryOrder/DeliveryOrderDetail.aspx" />
+      <siteMapNode title="Detail Add" url="DeliveryOrder/DeliveryOrderDetailAdd.aspx" />
+      <siteMapNode title="Detail Edit" url="DeliveryOrder/DeliveryOrderDetailEdit.aspx" />
+      <siteMapNode title="Detail View" url="DeliveryOrder/DeliveryOrderDetailView.aspx" />
+    </siteMapNode>
+    <siteMapNode title="Sales Retur Request" url="RequestSalesRetur/RequestSalesRetur.aspx">
+      <siteMapNode title="Add" url="RequestSalesRetur/RequestSalesReturAdd.aspx" />
+      <siteMapNode title="Edit" url="RequestSalesRetur/RequestSalesReturEdit.aspx" />
+      <siteMapNode title="Detail" url="RequestSalesRetur/RequestSalesReturDetail.aspx" />
+      <siteMapNode title="Detail Add" url="RequestSalesRetur/RequestSalesReturDetailAdd.aspx" />
+      <siteMapNode title="Detail Edit" url="RequestSalesRetur/RequestSalesReturDetailEdit.aspx" />
+      <siteMapNode title="Detail View" url="RequestSalesRetur/RequestSalesReturDetailView.aspx" />
+    </siteMapNode>
+    <siteMapNode title="Retail" url="Retail/Retail.aspx">
+      <siteMapNode title="Add" url="Retail/RetailAdd.aspx" />
+      <siteMapNode title="Edit" url="Retail/RetailEdit.aspx" />
+      <siteMapNode title="Detail" url="Retail/RetailDetail.aspx" />
+      <siteMapNode title="Detail Add" url="Retail/RetailDetailAdd.aspx" />
+      <siteMapNode title="Detail Edit" url="Retail/RetailDetailEdit.aspx" />
+      <siteMapNode title="Detail View" url="Retail/RetailDetailView.aspx" />
+    </siteMapNode>
+    <siteMapNode title="POS" url="POS/POS.aspx" />
+    <siteMapNode title="Direct Sales" url="DirectSales/DirectSales.aspx">
+      <siteMapNode title="Add" url="DirectSales/DirectSalesAdd.aspx" />
+      <siteMapNode title="Edit" url="DirectSales/DirectSalesEdit.aspx" />
+      <siteMapNode title="Detail" url="DirectSales/DirectSalesDetail.aspx" />
+      <siteMapNode title="Detail Add" url="DirectSales/DirectSalesDetailAdd.aspx" />
+      <siteMapNode title="Detail Edit" url="DirectSales/DirectSalesDetailEdit.aspx" />
+    </siteMapNode>
+    <siteMapNode title="Report" url="">
+      <siteMapNode title="Customer List" url="Report/CustomerList.aspx" />
+      <siteMapNode title="Sales Contract" url="">
+        <siteMapNode title="Per Transaction" url="" />
+        <siteMapNode title="Per Customer" url="" />
+        <siteMapNode title="Per Sales" url="" />
+        <siteMapNode title="Per Product" url="" />
+        <siteMapNode title="Summary Per Product" url="" />
+        <siteMapNode title="Summary Per Customer" url="" />
+      </siteMapNode>
+      <siteMapNode title="Sales Contract Un-PFI" url="">
+        <siteMapNode title="Per Transaction" url="" />
+        <siteMapNode title="Per Customer" url="" />
+        <siteMapNode title="Per Sales" url="" />
+        <siteMapNode title="Per Product" url="" />
+        <siteMapNode title="Summary Per Product" url="" />
+        <siteMapNode title="Summary Per Customer" url="" />
+      </siteMapNode>
+      <siteMapNode title="Closing Sales Contract" url="" />
+      <siteMapNode title="Pro Forma Invoice" url="">
+        <siteMapNode title="Per Transaction" url="Report/ProFormaInvPerTrans.aspx" />
+        <siteMapNode title="Per Customer" url="Report/ProFormaInvPerCust.aspx" />
+        <siteMapNode title="Per Sales" url="" />
+        <siteMapNode title="Per Product" url="Report/ProFormaInvPerProduct.aspx" />
+        <siteMapNode title="Summary Per Customer" url="Report/ProFormaInvSummaryPerCust.aspx" />
+        <siteMapNode title="Summary Per Product" url="Report/ProFormaInvSummaryPerProduct.aspx" />
+      </siteMapNode>
+      <siteMapNode title="Outstanding Pro Forma Invoice" url="">
+        <siteMapNode title="Per Transaction" url="Report/OutstandingProFormaInvPerTrans.aspx" />
+        <siteMapNode title="Per Customer" url="Report/OutstandingProFormaInvPerCust.aspx" />
+        <siteMapNode title="Per Product" url="Report/OutstandingProFormaInvPerProduct.aspx" />
+      </siteMapNode>
+      <siteMapNode title="Closing Pro Forma Invoice" url="Report/ClosingProFormaInv.aspx" />
+      <siteMapNode title="Delivery Order" url="">
+        <siteMapNode title="Per Transaction" url="Report/DOPerTrans.aspx" />
+        <siteMapNode title="Per Customer" url="Report/DOPerCust.aspx" />
+        <siteMapNode title="Per Delivery" url="Report/DOPerDelivery.aspx" />
+        <siteMapNode title="Per Product" url="Report/DOPerProduct.aspx" />
+        <siteMapNode title="Summary Per Customer" url="Report/DOSummaryPerCust.aspx" />
+        <siteMapNode title="Summary Per Product" url="Report/DOSummaryPerProduct.aspx" />
+      </siteMapNode>
+      <siteMapNode title="Outstanding Delivery Order" url="">
+        <siteMapNode title="Per Transaction" url="Report/OutstandingDOPerTrans.aspx" />
+        <siteMapNode title="Per Customer" url="Report/OutstandingDOPerCust.aspx" />
+        <siteMapNode title="Per Product" url="Report/OutstandingDOPerProduct.aspx" />
+      </siteMapNode>
+      <siteMapNode title="Closing Delivery Order" url="Report/ClosingDO.aspx" />
+      <siteMapNode title="Request Sales Retur" url="">
+        <siteMapNode title="Per Transaction" url="Report/RequestSalesReturPerTrans.aspx" />
+        <siteMapNode title="Per Customer" url="Report/RequestSalesReturPerCust.aspx" />
+        <siteMapNode title="Per Product" url="Report/RequestSalesReturPerProd.aspx" />
+      </siteMapNode>
+      <siteMapNode title="Outstanding Request Sales Rtr" url="">
+        <siteMapNode title="Per Transaction" url="Report/RequestSalesReturOutPerTrans.aspx" />
+        <siteMapNode title="Per Customer" url="Report/RequestSalesReturOutPerCust.aspx" />
+        <siteMapNode title="Per Product" url="Report/RequestSalesReturOutPerProd.aspx" />
+      </siteMapNode>
+      <siteMapNode title="Progress PFI - B/L" url="">
+        <siteMapNode title="Summary" url="Report/ProgressPFI-BLSummary.aspx" />
+        <siteMapNode title="Detail" url="Report/ProgressPFI-BLDetail.aspx" />
+      </siteMapNode>
+      <siteMapNode title="POS Report" url="Report/POSReport.aspx" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

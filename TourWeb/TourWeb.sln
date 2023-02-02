@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "InetGlobalIndo.ERP.MTJ.UI.TourWeb", "InetGlobalIndo.ERP.MTJ.UI.TourWeb", "{FC10AE28-BEDE-447C-A196-22DC315B4A6D}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/TourWeb.root/TourWeb", CAAAAAAA"
+		SccAuxPath = ""
+		SccLocalPath = ".."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/InetGlobalIndo.ERP.MTJ.UI.TourWeb"
+		Debug.AspNetCompiler.PhysicalPath = "InetGlobalIndo.ERP.MTJ.UI.TourWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\InetGlobalIndo.ERP.MTJ.UI.TourWeb\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/InetGlobalIndo.ERP.MTJ.UI.TourWeb"
+		Release.AspNetCompiler.PhysicalPath = "InetGlobalIndo.ERP.MTJ.UI.TourWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\InetGlobalIndo.ERP.MTJ.UI.TourWeb\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2118"
+		VWDDynamicPort = "false"
+		VWDVirtualPath = "/InetGlobalIndo.ERP.MTJ.UI.TourWeb"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = InetGlobalIndo.ERP.MTJ.UI.TourWeb
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = InetGlobalIndo.ERP.MTJ.UI.TourWeb\\
+		SccProjectEnlistmentChoice1 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC10AE28-BEDE-447C-A196-22DC315B4A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC10AE28-BEDE-447C-A196-22DC315B4A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC10AE28-BEDE-447C-A196-22DC315B4A6D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC10AE28-BEDE-447C-A196-22DC315B4A6D}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

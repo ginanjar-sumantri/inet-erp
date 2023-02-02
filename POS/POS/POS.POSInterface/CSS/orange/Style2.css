@@ -1,0 +1,3538 @@
+﻿#bodyCashier
+{
+    background: url(image/bg_cashier.png) no-repeat center 0px #F7931E;
+    margin-left: auto;
+    margin-right: auto;
+    height: 768px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+}
+#bodyCashier .container
+{
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    margin: 0px auto;
+}
+#bodyCashier .container .header
+{
+    height: 25px;
+    background: #000;
+    border: solid #000 1px;
+    margin-bottom: 5px;
+}
+#bodyCashier .container .header .left
+{
+    float: left;
+}
+#bodyCashier .container .header .left .title .text
+{
+    font-family: "Arial";
+    text-transform: uppercase;
+    color: #000;
+    background: url(image/bg_title_internet.jpg) repeat-x;
+    height: 23px;
+    float: left;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 12pt;
+    padding-top: 2px;
+}
+#bodyCashier .container .header .left .title .sep
+{
+    /*background: url(image/bg_title_internet2.png) no-repeat; 	height: 25px; 	width: 13px; 	float: right;	 	margin-left : 15px;*/
+    background: url(image/bg_title_internet2.png) repeat-x;
+    height: 25px;
+    width: 13px;
+    float: left;
+}
+#bodyCashier .container .header .right
+{
+    float: right;
+    height: 25px;
+}
+#bodyCashier .container .header .right .date #tanggal
+{
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFF;
+    height: 23px;
+    float: left;
+    font-size: 12pt;
+    margin-right: 25px;
+    padding-top: 2px;
+}
+#bodyCashier .container .header .right .date #jam
+{
+    float: left;
+    color: #FFFF00;
+    font-family: Arial;
+    font-weight: bold;
+    width: 65px;
+    padding-top: 2px;
+    height: 23px;
+    font-size: 13pt;
+    margin-right: 10px;
+}
+
+#bodyCashier .container .content .top
+{
+    /*background: url(image/bg_top_cashier.png) repeat-x;*/
+    background-color: #F6891F;
+    margin-bottom: 5px;
+    width: 1020px;
+    height: 65px;
+    margin-left: 3px;
+}
+
+#bodyCashier .container .content .top .table
+{
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+#bodyCashier .container .content .top .table .table-inner-top
+{
+    margin-right: 8px;
+}
+
+#bodyCashier .container .content .top .table .table-inner-top .input-form
+{
+    font-family: Arial;
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    line-height: 35px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+#bodyCashier .container .content .top .table .table-inner-top .clear
+{
+    clear: both;
+}
+#bodyCashier #resetbtn #ResetButton
+{
+    width: 132px;
+    height: 44px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_reset_cashier_130x75.png) center no-repeat;
+    margin: -4px auto;
+}
+#bodyCashier .table-container-scroll
+{
+    height: 219px;
+    overflow: hidden;
+    float: right;
+    width: 488px;
+    background-color: #1a1a1a;
+    margin-top: -3px;
+    margin-right: 26px;
+}
+#bodyCashier .table-navigation-scroll
+{
+    left: 502px;
+    position: absolute;
+    top: 130px;
+}
+#bodyCashier .table-navigation-scroll2
+{
+    position: absolute;
+    top: 130px;
+    left: 986px;
+}
+#bodyCashier .table-navigation-scroll3
+{
+    position: absolute;
+    top: 495px;
+    left: 982px;
+}
+#bodyCashier .table-navigation-scroll4
+{
+    position: absolute;
+    left: 984px;
+    top: 131px;
+}
+#bodyCashier .table-navigation-scroll .up, #bodyCashier .table-navigation-scroll2 .up, #bodyCashier .table-navigation-scroll3 .up, #bodyCashier .table-navigation-scroll4 .up
+{
+    width: 35px;
+    height: 108px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_up_2.png) center no-repeat;
+}
+#bodyCashier .table-navigation-scroll .down, #bodyCashier .table-navigation-scroll2 .down, #bodyCashier .table-navigation-scroll3 .down, #bodyCashier .table-navigation-scroll4 .down
+{
+    width: 35px;
+    height: 108px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_down_2.png) center no-repeat;
+}
+#bodyCashier .table-container-scroll2
+{
+    height: 219px;
+    overflow: hidden;
+    float: right;
+    width: 445px;
+    background-color: #1a1a1a;
+    margin-top: -3px;
+}
+#bodyCashier .table-container-scroll3
+{
+    height: 188px;
+    overflow: hidden;
+    width: 970px;
+    background-color: #1a1a1a;
+}
+#bodyCashier .table-container-scroll4
+{
+    height: 226px;
+    overflow: hidden;
+    float: right;
+    width: 970px;
+    background-color: #1a1a1a;
+    margin-top: -3px;
+}
+
+#bodyCashier .table-container-scroll4 .PrintCustomerImageButton, #bodyCashier .table-container-scroll4 .PrintKitchenImageButton
+{
+    background: url("image/btn_to_custmer.png") no-repeat scroll center center transparent;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    line-height: 0;
+    margin: 0 auto;
+    outline: medium none;
+    text-indent: -999px;
+    width: 82px;
+    background-size: 82px;
+}
+#bodyCashier .table-container-scroll4 .PrintKitchenImageButton
+{
+    background: url("image/btn_to_kitchen.png") no-repeat scroll center center transparent;
+    background-size: 82px;
+}
+
+#bodyCashier .container .input_textbox input
+{
+    width: 220px;
+    height: 30px;
+    float: left; /*background: url(image/bg_textbox_cashier.png) no-repeat -2px;*/
+    position: relative;
+    border: none;
+    margin-top: 3px;
+    padding-right: 6px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: medium double Red;
+    color: SaddleBrown;
+}
+
+#bodyCashier #searchbtn #SearchButton
+{
+    width: 132px;
+    height: 44px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_search_cashier_130x75.png) center no-repeat;
+    margin: -4px auto;
+}
+
+#bodyCashier .container .backbutton input
+{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("image/btn_back_cashier_130x75.png");
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 181px auto;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 50px;
+    line-height: 0;
+    margin: 1px auto 0;
+    outline: medium none;
+    padding: 0;
+    text-indent: -999px;
+    width: 160px;
+}
+#bodyCashier .container .input-form .backbutton input
+{   
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("image/btn_back_cashier_130x75.png");
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 140px auto;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 46px;
+    line-height: 0;
+    margin: 1px auto 0;
+    outline: medium none;
+    padding: 0;
+    text-indent: -999px;
+    width: 139px;
+}
+
+#bodyCashier .container .resetallbutton input
+{
+    width: 62px;
+    height: 23px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_reset_all_cashier.png) center no-repeat;
+    margin: 0 auto;
+}
+#bodyCashier .container .closeshiftbutton input
+{
+    width: 163px;
+    height: 53px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_close_shift_cashier_130x75.png) center no-repeat;
+    margin: 0 auto;
+}
+#bodyCashier .container .settlementbutton input
+{
+    width: 163px;
+    height: 53px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_settlement_cashier_130x75.png) center no-repeat;
+    margin: 0 auto;
+}
+
+#bodyCashier .container .ReprintStrookButton
+{
+    width: 180px;
+    height: 53px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_reprint_struck.png) center no-repeat;
+    margin: 0 auto;
+    background-size: 194px;
+}
+
+#bodyCashier .container .content .top .table .table-inner-top #referencenumber .label
+{
+    margin-right: 5px;
+    float: left;
+    text-align: center;
+}
+
+.toptable td
+{
+    color: White;
+    font-weight: bold;
+    font-family: Trebuchet MS;
+    border: solid #4D4D4D 1px;
+    background: url(image/bg_top_table_cashier.png) center repeat-x;
+    font-size: 13px;
+    margin-top: 6px;
+    padding: 2px;
+}
+.repeater td
+{
+    color: White;
+    font-family: Arial;
+    font-size: 12px;
+    border: solid #4D4D4D 1px;
+    padding: 10px 1px;
+}
+.viewbutton input
+{
+    width: 82px;
+    height: 28px;
+    cursor: pointer;
+    display: block;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/btn_viewdetail_cashier.png) center no-repeat;
+    margin: 0 auto;
+}
+.pickbutton input
+{
+    width: 31px;
+    height: 28px;
+    cursor: pointer;
+    display: block;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/btn_in_cashier.png) center no-repeat;
+    margin: 1 auto;
+}
+.resetpickbutton input
+{
+    width: 31px;
+    height: 28px;
+    cursor: pointer;
+    display: block;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/btn_out_cashier.png) center no-repeat;
+    margin: 0 auto;
+}
+.dpbutton input
+{
+    width: 31px;
+    height: 28px;
+    cursor: pointer;
+    display: block;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/btn_dp.png) center no-repeat;
+    margin: 1 auto;
+}
+.detailcashier
+{
+    background: url(image/bg_detail_cashier.png) repeat-x;
+    margin-bottom: 5px;
+    width: 1002px;
+    height: 51px;
+    text-transform: uppercase;
+}
+.detailcashier .toplabel
+{
+    color: #000000;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 40px;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+.tableRepater
+{
+    padding-top: 8px;
+}
+
+
+/*By ALif*/
+/*POS Retail Page*/
+
+#bodyPosRetail
+{
+    background: url(image/bg_login.jpg) no-repeat center 0px #F7931E;
+    font-family: Arial;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 768px;
+    outline: none;
+    overflow: hidden;
+}
+#bodyPosRetail .container
+{
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    margin: 0px auto;
+}
+#bodyPosRetail .container .header
+{
+    height: 25px;
+    background: #000;
+    border: solid #000 1px;
+    margin-bottom: 5px;
+}
+#bodyPosRetail .container .header .left
+{
+    float: left;
+}
+#bodyPosRetail .container .header .left .title .text
+{
+    font-family: "Myriad Pro";
+    text-transform: uppercase;
+    color: #000;
+    background: url(image/bg_title_internet.jpg) repeat-x;
+    height: 23px;
+    float: left;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 12pt;
+    padding-top: 2px;
+}
+#bodyPosRetail .container .header .left .title .sep
+{
+    background: url(image/bg_title_internet2.png) repeat-x;
+    height: 25px;
+    width: 13px;
+    float: left;
+}
+#bodyPosRetail .container .header .right
+{
+    float: right;
+    height: 25px;
+}
+#bodyPosRetail .container .header .right .date #tanggal
+{
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFF;
+    height: 23px;
+    float: left;
+    font-size: 12pt;
+    margin-right: 25px;
+    padding-top: 2px;
+}
+#bodyPosRetail .container .header .right .date #jam
+{
+    float: left;
+    color: #FFFF00;
+    font-family: Arial;
+    font-weight: bold;
+    width: 65px;
+    padding-top: 2px;
+    height: 23px;
+    font-size: 13pt;
+    margin-right: 10px;
+}
+#bodyPosRetail .containerBox
+{
+    padding: 7px;
+}
+
+#bodyPosRetail .containerBox .totalItemBox
+{
+    background: #f6891f;
+    margin: 3px;
+    width: 10.5%;
+    height: 88px;
+    float: left;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+#bodyPosRetail .containerBox .transactionRefBox
+{
+    background: #f6891f;
+    margin: 3px;
+    width: 26%;
+    height: 88px;
+    float: left;
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+#bodyPosRetail .containerBox .customerBox
+{
+    background: #f6891f;
+    margin: 3px;
+    width: 36%;
+    height: 88px;
+    float: left;
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+#bodyPosRetail .containerBox .totalBox
+{
+    background: #f6891f;
+    margin: 3px;
+    width: 23%;
+    height: 88px;
+    float: left;
+}
+#bodyPosRetail .productListBox
+{
+    background-color: #4D4D4D;
+    color: White;
+    font-weight: bold;
+    font-size: 12px;
+}
+#bodyPosRetail .productListBox th
+{
+    border: solid #4D4D4D 1px;
+    background: #000000;
+}
+
+/* Dari sini Mulai nya................ By Handy*/
+
+#NewMemberButton
+{
+    background: url(image/btn_New.png) center no-repeat;
+    width: 75px;
+    height: 82px;
+}
+
+#bodyPosRetail .container .productImageBox
+{
+    background: #f6891f;
+}
+
+#bodyPosRetail .container .SendtoCashier
+{
+    background: #f6891f;
+}
+
+#BackButton
+{
+    background: url(image/btn_back2.png)center no-repeat;
+    width: 59px;
+    height: 59px;
+    font-size: smaller;
+    margin-right: 1px;
+}
+
+#SearchButton
+{
+    background: url(image/btn_search2.png)center no-repeat;
+    width: 59px;
+    height: 59px;
+    font-size: smaller;
+    margin-right: 1px;
+}
+
+#HoldButton
+{
+    background: url(image/btn_hold.png)center no-repeat;
+    width: 56px;
+    height: 59px;
+    font-size: smaller;
+    margin-right: 1px;
+}
+
+#OpenHoldButton
+{
+    background: url(image/btn_openHold.png)center no-repeat;
+    width: 55px;
+    height: 57px;
+    font-size: smaller;
+    margin-right: 1px;
+}
+
+#CheckStatusButton
+{
+    background: url(image/btn_check_Status.png)center no-repeat;
+    width: 55px;
+    height: 56px;
+    font-size: smaller;
+}
+
+#CancelAllButton
+{
+    background: url(image/btn_cancelAll.png)center no-repeat;
+    width: 60px;
+    height: 60px;
+    font-size: smaller;
+    margin-right: 1px;
+}
+
+#JoinJobOrderButton
+{
+    background: url(image/btn_join_job_order.png)center no-repeat;
+    width: 60px;
+    height: 60px;
+    font-size: smaller;
+    margin-right: 1px;
+}
+
+#SendToCashierButton
+{
+    background: url(image/btn_Send_to_cashier.png)center no-repeat;
+    width: 290px;
+    height: 47px;
+    font-size: smaller;
+    margin-bottom: 3px;
+}
+
+.Button1
+{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#bodyPosRetail .container .panelInputNumber .number input
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    margin: 1px;
+}
+
+#bodyPosRetail .container .panelInputNumber #nmbr1 input
+{
+    background: url(image/btn_nmbr_1.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr2 input
+{
+    background: url(image/btn_nmbr_2.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr3 input
+{
+    background: url(image/btn_nmbr_3.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr4 input
+{
+    background: url(image/btn_nmbr_4.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr5 input
+{
+    background: url(image/btn_nmbr_5.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr6 input
+{
+    background: url(image/btn_nmbr_6.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr7 input
+{
+    background: url(image/btn_nmbr_7.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr8 input
+{
+    background: url(image/btn_nmbr_8.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr9 input
+{
+    background: url(image/btn_nmbr_9.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbrdot input
+{
+    background: url(image/btn_nmbr_dot.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr0 input
+{
+    background: url(image/btn_nmbr_0.png) center no-repeat;
+}
+#bodyPosRetail .container .panelInputNumber #nmbr00 input
+{
+    background: url(image/btn_nmbr_00.png) center no-repeat;
+}
+
+/*By Surya*/
+#bodyPosRetail .container .subTotalBox
+{
+    color: #FFFFFF;
+    font-family: Arial;
+    text-transform: uppercase;
+    background: #1A1A1A;
+    font-size: 14px;
+    height: 182px;
+    padding: 0;
+    border: solid 1px #333333;
+}
+#bodyPosRetail .container .subTotalBox .label
+{
+    float: left;
+    width: 250px;
+    padding: 5px;
+    border-right: solid 1px #333333;
+}
+#bodyPosRetail .container .subTotalBox .value
+{
+    float: left;
+    width: 150px;
+    padding: 5px;
+    text-align: right;
+    color: #FFFF00;
+}
+#bodyPosRetail .container .subTotalBox .clear
+{
+    clear: both;
+}
+#bodyPosRetail .container .subTotalBox .discount, #bodyPosRetail .container .subTotalBox .subtotal, #bodyPosRetail .container .subTotalBox .service-charge, #bodyPosRetail .container .subTotalBox .tax, #bodyPosRetail .container .subTotalBox .total
+{
+    height: 26px;
+}
+#bodyPosRetail .container .subTotalBox .subtotal, #bodyPosRetail .container .subTotalBox .tax
+{
+    border-bottom: solid 1px #333333;
+}
+#bodyPosRetail .container .subTotalBox .total .label, #bodyPosRetail .container .subTotalBox .total .value
+{
+    padding: 30px 5px;
+    height: 17px;
+}
+#bodyPosRetail .container .productListBox .EditButton
+{
+    width: 15px;
+    height: 15px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_edit.jpg) center no-repeat;
+    margin: 0 auto;
+}
+#bodyPosRetail .container .productListBox .CancelButton
+{
+    width: 16px;
+    height: 16px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_cancel.jpg) center no-repeat;
+    margin: 0 auto;
+}
+/*CheckStatus*/
+/*by Anjar*/
+
+#bodyPosCheckStatus
+{
+    background: url(image/bg_login.jpg) no-repeat center 0px #F7931E;
+    font-family: Arial;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 768px;
+    outline: none;
+    overflow: hidden;
+}
+#bodyPosCheckStatus .container
+{
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    margin: 0px auto;
+}
+#bodyPosCheckStatus .container .header
+{
+    height: 25px;
+    background: #000;
+    border: solid #000 1px;
+    margin-bottom: 5px;
+}
+#bodyPosCheckStatus .container .header .left
+{
+    float: left;
+}
+#bodyPosCheckStatus .container .header .left .title .text
+{
+    font-family: "Myriad Pro";
+    text-transform: uppercase;
+    color: #000;
+    background: url(image/bg_title_internet.jpg) repeat-x;
+    height: 23px;
+    float: left;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 12pt;
+    padding-top: 2px;
+}
+#bodyPosCheckStatus .container .header .left .title .sep
+{
+    background: url(image/bg_title_internet2.png) repeat-x;
+    height: 25px;
+    width: 13px;
+    float: left;
+}
+#bodyPosCheckStatus .container .header .right
+{
+    float: right;
+    height: 25px;
+}
+#bodyPosCheckStatus .container .header .right .date #tanggal
+{
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFF;
+    height: 23px;
+    float: left;
+    font-size: 12pt;
+    margin-right: 25px;
+    padding-top: 2px;
+}
+#bodyPosCheckStatus .container .header .right .date #jam
+{
+    float: left;
+    color: #FFFF00;
+    font-family: Arial;
+    font-weight: bold;
+    width: 65px;
+    padding-top: 2px;
+    height: 23px;
+    font-size: 13pt;
+    margin-right: 10px;
+}
+#bodyPosCheckStatus .containerBox
+{
+    padding: 7px;
+}
+#bodyPosCheckStatus .containerBox DIV
+{
+    border: solid 1px black;
+}
+#bodyPosCheckStatus .containerBox .totalItemBox
+{
+    background: #f6891f;
+    margin: 3px;
+    width: 20%;
+    height: 76px;
+    float: left;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 15px;
+}
+#bodyPosCheckStatus .containerBox .transactionRefBox
+{
+    background: #f6891f;
+    margin: 3px;
+    width: 75.3%;
+    height: 106px;
+    float: left;
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 15px;
+}
+#bodyPosCheckStatus .containerBox .transactionRefBox #CustIDTextBox
+{
+    height: 22px;
+    font-size: 18px;
+}
+#bodyPosCheckStatus .containerBox .transactionRefBox #SearchFieldDDL
+{
+    height: 30px;
+    font-size: 18px;
+}
+#bodyPosCheckStatus .containerBox .transactionRefBox #SearchFieldTextBox
+{
+    height: 22px;
+    font-size: 18px;
+}
+#bodyPosCheckStatus .containerBox .customerBox
+{
+    background: #f6891f;
+    margin: 3px;
+    width: 36%;
+    height: 88px;
+    float: left;
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+#bodyPosCheckStatus .containerBox .totalBox
+{
+    background: #f6891f;
+    margin: 3px;
+    width: 23%;
+    height: 88px;
+    float: left;
+}
+#bodyPosCheckStatus .transactionRefBox #SearchButton
+{
+    width: 130px;
+    height: 75px;
+    border: medium none;
+    cursor: pointer;
+    display: block !important;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_search_130x75.png) center no-repeat;
+    margin: 0 auto;
+}
+#bodyPosCheckStatus .transactionRefBox #CloseButton
+{
+    width: 130px;
+    height: 75px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_back_130x75.png) center no-repeat;
+    margin: 0 auto;
+}
+
+#bodyPosCheckStatus .transactionRefBox #ResetButton
+{
+    width: 130px;
+    height: 75px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_reset_130x75.png) center no-repeat;
+    margin: 0 auto;
+}
+#bodyPosCheckStatus .productListBox
+{
+    background-color: #1a1a1a;
+    color: White;
+    font-size: 16px;
+    height: 270px;
+    width: 974px;
+    float: left;
+    overflow: hidden;
+    font-family: Trebuchet MS;
+}
+#bodyPosCheckStatus .productListBox td
+{
+    padding: 10px 5px;
+}
+#bodyPosCheckStatus .navigation
+{
+    float: left;
+    width: 35px;
+    margin-top: 50px;
+    margin-left: -3px;
+}
+#bodyPosCheckStatus .navigation .up, #bodyPosCheckStatus .table-navigation-scroll2 .up
+{
+    width: 35px;
+    height: 102px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_up.png) center no-repeat;
+}
+#bodyPosCheckStatus .navigation .down, #bodyPosCheckStatus .table-navigation-scroll2 .down
+{
+    width: 35px;
+    height: 102px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_down.png) center no-repeat;
+}
+#bodyPosCheckStatus .productListBox table
+{
+    width: 100%;
+}
+#bodyPosCheckStatus .productListBox .ChangeImageButton
+{
+    width: 90px;
+    height: 40px;
+    border: medium none;
+    cursor: pointer;
+    display: block !important;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_change_deliver.png) center no-repeat;
+    margin: 0 auto;
+    background-size: 92px;
+}
+#bodyPosCheckStatus .productListBox .ViewImageButton
+{
+    width: 70px;
+    height: 40px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_view_checkorder.png) center no-repeat;
+    float: left;
+}
+
+#bodyPosCheckStatus .table-container-scroll2 .PickPrintPreview
+{
+    background: url(      "image/btn_pick_DO.png" ) no-repeat scroll center center transparent;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 0;
+    height: 30px;
+    line-height: 0;
+    outline: medium none;
+    padding: 0;
+    text-indent: -999px;
+    width: 66px;
+    margin-left: 26px;
+}
+
+#bodyPosCheckStatus .bgproductListBox th
+{
+    background: url(image/bg_top_table_cashier.png) center no-repeat;
+    width: auto;
+    font-weight: bold;
+}
+#bodyPosCheckStatus .table-container-scroll2
+{
+    background-color: #1A1A1A;
+    height: 196px;
+    overflow: hidden;
+    width: 970px;
+}
+#bodyPosCheckStatus .detailcashier
+{
+    background: url(image/bg_detail_cashier.png) repeat-x;
+    margin-bottom: 5px;
+    width: 1002px;
+    height: 51px;
+    text-transform: uppercase;
+}
+#bodyPosCheckStatus .detailcashier .toplabel
+{
+    color: #000000;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 40px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+/*JoinJobOrder*/
+/*by Anjar*/
+
+#bodyPosJoinJobOrder
+{
+    background: url(image/bg_login.jpg) no-repeat center 0px #F7931E;
+    font-family: Trebuchet MS;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 768px;
+    outline: none;
+    overflow: hidden;
+}
+#bodyPosJoinJobOrder .container
+{
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    margin: 0px auto;
+}
+#bodyPosJoinJobOrder .container #PasswordPanel #OKButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 60px;
+    height: 32px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    background: url(image/btn_ok_password.png) center no-repeat;
+    background-size: 67px;
+}
+#bodyPosJoinJobOrder .container .header
+{
+    height: 25px;
+    background: #000;
+    border: solid #000 1px;
+    margin-bottom: 5px;
+}
+#bodyPosJoinJobOrder .container .header .left
+{
+    float: left;
+}
+#bodyPosJoinJobOrder .container .header .left .title .text
+{
+    font-family: "Myriad Pro";
+    text-transform: uppercase;
+    color: #000;
+    background: url(image/bg_title_internet.jpg) repeat-x;
+    height: 23px;
+    float: left;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 12pt;
+    padding-top: 2px;
+}
+#bodyPosJoinJobOrder .container .header .left .title .sep
+{
+    background: url(image/bg_title_internet2.png) repeat-x;
+    height: 25px;
+    width: 13px;
+    float: left;
+}
+#bodyPosJoinJobOrder .container .header .right
+{
+    float: right;
+    height: 25px;
+}
+#bodyPosJoinJobOrder .container .header .right .date #tanggal
+{
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFF;
+    height: 23px;
+    float: left;
+    font-size: 12pt;
+    margin-right: 25px;
+    padding-top: 2px;
+}
+#bodyPosJoinJobOrder .container .header .right .date #jam
+{
+    float: left;
+    color: #FFFF00;
+    font-family: Arial;
+    font-weight: bold;
+    width: 65px;
+    padding-top: 2px;
+    height: 23px;
+    font-size: 13pt;
+    margin-right: 10px;
+}
+#bodyPosJoinJobOrder .containerBox
+{
+    padding: 7px;
+}
+
+#bodyPosJoinJobOrder .containerBox .totalItemBox
+{
+    background: none repeat scroll 0 0 #F6891F;
+    float: left;
+    font-size: 46px;
+    font-weight: bold;
+    height: 77px;
+    margin: 3px;
+    padding-top: 33px;
+    text-align: center;
+    width: 218px;
+}
+#bodyPosJoinJobOrder .containerBox .transactionRefBox
+{
+    background: #f6891f;
+    margin: 3px;
+    width: 75.3%;
+    height: 110px;
+    float: left;
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 15px;
+}
+#bodyPosJoinJobOrder .containerBox .transactionRefBox td
+{
+    vertical-align: middle;
+}
+#bodyPosJoinJobOrder .containerBox .customerBox
+{
+    background: #f6891f;
+    margin: 3px;
+    width: 36%;
+    height: 88px;
+    float: left;
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+#bodyPosJoinJobOrder .containerBox .totalBox
+{
+    background: #f6891f;
+    margin: 3px;
+    width: 23%;
+    height: 88px;
+    float: left;
+}
+#bodyPosJoinJobOrder .transactionRefBox #SearchButton
+{
+    width: 130px;
+    height: 75px;
+    border: medium none;
+    cursor: pointer;
+    display: block !important;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_search_130x75.png) center no-repeat;
+    margin: 0 auto;
+}
+#bodyPosJoinJobOrder .transactionRefBox #CloseButton
+{
+    width: 130px;
+    height: 75px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_back_130x75.png) center no-repeat;
+    margin: 0 auto;
+}
+
+#bodyPosJoinJobOrder .transactionRefBox #ResetButton
+{
+    width: 130px;
+    height: 75px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_reset_130x75.png) center no-repeat;
+    margin: 0 auto;
+}
+#bodyPosJoinJobOrder .productListBox
+{
+    background-color: #1a1a1a;
+    color: White;
+    font-weight: bold;
+    font-size: 18px;
+}
+#bodyPosJoinJobOrder .productListBoxRepeater
+{
+    background-color: #1a1a1a;
+    color: White;
+    font-size: 14px;
+    height: 490px;
+    overflow: hidden;
+}
+#bodyPosJoinJobOrder .productDetailListBox, #bodyPosJoinJobOrder .table-container-scroll2
+{
+    background-color: #1a1a1a;
+    color: White;
+    font-size: 14px;
+    width: 350px;
+}
+#bodyPosJoinJobOrder .productDetailListBox .table-header
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+#bodyPosJoinJobOrder .reasonList, #bodyPosJoinJobOrder .table-container-scroll3
+{
+    background-color: #1a1a1a;
+    color: White;
+    font-size: 14px;
+    width: 350px;
+}
+#bodyPosJoinJobOrder .bgproductListBox
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+#bodyPosJoinJobOrder .bgproductListBox td
+{
+    background: url(image/bg_top_table_cashier.png) center no-repeat;
+    width: auto;
+}
+#bodyPosJoinJobOrder .productListBoxLeft
+{
+    width: 620px;
+    float: left;
+}
+#bodyPosJoinJobOrder .productListBoxRight
+{
+    float: left;
+}
+#bodyPosJoinJobOrder .productListBoxRight .up, #DetailListPanel .table-navigation-scroll2 .up, #ReasonListPanel .table-navigation-scroll3 .up
+{
+    width: 35px;
+    height: 102px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_up.png) center no-repeat;
+    margin-top: 110px;
+}
+#bodyPosJoinJobOrder .productListBoxRight .down, #DetailListPanel .table-navigation-scroll2 .down, #ReasonListPanel .table-navigation-scroll3 .down
+{
+    width: 35px;
+    height: 102px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_down.png) center no-repeat;
+}
+#DetailListPanel .productDetailListBox, #DetailListPanel .table-container-scroll2, #ReasonListPanel .reasonList, #ReasonListPanel .table-container-scroll3
+{
+    float: left;
+    width: 323px;
+}
+#DetailListPanel .table-container-scroll2, #ReasonListPanel .table-container-scroll3
+{
+    height: 490px;
+    overflow: hidden;
+}
+#DetailListPanel .table-navigation-scroll2, #ReasonListPanel .table-navigation-scroll3
+{
+    float: left;
+    width: 35px;
+}
+#bodyPosJoinJobOrder .productListBoxClear
+{
+    clear: both;
+}
+#bodyPosJoinJobOrder .productListBox
+{
+    width: 620px;
+}
+#bodyPosJoinJobOrder .productListBoxRepeater
+{
+    width: 620px;
+}
+#bodyPosJoinJobOrder .productListBoxRepeater td
+{
+    padding-bottom: 5px;
+}
+#bodyPosJoinJobOrder .productListBox table, #bodyPosJoinJobOrder .productListBoxRepeater table
+{
+    width: 100%;
+}
+#bodyPosJoinJobOrder .productListBox .no, #bodyPosJoinJobOrder .productListBoxRepeater .no
+{
+    width: 4%;
+    text-align: center;
+}
+#bodyPosJoinJobOrder .productListBox .reference, #bodyPosJoinJobOrder .productListBoxRepeater .reference
+{
+    width: 13%;
+    text-align: center;
+}
+#bodyPosJoinJobOrder .productListBox .job-order, #bodyPosJoinJobOrder .productListBoxRepeater .job-order
+{
+    width: 33%;
+    text-align: center;
+}
+#bodyPosJoinJobOrder .productListBox .date, #bodyPosJoinJobOrder .productListBoxRepeater .date
+{
+    width: 15%;
+    text-align: center;
+}
+#bodyPosJoinJobOrder .productListBox .action, #bodyPosJoinJobOrder .productListBoxRepeater .action
+{
+    width: 39%;
+    text-align: center;
+}
+#bodyPosJoinJobOrder .container .productListBoxRepeater .CancelPaidButton
+{
+    width: 90px;
+    height: 45px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn-cancel-paid-90x45.png) center no-repeat;
+    float: left;
+}
+#bodyPosJoinJobOrder .container .productListBoxRepeater .ViewJobOrderButton
+{
+    width: 66px;
+    height: 45px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn-view-66x45.png) center no-repeat;
+    float: left;
+}
+#bodyPosJoinJobOrder .container .productListBoxRepeater .JoinJobOrderButton
+{
+    width: 66px;
+    height: 45px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn-join-66x45.png) center no-repeat;
+    float: left;
+}
+#bodyPosJoinJobOrder .container .productListBoxRepeater .clearClass
+{
+    clear: both;
+}
+.pickReasonButton input
+{
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    display: block;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/btn_check.png) center no-repeat;
+    margin: 1 auto;
+}
+#bodyPosJoinJobOrder .containerBox .transactionRefBox #CustIDTextBox, #bodyPosJoinJobOrder .containerBox .transactionRefBox #SearchFieldTextBox, #bodyPosJoinJobOrder .containerBox .transactionRefBox #SearchFieldDDL
+{
+    height: 22px;
+    font-size: 18px;
+    border: medium double Red;
+    border-radius: 6px 6px 6px 6px;
+    color: SaddleBrown;
+}
+#bodyPosJoinJobOrder .containerBox .transactionRefBox #SearchFieldDDL
+{
+    height: 28px;
+    font-size: 18px;
+}
+#bodyPosJoinJobOrder .containerBox .transactionRefBox #CustIDTextBox, #bodyPosJoinJobOrder .containerBox .transactionRefBox #SearchFieldDDL
+{
+    margin-bottom: 2px;
+}
+/* DESAIN KEYBOARD*/
+
+#panelKeyboard
+{
+    float: left;
+    position: fixed;
+    bottom: 1px;
+    width: 100%;
+    left: 0px;
+    background: url(image/bg_key_keyboard.png) repeat;
+    font-weight: bold;
+    font-size: 11px;
+    color: Gray;
+}
+#panelKeyboard .keyboard
+{
+    background-color: #cccccc;
+}
+
+#panelKeyboard .KeyboardDiv
+{
+    bottom: 0;
+    height: 300px;
+    padding-top: 8px;
+    text-align: center;
+    width: 1024px;
+    margin: auto;
+}
+#panelKeyboard .KeyboardDiv input
+{
+    width: 50px;
+    height: 50px;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1
+{
+    padding-left: 88px;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 .number input
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 59px;
+    height: 57px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    margin: 1px;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr1 input
+{
+    background: url(image/btn_key_1.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr2 input
+{
+    background: url(image/btn_key_2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr3 input
+{
+    background: url(image/btn_key_3.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr4 input
+{
+    background: url(image/btn_key_4.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr5 input
+{
+    background: url(image/btn_key_5.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr6 input
+{
+    background: url(image/btn_key_6.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr7 input
+{
+    background: url(image/btn_key_7.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr8 input
+{
+    background: url(image/btn_key_8.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr9 input
+{
+    background: url(image/btn_key_9.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbr0 input
+{
+    background: url(image/btn_key_0.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrMin input
+{
+    background: url(image/btn_key_min.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrEqual input
+{
+    background: url(image/btn_key_equal.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrBack input
+{
+    background: url(image/btn_key_back.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2
+{
+    padding-left: 150px;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 .number input
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 59px;
+    height: 56px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    margin: 1px;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrQ input
+{
+    background: url(image/btn_key_Q.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrW input
+{
+    background: url(image/btn_key_W.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrE input
+{
+    background: url(image/btn_key_E.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrR input
+{
+    background: url(image/btn_key_R.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrT input
+{
+    background: url(image/btn_key_T.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrY input
+{
+    background: url(image/btn_key_Y.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrU input
+{
+    background: url(image/btn_key_U.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrI input
+{
+    background: url(image/btn_key_I.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrO input
+{
+    background: url(image/btn_key_O.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrP input
+{
+    background: url(image/btn_key_P.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrOpenKurva input
+{
+    background: url(image/btn_open_kurva.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrCloseKurva input
+{
+    background: url(image/btn_close_kurva.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrA input
+{
+    background: url(image/btn_key_A.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrS input
+{
+    background: url(image/btn_key_S.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrD input
+{
+    background: url(image/btn_key_D.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrF input
+{
+    background: url(image/btn_key_F.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrG input
+{
+    background: url(image/btn_key_G.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrH input
+{
+    background: url(image/btn_key_H.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrJ input
+{
+    background: url(image/btn_key_J.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrK input
+{
+    background: url(image/btn_key_K.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrL input
+{
+    background: url(image/btn_key_L.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrTitikKoma input
+{
+    background: url(image/btn_key_titik_koma.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrPetik input
+{
+    background: url(image/btn_key_petik.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrZ input
+{
+    background: url(image/btn_key_Z.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrX input
+{
+    background: url(image/btn_key_X.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrC input
+{
+    background: url(image/btn_key_C.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrV input
+{
+    background: url(image/btn_key_V.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrB input
+{
+    background: url(image/btn_key_B.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrN input
+{
+    background: url(image/btn_key_N.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrM input
+{
+    background: url(image/btn_key_M.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrKoma input
+{
+    background: url(image/btn_key_koma.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrTitik input
+{
+    background: url(image/btn_key_titik.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrSlash input
+{
+    background: url(image/btn_key_slash.png) center no-repeat;
+}
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrSift input
+{
+    background: url(image/btn_key_sift.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrSpace input
+{
+    background: url(image/btn_key_space.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrEnter input
+{
+    background: url(image/btn_key_enter.png) center no-repeat;
+}
+
+
+
+/* KEYBOARD SIFT */
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrSeru input
+{
+    background: url(image/btn_key_seru.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrAdd input
+{
+    background: url(image/btn_key_@.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrSharp input
+{
+    background: url(image/btn_key_sharp.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrDolar input
+{
+    background: url(image/btn_key_dolar.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrPersen input
+{
+    background: url(image/btn_key_persen.png) center no-repeat;
+}
+
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrPangkat input
+{
+    background: url(image/btn_key_pangkat.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrAnd input
+{
+    background: url(image/btn_key_and.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrBintang input
+{
+    background: url(image/btn_key_bintang.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrBukaKurung input
+{
+    background: url(image/btn_key_Buka_kurung.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrTutupKurung input
+{
+    background: url(image/btn_key_tutup_kurung.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrUnderCross input
+{
+    background: url(image/btn_key_under_cross.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrPlus input
+{
+    background: url(image/btn_key_plus.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrBack2 input
+{
+    background: url(image/btn_key_back.png) center no-repeat;
+}
+
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrQ2 input
+{
+    background: url(image/btn_key_Q2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrW2 input
+{
+    background: url(image/btn_key_W2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrE2 input
+{
+    background: url(image/btn_key_E2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrR2 input
+{
+    background: url(image/btn_key_R2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrT2 input
+{
+    background: url(image/btn_key_T2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrY2 input
+{
+    background: url(image/btn_key_Y2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrU2 input
+{
+    background: url(image/btn_key_U2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrI2 input
+{
+    background: url(image/btn_key_I2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrO2 input
+{
+    background: url(image/btn_key_O2.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrP2 input
+{
+    background: url(image/btn_key_P2.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrKurvaOpen2 input
+{
+    background: url(image/btn_open_kurva2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrKurvaClose2 input
+{
+    background: url(image/btn_close_kurva2.png) center no-repeat;
+}
+
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrA2 input
+{
+    background: url(image/btn_key_A2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrS2 input
+{
+    background: url(image/btn_key_S2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrD2 input
+{
+    background: url(image/btn_key_D2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrF2 input
+{
+    background: url(image/btn_key_F2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrG2 input
+{
+    background: url(image/btn_key_G2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrH2 input
+{
+    background: url(image/btn_key_H2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrJ2 input
+{
+    background: url(image/btn_key_J2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrK2 input
+{
+    background: url(image/btn_key_K2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrL2 input
+{
+    background: url(image/btn_key_L2.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrTitikDua input
+{
+    background: url(image/btn_key_titik_dua.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrBackSlash input
+{
+    background: url(image/btn_key_back_slash.png) center no-repeat;
+}
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrZ2 input
+{
+    background: url(image/btn_key_z2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrX2 input
+{
+    background: url(image/btn_key_x2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrC2 input
+{
+    background: url(image/btn_key_c2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrV2 input
+{
+    background: url(image/btn_key_v2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrB2 input
+{
+    background: url(image/btn_key_b2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrN2 input
+{
+    background: url(image/btn_key_n2.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrM2 input
+{
+    background: url(image/btn_key_m2.png) center no-repeat;
+}
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrLebihBesar input
+{
+    background: url(image/btn_key_lebih_besar.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrLebihKecil input
+{
+    background: url(image/btn_key_lebih_kecil.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv2 #nmbrTanya input
+{
+    background: url(image/btn_key_tanya.png) center no-repeat;
+}
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrSift input
+{
+    background: url(image/btn_key_sift.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrSpace input
+{
+    background: url(image/btn_key_space.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrEnter input
+{
+    background: url(image/btn_key_enter.png) center no-repeat;
+}
+
+
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrSift2 input
+{
+    background: url(image/btn_key_sift.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrSpace2 input
+{
+    background: url(image/btn_key_space.png) center no-repeat;
+}
+#panelKeyboard .KeyboardDiv .KeyboardDiv1 #nmbrEnter2 input
+{
+    background: url(image/btn_key_enter.png) center no-repeat;
+}
+.dragger, .dragger2, .dragger3
+{
+    cursor: move;
+}
+
+/* Monitoring */
+#bodyMonitoring
+{
+    background: url(image/bg_cashier.png) no-repeat center 0px #F7931E;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 768px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+}
+#bodyMonitoring .container
+{
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    margin: 0px auto;
+}
+#bodyMonitoring .container #PasswordPanel #OKButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 60px;
+    height: 32px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    background: url(image/btn_ok_password.png) center no-repeat;
+    background-size: 67px;
+}
+#bodyMonitoring .container #PasswordPanel #CancellButton
+{
+background: url("image/btn_cancel_DO.png") no-repeat scroll center center transparent;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 0;
+    height: 30px;
+    line-height: 0;
+    outline: medium none;
+    padding: 0;
+    text-indent: -999px;
+    width: 67px;
+}
+
+
+#bodyMonitoring .container .header
+{
+    height: 25px;
+    background: #000;
+    border: solid #000 1px;
+    margin-bottom: 5px;
+}
+#bodyMonitoring .container .header .left
+{
+    float: left;
+}
+#bodyMonitoring .container .header .left .title .text
+{
+    font-family: "Arial";
+    text-transform: uppercase;
+    color: #000;
+    background: url(image/bg_title_internet.jpg) repeat-x;
+    height: 23px;
+    float: left;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 12pt;
+    padding-top: 2px;
+}
+#bodyMonitoring .container .header .left .title .sep
+{
+    /*background: url(image/bg_title_internet2.png) no-repeat; 	height: 25px; 	width: 13px; 	float: right;	 	margin-left : 15px;*/
+    background: url(image/bg_title_internet2.png) repeat-x;
+    height: 25px;
+    width: 13px;
+    float: left;
+}
+#bodyMonitoring .container .header .right
+{
+    float: right;
+    height: 25px;
+}
+#bodyMonitoring .container .header .right .date #tanggal
+{
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFF;
+    height: 23px;
+    float: left;
+    font-size: 12pt;
+    margin-right: 25px;
+    padding-top: 2px;
+}
+#bodyMonitoring .container .header .right .date #jam
+{
+    float: left;
+    color: #FFFF00;
+    font-family: Arial;
+    font-weight: bold;
+    width: 65px;
+    padding-top: 2px;
+    height: 23px;
+    font-size: 13pt;
+    margin-right: 10px;
+}
+
+#bodyMonitoring .container .content .top
+{
+    /*background: url(image/bg_top_cashier.png) repeat-x;*/
+    background-color: #F6891F;
+    margin-bottom: 5px;
+    width: 1020px;
+    height: 130px;
+    margin-left: 2px;
+}
+
+#bodyMonitoring .container .content .top .table
+{
+    padding: 15px;
+    margin-bottom: 70px;
+}
+
+#bodyMonitoring .container .content .top .table .table-inner-top
+{
+    margin-right: -27px;
+}
+
+#bodyMonitoring .container .content .top .table .table-inner-top .input-form
+{
+    font-family: Arial;
+    color: #000;
+    font-size: 14px; /*text-transform: uppercase;*/
+    margin-bottom: 5px;
+    line-height: 32px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+#bodyMonitoring .container .content .top .table .table-inner-top .clear
+{
+    clear: both;
+}
+#bodyMonitoring #resetbtn #CashierButton
+{
+    width: 120px;
+    height: 92px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_payment.png) center no-repeat;
+    margin: 5px auto;
+    background-size: 121px;
+}
+#bodyMonitoring .table-container-scroll
+{
+    height: 262px;
+    overflow: hidden;
+    float: right;
+    width: 971px;
+    background-color: #1a1a1a;
+    margin-top: -3px;
+}
+#bodyMonitoring .table-container-scroll .ViewDetailImageButton input, #bodyMonitoring .table-container-scroll .ViewImageButton input
+{
+    /*background: url(  "image/btn_viewdetail_cashier.png" ) no-repeat scroll center center transparent;*/
+    background: url(   "image/btn_view_checkorder.png" ) no-repeat scroll center center transparent;
+    cursor: pointer;
+    display: block;
+    height: 32px;
+    line-height: 0;
+    margin: 0 auto;
+    outline: medium none;
+    text-indent: -999px;
+    width: 63px;
+}
+#bodyMonitoring .table-container-scroll .CancelImageButton input
+{
+    background: url(      "image/btn_cancel_DO.png" ) no-repeat scroll center center transparent;
+    cursor: pointer;
+    display: block;
+    height: 29px;
+    line-height: 0;
+    margin: 0 auto;
+    outline: medium none;
+    text-indent: -999px;
+    width: 66px;
+}
+
+#bodyMonitoring .table-container-scroll .ViewImageButton input
+{
+    background: url(      "image/btn_view_checkorder.png" ) no-repeat scroll center center transparent;
+    width: 67px;
+}
+#bodyMonitoring .table-container-scrollcheck
+{
+    height: 400px;
+    overflow: hidden;
+    float: right;
+    width: 820px;
+    background-color: #1a1a1a;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: White;
+}
+
+#bodyMonitoring .table-container-scrollcheck2
+{
+    height: 650px;
+    overflow: hidden;
+    float: right;
+    width: 985px;
+    background-color: #1a1a1a;
+    margin-top: 10px;
+    margin-left: -65px;
+    color: White;
+}
+
+#bodyMonitoring .table-navigation-scroll
+{
+    position: absolute;
+    top: 230px;
+    margin-left: -9px; /*left:497px;*/
+}
+#bodyMonitoring .table-navigation-scroll2
+{
+    left: 978px; /*position: absolute;*/
+    top: 531px;
+}
+#bodyMonitoring .table-navigation-scroll3
+{
+    position: absolute;
+    top: 230px;
+    left: 988px;
+}
+#bodyMonitoring .table-navigation-scroll .up, #bodyMonitoring .table-navigation-scroll2 .up, #bodyMonitoring .table-navigation-scroll3 .up
+{
+    width: 35px;
+    height: 108px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_up_2.png) center no-repeat;
+}
+#bodyMonitoring .table-navigation-scroll .down, #bodyMonitoring .table-navigation-scroll2 .down, #bodyMonitoring .table-navigation-scroll3 .down
+{
+    width: 35px;
+    height: 108px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_down_2.png) center no-repeat;
+}
+#bodyMonitoring .table-container-scroll3
+{
+    height: 540px;
+    overflow: hidden;
+    float: right; /*width: 449px;*/
+    background-color: #1a1a1a;
+    margin-top: -3px;
+}
+#bodyMonitoring .table-container-scroll2
+{
+    height: 196px;
+    overflow: hidden;
+    width: 971px;
+    background-color: #1a1a1a;
+}
+
+#bodyMonitoring .container .input_textbox input
+{
+    width: 220px;
+    height: 30px;
+    float: left; /*background: url(image/bg_textbox_cashier.png) no-repeat -2px;*/
+    position: relative;
+    border: none;
+    margin-top: 3px;
+    padding-right: 6px;
+    font-size: 16px;
+}
+#bodyMonitoring #searchPanel .SearchButtonForm
+{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url(      "image/btn_search_ticketing.png" );
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 40px auto;
+    border: medium none;
+    cursor: pointer;
+    display: block !important;
+    font-size: 0;
+    height: 32px;
+    line-height: 0;
+    margin: 0 auto;
+    outline: medium none;
+    padding: 0;
+    text-indent: -999px;
+    width: 37px;
+}
+#bodyMonitoring #searchbtn #CheckStatusButton
+{
+    width: 111px;
+    height: 92px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_take_product.png) center no-repeat;
+    margin: 5px auto;
+}
+
+#bodyMonitoring #backbtn #BackImageButton, #bodyMonitoring #MemberBtn #MemberButton, #bodyMonitoring #RegsitrasiBtn #RegistrationButton
+{
+    width: 122px;
+    height: 92px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding-top: 1px;
+    background: url(image/btn_cancel_monitoring2.png) center no-repeat;
+    margin: 5px auto;
+}
+#bodyMonitoring #MemberBtn #MemberButton
+{
+    background: url(      "image/btn_member.jpg" ) no-repeat scroll center center transparent;
+    background-size: 118px;
+}
+#bodyMonitoring #RegsitrasiBtn #RegistrationButton
+{
+    background: url(      "image/btn_registration.png" ) no-repeat scroll center center transparent;
+    background-size: 118px;
+}
+#bodyMonitoring .container .backbutton input
+{
+    width: 163px;
+    height: 53px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_back_cashier_130x75.png) center no-repeat;
+    margin: 0 auto;
+}
+#bodyMonitoring .container .resetallbutton input
+{
+    width: 62px;
+    height: 23px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_reset_all_cashier.png) center no-repeat;
+    margin: 0 auto;
+}
+#bodyMonitoring .container .closeshiftbutton input
+{
+    width: 163px;
+    height: 53px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_close_shift_cashier_130x75.png) center no-repeat;
+    margin: 0 auto;
+}
+#bodyMonitoring .container .settlementbutton input
+{
+    width: 163px;
+    height: 53px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_settlement_cashier_130x75.png) center no-repeat;
+    margin: 0 auto;
+}
+
+#bodyMonitoring .container .content .top .table .table-inner-top #referencenumber .label
+{
+    margin-right: 5px;
+    float: left;
+    text-align: center;
+}
+
+.toptable td
+{
+    color: White;
+    font-weight: bold;
+    font-family: Trebuchet MS;
+    border: solid #4D4D4D 1px;
+    background: url(image/bg_top_table_cashier.png) center repeat-x;
+    font-size: 13px;
+    margin-top: 6px;
+    padding: 2px;
+}
+
+.bgproductListBox th
+{
+    color: White;
+    font-weight: bold;
+    font-family: Trebuchet MS;
+    border: solid #4D4D4D 1px;
+    background: url(image/bg_top_table_cashier.png) center repeat-x;
+    font-size: 13px;
+    margin-top: 6px;
+    padding: 2px;
+}
+
+.repeater td
+{
+    color: White;
+    font-family: Arial;
+    font-size: 12px;
+    border: solid #4D4D4D 1px;
+    padding: 10px 1px;
+}
+.viewbutton input
+{
+    width: 82px;
+    height: 28px;
+    cursor: pointer;
+    display: block;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/btn_viewdetail_cashier.png) center no-repeat;
+    margin: 0 auto;
+}
+.pickbutton input
+{
+    width: 31px;
+    height: 28px;
+    cursor: pointer;
+    display: block;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/btn_in_cashier.png) center no-repeat;
+    margin: 1 auto;
+}
+.resetpickbutton input
+{
+    width: 31px;
+    height: 28px;
+    cursor: pointer;
+    display: block;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/btn_out_cashier.png) center no-repeat;
+    margin: 0 auto;
+}
+.dpbutton input
+{
+    width: 31px;
+    height: 28px;
+    cursor: pointer;
+    display: block;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/btn_dp.png) center no-repeat;
+    margin: 1 auto;
+}
+.detailcashier
+{
+    background: url(image/bg_detail_cashier.png) repeat-x;
+    margin-bottom: 5px;
+    width: 1002px;
+    height: 51px;
+    text-transform: uppercase;
+}
+.detailcashier .toplabel
+{
+    color: #000000;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 40px;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+.tableRepater
+{
+    padding-top: 8px;
+}
+
+#bodyMonitoring .navigation
+{
+    float: left;
+    width: 35px;
+    margin-left: 1004px;
+}
+#bodyMonitoring .navigation .up
+{
+    width: 35px;
+    height: 102px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_up.png) center no-repeat;
+}
+#bodyMonitoring .navigation .down
+{
+    width: 35px;
+    height: 102px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_down.png) center no-repeat;
+}
+.dragger
+{
+    cursor: move;
+}
+
+/* Join Table */
+#bodyJoinTable
+{
+    background: url(image/bg_cashier.png) no-repeat center 0px #F7931E;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 768px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+}
+#bodyJoinTable .container
+{
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    margin: 0px auto;
+}
+#bodyJoinTable .container .header
+{
+    height: 25px;
+    background: #000;
+    border: solid #000 1px;
+    margin-bottom: 5px;
+}
+#bodyJoinTable .container .header .left
+{
+    float: left;
+}
+#bodyJoinTable .container .header .left .title .text
+{
+    font-family: "Arial";
+    text-transform: uppercase;
+    color: #000;
+    background: url(image/bg_title_internet.jpg) repeat-x;
+    height: 23px;
+    float: left;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 12pt;
+    padding-top: 2px;
+}
+#bodyJoinTable .container .header .left .title .sep
+{
+    /*background: url(image/bg_title_internet2.png) no-repeat; 	height: 25px; 	width: 13px; 	float: right;	 	margin-left : 15px;*/
+    background: url(image/bg_title_internet2.png) repeat-x;
+    height: 25px;
+    width: 13px;
+    float: left;
+}
+#bodyJoinTable .container .header .right
+{
+    float: right;
+    height: 25px;
+}
+#bodyJoinTable .container .header .right .date #tanggal
+{
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFF;
+    height: 23px;
+    float: left;
+    font-size: 12pt;
+    margin-right: 25px;
+    padding-top: 2px;
+}
+#bodyJoinTable .container .header .right .date #jam
+{
+    float: left;
+    color: #FFFF00;
+    font-family: Arial;
+    font-weight: bold;
+    width: 65px;
+    padding-top: 2px;
+    height: 23px;
+    font-size: 13pt;
+    margin-right: 10px;
+}
+
+#bodyJoinTable .lantai
+{
+    margin-top: 75px;
+}
+
+#bodyJoinTable .containerBox .totalItemBox
+{
+    background: none repeat scroll 0 0 #F6891F;
+    border-radius: 10px 10px 10px 10px;
+    float: left;
+    font-family: Arial Black;
+    font-size: 20pt;
+    font-weight: bold;
+    height: 74px;
+    margin: 3px 3px 3px 10px;
+    padding-top: 36px;
+    text-align: center;
+    width: 203px;
+}
+
+#bodyJoinTable .containerBox .transactionRefBox
+{
+    background: none repeat scroll 0 0 #F6891F;
+    border-radius: 10px 10px 10px 10px;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 86px;
+    margin: 3px;
+    padding-left: 24px;
+    padding-top: 24px;
+    width: 75%;
+}
+#bodyJoinTable .containerBox .transactionRefBox td
+{
+    vertical-align: middle;
+}
+
+#bodyJoinTable .container .content .top
+{
+    background-color: #F6891F;
+    height: 104px;
+    margin-left: 10px;
+    margin-top: 129px;
+    width: 1001px;
+}
+
+#bodyJoinTable .lantai .button-lantai input
+{
+    width: 136px;
+    height: 90px;
+    background: url(image/bg_lantai_internet_3.png) center no-repeat;
+    border: none;
+    font-family: "Myriad Pro";
+    color: #000;
+    font-weight: bold;
+    font-size: 12pt;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    float: left;
+    margin-left: 10px;
+}
+
+#bodyJoinTable .container .content .top .table
+{
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+#bodyJoinTable .container .content .top .table .buttonaction
+{
+    padding-left: 15px;
+}
+
+#bodyJoinTable #SaveImageButton
+{
+    width: 112px;
+    height: 72px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_save_jointable.png) center no-repeat;
+    margin: -4px auto;
+}
+
+#bodyJoinTable #BackImageButton
+{
+    width: 112px;
+    height: 72px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_back_jointable.png) center no-repeat;
+    margin: -4px auto;
+}
+
+#bodyJoinTable #CancelImageButton
+{
+    width: 112px;
+    height: 72px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_cancel_jointable.png) center no-repeat;
+    margin: -4px auto;
+}
+
+#bodyJoinTable .table-container-scroll
+{
+    background-color: #1A1A1A;
+    float: right;
+    height: 460px;
+    margin-right: 40px;
+    margin-top: -3px;
+    overflow: hidden;
+    width: 358px;
+}
+
+#bodyJoinTable .table-navigation-scroll
+{
+    position: absolute;
+    top: 430px;
+    left: 390px;
+}
+#bodyJoinTable .table-navigation-scroll2
+{
+    position: absolute;
+    top: 430px;
+    left: 782px;
+}
+#bodyJoinTable .table-navigation-scroll3
+{
+    position: absolute;
+    top: 526px;
+    left: 988px;
+}
+#bodyJoinTable .table-navigation-scroll .up, #bodyJoinTable .table-navigation-scroll2 .up, #bodyJoinTable .table-navigation-scroll3 .up
+{
+    width: 35px;
+    height: 108px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_up_2.png) center no-repeat;
+}
+#bodyJoinTable .table-navigation-scroll .down, #bodyJoinTable .table-navigation-scroll2 .down, #bodyJoinTable .table-navigation-scroll3 .down
+{
+    width: 35px;
+    height: 108px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_down_2.png) center no-repeat;
+}
+#bodyJoinTable .table-container-scroll2
+{
+    height: 460px;
+    overflow: hidden;
+    float: right;
+    width: 302px;
+    background-color: #1a1a1a;
+    margin-top: -3px;
+}
+#bodyJoinTable .table-container-scroll3
+{
+    height: 245px;
+    overflow: hidden;
+    width: 981px;
+    background-color: #1a1a1a;
+}
+
+#bodyJoinTable .container .input_textbox input
+{
+    width: 132px;
+    height: 44px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_search_cashier_130x75.png) center no-repeat;
+    margin: -4px auto;
+}
+
+#bodyJoinTable .container .backbutton input
+{
+    width: 163px;
+    height: 53px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_back_cashier_130x75.png) center no-repeat;
+    margin: 0 auto;
+}
+#bodyJoinTable .container .resetallbutton input
+{
+    width: 62px;
+    height: 23px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_reset_all_cashier.png) center no-repeat;
+    margin: 0 auto;
+}
+#bodyJoinTable .container .closeshiftbutton input
+{
+    width: 163px;
+    height: 53px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_close_shift_cashier_130x75.png) center no-repeat;
+    margin: 0 auto;
+}
+#bodyJoinTable .container .settlementbutton input
+{
+    width: 163px;
+    height: 53px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_settlement_cashier_130x75.png) center no-repeat;
+    margin: 0 auto;
+}
+
+#bodyJoinTable .container .content .top .table .table-inner-top #referencenumber .label
+{
+    margin-right: 5px;
+    float: left;
+    text-align: center;
+}
+
+.toptable td
+{
+    color: White;
+    font-weight: bold;
+    font-family: Trebuchet MS;
+    border: solid #4D4D4D 1px;
+    background: url(image/bg_top_table_cashier.png) center repeat-x;
+    font-size: 13px;
+    margin-top: 6px;
+    padding: 2px;
+    margin-left: 10px;
+}
+.repeater td
+{
+    color: White;
+    font-family: Arial;
+    font-size: 12px;
+    border: solid #4D4D4D 1px;
+    padding: 10px 1px;
+}
+.viewbutton input
+{
+    width: 82px;
+    height: 28px;
+    cursor: pointer;
+    display: block;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/btn_viewdetail_cashier.png) center no-repeat;
+    margin: 0 auto;
+}
+.pickbutton input
+{
+    width: 31px;
+    height: 28px;
+    cursor: pointer;
+    display: block;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/btn_in_cashier.png) center no-repeat;
+    margin: 1 auto;
+}
+.resetpickbutton input
+{
+    width: 29px;
+    height: 28px;
+    cursor: pointer;
+    display: block;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/btn_out_cashier.png) center no-repeat;
+    margin: 0 auto;
+}
+.dpbutton input
+{
+    width: 31px;
+    height: 28px;
+    cursor: pointer;
+    display: block;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/btn_dp.png) center no-repeat;
+    margin: 1 auto;
+}
+.detailcashier
+{
+    background: url(image/bg_detail_cashier.png) repeat-x;
+    margin-bottom: -2px;
+    width: 1002px;
+    height: 51px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.detailcashier .toplabel
+{
+    color: #000000;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 40px;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+
+.detailcashier #CheckStatusPrintPreviewButton,
+.detailcashier #CashierPrintPreviewButton
+{
+  background: url("image/btn_print_preview_monitoring.png") no-repeat scroll center center transparent;
+    background-size:100px;
+    margin-left: -3px;
+     border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 109px;
+    height: 33px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+        position: relative;
+        margin-top:-36px;
+}
+.detailcashier #CheckStatusPrintPreviewButton
+{
+            margin-top:-40px;
+}
+
+.tableRepater
+{
+    padding-top: 0px;
+    margin-top: 9px;
+}
+
+#ReasonListPanel .reasonList
+{
+    margin-top: 20px;
+    border-radius: 10Px 10px 0px 0px; /*background-color: #1A1A1A; 	clear: both; 	color: White; 	float: left; 	font-family: Trebuchet MS; 	font-size: 14px; 	margin-left: 329px; 	padding-top: 2px; 	width: 350px;*/
+}
+
+#ReasonListPanel .reasonList, #ReasonListPanel .table-container-scroll2
+{
+    background-color: #1a1a1a;
+    color: White;
+    font-size: 14px;
+    width: 350px;
+    font-family: Trebuchet MS;
+    float: left;
+    /*margin-left: 329px;*/
+    margin-left: 0px;
+    padding-top: 2px;
+    clear: both;
+}
+#ReasonListPanel .table-container-scroll2
+{
+    height: 340px;
+    overflow: hidden;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#ReasonListPanel .table-navigation-scroll2
+{
+    float: left;
+    width: 35px;
+}
+#ReasonListPanel .table-navigation-scroll2 .up
+{
+    width: 35px;
+    height: 102px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_up.png) center no-repeat;
+    margin-top: 61px;
+}
+#ReasonListPanel .table-navigation-scroll2 .down
+{
+    width: 35px;
+    height: 102px;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    padding: 0;
+    background: url(image/btn_internet_down.png) center no-repeat;
+}
+#ReasonListPanel .bgproductListBox
+{
+    font-weight: lighter;
+    font-size: 18px;
+}
+#ReasonListPanel .bgproductListBox td
+{
+    background: url(image/bg_top_table_cashier.png) center no-repeat;
+    width: auto;
+}
+#ReasonListPanel .pickReasonButton input
+{
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    display: block;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    background: url(image/btn_check.png) center no-repeat;
+    margin: 1 auto;
+}
+
+#ReasonListPanel .reasonback
+{
+    width: 80px;
+    height: 95px;
+    border: none;
+    display: block;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    margin: 0 0 0 600px;
+    clear: both;
+    padding-top: 10px;
+}
+
+#ReasonListPanel .reasonback #Back2ImageButton
+{
+    background: url(image/btn_back5.png) center no-repeat;
+    display: block;
+    width: 80px;
+    height: 95px;
+    text-indent: -999px;
+}
+
+/*KeyBoardOnScreen*/
+
+#KeyBoardOnScreen
+{
+    background: url(image/bg_login.jpg) no-repeat center 0px #F7931E;
+    font-family: Trebuchet MS;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 768px;
+    outline: none;
+    overflow: hidden;
+}
+#KeyBoardOnScreen .container
+{
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    margin: 0px auto;
+}
+#KeyBoardOnScreen .container .header
+{
+    height: 25px;
+    background: #000;
+    border: solid #000 1px;
+    margin-bottom: 5px;
+}
+#KeyBoardOnScreen .container .header .left
+{
+    float: left;
+}
+#KeyBoardOnScreen .container .header .left .title .text
+{
+    font-family: "Myriad Pro";
+    text-transform: uppercase;
+    color: #000;
+    background: url(image/bg_title_internet.jpg) repeat-x;
+    height: 23px;
+    float: left;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 12pt;
+    padding-top: 2px;
+}
+#KeyBoardOnScreen .container .header .left .title .sep
+{
+    background: url(image/bg_title_internet2.png) repeat-x;
+    height: 25px;
+    width: 13px;
+    float: left;
+}
+#KeyBoardOnScreen .container .header .right
+{
+    float: right;
+    height: 25px;
+}
+#KeyBoardOnScreen .container .header .right .date #tanggal
+{
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #FFF;
+    height: 23px;
+    float: left;
+    font-size: 12pt;
+    margin-right: 25px;
+    padding-top: 2px;
+}
+#KeyBoardOnScreen .container .header .right .date #jam
+{
+    float: left;
+    color: #FFFF00;
+    font-family: Arial;
+    font-weight: bold;
+    width: 65px;
+    padding-top: 2px;
+    height: 23px;
+    font-size: 13pt;
+    margin-right: 10px;
+}
+#KeyBoardOnScreen .containerBox
+{
+    padding: 35px 30px;
+}
+
+#KeyBoardOnScreen .containerBox .totalItemBox
+{
+    background: #f6891f;
+    margin: 3px;
+    width: 218px;
+    height: 72px;
+    float: left;
+    font-weight: bold;
+    font-size: 20pt;
+    padding-top: 38px;
+    text-align: center;
+}
+#KeyBoardOnScreen .containerBox .transactionRefBox
+{
+    background: #f6891f;
+    width: 870px;
+    height: 173px;
+    float: left;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 50px 40px;
+    border-radius: 10px 10px 10px 10px;
+    font-family:caption;
+}
+#KeyBoardOnScreen .containerBox .transactionRefBox td
+{
+    vertical-align: middle;
+    width: 500px;
+    height: 60px;
+}
+
+#KeyBoardOnScreen .containerBox .transactionRefBox #OKButton, #KeyBoardOnScreen .containerBox .transactionRefBox #CancelButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block !important;
+    float: left;
+    font-size: 0;
+    height: 97px;
+    line-height: 0;
+    margin: 0 auto 0 15px;
+    outline: medium none;
+    padding: 0;
+    text-indent: -999px;
+    width: 152px;
+}
+#KeyBoardOnScreen .containerBox .transactionRefBox #OKButton
+{
+    background: url(   "image/btn_done_keyboard.png" ) no-repeat scroll center center transparent;
+    background-size: 149px;
+    margin-left:324px;
+}
+#KeyBoardOnScreen .containerBox .transactionRefBox #CancelButton
+{
+    background: url(   "image/btn_cancel_receiptTime.png" ) no-repeat scroll center center transparent;
+    background-size: 149px;
+}
+#KeyBoardOnScreen .containerBox .transactionRefBox .widthText
+{
+    border: medium double Red;
+    border-radius: 6px 6px 6px 6px;
+    color: SaddleBrown;
+    font-size: 35px;
+    height: 41px;
+    width: 640px;
+}
+
+.warning
+{
+    font-size: 15px;
+    color: Red;
+    margin-left: 9px;
+}
+
+
+#panelInputNumber
+{
+    position: relative;
+    left: 357px;
+    top: -420px;
+}
+#panelInputNumber .number
+{
+    width: 227px;
+    float: left;
+}
+#panelInputNumber .number input
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 73px;
+    height: 72px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    margin: 1px;
+}
+#panelInputNumber .number #Div1 input
+{
+    background: url(image/btn_nmbr_1.png) center no-repeat;
+}
+#panelInputNumber .number #Div2 input
+{
+    background: url(image/btn_nmbr_2.png) center no-repeat;
+}
+#panelInputNumber .number #Div3 input
+{
+    background: url(image/btn_nmbr_3.png) center no-repeat;
+}
+#panelInputNumber .number #Div4 input
+{
+    background: url(image/btn_nmbr_4.png) center no-repeat;
+}
+#panelInputNumber .number #Div5 input
+{
+    background: url(image/btn_nmbr_5.png) center no-repeat;
+}
+#panelInputNumber .number #Div6 input
+{
+    background: url(image/btn_nmbr_6.png) center no-repeat;
+}
+#panelInputNumber .number #Div7 input
+{
+    background: url(image/btn_nmbr_7.png) center no-repeat;
+}
+#panelInputNumber .number #Div8 input
+{
+    background: url(image/btn_nmbr_8.png) center no-repeat;
+}
+#panelInputNumber .number #Div9 input
+{
+    background: url(image/btn_nmbr_9.png) center no-repeat;
+}
+#panelInputNumber .number #nmbrdot input
+{
+    background: url(image/btn_nmbr_dot.png) center no-repeat;
+}
+#panelInputNumber .number #Div10 input
+{
+    background: url(image/btn_nmbr_0.png) center no-repeat;
+}
+#panelInputNumber .number #Div11 input
+{
+    background: url(image/btn_nmbr_00.png) center no-repeat;
+}
+#panelInputNumber .button-submit
+{
+    float: left;
+    width: 63px;
+}
+#panelInputNumber .button-submit #btnClearNumber
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 70px;
+    height: 145px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    background: url(image/btn_small_gif.png) center no-repeat;
+}
+#panelInputNumber .button-submit #UpdateButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 70px;
+    height: 158px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    float: left;
+    padding: 0;
+    background: url(image/btn_ok_small.png) center no-repeat;
+}

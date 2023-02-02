@@ -1,0 +1,13 @@
+D:\WORK IP.1\SMS\Windows App\bin\Debug\Windows App.exe.config
+D:\WORK IP.1\SMS\Windows App\bin\Debug\Windows App.exe
+D:\WORK IP.1\SMS\Windows App\bin\Debug\Windows App.pdb
+D:\WORK IP.1\SMS\Windows App\bin\Debug\SMSLibrary.dll
+D:\WORK IP.1\SMS\Windows App\bin\Debug\SMSLibrary.pdb
+D:\WORK IP.1\SMS\Windows App\obj\Debug\ResolveAssemblyReference.cache
+D:\WORK IP.1\SMS\Windows App\obj\Debug\Windows_App.ConnStringGeneratorForm.resources
+D:\WORK IP.1\SMS\Windows App\obj\Debug\Windows_App.Properties.Resources.resources
+D:\WORK IP.1\SMS\Windows App\obj\Debug\Windows_App.SMSGateway.resources
+D:\WORK IP.1\SMS\Windows App\obj\Debug\Windows_App.tempHyperterminal.resources
+D:\WORK IP.1\SMS\Windows App\obj\Debug\Windows App.csproj.GenerateResource.Cache
+D:\WORK IP.1\SMS\Windows App\obj\Debug\Windows App.exe
+D:\WORK IP.1\SMS\Windows App\obj\Debug\Windows App.pdb

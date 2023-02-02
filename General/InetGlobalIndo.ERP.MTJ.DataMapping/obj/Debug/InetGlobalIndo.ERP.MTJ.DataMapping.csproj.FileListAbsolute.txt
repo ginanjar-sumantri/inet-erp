@@ -1,0 +1,8 @@
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.DataMapping\bin\Debug\InetGlobalIndo.ERP.MTJ.DataMapping.dll
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.DataMapping\bin\Debug\InetGlobalIndo.ERP.MTJ.DataMapping.pdb
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.DataMapping\bin\Debug\InetGlobalIndo.ERP.MTJ.Common.dll
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.DataMapping\bin\Debug\InetGlobalIndo.ERP.MTJ.SystemConfig.dll
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.DataMapping\bin\Debug\InetGlobalIndo.ERP.MTJ.Common.pdb
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.DataMapping\obj\Debug\ResolveAssemblyReference.cache
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.DataMapping\obj\Debug\InetGlobalIndo.ERP.MTJ.DataMapping.dll
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.DataMapping\obj\Debug\InetGlobalIndo.ERP.MTJ.DataMapping.pdb

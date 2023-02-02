@@ -1,0 +1,81 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VTSWeb.SystemConfig.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConnString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=192.168.100.1\development; Database=CDC_VTS_Development; UID=vtsuser; PWD=vtsuser.1;</Value>
+    </Setting>
+    <Setting Name="RequestPageKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Page</Value>
+    </Setting>
+    <Setting Name="ListPageSize" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="DataPagerRange" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="HomeWebAppURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:1362/VTSWeb.UI/</Value>
+    </Setting>
+    <Setting Name="DateForm" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Encryptionkey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">:))</Value>
+    </Setting>
+    <Setting Name="ActionResult" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ActionResult</Value>
+    </Setting>
+    <Setting Name="CompanyName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CYBER DATA CENTRE</Value>
+    </Setting>
+    <Setting Name="ForgotPasswordPage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CookieName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Name</Value>
+    </Setting>
+    <Setting Name="CookiePassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password</Value>
+    </Setting>
+    <Setting Name="CookieInstance" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Intance</Value>
+    </Setting>
+    <Setting Name="LoginLifeTimeExpired" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="CookiesPreferences" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PreferencesVTS</Value>
+    </Setting>
+    <Setting Name="StringSeparatorPublish" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/</Value>
+    </Setting>
+    <Setting Name="CustomerConnString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RootOrganization" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PhotoPicturePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Inetpub\wwwroot\VTSWeb\images\photo\</Value>
+    </Setting>
+    <Setting Name="ImageExtension" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">.jpg$|\.jpeg$|\.gif$|\.png</Value>
+    </Setting>
+    <Setting Name="ImageWidth" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">950</Value>
+    </Setting>
+    <Setting Name="ImageHeight" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">850</Value>
+    </Setting>
+    <Setting Name="ImageMaxSize" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">800000</Value>
+    </Setting>
+    <Setting Name="ImageDefault" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">no_picture.jpg</Value>
+    </Setting>
+    <Setting Name="PhotoPictureVirDirPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost/VTSWeb/images/photo/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

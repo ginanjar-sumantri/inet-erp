@@ -1,0 +1,138 @@
+﻿using System;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using InetGlobalIndo.ERP.MTJ.Common;
+using InetGlobalIndo.ERP.MTJ.DBFactory.ERPManSys;
+using InetGlobalIndo.ERP.MTJ.SystemConfig;
+using InetGlobalIndo.ERP.MTJ.BusinessRule.StockControl;
+using InetGlobalIndo.ERP.MTJ.Common.Encryption;
+using InetGlobalIndo.ERP.MTJ.BusinessRule.Settings;
+using InetGlobalIndo.ERP.MTJ.BusinessRule.Accounting;
+using InetGlobalIndo.ERP.MTJ.Common.Enum;
+using InetGlobalIndo.ERP.MTJ.DataMapping;
+
+namespace InetGlobalIndo.ERP.MTJ.UI.StockControl
+{
+    public partial class ProdType_PGAdd : ProductTypeBase
+    {
+        private PriceGroupBL _priceGroupBL = new PriceGroupBL();
+        private PermissionBL _permBL = new PermissionBL();
+        private CurrencyBL _currencyBL = new CurrencyBL();
+        private CurrencyRateBL _currencyRate = new CurrencyRateBL();
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            this._permAccess = this._permBL.PermissionValidation1(this._menuID, HttpContext.Current.User.Identity.Name, InetGlobalIndo.ERP.MTJ.Common.Enum.Action.Access);
+
+            if (this._permAccess == PermissionLevel.NoAccess)
+            {
+                Response.Redirect(this._errorPermissionPage);
+            }
+
+            this._permAdd = this._permBL.PermissionValidation1(this._menuID, HttpContext.Current.User.Identity.Name, InetGlobalIndo.ERP.MTJ.Common.Enum.Action.Add);
+
+            if (this._permAdd == PermissionLevel.NoAccess)
+            {
+                Response.Redirect(this._errorPermissionPage);
+            }
+
+            this._nvcExtractor = new NameValueCollectionExtractor(Request.QueryString);
+
+            if (!this.Page.IsPostBack == true)
+            {
+                this.PageTitleLiteral.Text = this._pageTitleLiteral;
+
+                this.SaveButton.ImageUrl = ApplicationConfig.HomeWebAppURL + "images/save.jpg";
+                this.CancelButton.ImageUrl = ApplicationConfig.HomeWebAppURL + "images/cancel.jpg";
+
+                this.ClearLabel();
+                this.ShowPriceGroup();
+                this.SetButtonPermission();
+            }
+        }
+
+        protected void ClearLabel()
+        {
+            this.WarningLabel.Text = "";
+        }
+
+
+        private void SetButtonPermission()
+        {
+            this._permAdd = this._permBL.PermissionValidation1(this._menuID, HttpContext.Current.User.Identity.Name, InetGlobalIndo.ERP.MTJ.Common.Enum.Action.Add);
+
+            if (this._permAdd == PermissionLevel.NoAccess)
+            {
+                this.SaveButton.Visible = false;
+            }
+        }
+
+        private void ShowPriceGroup()
+        {
+            string _prodTypeCode = Rijndael.Decrypt(this._nvcExtractor.GetValue(this._codeKey), ApplicationConfig.EncryptionKey);
+
+            this.PriceGroupDropDownList.DataTextField = "PriceGroupCode";
+            this.PriceGroupDropDownList.DataValueField = "PricegroupUniqueCode";
+            this.PriceGroupDropDownList.DataSource = this._priceGroupBL.GetListForDDLForProdType_PG(_prodTypeCode);
+            this.PriceGroupDropDownList.DataBind();
+            this.PriceGroupDropDownList.Items.Insert(0, new ListItem("[Choose One]", "null"));
+        }
+
+        public void ShowData(string _prmCode)
+        {
+            Master_PriceGroup _msPriceGroup = this._priceGroupBL.GetSingle(_prmCode);
+
+            this.YearTextBox.Text = _msPriceGroup.Year.ToString();
+            this.CurrTextBox.Text = _msPriceGroup.CurrCode;
+
+            byte _decimalPlace = this._currencyBL.GetDecimalPlace(this.CurrTextBox.Text);
+
+            this.ForexRateTextBox.Text = (_msPriceGroup.ForexRate == 0 ? "0" : _msPriceGroup.ForexRate.ToString(CurrencyDataMapper.GetFormatDecimal(_decimalPlace)));
+            this.AmountForexTextBox.Text = (_msPriceGroup.AmountForex == 0 ? "0" : _msPriceGroup.AmountForex.ToString(CurrencyDataMapper.GetFormatDecimal(_decimalPlace)));
+            this.AmountHomeTextBox.Text = (_msPriceGroup.AmountHome == 0 ? "0" : _msPriceGroup.AmountHome.ToString(CurrencyDataMapper.GetFormatDecimal(_decimalPlace)));
+            this.RemarkTextBox.Text = _msPriceGroup.PGDesc;
+            this.IsActiveCheckBox.Checked = _msPriceGroup.FgActive;
+        }
+
+        protected void CancelButton_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect(this._detailPage + "?" + _codeKey + "=" + HttpUtility.UrlEncode(this._nvcExtractor.GetValue(this._codeKey)));
+        }
+
+        protected void SaveButton_Click(object sender, ImageClickEventArgs e)
+        {
+            string _prodTypeCode = Rijndael.Decrypt(this._nvcExtractor.GetValue(this._codeKey), ApplicationConfig.EncryptionKey);
+
+            Master_ProductType_PriceGroup _masterProdTypePG = new Master_ProductType_PriceGroup();
+
+            _masterProdTypePG.ProductType_PriceGroupCode = Guid.NewGuid();
+            _masterProdTypePG.ProductTypeCode = _prodTypeCode;
+            _masterProdTypePG.PriceGroupUniqueCode = new Guid(this.PriceGroupDropDownList.SelectedValue);
+            _masterProdTypePG.InsertBy = HttpContext.Current.User.Identity.Name;
+            _masterProdTypePG.InsertDate = DateTime.Now;
+            _masterProdTypePG.EditBy = HttpContext.Current.User.Identity.Name;
+            _masterProdTypePG.EditDate = DateTime.Now;
+
+            bool _result = this._priceGroupBL.AddProdType_PG(_masterProdTypePG);
+
+            if (_result == true)
+            {
+                Response.Redirect(this._detailPage + "?" + _codeKey + "=" + HttpUtility.UrlEncode(this._nvcExtractor.GetValue(this._codeKey)));
+            }
+            else
+            {
+                this.ClearLabel();
+                this.WarningLabel.Text = "Your Failed Add Data";
+            }
+        }
+
+        protected void PriceGroupDropDownList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.PriceGroupDropDownList.SelectedValue != "null")
+            {
+                ShowData(this.PriceGroupDropDownList.SelectedValue.ToString().Trim());
+            }
+        }
+    }
+}

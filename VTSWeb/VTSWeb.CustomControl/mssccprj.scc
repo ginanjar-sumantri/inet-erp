@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[VTSWeb.CustomControl.csproj]
+SCC_Aux_Path = "\\192.168.100.1\VSS 2005 Database\VTSWeb"
+SCC_Project_Name = "$/VTSWeb.root/VTSWeb/VTSWeb.CustomControl", PBAAAAAA

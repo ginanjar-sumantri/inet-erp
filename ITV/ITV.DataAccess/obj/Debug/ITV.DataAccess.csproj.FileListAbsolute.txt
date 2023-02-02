@@ -1,0 +1,10 @@
+D:\WORK IP.1\ITV\ITV.DataAccess\bin\Debug\ITV.DataAccess.dll
+D:\WORK IP.1\ITV\ITV.DataAccess\bin\Debug\ITV.DataAccess.pdb
+D:\WORK IP.1\ITV\ITV.DataAccess\bin\Debug\DbLinq.dll
+D:\WORK IP.1\ITV\ITV.DataAccess\bin\Debug\DbLinq.MySql.dll
+D:\WORK IP.1\ITV\ITV.DataAccess\bin\Debug\MySql.Data.dll
+D:\WORK IP.1\ITV\ITV.DataAccess\bin\Debug\DbLinq.pdb
+D:\WORK IP.1\ITV\ITV.DataAccess\bin\Debug\DbLinq.MySql.pdb
+D:\WORK IP.1\ITV\ITV.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+D:\WORK IP.1\ITV\ITV.DataAccess\obj\Debug\ITV.DataAccess.dll
+D:\WORK IP.1\ITV\ITV.DataAccess\obj\Debug\ITV.DataAccess.pdb

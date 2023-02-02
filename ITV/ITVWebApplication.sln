@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITV.UI", "ITV.UI\ITV.UI.csproj", "{9BEBF256-05B5-47D2-9545-577B9A82F165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITV.BusinessRule", "ITV.BusinessRule\ITV.BusinessRule.csproj", "{1CF005D5-262C-4567-BA38-2E216195DE53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITV.Common", "ITV.Common\ITV.Common.csproj", "{3867AD95-463B-48DE-BE12-F1C2D7DA544F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITV.DataAccess", "ITV.DataAccess\ITV.DataAccess.csproj", "{D053BD40-F7ED-4A30-B5E6-FAB5307FF759}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://wagisrv:8080/tfs/tfswagidev_itv
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ITV.BusinessRule\\ITV.BusinessRule.csproj
+		SccProjectName1 = ITV.BusinessRule
+		SccLocalPath1 = ITV.BusinessRule
+		SccProjectUniqueName2 = ITV.Common\\ITV.Common.csproj
+		SccProjectName2 = ITV.Common
+		SccLocalPath2 = ITV.Common
+		SccProjectUniqueName3 = ITV.DataAccess\\ITV.DataAccess.csproj
+		SccProjectName3 = ITV.DataAccess
+		SccLocalPath3 = ITV.DataAccess
+		SccProjectUniqueName4 = ITV.UI\\ITV.UI.csproj
+		SccProjectName4 = ITV.UI
+		SccLocalPath4 = ITV.UI
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BEBF256-05B5-47D2-9545-577B9A82F165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BEBF256-05B5-47D2-9545-577B9A82F165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BEBF256-05B5-47D2-9545-577B9A82F165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BEBF256-05B5-47D2-9545-577B9A82F165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CF005D5-262C-4567-BA38-2E216195DE53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CF005D5-262C-4567-BA38-2E216195DE53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CF005D5-262C-4567-BA38-2E216195DE53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CF005D5-262C-4567-BA38-2E216195DE53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3867AD95-463B-48DE-BE12-F1C2D7DA544F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3867AD95-463B-48DE-BE12-F1C2D7DA544F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3867AD95-463B-48DE-BE12-F1C2D7DA544F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3867AD95-463B-48DE-BE12-F1C2D7DA544F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D053BD40-F7ED-4A30-B5E6-FAB5307FF759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D053BD40-F7ED-4A30-B5E6-FAB5307FF759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D053BD40-F7ED-4A30-B5E6-FAB5307FF759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D053BD40-F7ED-4A30-B5E6-FAB5307FF759}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

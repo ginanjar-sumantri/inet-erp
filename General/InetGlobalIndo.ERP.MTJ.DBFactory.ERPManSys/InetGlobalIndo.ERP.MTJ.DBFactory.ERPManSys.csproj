@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DFF8F29F-B38D-4597-BCD3-1C6D8DBC0EA4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InetGlobalIndo.ERP.MTJ.DBFactory.ERPManSys</RootNamespace>
+    <AssemblyName>InetGlobalIndo.ERP.MTJ.DBFactory.ERPManSys</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>PT. Inet Global Indo.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base.cs" />
+    <Compile Include="Billing_CustomerInvoiceDt.cs" />
+    <Compile Include="Billing_CustomerInvoiceHd.cs" />
+    <Compile Include="Billing_InvoiceDt.cs" />
+    <Compile Include="Billing_InvoiceHd.cs" />
+    <Compile Include="Billing_SupplierInvoiceDt.cs" />
+    <Compile Include="Billing_SupplierInvoiceHd.cs" />
+    <Compile Include="Accounting_FABeginning.cs" />
+    <Compile Include="Accounting_FABeginningList.cs" />
+    <Compile Include="BILTrSalesConfirmation.cs" />
+    <Compile Include="BILTrSalesConfirmationDt.cs" />
+    <Compile Include="BILMsEmailNotificationSetup.cs" />
+    <Compile Include="BILTrContract.cs" />
+    <Compile Include="BILTrUnSubscriptionHd.cs" />
+    <Compile Include="BILMsTermAndConditionSetup.cs" />
+    <Compile Include="BILTrUnSubscriptionDt.cs" />
+    <Compile Include="BILMsRadius.cs" />
+    <Compile Include="BILTrRadiusUpdateVoucher.cs" />
+    <Compile Include="BILMsRegistrationConfig.cs" />
+    <Compile Include="BILMsContractTemplateHd.cs" />
+    <Compile Include="BILMsContractTemplateDt.cs" />
+    <Compile Include="CompanyConfiguration.cs" />
+    <Compile Include="CompanyConfigReportParameter.cs" />
+    <Compile Include="FINSuppReturDt.cs" />
+    <Compile Include="FINSuppReturHd.cs" />
+    <Compile Include="FINCustReturHd.cs" />
+    <Compile Include="POSMsHotel.cs" />
+    <Compile Include="POSMsShipping.cs" />
+    <Compile Include="POSTrGraphicDt.cs" />
+    <Compile Include="POSTrPhotocopyDt.cs" />
+    <Compile Include="POSTrPrintingDt.cs" />
+    <Compile Include="STCReturRRDt.cs" />
+    <Compile Include="STCReturRRHd.cs" />
+    <Compile Include="STCReturSJDt.cs" />
+    <Compile Include="STCReturSJHd.cs" />
+    <Compile Include="POSTrAllDiscon.cs" />
+    <Compile Include="POSTrDeliveryOrderRef.cs" />
+    <Compile Include="STCServiceOutDt.cs" />
+    <Compile Include="STCServiceOutHd.cs" />
+    <Compile Include="STCServiceInDt.cs" />
+    <Compile Include="STCServiceInHd.cs" />
+    <Compile Include="POSTrAll.cs" />
+    <Compile Include="MsRatioReportComment.cs" />
+    <Compile Include="MsRatioReportDt.cs" />
+    <Compile Include="MsRatioReport.cs" />
+    <Compile Include="MsRatioDataDt.cs" />
+    <Compile Include="MsRatioData.cs" />
+    <Compile Include="MsPurpose.cs" />
+    <Compile Include="HRMTrLateDispensationDt.cs" />
+    <Compile Include="HRMTrLateDispensationHd.cs" />
+    <Compile Include="HRMTrLoanChangeDt2.cs" />
+    <Compile Include="HRMTrLoanInDt2.cs" />
+    <Compile Include="HRMTrLoanChangeDt.cs" />
+    <Compile Include="HRMTrLoanChangeHd.cs" />
+    <Compile Include="POSTrCafeDt.cs" />
+    <Compile Include="POSMsInternetTable.cs" />
+    <Compile Include="FINMsCashFlowGroupSubDt.cs" />
+    <Compile Include="FINMsCashFlowGroupSub.cs" />
+    <Compile Include="FINSuppInvConsignmentHd.cs" />
+    <Compile Include="POSMsDiscountConfig.cs" />
+    <Compile Include="MsTaxType.cs" />
+    <Compile Include="POSMsReason.cs" />
+    <Compile Include="Transaction_Activity.cs" />
+    <Compile Include="V_FINPettyReceive.cs" />
+    <Compile Include="V_RRForSupplierRetur.cs" />
+    <Compile Include="V_StockTransType.cs" />
+    <Compile Include="POSTrSettlementDtDownPayment.cs" />
+    <Compile Include="POSTrSettlementDtPaymentType.cs" />
+    <Compile Include="POSTrSettlementDtRefTransaction.cs" />
+    <Compile Include="PAYTrSKSalaryDt.cs" />
+    <Compile Include="PAYTrSKSalaryEmp.cs" />
+    <Compile Include="PAYTrSKSalaryHd.cs" />
+    <Compile Include="POSTrInternetDt.cs" />
+    <Compile Include="POSTrRetailHd.cs" />
+    <Compile Include="POSTrRetailDt.cs" />
+    <Compile Include="POSTrInternetHd.cs" />
+    <Compile Include="V_POSReferenceNotYetPayList.cs" />
+    <Compile Include="GLBudgetYearDt.cs" />
+    <Compile Include="STCSJDtReference.cs" />
+    <Compile Include="GLAdjustDiffRateDt2.cs" />
+    <Compile Include="GLAdjustDiffRateDt.cs" />
+    <Compile Include="GLAdjustDiffRateHd.cs" />
+    <Compile Include="GLBudgetYearHd.cs" />
+    <Compile Include="POSMsMenuServiceeTypeDt.cs" />
+    <Compile Include="POSMsMenuServiceeType.cs" />
+    <Compile Include="POSMsInternetBookingList.cs" />
+    <Compile Include="POSMsDebitCard.cs" />
+    <Compile Include="POSMsCreditCardType.cs" />
+    <Compile Include="POSMsCreditCard.cs" />
+    <Compile Include="POSMsCashierAccount.cs" />
+    <Compile Include="POSMsKitchen.cs" />
+    <Compile Include="MsMemberType.cs" />
+    <Compile Include="MsMember.cs" />
+    <Compile Include="HRMTrChangeShiftDt.cs" />
+    <Compile Include="HRMTrChangeShiftHd.cs" />
+    <Compile Include="PAYTrSalaryPosting.cs" />
+    <Compile Include="PAYTrSalaryEmp.cs" />
+    <Compile Include="PAYTrSalaryPaymentCr.cs" />
+    <Compile Include="PAYTrSalaryPaymentDb.cs" />
+    <Compile Include="PAYTrSalaryPaymentHd.cs" />
+    <Compile Include="PAYMsPHKPayroll.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PAYMsRatePPhPesangon.cs" />
+    <Compile Include="PAYTrSalaryProcess.cs" />
+    <Compile Include="MsPhoneBook.cs" />
+    <Compile Include="HRMTrAppraisalDt.cs" />
+    <Compile Include="HRMTrAppraisalHd.cs" />
+    <Compile Include="HRMMsAppraisalJobLvl.cs" />
+    <Compile Include="HRMMsAppraisalPurpose.cs" />
+    <Compile Include="HRMMsPurpose.cs" />
+    <Compile Include="HRMMsAppraisal.cs" />
+    <Compile Include="HRMMsAppraisalGroup.cs" />
+    <Compile Include="SMSGatewaySend.cs" />
+    <Compile Include="SMSGatewayReceive.cs" />
+    <Compile Include="PAYMsTunjangan.cs" />
+    <Compile Include="PAYTrTHRDt.cs" />
+    <Compile Include="PAYTrTHRHd.cs" />
+    <Compile Include="HRMTrEmpReprimandDt.cs" />
+    <Compile Include="HRMTrEmpReprimandHd.cs" />
+    <Compile Include="HRMTrEmpRewardDt.cs" />
+    <Compile Include="HRMTrEmpRewardHd.cs" />
+    <Compile Include="HRMMsReprimand.cs" />
+    <Compile Include="HRMMsReward.cs" />
+    <Compile Include="HRMTrLeaveRequestDt.cs" />
+    <Compile Include="HRMTrLeaveRequestHd.cs" />
+    <Compile Include="PAYTrPPhYearHd.cs" />
+    <Compile Include="PAYTrPPhYearDt.cs" />
+    <Compile Include="PAYMsMethodUserPermission.cs" />
+    <Compile Include="NCC_RCAdmin.cs" />
+    <Compile Include="PAYTrPayrollSettingDt.cs" />
+    <Compile Include="PAYTrPayrollSettingHd.cs" />
+    <Compile Include="HRMTrAttendanceDaily.cs" />
+    <Compile Include="HRMTrAttendanceClock.cs" />
+    <Compile Include="PAYTrSlipEmp.cs" />
+    <Compile Include="PAYTrSlipDt.cs" />
+    <Compile Include="PAYTrSlipHd.cs" />
+    <Compile Include="PAYTrDeductionDt.cs" />
+    <Compile Include="PAYTrDeductionHd.cs" />
+    <Compile Include="PAYTrBenefitDt.cs" />
+    <Compile Include="PAYTrBenefitHd.cs" />
+    <Compile Include="PAYTrSalaryDt.cs" />
+    <Compile Include="PAYTrSalaryHd.cs" />
+    <Compile Include="HRMTrScheduleShiftDt.cs" />
+    <Compile Include="HRMTrScheduleShiftHd.cs" />
+    <Compile Include="HRMTrEmpGroupAssignDt.cs" />
+    <Compile Include="HRMTrEmpGroupAssignHd.cs" />
+    <Compile Include="PAYMsRatePPh.cs" />
+    <Compile Include="V_GroupBy.cs" />
+    <Compile Include="PAYMsPremi.cs" />
+    <Compile Include="PAYMsFormula.cs" />
+    <Compile Include="PAYMsPayrollItemGroupDt.cs" />
+    <Compile Include="PAYMsPayrollItemGroup.cs" />
+    <Compile Include="PAYMsPayrollItem.cs" />
+    <Compile Include="PAYMsMethodSalary.cs" />
+    <Compile Include="HRMMsTermType.cs" />
+    <Compile Include="HRMTrTermDt.cs" />
+    <Compile Include="HRMTrTermHd.cs" />
+    <Compile Include="HRMMsShiftGroup.cs" />
+    <Compile Include="HRMMsAbsGroupDt.cs" />
+    <Compile Include="HRMTrLeaveAddDt.cs" />
+    <Compile Include="HRMTrLeaveAddHd.cs" />
+    <Compile Include="HRMMsPeriodSchedule.cs" />
+    <Compile Include="SALTrDirectSalesDt_SerialNmbr.cs" />
+    <Compile Include="HRMMsEmpGroup.cs" />
+    <Compile Include="HRMMsOverTimeRoundSetup.cs" />
+    <Compile Include="HRMMsOverTime.cs" />
+    <Compile Include="HRMMsDay.cs" />
+    <Compile Include="HRMMsShiftDt.cs" />
+    <Compile Include="HRMMsShift.cs" />
+    <Compile Include="HRMTrLemburDt.cs" />
+    <Compile Include="HRMTrLemburHd.cs" />
+    <Compile Include="HRMTrLoanInDt.cs" />
+    <Compile Include="HRMTrLoanInHd.cs" />
+    <Compile Include="HRMTrClaimPlafonDt.cs" />
+    <Compile Include="HRMTrClaimPlafonHd.cs" />
+    <Compile Include="HRMTrDinasDt.cs" />
+    <Compile Include="HRMTrDinasHd.cs" />
+    <Compile Include="HRMTrClaimIssueHd.cs" />
+    <Compile Include="HRMTrClaimIssueDt.cs" />
+    <Compile Include="HRMMsLeave.cs" />
+    <Compile Include="HRMMsClaim.cs" />
+    <Compile Include="HRMMsClaimGroup.cs" />
+    <Compile Include="HRMMsLoanDt.cs" />
+    <Compile Include="HRMMsLoan.cs" />
+    <Compile Include="HRMTrLeaveProcessDt.cs" />
+    <Compile Include="HRMTrLeaveProcessHd.cs" />
+    <Compile Include="PRCFAPODt.cs" />
+    <Compile Include="PRCFAPOHd.cs" />
+    <Compile Include="SALTrDirectSalesDt.cs" />
+    <Compile Include="PRCTrDirectPurchaseDt.cs" />
+    <Compile Include="PRCTrDirectPurchaseHd.cs" />
+    <Compile Include="SALTrDirectSalesHd.cs" />
+    <Compile Include="PRCSuppBuyingPrice.cs" />
+    <Compile Include="SALCustSellingPrice.cs" />
+    <Compile Include="V_ProductInformation.cs" />
+    <Compile Include="STCTrProductAssembly.cs" />
+    <Compile Include="STCStockValue.cs" />
+    <Compile Include="STCMsProductFormula.cs" />
+    <Compile Include="ErrorLog.cs" />
+    <Compile Include="FINCustInvSJList.cs" />
+    <Compile Include="FINSuppInvRRList.cs" />
+    <Compile Include="General.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>General.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="HOME_Reminder.cs" />
+    <Compile Include="SAL_NCPRefund.cs" />
+    <Compile Include="NCC_MsWeek.cs" />
+    <Compile Include="NCC_MsPeriod.cs" />
+    <Compile Include="V_PRRequestForPO.cs" />
+    <Compile Include="FINMsCashFlowGroupDt.cs" />
+    <Compile Include="FINMsCashFlowGroup.cs" />
+    <Compile Include="SAL_NCPSales.cs" />
+    <Compile Include="MsProduct_PhoneType.cs" />
+    <Compile Include="SAL_TrRetailItem.cs" />
+    <Compile Include="SAL_TrRetail.cs" />
+    <Compile Include="SAL_MsIncentiveSetting.cs" />
+    <Compile Include="MsProduct_SerialNumber.cs" />
+    <Compile Include="SAL_MsIncentive.cs" />
+    <Compile Include="Master_PhoneType.cs" />
+    <Compile Include="Master_PhoneSery.cs" />
+    <Compile Include="Master_DiscountLevel.cs" />
+    <Compile Include="Master_Discount.cs" />
+    <Compile Include="Master_PriceGroup.cs" />
+    <Compile Include="Master_DefaultProductValType.cs" />
+    <Compile Include="Master_BranchAccount.cs" />
+    <Compile Include="Master_FinancialRatio.cs" />
+    <Compile Include="PRCReturDt.cs" />
+    <Compile Include="PRCReturHd.cs" />
+    <Compile Include="HRM_TerminationReqComment.cs" />
+    <Compile Include="HRM_TerminationReqInvitation.cs" />
+    <Compile Include="HRM_TerminationHandOver.cs" />
+    <Compile Include="HRM_ExitInterviewAttachment.cs" />
+    <Compile Include="HRM_ExitInterview.cs" />
+    <Compile Include="HRM_TerminationFinishingAttachment.cs" />
+    <Compile Include="HRM_TerminationFinishing.cs" />
+    <Compile Include="HRM_TerminationReqAttachment.cs" />
+    <Compile Include="HRM_TerminationRequest.cs" />
+    <Compile Include="HRM_Master_Gender_Master_AbsenceType.cs" />
+    <Compile Include="HRM_AbsenceTypeLeaveAllowed.cs" />
+    <Compile Include="HRM_UpdateLeave.cs" />
+    <Compile Include="HRM_Employee_WorkingHour.cs" />
+    <Compile Include="HRM_WorkingHourList.cs" />
+    <Compile Include="HRM_Master_WorkingHour.cs" />
+    <Compile Include="HRM_AbsenceRequestActing.cs" />
+    <Compile Include="HRM_AbsenceRequest.cs" />
+    <Compile Include="HRM_EmpType_AbsenceType.cs" />
+    <Compile Include="HRM_Attendance.cs" />
+    <Compile Include="HRMMsAbsenceType.cs" />
+    <Compile Include="HRM_Master_Gender.cs" />
+    <Compile Include="HRM_Master_Holiday.cs" />
+    <Compile Include="HRM_ScreeningProcessAttachment.cs" />
+    <Compile Include="HRM_ScreeningProcessComment.cs" />
+    <Compile Include="HRM_ApplicantFinishing.cs" />
+    <Compile Include="HRM_ApplicantFinishing_Resume.cs" />
+    <Compile Include="HRM_ScreeningProcess.cs" />
+    <Compile Include="HRM_ScreeningSchedule.cs" />
+    <Compile Include="HRM_Master_CommentStatus.cs" />
+    <Compile Include="HRM_Master_ProcessType.cs" />
+    <Compile Include="Finance_MoneyChanger.cs" />
+    <Compile Include="FINBankReconAccount.cs" />
+    <Compile Include="HRM_ApplicantAttachment.cs" />
+    <Compile Include="HRM_ApplicantResume.cs" />
+    <Compile Include="HRM_ApplicantScreening.cs" />
+    <Compile Include="HRM_ApplicantScreening_Resume.cs" />
+    <Compile Include="Master_ProductExtension.cs" />
+    <Compile Include="Master_ProductSalesPrice.cs" />
+    <Compile Include="FINBankRecon.cs" />
+    <Compile Include="Master_EmpExp.cs" />
+    <Compile Include="Master_EmpBank.cs" />
+    <Compile Include="Master_EmpLeaveDay.cs" />
+    <Compile Include="Master_EmpFamily.cs" />
+    <Compile Include="Master_EmpEdu.cs" />
+    <Compile Include="Master_EmpSkill.cs" />
+    <Compile Include="HRM_RecruitmentRequest_Master_Skill.cs" />
+    <Compile Include="HRM_RecruitmentRequest.cs" />
+    <Compile Include="Master_Classroom.cs" />
+    <Compile Include="Master_ClassroomGroup.cs" />
+    <Compile Include="Master_CourseLocation.cs" />
+    <Compile Include="Master_CourseLocationAttach.cs" />
+    <Compile Include="Master_Instructors.cs" />
+    <Compile Include="Master_OrgUnit_MsEmployee.cs" />
+    <Compile Include="HRMMsReason.cs" />
+    <Compile Include="Master_Absence.cs" />
+    <Compile Include="HRMMsAbsGroup.cs" />
+    <Compile Include="Master_Course.cs" />
+    <Compile Include="Master_CourseGroup.cs" />
+    <Compile Include="Master_Education.cs" />
+    <Compile Include="Master_Skill.cs" />
+    <Compile Include="Master_SkillType.cs" />
+    <Compile Include="Master_TransactionClose.cs" />
+    <Compile Include="MTJERPManSys.cs">
+      <DependentUpon>MTJERPManSys.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Port_TallyHdActor.cs" />
+    <Compile Include="Port_TallyDtProduct.cs" />
+    <Compile Include="Port_TallyDt.cs" />
+    <Compile Include="Port_TallyHd.cs" />
+    <Compile Include="Master_Default.cs" />
+    <Compile Include="Master_DefaultAcc.cs" />
+    <Compile Include="Master_OrganizationUnit.cs" />
+    <Compile Include="FINSuppInvDt2.cs" />
+    <Compile Include="MsAccGroupDt.cs" />
+    <Compile Include="PORTDocServiceActor.cs" />
+    <Compile Include="GLFAAddStockDt.cs" />
+    <Compile Include="GLFAAddStockDt2.cs" />
+    <Compile Include="GLFAAddStockHd.cs" />
+    <Compile Include="GLFAServiceDt.cs" />
+    <Compile Include="GLFAServiceHd.cs" />
+    <Compile Include="PORTShipDepartureAdmHd.cs" />
+    <Compile Include="Port_CrewAssignmentActor.cs" />
+    <Compile Include="PORTCrewAssignment.cs" />
+    <Compile Include="Master_LimitAuthorization.cs" />
+    <Compile Include="MsTransType_MsAccount.cs" />
+    <Compile Include="Master_EmployeeAuthorization.cs" />
+    <Compile Include="Master_CustomerExtension.cs" />
+    <Compile Include="Master_CustBillAccount.cs" />
+    <Compile Include="PORTDocServiceHd.cs" />
+    <Compile Include="PORTDocServiceDt.cs" />
+    <Compile Include="PORTMsShipType_MsService.cs" />
+    <Compile Include="PORTMsServiceTypeDt.cs" />
+    <Compile Include="PORTMsServiceDt.cs" />
+    <Compile Include="MsSetup.cs" />
+    <Compile Include="FINSuppInvDt.cs" />
+    <Compile Include="FINSuppInvHd.cs" />
+    <Compile Include="PORTPlanShipArrival_MsProduct.cs" />
+    <Compile Include="PORTPlanShipArrival_ProductLogistic.cs" />
+    <Compile Include="PORTShipArrival_MsProduct.cs" />
+    <Compile Include="PORTShipArrival_ProductLogistic.cs" />
+    <Compile Include="Port_DocServiceHd_PackingListHd.cs" />
+    <Compile Include="Port_DocServiceHd_STCSJHd.cs" />
+    <Compile Include="Port_PackingListDt.cs" />
+    <Compile Include="Port_PackingListHd.cs" />
+    <Compile Include="Port_PackingListHdActor.cs" />
+    <Compile Include="Port_PPHTDt.cs" />
+    <Compile Include="Port_PPHTHd.cs" />
+    <Compile Include="Port_PPHTHdActor.cs" />
+    <Compile Include="PRCPODt.cs" />
+    <Compile Include="PRCPODt2.cs" />
+    <Compile Include="STCReceiveDt.cs" />
+    <Compile Include="STCReceiveHd.cs" />
+    <Compile Include="FINCustInvDt.cs" />
+    <Compile Include="FINCustInvHd.cs" />
+    <Compile Include="FINPettyPrintHistory.cs" />
+    <Compile Include="FINPettyReceiveDt.cs" />
+    <Compile Include="FINPettyReceiveHd.cs" />
+    <Compile Include="FINPettyReceivePrintHistory.cs" />
+    <Compile Include="MKTDODt.cs" />
+    <Compile Include="MKTDOHd.cs" />
+    <Compile Include="MKTSODt.cs" />
+    <Compile Include="MKTSOHd.cs" />
+    <Compile Include="MsDelivery.cs" />
+    <Compile Include="MsShipment.cs" />
+    <Compile Include="PRCPOHd.cs" />
+    <Compile Include="STCChangeDt.cs" />
+    <Compile Include="STCChangeHd.cs" />
+    <Compile Include="STCIssueSlipDt.cs" />
+    <Compile Include="STCIssueSlipHd.cs" />
+    <Compile Include="STCSJDt.cs" />
+    <Compile Include="STCSJHd.cs" />
+    <Compile Include="STCTransferDt.cs" />
+    <Compile Include="STCTransferHd.cs" />
+    <Compile Include="STCRejectInDt.cs" />
+    <Compile Include="STCRejectInHd.cs" />
+    <Compile Include="STCRROtherDt.cs" />
+    <Compile Include="STCTransOutDt.cs" />
+    <Compile Include="STCTransOutHd.cs" />
+    <Compile Include="STCTransInHd.cs" />
+    <Compile Include="STCRROtherHd.cs" />
+    <Compile Include="STCTransInDt.cs" />
+    <Compile Include="STCRejectOutDt.cs" />
+    <Compile Include="STCRejectOutHd.cs" />
+    <Compile Include="MsProductTypeDt.cs" />
+    <Compile Include="STCIssueToFADt.cs" />
+    <Compile Include="STCIssueToFAHd.cs" />
+    <Compile Include="MsStockTypeDt.cs" />
+    <Compile Include="STCAdjustDt.cs" />
+    <Compile Include="STCAdjustHd.cs" />
+    <Compile Include="MsWarehouse_MsWrhsLocation.cs" />
+    <Compile Include="MsWrhsLocation.cs" />
+    <Compile Include="PORTShipApproval.cs" />
+    <Compile Include="PORTShipArrivalNeed.cs" />
+    <Compile Include="PORTShipArrivalHd.cs" />
+    <Compile Include="MsStockType.cs" />
+    <Compile Include="PORTReceivedSignDt.cs" />
+    <Compile Include="MKTReqReturDt.cs" />
+    <Compile Include="MKTReqReturHd.cs" />
+    <Compile Include="GLFAPurchaseDt.cs" />
+    <Compile Include="PORTReceivedSignHd.cs" />
+    <Compile Include="PRCRequestDt.cs" />
+    <Compile Include="PRCRequestHd.cs" />
+    <Compile Include="STCOpnameDt.cs" />
+    <Compile Include="STCOpnameHd.cs" />
+    <Compile Include="STCRequestDt.cs" />
+    <Compile Include="STCRequestHd.cs" />
+    <Compile Include="FINAPRateDt.cs" />
+    <Compile Include="FINAPRateHd.cs" />
+    <Compile Include="FINARRateDt.cs" />
+    <Compile Include="FINARRateHd.cs" />
+    <Compile Include="FINBeginSI.cs" />
+    <Compile Include="FINBeginCI.cs" />
+    <Compile Include="FINDPSuppDt.cs" />
+    <Compile Include="FINDPSuppHd.cs" />
+    <Compile Include="FINChangeGiroOutPay.cs" />
+    <Compile Include="FINDPCustReturPay.cs" />
+    <Compile Include="FINDPCustReturHd.cs" />
+    <Compile Include="FINDPCustReturDt.cs" />
+    <Compile Include="FINARPosting.cs" />
+    <Compile Include="FINChangeGiroOutDt.cs" />
+    <Compile Include="FINChangeGiroOutHd.cs" />
+    <Compile Include="FINDPCustDt.cs" />
+    <Compile Include="FINDPCustHd.cs" />
+    <Compile Include="FINDPCustList.cs" />
+    <Compile Include="FINAPPosting.cs" />
+    <Compile Include="FINChangeGiroInPay.cs" />
+    <Compile Include="FINChangeGiroInDt.cs" />
+    <Compile Include="FINChangeGiroInHd.cs" />
+    <Compile Include="FINDPSuppReturDt.cs" />
+    <Compile Include="FINDPSuppReturHd.cs" />
+    <Compile Include="FINDPSuppReturPay.cs" />
+    <Compile Include="FINPayTradeDb.cs" />
+    <Compile Include="FINGiroIn.cs" />
+    <Compile Include="FINGiroOut.cs" />
+    <Compile Include="FINPayTradeCr.cs" />
+    <Compile Include="FINPayTradeHd.cs" />
+    <Compile Include="FINReceiptTradeCr.cs" />
+    <Compile Include="FINReceiptTradeDb.cs" />
+    <Compile Include="FINReceiptTradeHd.cs" />
+    <Compile Include="GLBudgetAcc.cs" />
+    <Compile Include="GLBudget.cs" />
+    <Compile Include="GLFAPurchaseHd.cs" />
+    <Compile Include="GLPeriod.cs" />
+    <Compile Include="GLYear.cs" />
+    <Compile Include="MsProduct.cs" />
+    <Compile Include="MsProductConvert.cs" />
+    <Compile Include="MsWarehouse.cs" />
+    <Compile Include="MsConvertion.cs" />
+    <Compile Include="MsWrhsGroup.cs" />
+    <Compile Include="MsProductSubGroup.cs" />
+    <Compile Include="MsProductGroup.cs" />
+    <Compile Include="FINDNCustDt.cs" />
+    <Compile Include="FINDNCustHd.cs" />
+    <Compile Include="FINCNCustDt.cs" />
+    <Compile Include="FINCNCustHd.cs" />
+    <Compile Include="FINCNSuppDt.cs" />
+    <Compile Include="FINCNSuppHd.cs" />
+    <Compile Include="FINDNSuppDt.cs" />
+    <Compile Include="FINDNSuppHd.cs" />
+    <Compile Include="FINReceiptNonTradeCr.cs" />
+    <Compile Include="FINReceiptNonTradeDb.cs" />
+    <Compile Include="FINReceiptNonTradeHd.cs" />
+    <Compile Include="FINPayNonTradeCr.cs" />
+    <Compile Include="FINPayNonTradeDb.cs" />
+    <Compile Include="FINPayNonTradeHd.cs" />
+    <Compile Include="FINPettyDt.cs" />
+    <Compile Include="FINPettyHd.cs" />
+    <Compile Include="GLFADevaluationDt.cs" />
+    <Compile Include="GLFADevaluationHd.cs" />
+    <Compile Include="GLFAMoveDt.cs" />
+    <Compile Include="GLFAMoveHd.cs" />
+    <Compile Include="GLFAProcessDt.cs" />
+    <Compile Include="GLFAProcessHd.cs" />
+    <Compile Include="GLFASalesDt.cs" />
+    <Compile Include="GLFASalesHd.cs" />
+    <Compile Include="GLFATenancyDt.cs" />
+    <Compile Include="GLFATenancyHd.cs" />
+    <Compile Include="GLJournalDt.cs" />
+    <Compile Include="GLJournalHd.cs" />
+    <Compile Include="MsAccClass.cs" />
+    <Compile Include="MsAccGroup.cs" />
+    <Compile Include="MsAccount.cs" />
+    <Compile Include="MsAccSubGroup.cs" />
+    <Compile Include="MsAccType.cs" />
+    <Compile Include="MsBank.cs" />
+    <Compile Include="MsCity.cs" />
+    <Compile Include="MsCountry.cs" />
+    <Compile Include="MsCurrency.cs" />
+    <Compile Include="MsCurrRate.cs" />
+    <Compile Include="MsCustAddress.cs" />
+    <Compile Include="MsCustCollect.cs" />
+    <Compile Include="MsCustContact.cs" />
+    <Compile Include="MsCustGroup.cs" />
+    <Compile Include="MsCustGroupAcc.cs" />
+    <Compile Include="MsCustomer.cs" />
+    <Compile Include="MsCustType.cs" />
+    <Compile Include="MsEmployee.cs" />
+    <Compile Include="MsEmpType.cs" />
+    <Compile Include="MsFAGroup.cs" />
+    <Compile Include="MsFAGroupSub.cs" />
+    <Compile Include="MsFAGroupSubAcc.cs" />
+    <Compile Include="MsFALocation.cs" />
+    <Compile Include="MsFAMaintenance.cs" />
+    <Compile Include="MsFAMaintenanceAcc.cs" />
+    <Compile Include="MsFAStatus.cs" />
+    <Compile Include="MsFixedAsset.cs" />
+    <Compile Include="MsJobLevel.cs" />
+    <Compile Include="MsJobTitle.cs" />
+    <Compile Include="MsPayType.cs" />
+    <Compile Include="MsPetty.cs" />
+    <Compile Include="MsProductType.cs" />
+    <Compile Include="MsRegional.cs" />
+    <Compile Include="MsReligion.cs" />
+    <Compile Include="MsSubled.cs" />
+    <Compile Include="MsSuppGroup.cs" />
+    <Compile Include="MsSuppGroupAcc.cs" />
+    <Compile Include="MsSupplier.cs" />
+    <Compile Include="MsSuppContact.cs" />
+    <Compile Include="MsSuppType.cs" />
+    <Compile Include="MsTerm.cs" />
+    <Compile Include="MsTermDt.cs" />
+    <Compile Include="MsTransType.cs" />
+    <Compile Include="MsUnit.cs" />
+    <Compile Include="MsWorkPlace.cs" />
+    <Compile Include="MsWrhsArea.cs" />
+    <Compile Include="MTJERPManSys.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MTJERPManSys.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="PORTMsAgent.cs" />
+    <Compile Include="PORTMsDocument.cs" />
+    <Compile Include="PORTMsFlag.cs" />
+    <Compile Include="PORTMsPartShip.cs" />
+    <Compile Include="PORTMsService.cs" />
+    <Compile Include="PORTMsServiceType.cs" />
+    <Compile Include="PORTMsShip.cs" />
+    <Compile Include="PORTMsShipNeed.cs" />
+    <Compile Include="PORTMsShipType.cs" />
+    <Compile Include="PORTMsSize.cs" />
+    <Compile Include="PORTPlanShipApproval.cs" />
+    <Compile Include="PORTPlanShipArrival.cs" />
+    <Compile Include="PORTPlanShipArrivalNeed.cs" />
+    <Compile Include="PORTPlanShipLoading.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="STCTransReqDt.cs" />
+    <Compile Include="STCTransReqHd.cs" />
+    <Compile Include="StoredProcedureResult.cs" />
+    <Compile Include="V_MsFALocationType.cs" />
+    <Compile Include="V_MsSubled.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MTJERPManSys.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>MTJERPManSys.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="General.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>General.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MTJERPManSys.dbml.layout">
+      <DependentUpon>MTJERPManSys.dbml</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PT. Inet Global Indo.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="General.dbml.layout">
+      <DependentUpon>General.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,145 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessRule.POS", "BusinessRule.POS\BusinessRule.POS.csproj", "{CEFE3E8D-E9B0-4D16-85E8-ADA7D8EF324B}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "InetGlobalIndo.ERP.MTJ.UI.POS", "InetGlobalIndo.ERP.MTJ.UI.POS", "{6F24D186-825A-406D-9889-C1AF10E1F017}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/POS.root/POS", CAAAAAAA"
+		SccAuxPath = ""
+		SccLocalPath = "..\.."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		ProjectReferences = "{CEFE3E8D-E9B0-4D16-85E8-ADA7D8EF324B}|BusinessRule.POS.dll;{3515578C-D636-4093-ABE9-BFD38D980DD9}|BusinessRule.POSInterface.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/InetGlobalIndo.ERP.MTJ.UI.POS"
+		Debug.AspNetCompiler.PhysicalPath = "InetGlobalIndo.ERP.MTJ.UI.POS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\InetGlobalIndo.ERP.MTJ.UI.POS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/InetGlobalIndo.ERP.MTJ.UI.POS"
+		Release.AspNetCompiler.PhysicalPath = "InetGlobalIndo.ERP.MTJ.UI.POS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\InetGlobalIndo.ERP.MTJ.UI.POS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2116"
+		VWDDynamicPort = "false"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "POS.POSInterface", "POS.POSInterface", "{3BF88565-9015-4AF0-9AEA-9FDCD0DE9BF5}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/POS.root/POS", CAAAAAAA"
+		SccAuxPath = ""
+		SccLocalPath = "..\.."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		ProjectReferences = "{3515578C-D636-4093-ABE9-BFD38D980DD9}|BusinessRule.POSInterface.dll;{CEFE3E8D-E9B0-4D16-85E8-ADA7D8EF324B}|BusinessRule.POS.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/POS.POSInterface"
+		Debug.AspNetCompiler.PhysicalPath = "POS.POSInterface\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\POS.POSInterface\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/POS.POSInterface"
+		Release.AspNetCompiler.PhysicalPath = "POS.POSInterface\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\POS.POSInterface\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2117"
+		VWDDynamicPort = "false"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessRule.POSInterface", "BusinessRule.POSInterface\BusinessRule.POSInterface.csproj", "{3515578C-D636-4093-ABE9-BFD38D980DD9}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "InetGlobalIndo.ERP.MTJ.UI", "InetGlobalIndo.ERP.MTJ.UI", "{AF1E6BC6-3BFC-4005-8DB8-8F2DF02936FA}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/POS.root/POS", CAAAAAAA"
+		SccAuxPath = ""
+		SccLocalPath = "..\.."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/InetGlobalIndo.ERP.MTJ.UI"
+		Debug.AspNetCompiler.PhysicalPath = "InetGlobalIndo.ERP.MTJ.UI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\InetGlobalIndo.ERP.MTJ.UI\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/InetGlobalIndo.ERP.MTJ.UI"
+		Release.AspNetCompiler.PhysicalPath = "InetGlobalIndo.ERP.MTJ.UI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\InetGlobalIndo.ERP.MTJ.UI\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2100"
+		VWDDynamicPort = "false"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 6
+		SccProjectName0 = \u0022$/POS.root/POS\u0022,\u0020CAAAAAAA
+		SccLocalPath0 = ..
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectFilePathRelativizedFromConnection0 = POS\\
+		SccProjectUniqueName1 = BusinessRule.POS\\BusinessRule.POS.csproj
+		SccLocalPath1 = ..
+		SccProjectFilePathRelativizedFromConnection1 = POS\\BusinessRule.POS\\
+		SccWebProject2 = true
+		SccProjectUniqueName2 = InetGlobalIndo.ERP.MTJ.UI.POS
+		SccLocalPath2 = ..
+		SccProjectFilePathRelativizedFromConnection2 = POS\\InetGlobalIndo.ERP.MTJ.UI.POS\\
+		SccProjectEnlistmentChoice2 = 2
+		SccWebProject3 = true
+		SccProjectUniqueName3 = POS.POSInterface
+		SccLocalPath3 = ..
+		SccProjectFilePathRelativizedFromConnection3 = POS\\POS.POSInterface\\
+		SccProjectEnlistmentChoice3 = 2
+		SccProjectUniqueName4 = BusinessRule.POSInterface\\BusinessRule.POSInterface.csproj
+		SccLocalPath4 = ..
+		SccProjectFilePathRelativizedFromConnection4 = POS\\BusinessRule.POSInterface\\
+		SccWebProject5 = true
+		SccProjectUniqueName5 = InetGlobalIndo.ERP.MTJ.UI
+		SccLocalPath5 = ..
+		SccProjectFilePathRelativizedFromConnection5 = POS\\InetGlobalIndo.ERP.MTJ.UI\\
+		SccProjectEnlistmentChoice5 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEFE3E8D-E9B0-4D16-85E8-ADA7D8EF324B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEFE3E8D-E9B0-4D16-85E8-ADA7D8EF324B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEFE3E8D-E9B0-4D16-85E8-ADA7D8EF324B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEFE3E8D-E9B0-4D16-85E8-ADA7D8EF324B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F24D186-825A-406D-9889-C1AF10E1F017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F24D186-825A-406D-9889-C1AF10E1F017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F24D186-825A-406D-9889-C1AF10E1F017}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F24D186-825A-406D-9889-C1AF10E1F017}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{3BF88565-9015-4AF0-9AEA-9FDCD0DE9BF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BF88565-9015-4AF0-9AEA-9FDCD0DE9BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BF88565-9015-4AF0-9AEA-9FDCD0DE9BF5}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BF88565-9015-4AF0-9AEA-9FDCD0DE9BF5}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{3515578C-D636-4093-ABE9-BFD38D980DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3515578C-D636-4093-ABE9-BFD38D980DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3515578C-D636-4093-ABE9-BFD38D980DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3515578C-D636-4093-ABE9-BFD38D980DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF1E6BC6-3BFC-4005-8DB8-8F2DF02936FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF1E6BC6-3BFC-4005-8DB8-8F2DF02936FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF1E6BC6-3BFC-4005-8DB8-8F2DF02936FA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF1E6BC6-3BFC-4005-8DB8-8F2DF02936FA}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

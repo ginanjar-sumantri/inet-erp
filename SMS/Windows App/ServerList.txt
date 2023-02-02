@@ -1,0 +1,2 @@
+﻿#SMS Server
+Data Source=DANNYHI\SQLEXPRESS;Integrated Security=True;Initial Catalog=SMS

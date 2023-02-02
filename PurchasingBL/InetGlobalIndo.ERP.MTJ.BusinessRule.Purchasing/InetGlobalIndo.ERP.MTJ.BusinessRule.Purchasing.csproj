@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{699421E9-E4C4-4731-A680-E4B9353088AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InetGlobalIndo.ERP.MTJ.BusinessRule.Purchasing</RootNamespace>
+    <AssemblyName>InetGlobalIndo.ERP.MTJ.BusinessRule.Purchasing</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>PT. Inet Global Indo.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="InetGlobalIndo.ERP.MTJ.Authentication, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.100.1\ApplicationDll\InetGlobalIndo.ERP.MTJ.Authentication.dll</HintPath>
+    </Reference>
+    <Reference Include="InetGlobalIndo.ERP.MTJ.BusinessRule, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\HomeBL\InetGlobalIndo.ERP.MTJ.BusinessRule\bin\Debug\InetGlobalIndo.ERP.MTJ.BusinessRule.dll</HintPath>
+    </Reference>
+    <Reference Include="InetGlobalIndo.ERP.MTJ.BusinessRule.Accounting, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.100.1\ApplicationDll\InetGlobalIndo.ERP.MTJ.BusinessRule.Accounting.dll</HintPath>
+    </Reference>
+    <Reference Include="InetGlobalIndo.ERP.MTJ.BusinessRule.Settings, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.100.1\ApplicationDll\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="InetGlobalIndo.ERP.MTJ.BusinessRule.StockControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\StockControlBL\InetGlobalIndo.ERP.MTJ.BusinessRule.StockControl\bin\Debug\InetGlobalIndo.ERP.MTJ.BusinessRule.StockControl.dll</HintPath>
+    </Reference>
+    <Reference Include="InetGlobalIndo.ERP.MTJ.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\General\InetGlobalIndo.ERP.MTJ.Common\bin\Debug\InetGlobalIndo.ERP.MTJ.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="InetGlobalIndo.ERP.MTJ.DataMapping, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\General\InetGlobalIndo.ERP.MTJ.DataMapping\bin\Debug\InetGlobalIndo.ERP.MTJ.DataMapping.dll</HintPath>
+    </Reference>
+    <Reference Include="InetGlobalIndo.ERP.MTJ.DBFactory.ERPManSys, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\General\InetGlobalIndo.ERP.MTJ.DBFactory.ERPManSys\bin\Debug\InetGlobalIndo.ERP.MTJ.DBFactory.ERPManSys.dll</HintPath>
+    </Reference>
+    <Reference Include="InetGlobalIndo.ERP.MTJ.SystemConfig, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.100.1\ApplicationDll\InetGlobalIndo.ERP.MTJ.SystemConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base.cs" />
+    <Compile Include="FixedAssetPurchaseOrderBL.cs" />
+    <Compile Include="DirectPurchaseBL.cs" />
+    <Compile Include="SuppBuyingPriceBL.cs" />
+    <Compile Include="DeliveryBL.cs" />
+    <Compile Include="PurchaseOrderBL.cs" />
+    <Compile Include="ReportPurchaseBL.cs" />
+    <Compile Include="ShipmentBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseRequestBL.cs" />
+    <Compile Include="PurchaseReturBL.cs" />
+    <None Include="PT. Inet Global Indo.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

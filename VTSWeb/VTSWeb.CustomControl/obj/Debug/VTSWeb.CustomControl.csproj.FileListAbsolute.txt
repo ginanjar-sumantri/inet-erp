@@ -1,0 +1,13 @@
+D:\WORK IP.1\VTSWeb\VTSWeb.CustomControl\bin\Debug\TaskList.CustomControl.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.CustomControl\bin\Debug\TaskList.CustomControl.pdb
+D:\WORK IP.1\VTSWeb\VTSWeb.CustomControl\bin\Debug\VTSWeb.BusinessRule.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.CustomControl\bin\Debug\VTSWeb.Common.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.CustomControl\bin\Debug\VTSWeb.Database.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.CustomControl\bin\Debug\VTSWeb.SystemConfig.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.CustomControl\bin\Debug\VTSWeb.Common.pdb
+D:\WORK IP.1\VTSWeb\VTSWeb.CustomControl\bin\Debug\VTSWeb.SystemConfig.pdb
+D:\WORK IP.1\VTSWeb\VTSWeb.CustomControl\bin\Debug\VTSWeb.Database.pdb
+D:\WORK IP.1\VTSWeb\VTSWeb.CustomControl\bin\Debug\VTSWeb.BusinessRule.pdb
+D:\WORK IP.1\VTSWeb\VTSWeb.CustomControl\obj\Debug\ResolveAssemblyReference.cache
+D:\WORK IP.1\VTSWeb\VTSWeb.CustomControl\obj\Debug\TaskList.CustomControl.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.CustomControl\obj\Debug\TaskList.CustomControl.pdb

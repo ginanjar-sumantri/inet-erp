@@ -1,0 +1,90 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/default.master" AutoEventWireup="true" CodeFile="ProductFormulaDetailAdd.aspx.cs"
+    Inherits="InetGlobalIndo.ERP.MTJ.UI.StockControl.ProductFormula.ProductFormulaDetailAdd" %>
+
+<%@ Register src="../ProductPicker.ascx" tagname="ProductPicker" tagprefix="uc1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="DefaultHeadContentPlaceHolder" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="DefaultBodyContentPlaceHolder" runat="Server">
+    <asp:Panel runat="server" ID="Panel1" DefaultButton="SaveButton">
+        <table cellpadding="3" cellspacing="0" width="0" border="0">
+            <tr>
+                <td class="tahoma_14_black">
+                    <b>
+                        <asp:Literal ID="PageTitleLiteral" runat="server" />
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ValidationSummary ID="ValidationSummary" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label runat="server" ID="WarningLabel" CssClass="warning"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table cellpadding="3" cellspacing="0" width="0" border="0">
+                        <tr>
+                            <td>
+                                Product
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td>
+                                 <uc1:ProductPicker ID="ProductPicker1" runat="server" />
+                                <asp:HiddenField ID="tempProductCode" runat="server" />
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                Qty
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td>
+                                <asp:TextBox ID="QtyTextBox" runat="server" MaxLength="18" Width="150"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="QtyRequiredFieldValidator" runat="server" Text="*"
+                                    ErrorMessage="Qty Must Be Filled" ControlToValidate="QtyTextBox"></asp:RequiredFieldValidator>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Unit
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td>
+                                <asp:TextBox runat="server" ID="UnitTextBox" BackColor="#cccccc" Width="210"></asp:TextBox>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table cellpadding="3" cellspacing="0" border="0" width="0">
+                        <tr>
+                            <td>
+                                <asp:ImageButton ID="SaveButton" runat="server" OnClick="SaveButton_Click" />
+                            </td>
+                            <td>
+                                <asp:ImageButton ID="CancelButton" runat="server" CausesValidation="False" OnClick="CancelButton_Click" />
+                            </td>
+                            <td>
+                                <asp:ImageButton ID="ResetButton" runat="server" CausesValidation="False" OnClick="ResetButton_Click" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </asp:Panel>
+</asp:Content>

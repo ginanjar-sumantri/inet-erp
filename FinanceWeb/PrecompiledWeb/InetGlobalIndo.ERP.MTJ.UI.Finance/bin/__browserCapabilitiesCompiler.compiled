@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/InetGlobalIndo.ERP.MTJ.UI.Finance/App_Browsers/" hash="ffffffff933555af" filehash="3b3e68a2adde" flags="110000" assembly="App_Browsers" type="ASP.ApplicationBrowserCapabilitiesFactory">
+    <filedeps>
+        <filedep name="/InetGlobalIndo.ERP.MTJ.UI.Finance/App_Browsers/BrowserFile.browser" />
+    </filedeps>
+</preserve>

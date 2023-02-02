@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="SMSPortal" Class="SMSDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.MsBlockPhoneBook" Member="MsBlockPhoneBooks">
+    <Type Name="MsBlockPhoneBook">
+      <Column Name="BlockID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OrganizationID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="phoneNumber" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsCategory" Member="MsCategories">
+    <Type Name="MsCategory">
+      <Column Name="id" Type="System.Byte" DbType="TinyInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SMSKeyword" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrAutoReply" Member="TrAutoReplies">
+    <Type Name="TrAutoReply">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OrganizationID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="KeyWord" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ReplyMessage" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrSchedule" Member="TrSchedules">
+    <Type Name="TrSchedule">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OrganizationID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ScheduleDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="DestinationPhoneNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="fgQueuedSend" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsBackEndSetting" Member="MsBackEndSettings">
+    <Type Name="MsBackEndSetting">
+      <Column Name="Description" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SMSGatewaySend" Member="SMSGatewaySends">
+    <Type Name="SMSGatewaySend">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DestinationPhoneNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="flagSend" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="userID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DateSent" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OrganizationID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="fgMasking" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MaskingStatus" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MSPackage" Member="MSPackages">
+    <Type Name="MSPackage">
+      <Column Name="PackageName" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SMSPerDay" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(8000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsCountryCode" Member="MsCountryCodes">
+    <Type Name="MsCountryCode">
+      <Column Name="CountryCode" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SMSGatewayReceive" Member="SMSGatewayReceives">
+    <Type Name="SMSGatewayReceive">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SenderPhoneNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="flagRead" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="userID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ReplyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DateReceived" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OrganizationID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="fgSound" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsUser" Member="MsUsers">
+    <Type Name="MsUser">
+      <Column Name="OrganizationID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="fgAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="fgWebAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RegistrationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ExpiredDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PackageName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SMSLimit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastLimitReset" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="fgActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsOrganization" Member="MsOrganizations">
+    <Type Name="MsOrganization">
+      <Column Name="OrganizationID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OrganizationName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UserLimit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BalanceCheckCode" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="BalanceCheckRequest" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LastBalance" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="GatewayStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FooterAdditionalMessage" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GatewayStatusNoticeNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GatewayStatusNoticeLastSent" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GlobalReplyMessage" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MaskingBalanceAccount" Type="System.Decimal" DbType="Decimal(23,8)" CanBeNull="true" />
+      <Column Name="MaskingSD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FgHosted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SignalStrength" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrBalance" Member="TrBalances">
+    <Type Name="TrBalance">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OrganizationID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="fgIncrease" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(23,8)" CanBeNull="true" />
+      <Column Name="TransDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsPhoneBook" Member="MsPhoneBooks">
+    <Type Name="MsPhoneBook">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OrganizationID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Company" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DateOfBirth" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Religion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PhoneBookGroup" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="fgBirthDay" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BirthdayWishes" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="lastWishesSent" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="JobTitle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="NameCardPicture" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

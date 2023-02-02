@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="SIP_Membership" Class="MTJMembershipDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.aspnet_Applications" Member="aspnet_Applications">
+    <Type Name="aspnet_Application">
+      <Column Name="ApplicationName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredApplicationName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Association Name="aspnet_Application_aspnet_Membership" Member="aspnet_Memberships" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_Membership" />
+      <Association Name="aspnet_Application_aspnet_Path" Member="aspnet_Paths" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_Path" />
+      <Association Name="aspnet_Application_aspnet_User" Member="aspnet_Users" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_User" />
+      <Association Name="aspnet_Application_aspnet_Role" Member="aspnet_Roles" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_Role" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Membership" Member="aspnet_Memberships">
+    <Type Name="aspnet_Membership">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordFormat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordSalt" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="MobilePIN" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="LoweredEmail" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="PasswordQuestion" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="PasswordAnswer" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="IsApproved" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsLockedOut" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastLoginDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastPasswordChangedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastLockoutDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAttemptCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAttemptWindowStart" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAnswerAttemptCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAnswerAttemptWindowStart" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="aspnet_Application_aspnet_Membership" Member="aspnet_Application" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_Application" IsForeignKey="true" />
+      <Association Name="aspnet_User_aspnet_Membership" Member="aspnet_User" ThisKey="UserId" OtherKey="UserId" Type="aspnet_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Paths" Member="aspnet_Paths">
+    <Type Name="aspnet_Path">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="PathId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Path" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredPath" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Association Name="aspnet_Path_aspnet_PersonalizationAllUser" Member="aspnet_PersonalizationAllUser" ThisKey="PathId" OtherKey="PathId" Type="aspnet_PersonalizationAllUser" Cardinality="One" />
+      <Association Name="aspnet_Path_aspnet_PersonalizationPerUser" Member="aspnet_PersonalizationPerUsers" ThisKey="PathId" OtherKey="PathId" Type="aspnet_PersonalizationPerUser" />
+      <Association Name="aspnet_Application_aspnet_Path" Member="aspnet_Application" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_Application" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_PersonalizationAllUsers" Member="aspnet_PersonalizationAllUsers">
+    <Type Name="aspnet_PersonalizationAllUser">
+      <Column Name="PathId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PageSettings" Type="System.Data.Linq.Binary" DbType="Image NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="LastUpdatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="aspnet_Path_aspnet_PersonalizationAllUser" Member="aspnet_Path" ThisKey="PathId" OtherKey="PathId" Type="aspnet_Path" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_PersonalizationPerUser" Member="aspnet_PersonalizationPerUsers">
+    <Type Name="aspnet_PersonalizationPerUser">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PathId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PageSettings" Type="System.Data.Linq.Binary" DbType="Image NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="LastUpdatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="aspnet_Path_aspnet_PersonalizationPerUser" Member="aspnet_Path" ThisKey="PathId" OtherKey="PathId" Type="aspnet_Path" IsForeignKey="true" />
+      <Association Name="aspnet_User_aspnet_PersonalizationPerUser" Member="aspnet_User" ThisKey="UserId" OtherKey="UserId" Type="aspnet_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Profile" Member="aspnet_Profiles">
+    <Type Name="aspnet_Profile">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PropertyNames" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="PropertyValuesString" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="PropertyValuesBinary" Type="System.Data.Linq.Binary" DbType="Image NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="LastUpdatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="aspnet_User_aspnet_Profile" Member="aspnet_User" ThisKey="UserId" OtherKey="UserId" Type="aspnet_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_SchemaVersions" Member="aspnet_SchemaVersions">
+    <Type Name="aspnet_SchemaVersion">
+      <Column Name="Feature" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CompatibleSchemaVersion" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IsCurrentVersion" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_UsersInRoles" Member="aspnet_UsersInRoles">
+    <Type Name="aspnet_UsersInRole">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="aspnet_User_aspnet_UsersInRole" Member="aspnet_User" ThisKey="UserId" OtherKey="UserId" Type="aspnet_User" IsForeignKey="true" />
+      <Association Name="aspnet_Role_aspnet_UsersInRole" Member="aspnet_Role" ThisKey="RoleId" OtherKey="RoleId" Type="aspnet_Role" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_WebEvent_Events" Member="aspnet_WebEvent_Events">
+    <Type Name="aspnet_WebEvent_Event">
+      <Column Name="EventId" Type="System.String" DbType="Char(32) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EventTimeUtc" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EventTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EventType" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="EventSequence" Type="System.Decimal" DbType="Decimal(19,0) NOT NULL" CanBeNull="false" />
+      <Column Name="EventOccurrence" Type="System.Decimal" DbType="Decimal(19,0) NOT NULL" CanBeNull="false" />
+      <Column Name="EventCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EventDetailCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Message" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="ApplicationPath" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="ApplicationVirtualPath" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="MachineName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="RequestUrl" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="ExceptionType" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Details" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.Menu_aspnet.Roles]" Member="master_Menu_aspnet_Roles">
+    <Type Name="master_Menu_aspnet_Role">
+      <Column Name="MenuID" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="aspnet_Role_master_Menu_aspnet_Role" Member="aspnet_Role" ThisKey="RoleId" OtherKey="RoleId" Type="aspnet_Role" IsForeignKey="true" />
+      <Association Name="master_Menu_master_Menu_aspnet_Role" Member="master_Menu" ThisKey="MenuID" OtherKey="MenuID" Type="master_Menu" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Users" Member="aspnet_Users">
+    <Type Name="aspnet_User">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredUserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="MobileAlias" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="IsAnonymous" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LastActivityDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="aspnet_User_aspnet_Membership" Member="aspnet_Membership" ThisKey="UserId" OtherKey="UserId" Type="aspnet_Membership" Cardinality="One" />
+      <Association Name="aspnet_User_aspnet_PersonalizationPerUser" Member="aspnet_PersonalizationPerUsers" ThisKey="UserId" OtherKey="UserId" Type="aspnet_PersonalizationPerUser" />
+      <Association Name="aspnet_User_aspnet_Profile" Member="aspnet_Profile" ThisKey="UserId" OtherKey="UserId" Type="aspnet_Profile" Cardinality="One" />
+      <Association Name="aspnet_User_aspnet_UsersInRole" Member="aspnet_UsersInRoles" ThisKey="UserId" OtherKey="UserId" Type="aspnet_UsersInRole" />
+      <Association Name="aspnet_User_User_Employee" Member="User_Employee" ThisKey="UserId" OtherKey="UserId" Type="User_Employee" Cardinality="One" />
+      <Association Name="aspnet_User_master_Company_aspnet_User" Member="master_Company_aspnet_Users" ThisKey="UserId" OtherKey="UserID" Type="master_Company_aspnet_User" />
+      <Association Name="aspnet_User_master_UserConnMode" Member="master_UserConnMode" ThisKey="UserId" OtherKey="UserId" Type="master_UserConnMode" Cardinality="One" />
+      <Association Name="aspnet_User_master_Database_aspnet_User" Member="master_Database_aspnet_Users" ThisKey="UserId" OtherKey="UserID" Type="master_Database_aspnet_User" />
+      <Association Name="aspnet_User_master_UserExtension" Member="master_UserExtension" ThisKey="UserId" OtherKey="UserId" Type="master_UserExtension" Cardinality="One" />
+      <Association Name="aspnet_Application_aspnet_User" Member="aspnet_Application" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_Application" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.User_Employee" Member="User_Employees">
+    <Type Name="User_Employee">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EmployeeId" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="aspnet_User_User_Employee" Member="aspnet_User" ThisKey="UserId" OtherKey="UserId" Type="aspnet_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.Company_aspnet.User]" Member="master_Company_aspnet_Users">
+    <Type Name="master_Company_aspnet_User">
+      <Column Name="CompanyID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="aspnet_User_master_Company_aspnet_User" Member="aspnet_User" ThisKey="UserID" OtherKey="UserId" Type="aspnet_User" IsForeignKey="true" />
+      <Association Name="master_Company_master_Company_aspnet_User" Member="master_Company" ThisKey="CompanyID" OtherKey="CompanyID" Type="master_Company" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.UserConnMode]" Member="master_UserConnModes">
+    <Type Name="master_UserConnMode">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DatabaseID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="aspnet_User_master_UserConnMode" Member="aspnet_User" ThisKey="UserId" OtherKey="UserId" Type="aspnet_User" IsForeignKey="true" />
+      <Association Name="master_Database_master_UserConnMode" Member="master_Database" ThisKey="DatabaseID" OtherKey="DatabaseID" Type="master_Database" IsForeignKey="true" />
+      <Association Name="master_Company_master_UserConnMode" Member="master_Company" ThisKey="CompanyID" OtherKey="CompanyID" Type="master_Company" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.Database_aspnet.User]" Member="master_Database_aspnet_Users">
+    <Type Name="master_Database_aspnet_User">
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DatabaseID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="aspnet_User_master_Database_aspnet_User" Member="aspnet_User" ThisKey="UserID" OtherKey="UserId" Type="aspnet_User" IsForeignKey="true" />
+      <Association Name="master_Database_master_Database_aspnet_User" Member="master_Database" ThisKey="DatabaseID" OtherKey="DatabaseID" Type="master_Database" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.Company_master.Database]" Member="master_Company_master_Databases">
+    <Type Name="master_Company_master_Database">
+      <Column Name="CompanyID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DatabaseID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="master_Database_master_Company_master_Database" Member="master_Database" ThisKey="DatabaseID" OtherKey="DatabaseID" Type="master_Database" IsForeignKey="true" />
+      <Association Name="master_Company_master_Company_master_Database" Member="master_Company" ThisKey="CompanyID" OtherKey="CompanyID" Type="master_Company" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Roles" Member="aspnet_Roles">
+    <Type Name="aspnet_Role">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredRoleName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Association Name="aspnet_Role_aspnet_UsersInRole" Member="aspnet_UsersInRoles" ThisKey="RoleId" OtherKey="RoleId" Type="aspnet_UsersInRole" />
+      <Association Name="aspnet_Role_master_Menu_aspnet_Role" Member="master_Menu_aspnet_Roles" ThisKey="RoleId" OtherKey="RoleId" Type="master_Menu_aspnet_Role" />
+      <Association Name="aspnet_Role_master_Role" Member="master_Role" ThisKey="RoleId" OtherKey="RoleId" Type="master_Role" Cardinality="One" />
+      <Association Name="aspnet_Role_master_Company_aspnet_Role" Member="master_Company_aspnet_Roles" ThisKey="RoleId" OtherKey="RoleId" Type="master_Company_aspnet_Role" />
+      <Association Name="aspnet_Role_master_RolePermission" Member="master_RolePermissions" ThisKey="RoleId" OtherKey="RoleID" Type="master_RolePermission" />
+      <Association Name="aspnet_Application_aspnet_Role" Member="aspnet_Application" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_Application" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.Role]" Member="master_Roles">
+    <Type Name="master_Role">
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SystemRole" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="aspnet_Role_master_Role" Member="aspnet_Role" ThisKey="RoleId" OtherKey="RoleId" Type="aspnet_Role" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.PermissionTemplate]" Member="master_PermissionTemplates">
+    <Type Name="master_PermissionTemplate">
+      <Column Name="MenuID" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Add]" Member="Add" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Edit" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="[Delete]" Member="Delete" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="[View]" Member="View" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="GetApproval" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Approve" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Posting" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Unposting" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PrintPreview" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TaxPreview" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Access" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="[Close]" Member="Close" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Generate" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Revisi" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="master_Menu_master_PermissionTemplate" Member="master_Menu" ThisKey="MenuID" OtherKey="MenuID" Type="master_Menu" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.Company_aspnet_Role]" Member="master_Company_aspnet_Roles">
+    <Type Name="master_Company_aspnet_Role">
+      <Column Name="CompanyID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="aspnet_Role_master_Company_aspnet_Role" Member="aspnet_Role" ThisKey="RoleId" OtherKey="RoleId" Type="aspnet_Role" IsForeignKey="true" />
+      <Association Name="master_Company_master_Company_aspnet_Role" Member="master_Company" ThisKey="CompanyID" OtherKey="CompanyID" Type="master_Company" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.RolePermission]" Member="master_RolePermissions">
+    <Type Name="master_RolePermission">
+      <Column Name="RoleID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MenuID" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Add]" Member="Add" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Edit" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Delete]" Member="Delete" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[View]" Member="View" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="GetApproval" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Approve" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Posting" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Unposting" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="PrintPreview" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="TaxPreview" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Close]" Member="Close" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Access" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Generate" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Revisi" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="aspnet_Role_master_RolePermission" Member="aspnet_Role" ThisKey="RoleID" OtherKey="RoleId" Type="aspnet_Role" IsForeignKey="true" />
+      <Association Name="master_Menu_master_RolePermission" Member="master_Menu" ThisKey="MenuID" OtherKey="MenuID" Type="master_Menu" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.Database]" Member="master_Databases">
+    <Type Name="master_Database">
+      <Column Name="DatabaseID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Server" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UID" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PWD" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="master_Database_master_UserConnMode" Member="master_UserConnModes" ThisKey="DatabaseID" OtherKey="DatabaseID" Type="master_UserConnMode" />
+      <Association Name="master_Database_master_Database_aspnet_User" Member="master_Database_aspnet_Users" ThisKey="DatabaseID" OtherKey="DatabaseID" Type="master_Database_aspnet_User" />
+      <Association Name="master_Database_master_Company_master_Database" Member="master_Company_master_Database" ThisKey="DatabaseID" OtherKey="DatabaseID" Type="master_Company_master_Database" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.RoleMenu]" Member="master_RoleMenus">
+    <Type Name="master_RoleMenu">
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MenuId" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.UserExtension]" Member="master_UserExtensions">
+    <Type Name="master_UserExtension">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="aspnet_User_master_UserExtension" Member="aspnet_User" ThisKey="UserId" OtherKey="UserId" Type="aspnet_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.CompanyMenu]" Member="master_CompanyMenus">
+    <Type Name="master_CompanyMenu">
+      <Column Name="CompanyId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MenuId" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsReminder" Member="MsReminders">
+    <Type Name="MsReminder">
+      <Column Name="ReminderCode" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ReminderName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MenuID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TableName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FgCondition" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="Path" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="ExecuteName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ButtonText" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ReminderType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsReminderMapping" Member="MsReminderMappings">
+    <Type Name="MsReminderMapping">
+      <Column Name="ReminderCode" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.ReportListTemplate]" Member="master_ReportListTemplates">
+    <Type Name="master_ReportListTemplate">
+      <Column Name="ReportType" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ReportGroupID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SortNo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ReportName" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="ReportPath" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="fgActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.Menu]" Member="master_Menus">
+    <Type Name="master_Menu">
+      <Column Name="MenuID" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Value" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ParentID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="NavigateURL" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="ImageURL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="OnSelectedImageURL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModuleID" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="MenuIcon" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ShowInQuickLaunch" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Indent" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="SiteMapURL" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Association Name="master_Menu_master_Menu_aspnet_Role" Member="master_Menu_aspnet_Roles" ThisKey="MenuID" OtherKey="MenuID" Type="master_Menu_aspnet_Role" />
+      <Association Name="master_Menu_master_PermissionTemplate" Member="master_PermissionTemplate" ThisKey="MenuID" OtherKey="MenuID" Type="master_PermissionTemplate" Cardinality="One" />
+      <Association Name="master_Menu_master_RolePermission" Member="master_RolePermissions" ThisKey="MenuID" OtherKey="MenuID" Type="master_RolePermission" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.theme]" Member="master_themes">
+    <Type Name="master_theme">
+      <Column Name="ThemeCode" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ThemeName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BackgroundColorBody" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="BackgroundImage" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BackgroundImageBawah" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RowColor" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="RowColorAlternate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="RowColorHover" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="WelcomeTextColor" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="BackgroundColorLogin" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="BackgroundImageLogin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BackgroundImagePanelLogin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PanelLoginWidth" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PanelLoginHeight" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.Company]" Member="master_Companies">
+    <Type Name="master_Company">
+      <Column Name="CompanyID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Logo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PrimaryAddress" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="CompanyTag" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="TaxBranchNo" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="[default]" Member="default" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="master_Company_master_Company_aspnet_User" Member="master_Company_aspnet_Users" ThisKey="CompanyID" OtherKey="CompanyID" Type="master_Company_aspnet_User" />
+      <Association Name="master_Company_master_UserConnMode" Member="master_UserConnModes" ThisKey="CompanyID" OtherKey="CompanyID" Type="master_UserConnMode" />
+      <Association Name="master_Company_master_Company_master_Database" Member="master_Company_master_Databases" ThisKey="CompanyID" OtherKey="CompanyID" Type="master_Company_master_Database" />
+      <Association Name="master_Company_master_Company_aspnet_Role" Member="master_Company_aspnet_Roles" ThisKey="CompanyID" OtherKey="CompanyID" Type="master_Company_aspnet_Role" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[master.ReportList]" Member="master_ReportLists">
+    <Type Name="master_ReportList">
+      <Column Name="ReportType" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ReportGroupID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SortNo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ReportName" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="ReportPath" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="CompanyID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="fgActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Enabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsDbConsolidationList" Member="MsDbConsolidationLists">
+    <Type Name="MsDbConsolidationList">
+      <Column Name="ConsolidationID" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DatabaseID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsLinkServer" Member="MsLinkServers">
+    <Type Name="MsLinkServer">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Server_IP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Server_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Server_Instance" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Server_Database" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Server_RemoteUser" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Server_RemotePass" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Server_Location" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Server_HO" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsTableSync" Member="MsTableSyncs">
+    <Type Name="MsTableSync">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Table_Group" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Table_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Table_PrimaryKey" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GrantOrDenyAllPermByRoleAndModule" Method="GrantOrDenyAllPermByRoleAndModule">
+    <Parameter Name="flagTo" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="moduleID" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="roleID" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_RolePermission" Method="sp_RolePermission">
+    <Parameter Name="roleID" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="menuID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="field" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="permission" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

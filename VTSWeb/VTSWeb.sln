@@ -1,0 +1,116 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VTSWeb.BusinessRule", "VTSWeb.BusinessRule\VTSWeb.BusinessRule.csproj", "{2EA3FB5C-7CB3-4476-8F15-8EF9FB3D910C}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "VTSWeb.UI", "VTSWeb.UI", "{BB42B6E8-8BE6-41BF-89A9-D0E2468E401C}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/VTSWeb.root/VTSWeb", CAAAAAAA"
+		SccAuxPath = ""
+		SccLocalPath = ".."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		ProjectReferences = "{2EA3FB5C-7CB3-4476-8F15-8EF9FB3D910C}|VTSWeb.BusinessRule.dll;{8A0FA9D4-C6E2-4875-94A4-04E1FE9C6A9A}|VTSWeb.Database.dll;{BD55BD0F-2233-4B4F-BCAB-AA5E0773B1DB}|VTSWeb.SystemConfig.dll;{4EBBE7AC-B0C2-4A5E-9AA5-8E01A991C6A2}|VTSWeb.Common.dll;{4EB7B55F-F2F5-4C25-88AA-E05795430A29}|VTSWeb.DataMapping.dll;{F4D110D5-8A41-4CB3-9769-36C7378C1585}|TaskList.CustomControl.dll;{E0C091EB-1543-40B8-865E-53B94097457B}|VTSWeb.Foto.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/VTSWeb.UI"
+		Debug.AspNetCompiler.PhysicalPath = "VTSWeb.UI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\VTSWeb.UI\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/VTSWeb.UI"
+		Release.AspNetCompiler.PhysicalPath = "VTSWeb.UI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\VTSWeb.UI\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2400"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VTSWeb.SystemConfig", "VTSWeb.SystemConfig\VTSWeb.SystemConfig.csproj", "{BD55BD0F-2233-4B4F-BCAB-AA5E0773B1DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VTSWeb.Database", "VTSWeb.Database\VTSWeb.Database.csproj", "{8A0FA9D4-C6E2-4875-94A4-04E1FE9C6A9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VTSWeb.DataMapping", "VTSWeb.DataMapping\VTSWeb.DataMapping.csproj", "{4EB7B55F-F2F5-4C25-88AA-E05795430A29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VTSWeb.Common", "VTSWeb.Common\VTSWeb.Common.csproj", "{4EBBE7AC-B0C2-4A5E-9AA5-8E01A991C6A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VTSWeb.CustomControl", "VTSWeb.CustomControl\VTSWeb.CustomControl.csproj", "{F4D110D5-8A41-4CB3-9769-36C7378C1585}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VTSWeb.Foto", "VTSWeb.Foto\VTSWeb.Foto.csproj", "{E0C091EB-1543-40B8-865E-53B94097457B}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 9
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = VTSWeb.BusinessRule\\VTSWeb.BusinessRule.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = VTSWeb.BusinessRule\\
+		SccProjectUniqueName2 = VTSWeb.Common\\VTSWeb.Common.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = VTSWeb.Common\\
+		SccProjectUniqueName3 = VTSWeb.CustomControl\\VTSWeb.CustomControl.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = VTSWeb.CustomControl\\
+		SccProjectUniqueName4 = VTSWeb.Database\\VTSWeb.Database.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = VTSWeb.Database\\
+		SccProjectUniqueName5 = VTSWeb.DataMapping\\VTSWeb.DataMapping.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = VTSWeb.DataMapping\\
+		SccProjectUniqueName6 = VTSWeb.Foto\\VTSWeb.Foto.csproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = VTSWeb.Foto\\
+		SccProjectUniqueName7 = VTSWeb.SystemConfig\\VTSWeb.SystemConfig.csproj
+		SccLocalPath7 = .
+		SccProjectFilePathRelativizedFromConnection7 = VTSWeb.SystemConfig\\
+		SccWebProject8 = true
+		SccProjectUniqueName8 = VTSWeb.UI
+		SccLocalPath8 = .
+		SccProjectFilePathRelativizedFromConnection8 = VTSWeb.UI\\
+		SccProjectEnlistmentChoice8 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EA3FB5C-7CB3-4476-8F15-8EF9FB3D910C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA3FB5C-7CB3-4476-8F15-8EF9FB3D910C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA3FB5C-7CB3-4476-8F15-8EF9FB3D910C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA3FB5C-7CB3-4476-8F15-8EF9FB3D910C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB42B6E8-8BE6-41BF-89A9-D0E2468E401C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB42B6E8-8BE6-41BF-89A9-D0E2468E401C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB42B6E8-8BE6-41BF-89A9-D0E2468E401C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB42B6E8-8BE6-41BF-89A9-D0E2468E401C}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{BD55BD0F-2233-4B4F-BCAB-AA5E0773B1DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD55BD0F-2233-4B4F-BCAB-AA5E0773B1DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD55BD0F-2233-4B4F-BCAB-AA5E0773B1DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD55BD0F-2233-4B4F-BCAB-AA5E0773B1DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A0FA9D4-C6E2-4875-94A4-04E1FE9C6A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A0FA9D4-C6E2-4875-94A4-04E1FE9C6A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A0FA9D4-C6E2-4875-94A4-04E1FE9C6A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A0FA9D4-C6E2-4875-94A4-04E1FE9C6A9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EB7B55F-F2F5-4C25-88AA-E05795430A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EB7B55F-F2F5-4C25-88AA-E05795430A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EB7B55F-F2F5-4C25-88AA-E05795430A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EB7B55F-F2F5-4C25-88AA-E05795430A29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EBBE7AC-B0C2-4A5E-9AA5-8E01A991C6A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EBBE7AC-B0C2-4A5E-9AA5-8E01A991C6A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EBBE7AC-B0C2-4A5E-9AA5-8E01A991C6A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EBBE7AC-B0C2-4A5E-9AA5-8E01A991C6A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4D110D5-8A41-4CB3-9769-36C7378C1585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D110D5-8A41-4CB3-9769-36C7378C1585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D110D5-8A41-4CB3-9769-36C7378C1585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D110D5-8A41-4CB3-9769-36C7378C1585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0C091EB-1543-40B8-865E-53B94097457B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0C091EB-1543-40B8-865E-53B94097457B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0C091EB-1543-40B8-865E-53B94097457B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0C091EB-1543-40B8-865E-53B94097457B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

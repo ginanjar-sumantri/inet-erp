@@ -1,0 +1,15 @@
+D:\WORK IP.1\VTSWeb\VTSWeb.Foto\bin\Debug\VTSWeb.Foto.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.Foto\bin\Debug\VTSWeb.Foto.pdb
+D:\WORK IP.1\VTSWeb\VTSWeb.Foto\bin\Debug\VTSWeb.BusinessRule.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.Foto\bin\Debug\VTSWeb.Common.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.Foto\bin\Debug\VTSWeb.Database.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.Foto\bin\Debug\VTSWeb.DataMapping.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.Foto\bin\Debug\VTSWeb.SystemConfig.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.Foto\bin\Debug\VTSWeb.Common.pdb
+D:\WORK IP.1\VTSWeb\VTSWeb.Foto\bin\Debug\VTSWeb.DataMapping.pdb
+D:\WORK IP.1\VTSWeb\VTSWeb.Foto\bin\Debug\VTSWeb.Database.pdb
+D:\WORK IP.1\VTSWeb\VTSWeb.Foto\bin\Debug\VTSWeb.BusinessRule.pdb
+D:\WORK IP.1\VTSWeb\VTSWeb.Foto\bin\Debug\VTSWeb.SystemConfig.pdb
+D:\WORK IP.1\VTSWeb\VTSWeb.Foto\obj\Debug\ResolveAssemblyReference.cache
+D:\WORK IP.1\VTSWeb\VTSWeb.Foto\obj\Debug\VTSWeb.Foto.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.Foto\obj\Debug\VTSWeb.Foto.pdb

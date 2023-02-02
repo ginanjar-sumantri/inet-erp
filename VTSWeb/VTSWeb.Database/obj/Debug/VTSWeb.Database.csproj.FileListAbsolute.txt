@@ -1,0 +1,8 @@
+D:\WORK IP.1\VTSWeb\VTSWeb.Database\bin\Debug\VTSWeb.Database.dll.config
+D:\WORK IP.1\VTSWeb\VTSWeb.Database\bin\Debug\VTSWeb.Database.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.Database\bin\Debug\VTSWeb.Database.pdb
+D:\WORK IP.1\VTSWeb\VTSWeb.Database\bin\Debug\VTSWeb.SystemConfig.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.Database\bin\Debug\VTSWeb.SystemConfig.pdb
+D:\WORK IP.1\VTSWeb\VTSWeb.Database\obj\Debug\ResolveAssemblyReference.cache
+D:\WORK IP.1\VTSWeb\VTSWeb.Database\obj\Debug\VTSWeb.Database.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.Database\obj\Debug\VTSWeb.Database.pdb

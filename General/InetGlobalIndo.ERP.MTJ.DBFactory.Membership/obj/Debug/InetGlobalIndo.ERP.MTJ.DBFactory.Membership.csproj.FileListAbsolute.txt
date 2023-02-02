@@ -1,0 +1,6 @@
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.DBFactory.Membership\bin\Debug\InetGlobalIndo.ERP.MTJ.DBFactory.Membership.dll.config
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.DBFactory.Membership\bin\Debug\InetGlobalIndo.ERP.MTJ.DBFactory.Membership.dll
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.DBFactory.Membership\bin\Debug\InetGlobalIndo.ERP.MTJ.DBFactory.Membership.pdb
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.DBFactory.Membership\obj\Debug\ResolveAssemblyReference.cache
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.DBFactory.Membership\obj\Debug\InetGlobalIndo.ERP.MTJ.DBFactory.Membership.dll
+D:\WORK IP.1\General\InetGlobalIndo.ERP.MTJ.DBFactory.Membership\obj\Debug\InetGlobalIndo.ERP.MTJ.DBFactory.Membership.pdb

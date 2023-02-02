@@ -1,0 +1,143 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Windows App", "Windows App\Windows App.csproj", "{220BA320-4747-48E2-9A2B-E6C77D9FD423}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSLibrary", "SMSLibrary\SMSLibrary.csproj", "{7112F489-E9EE-4624-9625-3180A7C99222}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web SMS Portal", "Web SMS Portal", "{34F22E55-97FD-482C-9A6E-D5A60B798596}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/SMS.root/SMS", CAAAAAAA"
+		SccAuxPath = ""
+		SccLocalPath = ".."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		ProjectReferences = "{7112F489-E9EE-4624-9625-3180A7C99222}|SMSLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/Web SMS Portal"
+		Debug.AspNetCompiler.PhysicalPath = "Web SMS Portal\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Web SMS Portal\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Web SMS Portal"
+		Release.AspNetCompiler.PhysicalPath = "Web SMS Portal\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Web SMS Portal\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "8888"
+		VWDDynamicPort = "false"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BackEndSMSPortal", "BackEndSMSPortal", "{7C2ED94B-698C-46E0-8E73-8C67166D6970}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/SMS.root/SMS", CAAAAAAA"
+		SccAuxPath = ""
+		SccLocalPath = ".."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		ProjectReferences = "{7112F489-E9EE-4624-9625-3180A7C99222}|SMSLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/BackEndSMSPortal"
+		Debug.AspNetCompiler.PhysicalPath = "BackEndSMSPortal\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\BackEndSMSPortal\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/BackEndSMSPortal"
+		Release.AspNetCompiler.PhysicalPath = "BackEndSMSPortal\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\BackEndSMSPortal\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2423"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MobileSMS", "MobileSMS", "{66EE674F-55CF-4C44-87BB-56D30C12329D}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/SMS.root/SMS", CAAAAAAA"
+		SccAuxPath = ""
+		SccLocalPath = ".."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		ProjectReferences = "{7112F489-E9EE-4624-9625-3180A7C99222}|SMSLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/MobileSMS"
+		Debug.AspNetCompiler.PhysicalPath = "MobileSMS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\MobileSMS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/MobileSMS"
+		Release.AspNetCompiler.PhysicalPath = "MobileSMS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\MobileSMS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1666"
+		VWDDynamicPort = "false"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 6
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SMSLibrary\\SMSLibrary.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = SMSLibrary\\
+		SccProjectUniqueName2 = Windows\u0020App\\Windows\u0020App.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = Windows\u0020App\\
+		SccWebProject3 = true
+		SccProjectUniqueName3 = Web\u0020SMS\u0020Portal
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = Web\u0020SMS\u0020Portal\\
+		SccProjectEnlistmentChoice3 = 2
+		SccWebProject4 = true
+		SccProjectUniqueName4 = BackEndSMSPortal
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = BackEndSMSPortal\\
+		SccProjectEnlistmentChoice4 = 2
+		SccWebProject5 = true
+		SccProjectUniqueName5 = MobileSMS
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = MobileSMS\\
+		SccProjectEnlistmentChoice5 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{220BA320-4747-48E2-9A2B-E6C77D9FD423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{220BA320-4747-48E2-9A2B-E6C77D9FD423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{220BA320-4747-48E2-9A2B-E6C77D9FD423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{220BA320-4747-48E2-9A2B-E6C77D9FD423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7112F489-E9EE-4624-9625-3180A7C99222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7112F489-E9EE-4624-9625-3180A7C99222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7112F489-E9EE-4624-9625-3180A7C99222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7112F489-E9EE-4624-9625-3180A7C99222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F22E55-97FD-482C-9A6E-D5A60B798596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F22E55-97FD-482C-9A6E-D5A60B798596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F22E55-97FD-482C-9A6E-D5A60B798596}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F22E55-97FD-482C-9A6E-D5A60B798596}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{7C2ED94B-698C-46E0-8E73-8C67166D6970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C2ED94B-698C-46E0-8E73-8C67166D6970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C2ED94B-698C-46E0-8E73-8C67166D6970}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C2ED94B-698C-46E0-8E73-8C67166D6970}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{66EE674F-55CF-4C44-87BB-56D30C12329D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66EE674F-55CF-4C44-87BB-56D30C12329D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66EE674F-55CF-4C44-87BB-56D30C12329D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{66EE674F-55CF-4C44-87BB-56D30C12329D}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

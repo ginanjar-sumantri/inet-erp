@@ -1,0 +1,11 @@
+D:\WORK IP.1\SettingBL\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings\bin\Debug\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings.dll
+D:\WORK IP.1\SettingBL\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings\bin\Debug\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings.pdb
+D:\WORK IP.1\SettingBL\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings\bin\Debug\InetGlobalIndo.ERP.MTJ.Authentication.dll
+D:\WORK IP.1\SettingBL\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings\bin\Debug\InetGlobalIndo.ERP.MTJ.Common.dll
+D:\WORK IP.1\SettingBL\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings\bin\Debug\InetGlobalIndo.ERP.MTJ.DataMapping.dll
+D:\WORK IP.1\SettingBL\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings\bin\Debug\InetGlobalIndo.ERP.MTJ.DBFactory.ERPManSys.dll
+D:\WORK IP.1\SettingBL\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings\bin\Debug\InetGlobalIndo.ERP.MTJ.DBFactory.Membership.dll
+D:\WORK IP.1\SettingBL\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings\bin\Debug\InetGlobalIndo.ERP.MTJ.SystemConfig.dll
+D:\WORK IP.1\SettingBL\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings\obj\Debug\ResolveAssemblyReference.cache
+D:\WORK IP.1\SettingBL\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings\obj\Debug\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings.dll
+D:\WORK IP.1\SettingBL\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings\obj\Debug\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings.pdb

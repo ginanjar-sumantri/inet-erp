@@ -1,0 +1,9 @@
+D:\WORK IP.1\VTSWeb\VTSWeb.DataMapping\bin\Debug\VTSWeb.DataMapping.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.DataMapping\bin\Debug\VTSWeb.DataMapping.pdb
+D:\WORK IP.1\VTSWeb\VTSWeb.DataMapping\bin\Debug\VTSWeb.Common.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.DataMapping\bin\Debug\VTSWeb.SystemConfig.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.DataMapping\bin\Debug\VTSWeb.Common.pdb
+D:\WORK IP.1\VTSWeb\VTSWeb.DataMapping\bin\Debug\VTSWeb.SystemConfig.pdb
+D:\WORK IP.1\VTSWeb\VTSWeb.DataMapping\obj\Debug\ResolveAssemblyReference.cache
+D:\WORK IP.1\VTSWeb\VTSWeb.DataMapping\obj\Debug\VTSWeb.DataMapping.dll
+D:\WORK IP.1\VTSWeb\VTSWeb.DataMapping\obj\Debug\VTSWeb.DataMapping.pdb

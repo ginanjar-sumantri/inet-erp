@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SMSMasterPage.master.cs"
+    Inherits="SMSMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script type="text/javascript" src="../jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="../JavaScript.js"></script>
+<head>
+    <title>WEB SMS</title>
+    <style type="text/css">
+        BODY
+        {
+            margin: 0px 0px 0px 0px;
+            background: #efefef;
+            font-family: Calibri,Tahoma;
+            font-size: 12px;
+        }
+        INPUT
+        {
+            font-family: Calibri,Tahoma;
+        }
+        .menupanel
+        {
+            clear:both;
+            margin-left: 10px;
+        }
+        .menupanel a, .menupanel div, .menupanel div a
+        {
+            float: left;
+            padding : 1px 5px 2px 5px;
+        }
+        .uppanelTitle
+        {
+            clear: both;
+            color: #fffc00;
+            background-color : #69F;
+            text-align: left;
+            font-weight: bold;
+            font-family: Arial;
+            font-size: 14px;
+            padding:5px;
+        } 
+        .contentpanelContent
+        {
+            clear: both;
+            background-color: White;
+            text-align: left;
+            padding: 5px 5px 5px 5px;
+        }
+        .bgcolor_gray
+        {
+            background-color: #999;
+            color: White;
+        }
+        .TableRowOver
+        {
+            background-color: #EEE;
+            cursor: pointer;
+        }
+        .TableRow
+        {
+            background-color: White;
+        }
+        .footerAllRightReserved{position:absolute;bottom:0px;color:#666;padding:3px;}        
+    </style>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:Literal runat="server" ID="browserBouncer"></asp:Literal>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderAtas" runat="server">
+    </asp:ContentPlaceHolder>
+        <div class="menupanel">
+            <a href="../Message/Compose.aspx">Compose</a>
+            <asp:Panel runat="server" ID="panelInbox">
+                <a href="../Message/Inbox.aspx">Inbox (<asp:Literal runat="server" ID="newInbox"></asp:Literal>)</a>
+            </asp:Panel>
+            <a href="../Message/Outbox.aspx">Outbox (<asp:Literal runat="server" ID="newOutbox"></asp:Literal>)</a>
+            <a href="../Message/SentItems.aspx">Sent</a>
+            <asp:Panel runat="server" ID="panelJunk">
+                <%--<a href="../Message/Junk.aspx">Junk</a>--%>
+            </asp:Panel>
+            <asp:Panel runat="server" ID="panelContact">
+                <a href="../Message/Contacts.aspx">Contact</a>
+            </asp:Panel>
+            <asp:Panel runat="server" ID="panelGroup">
+                <a href="../Message/Groups.aspx">Group</a>
+            </asp:Panel>           
+        </div>
+        <div class="menupanel">
+            <a style="width:150px" href="../ChangePassword/ChangePassword.aspx">Change Password</a>
+            <asp:Panel runat="server" ID="paneLBlockPhoneNumber">
+                <a style="width:150px" href="../BlockPhoneNumber/BlockPhoneNumber.aspx">Block Phone Number</a>
+            </asp:Panel>
+            <asp:Panel runat="server" ID="panelStatistic">
+                <%--<a href="../Statistic/Statistic.aspx">Statistic</a>--%>
+            </asp:Panel>
+        </div>
+        <div class="menupanel">
+            <asp:Panel runat="server" ID="panelMenuAdmin">                
+                <a href="../ManageUser/ManageUser.aspx">Manage User</a>
+                <a href="../BalanceCheck/BalanceCheck.aspx">Balance Check</a>
+                <a href="../Schedule/Schedule.aspx">Schedule</a>
+                <a href="../AutoReply/AutoReply.aspx">Auto Reply</a>
+                <%--<a href="../Configure/Configure.aspx">Configure</a>--%>
+                <%--<a href="../Download/Download.aspx">Download Gateway Application</a>--%>
+            </asp:Panel>
+        </div>
+        <div class="menupanel">
+            <asp:Panel runat="server" ID="panelCorporateFeature">
+                <a href="../BalanceCheck/BalanceCheck.aspx">Balance Check</a>
+                <a href="../Schedule/Schedule.aspx">Schedule</a>
+                <a href="../AutoReply/AutoReply.aspx">Auto Reply</a>
+            </asp:Panel>
+        </div>
+        <div class="uppanelTitle">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderContentTitle" runat="server">
+            </asp:ContentPlaceHolder>
+            <div style="float:right">
+                <asp:LinkButton runat="server" ID="LogoutLinkButton" CausesValidation="false"
+                    onclick="LogoutLinkButton_Click">Logout</asp:LinkButton>
+            </div>
+        </div>
+        <div class="contentpanelContent">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    <div class="footerAllRightReserved">All Right Reserved &copy; 2010</div>
+    <iframe id="IFrameNewMsg" src="../NewMsg.aspx" style="width:1px;height:1px;border:0px;"></iframe>
+    <script language="javascript">setInterval("$('#IFrameNewMsg').attr('src','../NewMsg.aspx');", 60000);</script>
+    </form>
+</body>
+</html>

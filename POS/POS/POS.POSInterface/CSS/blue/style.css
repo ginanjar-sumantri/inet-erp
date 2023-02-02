@@ -1,0 +1,313 @@
+/*Login Page*/
+*
+{
+	outline:none;
+}
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner 
+{
+    border: none;
+}
+#bodyLogin
+{
+	background:url(image/bg_login.jpg) no-repeat center 0px #001f59;
+	margin-top:5px;
+	margin-left:auto;
+	margin-right:auto;
+	height:725px;
+	outline:none;
+}
+#bodyLogin #Login1
+{
+	width:100%;
+	margin:0 auto;
+}
+#bodyLogin .container 
+{
+	position:relative;
+}
+#bodyLogin .container .content 
+{
+	width:622px;
+	height:650px;
+	margin:0px auto;
+}
+#bodyLogin .container .content .left-content
+{
+	background:url(image/bg_login_left.png) no-repeat;
+	width:249px;
+	height:650px;
+	float:left;
+	margin-right:4px;
+	padding:24px;
+	padding-top:19px;
+	padding-right:15px;
+}
+#bodyLogin .container .content .right-content
+{
+	background:url(image/bg_login_right.png) no-repeat;
+	width:260px;
+	height:650px;
+	float:left;
+	padding:20px 34px;
+}
+#bodyLogin .container .footer
+{
+	font-family:"Myriad Pro";
+	font-size:42px;
+	font-weight:bold;
+	color:#FFFF00;
+	background:url(image/bg_footer.jpg) repeat-x;
+	text-align:center;
+	height:70px;
+	clear:both;
+	margin:0 auto;
+	margin-top:5px;
+}
+#bodyLogin .container .content .link-button input
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+	width:118px;
+    height: 98px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+	float:left;
+	margin-right:5px;
+	margin-bottom:5px;
+}
+#bodyLogin .container .content .link-button #Login1_MemberButton
+{
+	background:url(image/btn_member.png) no-repeat;
+}
+#bodyLogin .container .content .link-button #Login1_Ticketing
+{
+	background:url(image/btn_ticket.png) no-repeat;
+}
+#bodyLogin .container .content .link-button #Login1_PrintingButton
+{
+	background:url(image/btn_print.png) no-repeat;
+}
+#bodyLogin .container .content .link-button #Login1_PhotoCopyButton
+{
+	background:url(image/btn_copy.png) no-repeat;
+}
+#bodyLogin .container .content .link-button #Login1_ShippingButton
+{
+	background:url(image/btn_shiping.png) no-repeat;
+}
+#bodyLogin .container .content .link-button #Login1_InternetButton
+{
+	background:url(image/btn_internet.png) no-repeat;
+}
+#bodyLogin .container .content .link-button #Login1_StationaryButton
+{
+	background:url(image/btn_stationery.png) no-repeat;
+}
+#bodyLogin .container .content .link-button #Login1_GrafikDesainButton
+{
+	background:url(image/btn_design.png) no-repeat;
+}
+#bodyLogin .container .content .link-button #Login1_VoucherButton
+{
+	background:url(image/btn_voucher.png) no-repeat;
+}
+#bodyLogin .container .content .link-button #Login1_CafeButton
+{
+	background:url(image/btn_cafe.png) no-repeat;
+}
+#bodyLogin .container .content .link-button #Login1_CashierButton
+{
+	background:url(image/btn_cashier.png) no-repeat;
+}
+#bodyLogin .container .content .right-content .WelcomeLabel
+{
+	color:#FFFF00;
+	font-family:"Myriad Pro";
+	font-weight:bold;
+	font-size:16px;
+	text-transform:uppercase;
+}
+#bodyLogin .container .content .right-content .CompanyImage
+{
+	width:261px;
+	height:80px;
+	background:url(image/logo.png) no-repeat;
+	margin-bottom:20px;
+}
+#bodyLogin .container .content .right-content .login .input-form
+{
+	background:url(image/bg_input_form.png) no-repeat;
+	height:22px;
+	margin-bottom:5px;
+	padding:3px;
+}
+#bodyLogin .container .content .right-content .login .input-form .label
+{
+	float:left;
+	font-family:"Myriad Pro";
+	color:#FFF;
+	text-transform:uppercase;
+	font-size:14px;
+	padding-left:3px;
+	padding-top:3px;
+}
+#bodyLogin .container .content .right-content .login .input-form .input
+{
+	float:right;	
+}
+#bodyLogin .container .content .right-content .login .input-form .input input
+{
+	height:16px;
+	width:165px !important;
+}
+#bodyLogin .container .content .right-content .login .input-form .input select
+{
+	height:22px;
+	width:171px;
+}
+#bodyLogin .container .content .right-content .login .input-form .input span
+{
+	display:none;
+}
+#bodyLogin .container .content .right-content .login .submit .btn_login input
+{
+	border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+	width:260px;
+    height: 59px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+	background:url(image/btn_login.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .login .submit .btn_login input:hover
+{
+	background:url(image/btn_login2.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .login .submit .btn_logout a
+{
+	border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+	width:260px;
+    height: 59px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+	background:url(image/btn_logout.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .login .submit .btn_logout a:hover
+{
+	background:url(image/btn_logout2.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .login .message-error
+{
+	font-family:"Myriad Pro";
+	font-size:12px;
+	text-align:center;
+	font-weight:bold;
+	color:#FFFFFF;
+	margin-bottom:11px;
+}
+#bodyLogin .container .content .right-content .numpad
+{
+	width:300px;
+	clear:both;
+	margin-top:20px;
+}
+#bodyLogin .container .content .right-content .numpad .left-container
+{
+	width:205px;
+	float:left;
+	margin-left:-4px;
+}
+#bodyLogin .container .content .right-content .numpad .right-container
+{
+	width:75px;
+}
+#bodyLogin .container .content .right-content .numpad .right-container .clear input
+{
+	border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+	width:70px;
+    height: 271px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+	background:url(image/btn_nmbr_clear.png) center -1px no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container .number input
+{
+	border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+	width:64px;
+    height: 64px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+	float:left;
+	padding:0;
+	margin:2px;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr1 input
+{
+	background:url(image/btn_nmbr_1.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr2 input
+{
+	background:url(image/btn_nmbr_2.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr3 input
+{
+	background:url(image/btn_nmbr_3.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr4 input
+{
+	background:url(image/btn_nmbr_4.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr5 input
+{
+	background:url(image/btn_nmbr_5.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr6 input
+{
+	background:url(image/btn_nmbr_6.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr7 input
+{
+	background:url(image/btn_nmbr_7.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr8 input
+{
+	background:url(image/btn_nmbr_8.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr9 input
+{
+	background:url(image/btn_nmbr_9.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbrdot input
+{
+	background:url(image/btn_nmbr_dot.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr0 input
+{
+	background:url(image/btn_nmbr_0.png) center no-repeat;
+}
+#bodyLogin .container .content .right-content .numpad .left-container #nmbr00 input
+{
+	background:url(image/btn_nmbr_00.png) center no-repeat;
+}

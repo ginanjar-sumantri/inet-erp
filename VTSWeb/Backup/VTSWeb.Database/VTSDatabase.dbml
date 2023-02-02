@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="CDC_VTS_Development" Class="VTSDatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=WEBACCESSSRV\DEVELOPMENT;Initial Catalog=CDC_VTS_Development;User ID=vtsuser" SettingsObjectName="VTSWeb.Database.Properties.Settings" SettingsPropertyName="CDC_VTS_DevelopmentConnectionString3" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.MsCity" Member="MsCities">
+    <Type Name="MsCity">
+      <Column Name="CityCode" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CityName" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Regional" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="MsCity_MsCustomer" Member="MsCustomers" ThisKey="CityCode" OtherKey="City" Type="MsCustomer" />
+      <Association Name="MsCountry_MsCity" Member="MsCountry" ThisKey="Country" OtherKey="CountryCode" Type="MsCountry" IsForeignKey="true" />
+      <Association Name="MsRegional_MsCity" Member="MsRegional" ThisKey="Regional" OtherKey="RegionalCode" Type="MsRegional" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ClearanceAdditionalPhoto" Member="ClearanceAdditionalPhotos">
+    <Type Name="ClearanceAdditionalPhoto">
+      <Column Name="ClearanceAdditionalCode" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ClearanceCode" Type="System.String" DbType="VarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="Photo" Type="System.Data.Linq.Binary" DbType="Image NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="ClearanceHd_ClearanceAdditionalPhoto" Member="ClearanceHd" ThisKey="ClearanceCode" OtherKey="ClearanceCode" Type="ClearanceHd" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsArea" Member="MsAreas">
+    <Type Name="MsArea">
+      <Column Name="AreaCode" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AreaName" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Association Name="MsArea_MsCustContact_MsArea" Member="MsCustContact_MsAreas" ThisKey="AreaCode" OtherKey="AreaCode" Type="MsCustContact_MsArea" />
+      <Association Name="MsArea_ClearanceDt" Member="ClearanceDts" ThisKey="AreaCode" OtherKey="AreaCode" Type="ClearanceDt" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsCountry" Member="MsCountries">
+    <Type Name="MsCountry">
+      <Column Name="CountryCode" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CountryName" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="MsCountry_MsCity" Member="MsCities" ThisKey="CountryCode" OtherKey="Country" Type="MsCity" />
+      <Association Name="MsCountry_MsCustContact" Member="MsCustContacts" ThisKey="CountryCode" OtherKey="Country" Type="MsCustContact" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsCustContact_MsArea" Member="MsCustContact_MsAreas">
+    <Type Name="MsCustContact_MsArea">
+      <Column Name="VisitorAreaCode" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CustCode" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="ItemNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AreaCode" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Association Name="MsArea_MsCustContact_MsArea" Member="MsArea" ThisKey="AreaCode" OtherKey="AreaCode" Type="MsArea" IsForeignKey="true" />
+      <Association Name="MsCustContact_MsCustContact_MsArea" Member="MsCustContact" ThisKey="CustCode,ItemNo" OtherKey="CustCode,ItemNo" Type="MsCustContact" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsCustomer" Member="MsCustomers">
+    <Type Name="MsCustomer">
+      <Column Name="CustCode" Type="System.String" DbType="VarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CustName" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="CustType" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Address1" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
+      <Column Name="Address2" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="ContactName" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="ContactTitle" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ContactHP" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ContactEmail" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Association Name="MsCustomer_ClearanceHd" Member="ClearanceHds" ThisKey="CustCode" OtherKey="CustomerCode" Type="ClearanceHd" />
+      <Association Name="MsCustomer_MsCustContact" Member="MsCustContacts" ThisKey="CustCode" OtherKey="CustCode" Type="MsCustContact" />
+      <Association Name="MsCustomer_MsRack_Customer" Member="MsRack_Customers" ThisKey="CustCode" OtherKey="CustCode" Type="MsRack_Customer" />
+      <Association Name="MsCity_MsCustomer" Member="MsCity" ThisKey="City" OtherKey="CityCode" Type="MsCity" IsForeignKey="true" />
+      <Association Name="MsCustType_MsCustomer" Member="MsCustType" ThisKey="CustType" OtherKey="CustTypeCode" Type="MsCustType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsCustType" Member="MsCustTypes">
+    <Type Name="MsCustType">
+      <Column Name="CustTypeCode" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CustTypeName" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="MsCustType_MsCustomer" Member="MsCustomers" ThisKey="CustTypeCode" OtherKey="CustType" Type="MsCustomer" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsPurpose" Member="MsPurposes">
+    <Type Name="MsPurpose">
+      <Column Name="PurposeCode" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PurposeName" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Association Name="MsPurpose_ClearanceDt" Member="ClearanceDts" ThisKey="PurposeCode" OtherKey="PurposeCode" Type="ClearanceDt" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsRegional" Member="MsRegionals">
+    <Type Name="MsRegional">
+      <Column Name="RegionalCode" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RegionalName" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="MsRegional_MsCity" Member="MsCities" ThisKey="RegionalCode" OtherKey="Regional" Type="MsCity" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsReligion" Member="MsReligions">
+    <Type Name="MsReligion">
+      <Column Name="ReligionCode" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ReligionName" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="MsReligion_MsCustContact" Member="MsCustContacts" ThisKey="ReligionCode" OtherKey="Religion" Type="MsCustContact" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ClearanceHd" Member="ClearanceHds">
+    <Type Name="ClearanceHd">
+      <Column Name="ClearanceCode" Type="System.String" DbType="VarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ClearanceDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CustomerCode" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="VisitorCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="CompleteStatus" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="VisitorImage" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="ClearanceHd_ClearanceAdditionalPhoto" Member="ClearanceAdditionalPhotos" ThisKey="ClearanceCode" OtherKey="ClearanceCode" Type="ClearanceAdditionalPhoto" />
+      <Association Name="ClearanceHd_ClearanceDt" Member="ClearanceDts" ThisKey="ClearanceCode" OtherKey="ClearanceCode" Type="ClearanceDt" />
+      <Association Name="MsCustomer_ClearanceHd" Member="MsCustomer" ThisKey="CustomerCode" OtherKey="CustCode" Type="MsCustomer" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsMenu" Member="MsMenus">
+    <Type Name="MsMenu">
+      <Column Name="MenuID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ParentID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NavigateURL" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="PermisionLevel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="indent" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsCustContact" Member="MsCustContacts">
+    <Type Name="MsCustContact">
+      <Column Name="CustCode" Type="System.String" DbType="VarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemNo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ContactType" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="ContactName" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="ContactTitle" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Religion" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Address1" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="Address2" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="FgAccess" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgGoodsIn" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgGoodsOut" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgAdditionalVisitor" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgAuthorizationContact" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CardID" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Association Name="MsCustContact_MsCustContact_MsArea" Member="MsCustContact_MsAreas" ThisKey="CustCode,ItemNo" OtherKey="CustCode,ItemNo" Type="MsCustContact_MsArea" />
+      <Association Name="MsCustContact_master_CustContactExtension" Member="master_CustContactExtension" ThisKey="CustCode,ItemNo" OtherKey="CustCode,ItemNo" Type="master_CustContactExtension" Cardinality="One" />
+      <Association Name="MsCountry_MsCustContact" Member="MsCountry" ThisKey="Country" OtherKey="CountryCode" Type="MsCountry" IsForeignKey="true" />
+      <Association Name="MsCustomer_MsCustContact" Member="MsCustomer" ThisKey="CustCode" OtherKey="CustCode" Type="MsCustomer" IsForeignKey="true" />
+      <Association Name="MsReligion_MsCustContact" Member="MsReligion" ThisKey="Religion" OtherKey="ReligionCode" Type="MsReligion" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.master_CustContactExtension" Member="master_CustContactExtensions">
+    <Type Name="master_CustContactExtension">
+      <Column Name="CustCode" Type="System.String" DbType="VarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemNo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CustomerPhoto" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FingerIndex" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FingerPrint" Type="System.Data.Linq.Binary" DbType="Binary(400)" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="MsCustContact_master_CustContactExtension" Member="MsCustContact" ThisKey="CustCode,ItemNo" OtherKey="CustCode,ItemNo" Type="MsCustContact" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GoodsInOutDt" Member="GoodsInOutDts">
+    <Type Name="GoodsInOutDt">
+      <Column Name="TransNmbr" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemNo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CustCode" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductName" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="SerialNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="ElectriCityNumerik" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrGoodList" Member="TrGoodLists">
+    <Type Name="TrGoodList">
+      <Column Name="CustCode" Type="System.String" DbType="VarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemCode" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProductName" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="SerialNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="ElectriCityNumerik" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsUser" Member="MsUsers">
+    <Type Name="MsUser">
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LoweredUserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="PermissionLevelCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsUser_MsEmployees" Member="MsUser_MsEmployees">
+    <Type Name="MsUser_MsEmployee">
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EmpNumb" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsEmployee" Member="MsEmployees">
+    <Type Name="MsEmployee">
+      <Column Name="EmpNumb" Type="System.String" DbType="VarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EmpName" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="JobLevel" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="JobTitle" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsUserGroup" Member="MsUserGroups">
+    <Type Name="MsUserGroup">
+      <Column Name="UserGroupCode" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserGroupName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="FgAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsUserGroupDt" Member="MsUserGroupDts">
+    <Type Name="MsUserGroupDt">
+      <Column Name="UserGroupCode" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EmpNumb" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsAccessPermission" Member="MsAccessPermissions">
+    <Type Name="MsAccessPermission">
+      <Column Name="UserGroup" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MenuID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AllowAccess" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_UserPermissionGroup" Member="V_UserPermissionGroups">
+    <Type Name="V_UserPermissionGroup">
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UserGroupName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FgAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_UserPermissionGroup" Member="V_UserPermissionGroup1s">
+    <Type Name="V_UserPermissionGroup1">
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UserGroupName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FgAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsRackServer" Member="MsRackServers">
+    <Type Name="MsRackServer">
+      <Column Name="RackCode" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RackName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Association Name="MsRackServer_MsRack_Customer" Member="MsRack_Customers" ThisKey="RackCode" OtherKey="RackCode" Type="MsRack_Customer" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsRackBox" Member="MsRackBoxes">
+    <Type Name="MsRackBox">
+      <Column Name="RackCode" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemNo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RackBoxName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ClearanceDt" Member="ClearanceDts">
+    <Type Name="ClearanceDt">
+      <Column Name="ClearanceCode" Type="System.String" DbType="VarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AreaCode" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PurposeCode" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CheckIn" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CheckOut" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="RackCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="ClearanceHd_ClearanceDt" Member="ClearanceHd" ThisKey="ClearanceCode" OtherKey="ClearanceCode" Type="ClearanceHd" IsForeignKey="true" />
+      <Association Name="MsArea_ClearanceDt" Member="MsArea" ThisKey="AreaCode" OtherKey="AreaCode" Type="MsArea" IsForeignKey="true" />
+      <Association Name="MsPurpose_ClearanceDt" Member="MsPurpose" ThisKey="PurposeCode" OtherKey="PurposeCode" Type="MsPurpose" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GoodsInOutHd" Member="GoodsInOutHds">
+    <Type Name="GoodsInOutHd">
+      <Column Name="TransNmbr" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FileNmbr" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TransType" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CustCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TransDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="CarryBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RequestedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ApprovedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PostedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EntryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EntryUserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditUserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RackCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsRack_Customer" Member="MsRack_Customers">
+    <Type Name="MsRack_Customer">
+      <Column Name="RackCustomerCode" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CustCode" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="RackCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="MsCustomer_MsRack_Customer" Member="MsCustomer" ThisKey="CustCode" OtherKey="CustCode" Type="MsCustomer" IsForeignKey="true" />
+      <Association Name="MsRackServer_MsRack_Customer" Member="MsRackServer" ThisKey="RackCode" OtherKey="RackCode" Type="MsRackServer" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

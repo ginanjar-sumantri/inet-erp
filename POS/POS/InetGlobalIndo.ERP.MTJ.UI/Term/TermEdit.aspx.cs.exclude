@@ -1,0 +1,89 @@
+﻿using System;
+using System.Web;
+using System.Web.UI;
+using InetGlobalIndo.ERP.MTJ.Common;
+using InetGlobalIndo.ERP.MTJ.BusinessRule;
+using InetGlobalIndo.ERP.MTJ.DBFactory.ERPManSys;
+using InetGlobalIndo.ERP.MTJ.Common.Encryption;
+using InetGlobalIndo.ERP.MTJ.SystemConfig;
+
+namespace InetGlobalIndo.ERP.MTJ.UI.Home.Term
+{
+    public partial class TermEdit : TermBase
+    {
+        private TermBL _termBL = new TermBL();
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            this._nvcExtractor = new NameValueCollectionExtractor(Request.QueryString);
+
+            if (!this.Page.IsPostBack == true)
+            {
+                this.PageTitleLiteral.Text = this._pageTitleLiteral;
+
+                this.SaveButton.ImageUrl = ApplicationConfig.HomeWebAppURL + "images/save.jpg";
+                this.CancelButton.ImageUrl = ApplicationConfig.HomeWebAppURL + "images/cancel.jpg";
+                this.ResetButton.ImageUrl = ApplicationConfig.HomeWebAppURL + "images/reset.jpg";
+
+                this.SetAttribute();
+                this.ClearLabel();
+                this.ShowData();
+            }
+        }
+
+        protected void SetAttribute()
+        {
+            this.PeriodTextBox.Attributes.Add("OnKeyDown", "return NumericWithTab();");
+            this.RangeTextBox.Attributes.Add("OnKeyDown", "return NumericWithTab();");
+        }
+
+        protected void ClearLabel()
+        {
+            this.WarningLabel.Text = "";
+        }
+
+        protected void ShowData()
+        {
+            MsTerm _msTerm = this._termBL.GetSingle(Rijndael.Decrypt(this._nvcExtractor.GetValue(this._termCodeKey), ApplicationConfig.EncryptionKey));
+
+            this.TermCodeTextBox.Text = _msTerm.TermCode;
+            this.TermNameTextBox.Text = _msTerm.TermName;
+            this.PeriodTextBox.Text = Convert.ToString(_msTerm.XPeriod);
+            this.TypeRangeDropDownList.SelectedValue = _msTerm.TypeRange;
+            this.RangeTextBox.Text = Convert.ToString(_msTerm.XRange);
+        }
+
+        protected void SaveButton_Click(object sender, ImageClickEventArgs e)
+        {
+            MsTerm _msTerm = this._termBL.GetSingle(Rijndael.Decrypt(this._nvcExtractor.GetValue(this._termCodeKey), ApplicationConfig.EncryptionKey));
+            _msTerm.TermCode = this.TermCodeTextBox.Text;
+            _msTerm.TermName = this.TermNameTextBox.Text;
+            _msTerm.XPeriod = Convert.ToInt16(this.PeriodTextBox.Text);
+            _msTerm.TypeRange = this.TypeRangeDropDownList.SelectedValue;
+            _msTerm.XRange = Convert.ToInt16(this.RangeTextBox.Text);
+            _msTerm.UserID = HttpContext.Current.User.Identity.Name;
+            _msTerm.UserDate = DateTime.Now;
+
+            if (this._termBL.Edit(_msTerm) == true)
+            {
+                Response.Redirect(this._homePage);
+            }
+            else
+            {
+                this.ClearLabel();
+                this.WarningLabel.Text = "You Failed Edit Term";
+            }
+        }
+
+        protected void CancelButton_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect(this._homePage);
+        }
+
+        protected void ResetButton_Click(object sender, ImageClickEventArgs e)
+        {
+            this.ClearLabel();
+            this.ShowData();
+        }
+    }
+}

@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[BusinessRule.POSInterface.csproj]
+SCC_Aux_Path = "\\192.168.100.1\VSS 2005 Database\POS"
+SCC_Project_Name = "$/POS.root/BusinessRule.POSInterface", UYCAAAAA

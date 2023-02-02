@@ -1,0 +1,116 @@
+﻿using System;
+using System.Web;
+using System.Web.UI;
+using InetGlobalIndo.ERP.MTJ.DBFactory.ERPManSys;
+using InetGlobalIndo.ERP.MTJ.SystemConfig;
+using InetGlobalIndo.ERP.MTJ.Common;
+using InetGlobalIndo.ERP.MTJ.Common.Encryption;
+using InetGlobalIndo.ERP.MTJ.BusinessRule.Purchasing;
+using InetGlobalIndo.ERP.MTJ.BusinessRule.StockControl;
+using InetGlobalIndo.ERP.MTJ.BusinessRule;
+using InetGlobalIndo.ERP.MTJ.BusinessRule.Settings;
+using InetGlobalIndo.ERP.MTJ.Common.Enum;
+
+namespace InetGlobalIndo.ERP.MTJ.UI.Purchasing.PurchaseOrder
+{
+    public partial class PurchaseOrderDetail2Edit : PurchaseOrderBase
+    {
+        private PurchaseOrderBL _purchaseOrderBL = new PurchaseOrderBL();
+        private ProductBL _productBL = new ProductBL();
+        private UnitBL _unitBL = new UnitBL();
+        private PurchaseRequestBL _purchaseRequestBL = new PurchaseRequestBL();
+        private PermissionBL _permBL = new PermissionBL();
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            this._permAccess = this._permBL.PermissionValidation1(this._menuID, HttpContext.Current.User.Identity.Name, InetGlobalIndo.ERP.MTJ.Common.Enum.Action.Access);
+
+            if (this._permAccess == PermissionLevel.NoAccess)
+            {
+                Response.Redirect(this._errorPermissionPage);
+            }
+
+            this._permEdit = this._permBL.PermissionValidation1(this._menuID, HttpContext.Current.User.Identity.Name, InetGlobalIndo.ERP.MTJ.Common.Enum.Action.Edit);
+
+            if (this._permEdit == PermissionLevel.NoAccess)
+            {
+                Response.Redirect(this._errorPermissionPage);
+            }
+
+            this._nvcExtractor = new NameValueCollectionExtractor(Request.QueryString);
+
+            if (!this.Page.IsPostBack == true)
+            {
+                this.PageTitleLiteral.Text = this._pageTitleLiteral2;
+
+                this.SaveButton.ImageUrl = ApplicationConfig.HomeWebAppURL + "images/save.jpg";
+                this.CancelButton.ImageUrl = ApplicationConfig.HomeWebAppURL + "images/cancel.jpg";
+                this.ResetButton.ImageUrl = ApplicationConfig.HomeWebAppURL + "images/reset.jpg";
+
+                this.ClearLabel();
+                //this.SetAttribute();
+                this.ShowData();
+            }
+        }
+
+        protected void ClearLabel()
+        {
+            this.WarningLabel.Text = "";
+        }
+
+        //protected void SetAttribute()
+        //{
+        //    this.QtyTextBox.Attributes.Add("OnBlur", "ChangeFormat(" + this.QtyTextBox.ClientID + ");");
+        //}
+
+        public void ShowData()
+        {
+            string _transNo = Rijndael.Decrypt(this._nvcExtractor.GetValue(this._codeKey), ApplicationConfig.EncryptionKey);
+            string _revisi = Rijndael.Decrypt(this._nvcExtractor.GetValue(this._codeRevisi), ApplicationConfig.EncryptionKey);
+            string _productCode = Rijndael.Decrypt(this._nvcExtractor.GetValue(this._productKey), ApplicationConfig.EncryptionKey);
+            string _requestNo = Rijndael.Decrypt(this._nvcExtractor.GetValue(this._requestNoKey), ApplicationConfig.EncryptionKey);
+
+            PRCPODt2 _prcPODt2 = this._purchaseOrderBL.GetSinglePRCPODt2(_transNo, Convert.ToInt32(_revisi), _requestNo);
+
+            //this.ProductTextBox.Text = this._productBL.GetProductNameByCode(_prcPODt2.ProductCode);
+            this.RequestNoTextBox.Text = this._purchaseRequestBL.GetFileNmbrPRCRequestHd(_prcPODt2.RequestNo);
+            //this.QtyTextBox.Text = (_prcPODt2.Qty == 0) ? "0" : _prcPODt2.Qty.ToString("#,###.##");
+            //this.UnitTextBox.Text = this._unitBL.GetUnitNameByCode(_prcPODt2.Unit);
+        }
+
+        protected void SaveButton_Click(object sender, ImageClickEventArgs e)
+        {
+            string _transNo = Rijndael.Decrypt(this._nvcExtractor.GetValue(this._codeKey), ApplicationConfig.EncryptionKey);
+            int _revisi = Convert.ToInt32(Rijndael.Decrypt(this._nvcExtractor.GetValue(this._codeRevisi), ApplicationConfig.EncryptionKey));
+            string _productCode = Rijndael.Decrypt(this._nvcExtractor.GetValue(this._productKey), ApplicationConfig.EncryptionKey);
+            string _requestNo = Rijndael.Decrypt(this._nvcExtractor.GetValue(this._requestNoKey), ApplicationConfig.EncryptionKey);
+
+            //PRCPODt2 _prcPODt2 = this._purchaseOrderBL.GetSinglePRCPODt2(_transNo, Convert.ToInt32(_revisi), _productCode, _requestNo);
+
+            //_prcPODt2.Qty = Convert.ToDecimal(this.QtyTextBox.Text);
+
+            //bool _result = this._purchaseOrderBL.EditPRCPODt2(_transNo, _revisi, _productCode, _requestNo, Convert.ToDecimal(this.QtyTextBox.Text), HttpContext.Current.User.Identity.Name, DateTime.Now);
+            bool _result = false;
+
+            if (_result == true)
+            {
+                Response.Redirect(this._detailPage + "?" + this._codeKey + "=" + HttpUtility.UrlEncode(this._nvcExtractor.GetValue(this._codeKey)) + "&" + this._codeRevisi + "=" + HttpUtility.UrlEncode(this._nvcExtractor.GetValue(this._codeRevisi)));
+            }
+            else
+            {
+                this.WarningLabel.Text = "Your Failed Edit Data";
+            }
+        }
+
+        protected void CancelButton_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect(this._detailPage + "?" + this._codeKey + "=" + HttpUtility.UrlEncode(this._nvcExtractor.GetValue(this._codeKey)) + "&" + this._codeRevisi + "=" + HttpUtility.UrlEncode(this._nvcExtractor.GetValue(this._codeRevisi)));
+        }
+
+        protected void ResetButton_Click(object sender, ImageClickEventArgs e)
+        {
+            this.ClearLabel();
+            this.ShowData();
+        }
+    }
+}

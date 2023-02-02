@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB226834-FC4E-4A40-9A76-59660F780359}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InetGlobalIndo.ERP.MTJ.BusinessRule.HumanResource</RootNamespace>
+    <AssemblyName>InetGlobalIndo.ERP.MTJ.BusinessRule.HumanResource</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>PT. Inet Global Indo.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="InetGlobalIndo.ERP.MTJ.Authentication, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\General\InetGlobalIndo.ERP.MTJ.Authentication\bin\Debug\InetGlobalIndo.ERP.MTJ.Authentication.dll</HintPath>
+    </Reference>
+    <Reference Include="InetGlobalIndo.ERP.MTJ.BusinessRule.Settings, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SettingBL\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings\bin\Debug\InetGlobalIndo.ERP.MTJ.BusinessRule.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="InetGlobalIndo.ERP.MTJ.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="InetGlobalIndo.ERP.MTJ.DataMapping, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="InetGlobalIndo.ERP.MTJ.DBFactory.ERPManSys, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="InetGlobalIndo.ERP.MTJ.DBFactory.Membership, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\General\InetGlobalIndo.ERP.MTJ.DBFactory.Membership\bin\Debug\InetGlobalIndo.ERP.MTJ.DBFactory.Membership.dll</HintPath>
+    </Reference>
+    <Reference Include="InetGlobalIndo.ERP.MTJ.SystemConfig, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\General\InetGlobalIndo.ERP.MTJ.SystemConfig\bin\Debug\InetGlobalIndo.ERP.MTJ.SystemConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicantResumeBL.cs" />
+    <Compile Include="ApplicantScreeningBL.cs" />
+    <Compile Include="Base.cs" />
+    <Compile Include="AbsenceBL.cs" />
+    <Compile Include="ClassRoomBL.cs" />
+    <Compile Include="CommentStatusBL.cs" />
+    <Compile Include="ApplicantFinishingBL.cs" />
+    <Compile Include="AbsenceTypeBL.cs" />
+    <Compile Include="AttendanceBL.cs" />
+    <Compile Include="AbsenceRequestBL.cs" />
+    <Compile Include="ClaimBL.cs" />
+    <Compile Include="ClaimIssueBL.cs" />
+    <Compile Include="ClaimPlafonBL.cs" />
+    <Compile Include="AppraisalBL.cs" />
+    <Compile Include="ChangeShiftBL.cs" />
+    <Compile Include="LateDispensationBL.cs" />
+    <Compile Include="LoanChangeBL.cs" />
+    <Compile Include="LeaveTempBL.cs" />
+    <Compile Include="PayrollInfoBL.cs" />
+    <Compile Include="TrAppraisalBL.cs" />
+    <Compile Include="PurposeBL.cs" />
+    <Compile Include="TrReprimandBL.cs" />
+    <Compile Include="ReprimandBL.cs" />
+    <Compile Include="RewardBL.cs" />
+    <Compile Include="LeaveRequestBL.cs" />
+    <Compile Include="EmpGroupAssignBL.cs" />
+    <Compile Include="ScheduleShiftBL.cs" />
+    <Compile Include="HolidayBL.cs" />
+    <Compile Include="HRMTermBL.cs" />
+    <Compile Include="GroupByBL.cs" />
+    <Compile Include="TermTypeBL.cs" />
+    <Compile Include="ShiftGroupBL.cs" />
+    <Compile Include="LeaveAddBL.cs" />
+    <Compile Include="PeriodScheduleBL.cs" />
+    <Compile Include="DayBL.cs" />
+    <Compile Include="OverTimeBL.cs" />
+    <Compile Include="ShiftBL.cs" />
+    <Compile Include="LoanInBL.cs" />
+    <Compile Include="LemburBL.cs" />
+    <Compile Include="LeaveProcessBL.cs" />
+    <Compile Include="DinasBL.cs" />
+    <Compile Include="LeaveBL.cs" />
+    <Compile Include="LoanBL.cs" />
+    <Compile Include="ExitInterviewBL.cs" />
+    <Compile Include="ReportHumanResourceBL.cs" />
+    <Compile Include="TerminationFinishingBL.cs" />
+    <Compile Include="TerminationRequestBL.cs" />
+    <Compile Include="TrRewardBL.cs" />
+    <Compile Include="UpdateLeaveBL.cs" />
+    <Compile Include="WorkingHourBL.cs" />
+    <Compile Include="GenderBL.cs" />
+    <Compile Include="ScreeningProcessBL.cs" />
+    <Compile Include="ScreeningScheduleBL.cs" />
+    <Compile Include="CourseLocationBL.cs" />
+    <Compile Include="RecruitmentRequestBL.cs" />
+    <Compile Include="ProcessTypeBL.cs" />
+    <Compile Include="SkillBL.cs" />
+    <Compile Include="InstructorBL.cs" />
+    <Compile Include="ReasonBL.cs" />
+    <Compile Include="EmployeeBL.cs" />
+    <Compile Include="MasterCourseBL.cs" />
+    <Compile Include="OrganizationStructureBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkPlaceBL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PT. Inet Global Indo.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

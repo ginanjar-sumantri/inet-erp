@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessRule.SMS", "BusinessRule.SMS\BusinessRule.SMS.csproj", "{C0813941-7888-4145-B5FD-4047BE5F0FCA}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SMSGateway.UI", "SMSGateway.UI", "{42EA0BCC-D5D5-4A77-BBDB-85843820F976}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/SMSGateway.root/SMSGateway", CAAAAAAA"
+		SccAuxPath = ""
+		SccLocalPath = ".."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		ProjectReferences = "{C0813941-7888-4145-B5FD-4047BE5F0FCA}|BusinessRule.SMS.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/SMSGateway.UI"
+		Debug.AspNetCompiler.PhysicalPath = "SMSGateway.UI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SMSGateway.UI\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SMSGateway.UI"
+		Release.AspNetCompiler.PhysicalPath = "SMSGateway.UI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SMSGateway.UI\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2114"
+		VWDDynamicPort = "false"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "InetGlobalIndo.ERP.MTJ.UI", "InetGlobalIndo.ERP.MTJ.UI", "{2F30DDAC-6F82-4D28-9EE2-6DD071C2951F}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/SMSGateway.root/SMSGateway", CAAAAAAA"
+		SccAuxPath = ""
+		SccLocalPath = ".."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/InetGlobalIndo.ERP.MTJ.UI"
+		Debug.AspNetCompiler.PhysicalPath = "InetGlobalIndo.ERP.MTJ.UI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\InetGlobalIndo.ERP.MTJ.UI\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/InetGlobalIndo.ERP.MTJ.UI"
+		Release.AspNetCompiler.PhysicalPath = "InetGlobalIndo.ERP.MTJ.UI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\InetGlobalIndo.ERP.MTJ.UI\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2100"
+		VWDDynamicPort = "false"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BusinessRule.SMS\\BusinessRule.SMS.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = BusinessRule.SMS\\
+		SccWebProject2 = true
+		SccProjectUniqueName2 = InetGlobalIndo.ERP.MTJ.UI
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = InetGlobalIndo.ERP.MTJ.UI\\
+		SccProjectEnlistmentChoice2 = 2
+		SccWebProject3 = true
+		SccProjectUniqueName3 = SMSGateway.UI
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = SMSGateway.UI\\
+		SccProjectEnlistmentChoice3 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0813941-7888-4145-B5FD-4047BE5F0FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0813941-7888-4145-B5FD-4047BE5F0FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0813941-7888-4145-B5FD-4047BE5F0FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0813941-7888-4145-B5FD-4047BE5F0FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42EA0BCC-D5D5-4A77-BBDB-85843820F976}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42EA0BCC-D5D5-4A77-BBDB-85843820F976}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42EA0BCC-D5D5-4A77-BBDB-85843820F976}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{42EA0BCC-D5D5-4A77-BBDB-85843820F976}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{2F30DDAC-6F82-4D28-9EE2-6DD071C2951F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F30DDAC-6F82-4D28-9EE2-6DD071C2951F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F30DDAC-6F82-4D28-9EE2-6DD071C2951F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F30DDAC-6F82-4D28-9EE2-6DD071C2951F}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
